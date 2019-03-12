@@ -30,10 +30,11 @@ install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.50/hugo_extended_0.50_Linux-64bit.deb
     - sudo dpkg -i hugo*.deb
     - rm -rf public 2> /dev/null
+    - nvm install 6.4.0
     - npm install -g markdown-spellcheck
     - npm install -g link-checker
 
 script:
     - hugo
-    - mdspell content/en/**/*.md --report
+    - mdspell "content/**/*.md" --ignore-numbers --ignore-acronyms --report
     - link-checker public
