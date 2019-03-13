@@ -3,4 +3,203 @@
 Add styles or override variables from the theme here.
 
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import "_define-variables";
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints";
+@import '../../themes/docsy/assets/vendor/bootstrap/scss/functions', '../../themes/docsy/assets/vendor/bootstrap/scss/variables';
 
+:root {
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
+
+.hero {
+  background: url('/images/background-cover.jpg');
+  max-height: 505px;
+
+  &__block {
+    padding: 37px 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 14px 6px #001a29;
+    background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  }
+
+  .nav-tabs {
+    display: flex;
+    justify-content: space-around;
+
+    .nav-link {
+      &.active {
+        position: relative;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.2px;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 7px solid;
+        border-color: #da5201;
+      }
+
+      &:hover {
+
+      }
+    }
+  }
+
+  &__tab-pane {
+    &.tab-pane.active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__tab-title {
+    color: var(--greyish-brown);
+  }
+
+  &__tab-body {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: #444444;
+  }
+}
+
+.why {
+  color: var(--greyish-brown);
+
+  &__image {
+    height: 38px;
+  }
+
+  &__block-title {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #444444;
+    width: 50%;
+  }
+
+  &__block-body {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  .why__block {
+    padding: 0 32px 0 0;
+    border-right: solid 1px #bbbbbb;
+
+    &--no-border {
+      border-right: 0;
+    }
+
+    &--no-border-md {
+      @include media-breakpoint-down(md) {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.features {
+  background-color: var(--silver);
+
+  &__title {
+    font-size: 35px;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: var(--greyish-brown);
+  }
+
+  &__block {
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.2px;
+    color: var(--greyish-brown);
+  }
+}
+
+.accelerators {
+  &__item {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    color: var(--black-two);
+
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
+    background-color: var(--white);
+  }
+
+  &__inner-wrapper {
+    padding: 27px 21px 24px 25px;
+  }
+}
+
+.testimonials {
+  background-color: var(--silver);
+
+  &__testimonial {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    color: var(--black);
+  }
+
+  &__author {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+  }
+}
+
+.companies {
+  &__title {
+    font-size: 35px;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: var(--black)
+  }
+
+  &__image {
+    width: 167px;
+    height: 71px;
+  }
+
+  &__wrapper {
+    color: var(--azure);
+  }
+
+  &__cta {
+    font-size: 25px;
+    letter-spacing: 0.2px;
+  }
+}
+
+.btn-cta {
+  align-self: center;
+  width: 287px;
+  height: 67px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: var(--white);
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #fd6003, #c44c04);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
