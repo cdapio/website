@@ -1,20 +1,15 @@
 <!doctype html>
-<html lang="{{ .Site.Language.Lang }}" class="no-js">
-  <head>
-    {{ partial "head.html" . }}
-  </head>
-  <body class="td-{{ .Kind }}">
-    <header>
-      {{ partial "navbar.html" . }}
-    </header>
-      {{ partial "hero.html" . }}
-      {{ partial "announcement.html" . }}
-      {{ partial "why.html" . }}
-      {{ partial "features.html" . }}
-      {{ partial "accelerators.html" . }}
-      {{ partial "testimonials.html" . }}
-      {{ partial "companies.html" . }}
-      {{ partial "footer.html" . }}
-    {{ partialCached "scripts.html" . }}
-  </body>
+<html lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}">
+<head>
+  <title>
+    {{ .Site.Title }}
+  </title>
+  {{ partial "head.html" . }}
+</head>
+<body class="td-{{ .Kind }}">
+  {{ partial "header.html" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer.html" . }}
+  {{ partialCached "scripts.html" . }}
+</body>
 </html>
