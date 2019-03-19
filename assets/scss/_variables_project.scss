@@ -173,6 +173,7 @@ section.hero {
 
   &__image {
     height: 38px;
+    opacity: .43;
   }
 
   &__block-title {
@@ -280,6 +281,11 @@ section.hero {
     border: 1px solid transparent;
     transition: all .3s;
 
+    @include media-breakpoint-down(md) {
+      max-width: 290px;
+      margin: 0 auto;
+    }
+
     &:focus {
       border: 1px solid $orange-10;
     }
@@ -295,13 +301,38 @@ section.hero {
     }
   }
 
+  &__link {
+    margin-top: 28px;
+  }
+
   &__item-image {
     transform: scale(1);
     transition: all .3s;
+    max-height: 157px;
   }
 
   &__inner-wrapper {
     padding: 27px 21px 24px 25px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 27px 10px 24px 10px;
+    }
+  }
+
+  &__item-body {
+    min-height: 140px;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    line-height: 20px;
+    margin: 6px 0 0;
+
+    @include media-breakpoint-down(lg) {
+      min-height: 160px;
+    }
+
+    @include media-breakpoint-down(md) {
+      min-height: 100px;
+    }
   }
 }
 
