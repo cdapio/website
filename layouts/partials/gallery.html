@@ -3,20 +3,20 @@
      data-ride="carousel"
      data-interval="false">
   <ol class="carousel-indicators">
-    {{ range $index, $e := .Site.Data.images }}
+    {{ range $index, $element := .Site.Data.gallery }}
     <li data-target="#carouselCaptions" data-slide-to="{{ $index }}" class="{{ if .active }} active {{ end }}"></li>
     {{ end }}
   </ol>
   <div class="carousel-inner">
-    {{ range $e := .Site.Data.images }}
+    {{ range $element := .Site.Data.gallery }}
     <div class="carousel-item {{ if .active }} active {{ end }}">
       <div class="announcement__media d-flex flex-column flex-md-row">
         <img src="{{ .imageUrl }}.jpg" class="announcement__carousel-img align-self-top"
              alt="announcement">
         <div class="announcement__media-body">
-          <h2 class="announcement__title not-apply">{{ $e.title }}</h2>
-          <p class="not-apply"> {{ $e.description }}  </p>
-          <a class="btn btn-link mt-3" href="#"> {{ $e.linkTitle }} </a>
+          <h2 class="announcement__title not-apply">{{ $element.title }}</h2>
+          <p class="not-apply"> {{ $element.description }}  </p>
+          <a class="btn btn-link mt-3" href="#"> {{ $element.linkTitle }} </a>
         </div>
       </div>
     </div>
