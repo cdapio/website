@@ -1,5 +1,5 @@
 baseURL = "http://localhost:1313/"
-title = "Test Example"
+title = "CDAP"
 
 enableRobotsTXT = true
 
@@ -56,9 +56,8 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "CDAPP"
-description = "The Data Analytics Platform"
-about = "A 100% open source, integrated framework that accelerates application development for data analytics"
+title = "CDAP"
+description = "Custom description"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -94,67 +93,19 @@ enable = true
 [[languages.en.menu.main]]
 identifier = "Get Started"
 name = "GET STARTED"
-url = "/"
 weight = 10
 
 [[languages.en.menu.main]]
 identifier = "Downloads"
 name = "DOWNLOADS"
-url = "/downloads/"
 weight = 20
-
-[[languages.en.menu.main]]
-identifier = "Case Studies"
-parent = "RESOURCES"
-name = "Case Studies"
-url = "/resources/case-studies"
-weight = 1
-
-[[languages.en.menu.main]]
-identifier = "Accelerators"
-parent = "RESOURCES"
-name = "Accelerators"
-url = "/resources/accelerators"
-weight = 2
-
-[[languages.en.menu.main]]
-identifier = "Plugins"
-parent = "RESOURCES"
-name = "Plugins"
-url = "/resources/plugins"
-weight = 3
-
-[[languages.en.menu.main]]
-identifier = "Videos"
-parent = "RESOURCES"
-name = "Videos"
-url = "/resources/videos"
-weight = 4
-
-[[languages.en.menu.main]]
-identifier = "Documentation"
-parent = "RESOURCES"
-post = "<i class='fas fa-external-link-alt external-link-icon'></i>"
-name = "Documentation"
-url = "/resources/documentation"
-weight = 5
-
-[[languages.en.menu.main]]
-identifier = "Blog"
-parent = "RESOURCES"
-post = "<i class='fas fa-external-link-alt external-link-icon'></i>"
-name = "Blog"
-url = "/resources/blog"
-weight = 6
 
 [[languages.en.menu.main]]
 identifier = "RESOURCES"
 name = "RESOURCES"
-url = "/resources/"
 weight = 30
 
 [[languages.en.menu.main]]
 identifier = "Community"
 name = "COMMUNITY"
-url = "/community/"
 weight = 40

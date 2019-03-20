@@ -1,5 +1,20 @@
-{
-  "visible": [
+[
+    {
+      "url": "#",
+      "image": "companies-logo.png"
+    },
+    {
+      "url": "#",
+      "image": "companies-logo.png"
+    },
+    {
+      "url": "#",
+      "image": "companies-logo.png"
+    },
+    {
+      "url": "#",
+      "image": "companies-logo.png"
+    },
     {
       "url": "#",
       "image": "companies-logo.png"
@@ -16,25 +31,4 @@
       "url": "#",
       "image": "companies-logo.png"
     }
-
-  ],
-  "hidden": [
-    {
-      "url": "#",
-      "image": "companies-logo.png"
-    },
-    {
-      "url": "#",
-      "image": "companies-logo.png"
-    },
-    {
-      "url": "#",
-      "image": "companies-logo.png"
-    },
-    {
-      "url": "#",
-      "image": "companies-logo.png"
-    }
-
-  ]
-}
+]

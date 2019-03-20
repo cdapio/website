@@ -4,43 +4,53 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
-        <h3 class="hero__c-title not-apply">{{ .Site.Params.Title }}</h3>
-        <h2 class="hero__title mt-4 not-apply">{{ .Site.Params.description | safeHTML }}</h2>
-        <p class="hero__paragraph not-apply">{{ .Site.Params.about | safeHTML }}</p>
+        <h3 class="hero__c-title not-apply">CDAP</h3>
+        <h2 class="hero__title mt-4 not-apply">The Data Analytics Platform</h2>
+        <p class="hero__paragraph not-apply">A 100% open source, integrated framework that accelerates application
+          development for
+          data analytics</p>
       </div>
       <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
         <div class="hero__block">
           <ul class="hero__nav-tabs nav nav-tabs" id="myTab" role="tablist">
-            {{ range $index, $element := .Site.Data.tabs }}
             <li class="nav-item">
-              <a class="hero__nav-link {{ if .active }} active {{ end }}"
-                 id="{{ .id }}-tab"
-                 data-toggle="tab"
-                 href="#{{ .id }}"
-                 role="tab"
-                 aria-controls="{{ .id }}"
-                 aria-selected="true">{{ $element.tabTitle }}</a>
+              <a class="hero__nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                 aria-controls="home"
+                 aria-selected="true">On Cloud</a>
             </li>
-            {{ end }}
+            <li class="nav-item">
+              <a class="hero__nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                 aria-controls="profile"
+                 aria-selected="false">On Premises</a>
+            </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            {{ range $index, $element := .Site.Data.tabs }}
-            <div class="hero__tab-pane tab-pane fade {{ if .active }} show active {{ end }}"
-                 id="{{ .id }}"
-                 role="tabpanel"
-                 aria-labelledby="home-tab">
-              <h3 class="hero__tab-title text-center mt-4">{{ $element.title }}</h3>
-              <div class="hero__tab-body text-center mt-4">{{ $element.description }}</div>
-              <button class="btn-cta mt-3">{{ $element.buttonTitle }}</button>
+            <div class="hero__tab-pane tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <h3 class="hero__tab-title text-center mt-4">Get Started in the Cloud</h3>
+              <div class="hero__tab-body text-center mt-4">Run CDAP on any major public cloud provideer including Amazon
+                Web
+                Services,
+                Microsoft Azure and
+                Google Cloud Platform
+              </div>
+              <button class="btn-cta mt-3">Get started</button>
             </div>
-            {{ end }}
+            <div class="hero__tab-pane tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <h3 class="hero__tab-title text-center mt-4">Get Started in the Cloud</h3>
+              <div class="hero__tab-body text-center mt-4">Run CDAP on any major public cloud provideer including Amazon
+                Web
+                Services,
+                Microsoft Azure and
+                Google Cloud Platform
+              </div>
+              <button class="btn-cta mt-3">Get started</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="announcement">
   <div class="container">
@@ -129,7 +139,6 @@
   </div>
 </section>
 
-
 <section class="features">
   <div class="container">
     <div class="row">
@@ -210,76 +219,17 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="accelerators__title">Accelerators</h2>
+        <h2 class="accelerators__title">
+          {{ with .GetPage "accelerators.md" }}
+            {{ .Title }}
+          {{ end }}
+        </h2>
       </div>
     </div>
   </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <a href="{{ "resources/accelerators/pipelines/" | relLangURL }}">
-          <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1">
-            <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-            <div class="accelerators__inner-wrapper">
-              <h4 class="accelerators__item-title">Pipelines</h4>
-              <p class="accelerators__item-body not-apply">Pipelines lets extract, transform, blend, aggregate and load
-                data
-                to/from
-                a
-                variety of on-prem and cloud data sources.</p>
-              <a href="#" class="d-flex accelerators__link">Learn More</a>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="accelerators__item mt-5 mt-lg-0" tabindex="-1">
-          <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-          <div class="accelerators__inner-wrapper">
-            <h4 class="accelerators__item-title">Preparation</h4>
-            <p class="accelerators__item-body not-apply">
-              Description of Pipelines features and capabilities goes here. Lorem ipsum dolor sit amet, consecteru
-              adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.
-            </p>
-            <a href="#" class="d-flex accelerators__link">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="accelerators__item mt-5 mt-lg-0" tabindex="-1">
-          <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-          <div class="accelerators__inner-wrapper">
-            <h4 class="accelerators__item-title">Analytics</h4>
-            <p class="accelerators__item-body not-apply">
-              Description of Analytics features and capabilities goes here. Lorem ipsum dolor sit amet, consecteru
-              adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.
-            </p>
-            <a href="#" class="d-flex accelerators__link">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="accelerators__item mt-5 mt-lg-0" tabindex="-1">
-          <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-          <div class="accelerators__inner-wrapper">
-            <h4 class="accelerators__item-title">Rules</h4>
-            <p class="accelerators__item-body not-apply">
-              Description of Rules features and capabilities goes here. Lorem ipsum dolor sit amet, consecteru
-              adipiscing elit.Lorem ipsum dolor sit amet, consecteru adipiscing elit.
-            </p>
-            <a href="#" class="d-flex accelerators__link">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <button class="btn-cta mt-5">Get started</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ with .GetPage "accelerators.md" }}
+    {{ .Content }}
+  {{ end }}
 </section>
 
 <section class="testimonials">
@@ -323,7 +273,7 @@
       <div class="col-12">
         <h2 class="companies__title">
           {{ with .GetPage "companies.md" }}
-          {{ .Title }}
+            {{ .Title }}
           {{ end }}
         </h2>
         <a href="#">Read case studies</a>
@@ -332,28 +282,8 @@
   </div>
   <div class="container">
     {{ with .GetPage "companies.md" }}
-    {{ .Content }}
+      {{ .Content }}
     {{ end }}
-      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">-->
-        <!--<a href="#">-->
-          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
-        <!--</a>-->
-      <!--</div>-->
-      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">-->
-        <!--<a href="#">-->
-          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
-        <!--</a>-->
-      <!--</div>-->
-      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">-->
-        <!--<a href="#">-->
-          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
-        <!--</a>-->
-      <!--</div>-->
-      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">-->
-        <!--<a href="#">-->
-          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
-        <!--</a>-->
-      <!--</div>-->
   </div>
   <div class="container">
     <div class="row">
