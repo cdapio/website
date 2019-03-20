@@ -3,17 +3,14 @@
 Add styles or override variables from the theme here.
 
 */
-
 @import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints",
-"../../themes/docsy/assets/vendor/bootstrap/scss/functions",
-"../../themes/docsy/assets/vendor/bootstrap/scss/bootstrap-reboot",
-"../../themes/docsy/assets/vendor/bootstrap/scss/variables";
-
+        "../../themes/docsy/assets/vendor/bootstrap/scss/functions",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/bootstrap-reboot",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/variables";
 @import "_define-variables",
-"_base",
-"_mixins",
-"_fonts";
-
+        "_base",
+        "_mixins",
+        "_fonts";
 
 section.hero {
   @include media-breakpoint-up(sm) {
@@ -107,7 +104,7 @@ section.hero {
     &.nav-tabs {
       border-bottom: 0;
 
-      @include media-breakpoint-up(sm){
+      @include media-breakpoint-up(sm) {
         border-bottom: 1px solid #dee2e6;
 
         &:after {
@@ -431,10 +428,6 @@ section.hero {
   &:hover {
     background-image: linear-gradient(to bottom, $orange-5, $orange-5);
     transition: all .3s;
-  }
-
-  &:focus {
-    border: 3px solid $orange
   }
 }
 
@@ -832,15 +825,24 @@ section.announcement {
   }
 
   &__title {
+    color: $black;
+  }
+
+  &__block-title {
     font-size: 25px;
     line-height: 1.2;
     letter-spacing: 0.2px;
     color: $black;
     margin-top: 27px;
+    text-align: center;
   }
 
   &__link {
     margin-left: 74px;
+  }
+
+  &__image-wrapper {
+    min-height: 130px;
   }
 }
 
