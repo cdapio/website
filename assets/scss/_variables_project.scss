@@ -846,4 +846,37 @@ section.announcement {
   }
 }
 
+.accelerators-info {
+  padding: 48px 72px 100px 24px;
+  color: black;
+  @include media-breakpoint-down(lg) {
+    padding: 47px 40px 0 24px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 35px 1px 0 0;
+  }
 
+  &__wrapper {
+
+    @include media-breakpoint-up(lg) {
+      &:nth-child(even) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__block {
+    margin-bottom: 70px;
+    @include media-breakpoint-up(lg) {
+      max-width: 580px;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+  }
+  &__body {
+    font-size: 18px;
+  }
+}
