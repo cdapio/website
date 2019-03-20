@@ -56,8 +56,9 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "CDAP"
-description = "Custom description"
+title = "CDAPP"
+description = "The Data Analytics Platform"
+about = "A 100% open source, integrated framework that accelerates application development for data analytics"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
