@@ -878,10 +878,43 @@ section.announcement {
   }
 }
 
-.videos {
-  &__video {
-    min-height: 168px;
-    background-color: $white-20;
-    border: 1px solid $gray-5;
+.hero-panel {
+  background-color: #012f4b;
+  min-height: 440px;
+  font-size: 25px;
+  @include media-breakpoint-down(sm) {
+    min-height: 575px;
+  }
+
+  .container {
+    @include media-breakpoint-up(sm) {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    background: url('/images/background-cover.jpg');
+    background-position: center;
+    height: 60px;
+    padding-top: 8px;
+  }
+
+  &__paragraph {
+    font-family: Roboto;
+    margin-top: 70px;
+    line-height: 35px;
+    letter-spacing: .17px;
+    max-width: 540px;
+  }
+
+  &__bottom-img {
+    position: absolute;
+    height: 150px;
+    top: 351px;
+    background: url("/images/features-bottom.svg") no-repeat;
+    background-size: cover;
+    @include media-breakpoint-down(sm) {
+      top: 486px;
+    }
   }
 }
