@@ -103,10 +103,9 @@
 
 <section class="features">
   {{ partial "features.html" . }}
-    <div class="row">
-      <div class="col-12 text-center pb-5">
-        <button class="btn-cta mt-5">Get started</button>
-      </div>
+  <div class="row">
+    <div class="col-12 text-center pb-5">
+      <button class="btn-cta mt-5">Get started</button>
     </div>
   </div>
 </section>
@@ -117,14 +116,14 @@
       <div class="col-12">
         <h2 class="accelerators__title">
           {{ with .GetPage "accelerators.md" }}
-            {{ .Title }}
+          {{ .Title }}
           {{ end }}
         </h2>
       </div>
     </div>
   </div>
   {{ with .GetPage "accelerators.md" }}
-    {{ .Content }}
+  {{ .Content }}
   {{ end }}
 </section>
 
@@ -136,22 +135,14 @@
       </div>
     </div>
   </div>
-  <div class="container mt-5">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-12 mt-5 mt-lg-0">
-        <p class="testimonials__testimonial font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          commodo iaculis ex, non rhoncus arcu blandit
-          sed. Fusce eget pharetra nulla, vel fermentum ante. Phasellus gravida non diam sed vehicula.”
-        </p>
-        <p class="testimonials__author">– Name Lastname, job title, Company name</p>
+      {{ range where .Site.RegularPages "Type" "in" (slice "testimonials") }}
+      <div class="col-lg-6 col-md-12 mt-5 mt-lg-4">
+        <p class="testimonials__testimonial font-italic">{{ .Content | markdownify }}</p>
+        <p class="testimonials__author">– {{ .Params.name }}, {{ .Params.job }}, {{ .Params.company }}</p>
       </div>
-      <div class="col-lg-6 col-md-12 mt-5 mt-lg-0">
-        <p class="testimonials__testimonial font-italic">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          commodo iaculis ex, non rhoncus arcu blandit
-          sed. Fusce eget pharetra nulla, vel fermentum ante. Phasellus gravida non diam sed vehicula.”
-        </p>
-        <p class="testimonials__author">– Name Lastname, job title, Company name</p>
-      </div>
+      {{ end }}
     </div>
     <div class="container">
       <div class="row">
