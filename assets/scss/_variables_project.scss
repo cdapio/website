@@ -3,56 +3,59 @@
 Add styles or override variables from the theme here.
 
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-@import "_define-variables";
-@import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints";
-@import '../../themes/docsy/assets/vendor/bootstrap/scss/functions', '../../themes/docsy/assets/vendor/bootstrap/scss/variables';
-
-:root {
-  body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--white);
-  }
-
-  p {
-    margin: 0;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-  }
-}
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/functions",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/bootstrap-reboot",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/variables";
+@import "_define-variables",
+        "_base",
+        "_mixins",
+        "_fonts";
 
 .hero {
   background: url('/images/background-cover.jpg');
-  max-height: 505px;
+  min-height: 505px;
 
   &__block {
     padding: 37px 50px;
     border-radius: 8px;
-    box-shadow: 0 0 14px 6px #001a29;
-    background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+    box-shadow: 0 0 14px 6px $black-10;
+    background-image: linear-gradient(to bottom, $white, $white-15);
   }
 
   .nav-tabs {
     display: flex;
     justify-content: space-around;
+  }
 
-    .nav-link {
-      &.active {
-        position: relative;
-        font-size: 18px;
-        font-weight: bold;
-        letter-spacing: 0.2px;
-        background-color: transparent;
-        border: 0;
-        border-bottom: 7px solid;
-        border-color: #da5201;
+  &__nav-tabs {
+    padding: 0 0 15px;
+  }
+
+  .nav-item {
+    a {
+      color: $greyish-brown;
+
+      &:link, &:hover {
+        text-decoration: inherit;
       }
+    }
+  }
 
-      &:hover {
+  &__nav-link {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    padding: 10px;
 
-      }
+    &.active {
+      position: relative;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0.2px;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 7px solid;
+      border-color: $deep-orange;
     }
   }
 
@@ -64,18 +67,18 @@ Add styles or override variables from the theme here.
   }
 
   &__tab-title {
-    color: var(--greyish-brown);
+    color: $greyish-brown;
   }
 
   &__tab-body {
     font-size: 18px;
     letter-spacing: 0.2px;
-    color: #444444;
+    color: $greyish-brown;
   }
 }
 
 .why {
-  color: var(--greyish-brown);
+  color: $greyish-brown;
 
   &__image {
     height: 38px;
@@ -86,7 +89,7 @@ Add styles or override variables from the theme here.
     font-weight: 300;
     letter-spacing: 0.2px;
     text-align: center;
-    color: #444444;
+    color: $greyish-brown;
     width: 50%;
   }
 
@@ -97,9 +100,15 @@ Add styles or override variables from the theme here.
     text-align: center;
   }
 
-  .why__block {
-    padding: 0 32px 0 0;
-    border-right: solid 1px #bbbbbb;
+  &__block {
+    border-bottom: solid 1px $gray;
+    padding: 0 0 36px 0;
+
+    @include media-breakpoint-up(md) {
+      border-right: solid 1px $gray;
+      border-bottom: 0;
+      padding: 0 32px 0 0;
+    }
 
     &--no-border {
       border-right: 0;
@@ -114,20 +123,20 @@ Add styles or override variables from the theme here.
 }
 
 .features {
-  background-color: var(--silver);
+  background-color: $silver;
 
   &__title {
     font-size: 35px;
     line-height: 1.71;
     letter-spacing: 0.2px;
-    color: var(--greyish-brown);
+    color: $greyish-brown;
   }
 
   &__block {
     font-size: 18px;
     line-height: 1.39;
     letter-spacing: 0.2px;
-    color: var(--greyish-brown);
+    color: $greyish-brown;
   }
 }
 
@@ -136,11 +145,34 @@ Add styles or override variables from the theme here.
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.2px;
-    color: var(--black-two);
+    color: $black-5;
+    cursor: pointer;
+    overflow: hidden;
 
     border-radius: 8px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
-    background-color: var(--white);
+    background-color: $white;
+    border: 1px solid transparent;
+    transition: all .3s;
+
+    &:focus {
+      border: 1px solid $orange-10;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.03);
+        transition: all .3s;
+      }
+
+      transition: all .3s;
+      background-color: $gray-10;
+    }
+  }
+
+  &__item-image {
+    transform: scale(1);
+    transition: all .3s;
   }
 
   &__inner-wrapper {
@@ -149,19 +181,19 @@ Add styles or override variables from the theme here.
 }
 
 .testimonials {
-  background-color: var(--silver);
+  background-color: $silver;
 
   &__testimonial {
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.2px;
-    color: var(--black);
+    color: $black;
   }
 
   &__author {
     font-size: 16px;
     font-weight: 500;
-    color: var(--black);
+    color: $black;
   }
 }
 
@@ -170,7 +202,7 @@ Add styles or override variables from the theme here.
     font-size: 35px;
     line-height: 1.71;
     letter-spacing: 0.2px;
-    color: var(--black)
+    color: $black
   }
 
   &__image {
@@ -179,27 +211,305 @@ Add styles or override variables from the theme here.
   }
 
   &__wrapper {
-    color: var(--azure);
+    color: $azure;
   }
 
   &__cta {
     font-size: 25px;
     letter-spacing: 0.2px;
+    cursor: pointer;
   }
 }
 
 .btn-cta {
   align-self: center;
-  width: 287px;
+  width: 100%;
   height: 67px;
   border-radius: 5px;
   font-size: 25px;
-  color: var(--white);
+  color: $white;
   cursor: pointer;
-  background-image: linear-gradient(to bottom, #fd6003, #c44c04);
+  background-image: linear-gradient(to bottom, $orange, $dark-orange);
+  transition: all .3s;
+  border: 3px solid transparent;
+
+  @include media-breakpoint-up(sm) {
+    width: 287px;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to bottom, $orange-5, $orange-5);
+    transition: all .3s;
+  }
+
+  &:focus {
+    border: 3px solid $orange
+  }
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+.footer {
+  background-color: $dark-grey;
+
+  a {
+    color: $white;
+    line-height: 1.88;
+    letter-spacing: 0.3px;
+
+    &:link, &:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+
+  &__block {
+    &--margin-right {
+      margin-right: 96px;
+
+      @include media-breakpoint-up(md) {
+        margin-right: 155px;
+      }
+    }
+  }
+
+  &__upper {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  &__lower {
+    padding-top: 14px;
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    border: solid 0.5px $gray-5;
+
+    &--small {
+      border: 0;
+      width: 141px;
+      height: 2px;
+      background-color: $gray-5;
+    }
+  }
+}
+
+.header {
+  min-height: 60px;
+  border: solid 1px $gray-5;
+  background-color: $black;
+  border-bottom: solid 2px $deep-orange;
+
+  .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  &__wrapper {
+    height: 100%;
+    padding: 9px;
+
+    .navbar {
+      padding: 0;
+    }
+  }
+
+  &__logo {
+    height: 21px;
+    width: 100px;
+  }
+
+  .nav-item {
+    margin-right: 56px;
+
+    .header__item {
+      color: $white;
+    }
+
+    @media screen and (max-width: 1440px) {
+      margin-right: 53px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 20px;
+    }
+  }
+
+  &__item {
+    font-size: 14px;
+    color: white;
+    letter-spacing: .3px;
+    padding-bottom: 12px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 13px;
+      letter-spacing: .26px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+      border-bottom: solid 8px $brownish-grey;
+    }
+
+    &:active {
+      text-decoration: none;
+      color: white;
+      border-bottom: solid 8px $deep-orange;
+    }
+  }
+
+  &__item-dropdown {
+    &:after {
+      @include rotate(rotate(45deg), 3px);
+    }
+
+    &:hover::after, &:active::after {
+      @include rotate(rotate(-135deg), -3px);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .dropdown {
+      &:hover {
+        & > .dropdown-menu {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    padding: 12px 25px 22px 17px;
+    margin: 0;
+    border: solid 1px $gray;
+    border-top: solid 2px $deep-orange;
+    background-color: $white-10;
+    top: 40px;
+
+    @media screen and (max-width: 768px) {
+      top: 0;
+      margin-top: 4px;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 34px;
+      letter-spacing: .29px;
+      color: $greyish-brown;
+      padding: 0;
+
+      &:hover {
+        background: none;
+      }
+
+      &:active {
+        color: $deep-orange;
+        background: none;
+      }
+    }
+  }
+}
+
+.announcement {
+  &__title {
+    color: $bright-orange;
+    letter-spacing: .17px;
+    font-size: 35px;
+  }
+
+  &__carousel {
+    margin-top: 49px;
+    padding-left: 57px;
+    padding-right: 86px;
+
+    @media screen and (max-width: 1440px) {
+      margin-top: 73px;
+      padding-left: 44px;
+      padding-right: 48px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+      padding-left: 6px;
+      padding-right: 2px;
+    }
+  }
+
+  &__media {
+    border-top: solid 1px $gray-5;
+    border-bottom: solid 1px $gray-5;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+  }
+
+  &__media-body {
+    letter-spacing: .17px;
+    margin-top: 25px;
+    margin-bottom: 33px;
+
+    p {
+      color: $brownish-grey;
+      font-size: 18px;
+    }
+
+    .btn {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__carousel-img {
+    height: 171px;
+    width: 252px;
+    margin-right: 28px;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: 5px;
+
+    li {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      border: solid 1px $gray-5;
+      margin-right: 15px;
+      bottom: -5px;
+    }
+
+    .active {
+      background: $bright-orange-5;
+      border: none;
+    }
+  }
 }

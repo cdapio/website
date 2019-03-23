@@ -1,0 +1,34 @@
+:root {
+  body {
+    font-family: $base-font-family;
+    color: $white;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  a {
+    color: $azure;
+
+    &:hover {
+      color: $azure;
+    }
+  }
+
+  section {
+    padding: 100px 0 50px;
+  }
+
+  footer {
+    padding: 36px 0 90px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 40px 0 176px;
+    }
+  }
+}
