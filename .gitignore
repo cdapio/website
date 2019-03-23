@@ -1,6 +1,15 @@
-
-public/
-resources/
+# dependencies
 node_modules/
-tech-doc-hugo
 
+# production
+public/
+tech-doc-hugo/
+/resources/
+
+# IDE
+.idea/
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
