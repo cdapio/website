@@ -17,10 +17,14 @@ Add styles or override variables from the theme here.
   min-height: 505px;
 
   &__block {
-    padding: 37px 50px;
     border-radius: 8px;
     box-shadow: 0 0 14px 6px $black-10;
     background-image: linear-gradient(to bottom, $white, $white-15);
+    padding: 17px 30px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 37px 50px;
+    }
   }
 
   .nav-tabs {
@@ -309,22 +313,33 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      align-items: flex-end;
+    }
   }
 
   .navbar-toggler {
+    width: 30px;
+    height: 30px;
     display: none;
-
+    border: none;
     @media screen and (max-width: 768px) {
       display: inline-block;
+    }
+
+    &:focus, &:active {
+      outline: none;
+      box-shadow: none;
     }
   }
 
   &__wrapper {
     height: 100%;
     padding: 9px;
-
     .navbar {
-      padding: 0;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
     }
   }
 
@@ -386,18 +401,22 @@ img {
       @include rotate(rotate(45deg), 3px);
     }
 
-    &:hover::after, &:active::after {
+    &:hover::after {
       @include rotate(rotate(-135deg), -3px);
     }
   }
 
-  @media screen and (min-width: 768px) {
-    .dropdown {
-      &:hover {
-        & > .dropdown-menu {
-          display: block;
-        }
-      }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown:hover .header__item-dropdown {
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 8px $brownish-grey;
+
+    &:after {
+      @include rotate(rotate(-135deg), -3px);
     }
   }
 
@@ -421,8 +440,17 @@ img {
       color: $greyish-brown;
       padding: 0;
 
+      .external-link-icon {
+        opacity: 0.3;
+        margin-left: 3px;
+      }
+
       &:hover {
         background: none;
+
+        .external-link-icon {
+          opacity: 1;
+        }
       }
 
       &:active {
@@ -434,6 +462,27 @@ img {
 }
 
 .announcement {
+  color: $black;
+
+  &__wrapper {
+    position: relative;
+    border-top: solid 1px $gray-5;
+    border-bottom: solid 1px $gray-5;
+    padding: 0 0 19px 0;
+
+    @include media-breakpoint-down(xs) {
+      padding: 0 0 50px 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 0 0 60px 0;
+    }
+
+    .carousel {
+      position: initial;
+    }
+  }
+
   &__title {
     color: $bright-orange;
     letter-spacing: .17px;
@@ -459,8 +508,6 @@ img {
   }
 
   &__media {
-    border-top: solid 1px $gray-5;
-    border-bottom: solid 1px $gray-5;
     margin: 0;
     padding: 0;
     height: fit-content;
@@ -469,7 +516,6 @@ img {
   &__media-body {
     letter-spacing: .17px;
     margin-top: 25px;
-    margin-bottom: 33px;
 
     p {
       color: $brownish-grey;
@@ -486,6 +532,9 @@ img {
     height: 171px;
     width: 252px;
     margin-right: 28px;
+    @media screen and (max-width: 1440px) {
+      align-self: self-start;
+    }
 
     @media screen and (max-width: 768px) {
       margin-right: 0;
@@ -496,7 +545,7 @@ img {
   }
 
   .carousel-indicators {
-    bottom: 5px;
+    bottom: 0;
 
     li {
       width: 10px;
@@ -513,3 +562,6 @@ img {
     }
   }
 }
+
+
+

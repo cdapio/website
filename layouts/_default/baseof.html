@@ -7,9 +7,13 @@
     <header>
       {{ partial "navbar.html" . }}
     </header>
-    <main role="main" class="td-main">
-      {{ block "main" . }}{{ end }}
-    </main>
+      {{ partial "hero.html" . }}
+      {{ partial "announcement.html" . }}
+      {{ partial "why.html" . }}
+      {{ partial "features.html" . }}
+      {{ partial "accelerators.html" . }}
+      {{ partial "testimonials.html" . }}
+      {{ partial "companies.html" . }}
       {{ partial "footer.html" . }}
     {{ partialCached "scripts.html" . }}
   </body>
