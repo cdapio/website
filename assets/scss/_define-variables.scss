@@ -27,3 +27,10 @@ $bright-orange: #fa5f03;
 $bright-orange-5: #fc5f02;
 $brownish-grey: #666666;
 $dark-grey: #323333;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1340px
+);
