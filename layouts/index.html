@@ -81,60 +81,22 @@
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h2 class="why__title text-center">Why CDAP</h2>
-        <p class="why__paragraph text-center mt-3 d-sm-flex d-none">CDAP lets developers, business analysts and data
-          scientists focus on
-          insights,
-          analytics and business value instead of wrestling with infrastructure, and integration.
+        <h2 class="why__title text-center">
+          {{ with .GetPage "why.md" }}
+            {{ .Title }}
+          {{ end }}
+        </h2>
+        <p class="why__paragraph text-center mt-3 d-sm-flex d-none">
+          {{ with .GetPage "why.md" }}
+            {{ .Description }}
+          {{ end }}
         </p>
       </div>
     </div>
-    <div class="row mt-5">
-      <div class="col-lg-3 col-md-6">
-        <div class="why__block d-flex flex-column align-items-center mt-lg-0">
-          <img class="why__image" src="/images/icons/icon-1.svg">
-          <h3 class="why__block-title text-center mt-4 not-apply">Reduced complexity</h3>
-          <div class="why__block-body text-center mt-4 d-sm-flex d-none">
-            CDAP lowers barrier to entry to complex technologies. It increases developer productivity through focus on
-            business logic; and leads to
-            accelerated ROI
-          </div>
-          <a class="d-sm-none d-flex mt-4" href="#">Learn More</a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="why__block why__block--no-border-md d-flex flex-column align-items-center mt-5 mt-lg-0">
-          <img class="why__image" src="/images/icons/icon-2.svg">
-          <h3 class="why__block-title text-center mt-4 not-apply">Increased velocity</h3>
-          <div class="why__block-body text-center mt-4 d-sm-flex d-none">
-            CDAP platform and intuitive UI allow, rapid onboarding and faster time to production. It provides business
-            value, by reducing repetition and silos, and promoting reuse and self service: build once, run anywhere
-          </div>
-          <a class="d-sm-none d-flex mt-4" href="#">Learn More</a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="why__block d-flex flex-column align-items-center mt-5 mt-lg-0">
-          <img class="why__image" src="/images/icons/icon-3.svg">
-          <h3 class="why__block-title text-center mt-4 not-apply">Increased flexibility</h3>
-          <div class="why__block-body text-center mt-4 d-sm-flex d-none">
-            CDAP is 100% open source, portable and extensible. It integrates with latest Big Data and Cloud
-            technologies.
-          </div>
-          <a class="d-sm-none d-flex mt-4" href="#">Learn More</a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="why__block why__block--no-border d-flex flex-column align-items-center mt-5 mt-lg-0">
-          <img class="why__image" src="/images/icons/icon-4.svg">
-          <h3 class="why__block-title text-center mt-4 not-apply">Improved visibility</h3>
-          <div class="why__block-body text-center mt-4 d-sm-flex d-none">
-            CDAP gives greater visibility on your data, by allowing to search metadata, and providing insight into data
-            lineage.
-          </div>
-          <a class="d-sm-none d-flex mt-4" href="#">Learn More</a>
-        </div>
-      </div>
+    <div class="row mt-5 pb-5">
+      {{ with .GetPage "why.md" }}
+        {{ .Content }}
+      {{ end }}
     </div>
   </div>
 </section>
