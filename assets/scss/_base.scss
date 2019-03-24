@@ -12,9 +12,8 @@
   }
 
   p {
-    color: $black;
-
     &:not(.not-apply) {
+      color: $black;
       margin: 0;
       font-size: 20px;
     }

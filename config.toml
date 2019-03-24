@@ -72,6 +72,7 @@ time_format_blog = "02.01.2006"
 copyright = "Global Inc"
 privacy_policy = "https://policies.google.com/privacy"
 github_repo = "https://github.com/google/docsy-example"
+logo = "/images/logo.svg"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"

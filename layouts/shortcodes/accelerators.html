@@ -1,57 +1,18 @@
+{{ $data := $.Site.Data.accelerators }}
 <div class="container mt-5">
   <div class="row">
-    <div class="col-lg-3 col-md-6">
-      <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1">
-        <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-        <div class="accelerators__inner-wrapper">
-          <h4 class="accelerators__item-title">Pipelines</h4>
-          <p class="accelerators__item-body not-apply">Pipelines lets extract, transform, blend, aggregate and load data
-            to/from
-            a
-            variety of on-prem and cloud data sources.</p>
-          <a href="#" class="d-flex accelerators__link">Learn More</a>
+    {{ range $data }}
+      <div class="col-lg-3 col-md-6">
+        <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1">
+          <img src="/images/{{ .imageUrl }}.png" class="accelerators__item-image"/>
+          <div class="accelerators__inner-wrapper">
+            <h4 class="accelerators__item-title">{{ .title }}</h4>
+            <p class="accelerators__item-body not-apply">{{ .description }}</p>
+            <a href="{{ .linkUrl }}" class="d-flex accelerators__link">{{ .linkTitle }}</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <div class="accelerators__item mt-5 mt-lg-0" tabindex="-1">
-        <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-        <div class="accelerators__inner-wrapper">
-          <h4 class="accelerators__item-title">Preparation</h4>
-          <p class="accelerators__item-body not-apply">
-            Description of Pipelines features and capabilities goes here. Lorem ipsum dolor sit amet, consecteru
-            adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.
-          </p>
-          <a href="#" class="d-flex accelerators__link">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <div class="accelerators__item mt-5 mt-lg-0" tabindex="-1">
-        <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-        <div class="accelerators__inner-wrapper">
-          <h4 class="accelerators__item-title">Analytics</h4>
-          <p class="accelerators__item-body not-apply">
-            Description of Analytics features and capabilities goes here. Lorem ipsum dolor sit amet, consecteru
-            adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.
-          </p>
-          <a href="#" class="d-flex accelerators__link">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <div class="accelerators__item mt-5 mt-lg-0" tabindex="-1">
-        <img src="/images/accelerations-pipelines.png" class="accelerators__item-image"/>
-        <div class="accelerators__inner-wrapper">
-          <h4 class="accelerators__item-title">Rules</h4>
-          <p class="accelerators__item-body not-apply">
-            Description of Rules features and capabilities goes here. Lorem ipsum dolor sit amet, consecteru
-            adipiscing elit.Lorem ipsum dolor sit amet, consecteru adipiscing elit.
-          </p>
-          <a href="#" class="d-flex accelerators__link">Learn More</a>
-        </div>
-      </div>
-    </div>
+    {{ end }}
   </div>
   <div class="container">
     <div class="row">
