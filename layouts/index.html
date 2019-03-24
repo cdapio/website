@@ -52,7 +52,7 @@
   </div>
 </section>
 
-<section class="announcement mt-5">
+<section class="announcement">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -68,58 +68,7 @@
               <li data-target="#carouselCaptions" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="announcement__media d-flex flex-column flex-md-row">
-                  <img src="images/announcement.jpg" class="announcement__carousel-img align-self-top"
-                       alt="announcement">
-                  <div class="announcement__media-body">
-                    <h2 class="announcement__title not-apply">Annoucement title goes here</h2>
-                    <p class="not-apply"> Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit
-                      amet, consecteru
-                      adipiscing elit.</p>
-                    <a class="btn btn-link mt-3" href="#">Learn more</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="announcement__media d-flex flex-column flex-md-row">
-                  <img src="images/announcement.jpg" class="announcement__carousel-img align-self-top"
-                       alt="announcement">
-                  <div class="announcement__media-body">
-                    <h2 class="announcement__title not-apply">Annoucement title goes here</h2>
-                    <p class="not-apply"> Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit
-                      amet, consecteru
-                      adipiscing elit.</p>
-                    <a class="btn btn-link mt-3" href="#">Learn more</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="announcement__media d-flex flex-column flex-md-row">
-                  <img src="images/announcement.jpg" class="announcement__carousel-img align-self-top"
-                       alt="announcement">
-                  <div class="announcement__media-body">
-                    <h2 class="announcement__title not-apply">Annoucement title goes here</h2>
-                    <p class="not-apply"> Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit
-                      amet, consecteru
-                      adipiscing elit.</p>
-                    <a class="btn btn-link mt-3" href="#">Learn more</a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="announcement__media d-flex flex-column flex-md-row">
-                  <img src="images/announcement.jpg" class="announcement__carousel-img align-self-top"
-                       alt="announcement">
-                  <div class="announcement__media-body">
-                    <h2 class="announcement__title not-apply">Annoucement title goes here</h2>
-                    <p class="not-apply"> Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit
-                      amet, consecteru
-                      adipiscing elit.</p>
-                    <a class="btn btn-link mt-3" href="#">Learn more</a>
-                  </div>
-                </div>
-              </div>
+              {{ partial "gallery.html" . }}
             </div>
           </div>
         </div>
@@ -260,7 +209,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center pb-5">
         <button class="btn-cta mt-5">Get started</button>
       </div>
     </div>
@@ -379,60 +328,39 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="companies__title">Companies using CDAP</h2>
+        <h2 class="companies__title">
+          {{ with .GetPage "companies.md" }}
+            {{ .Title }}
+          {{ end }}
+        </h2>
         <a href="#">Read case studies</a>
       </div>
     </div>
   </div>
   <div class="container">
-    <div class="row mt-5">
-      <div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">
-        <a href="#">
-          <img src="images/companies-logo.png" class="companies__image"/>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">
-        <a href="#">
-          <img src="images/companies-logo.png" class="companies__image"/>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">
-        <a href="#">
-          <img src="images/companies-logo.png" class="companies__image"/>
-        </a>
-      </div>
-      <div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">
-        <a href="#">
-          <img src="images/companies-logo.png" class="companies__image"/>
-        </a>
-      </div>
-    </div>
-    <div class="companies__wrapper mt-0 mt-sm-5">
-      <div class="collapse" id="companies">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">
-            <a href="#">
-              <img src="images/companies-logo.png" class="companies__image"/>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">
-            <a href="#">
-              <img src="images/companies-logo.png" class="companies__image"/>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">
-            <a href="#">
-              <img src="images/companies-logo.png" class="companies__image"/>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">
-            <a href="#">
-              <img src="images/companies-logo.png" class="companies__image"/>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{ with .GetPage "companies.md" }}
+      {{ .Content }}
+    {{ end }}
+      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">-->
+        <!--<a href="#">-->
+          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-start justify-content-center mt-5 mt-lg-0">-->
+        <!--<a href="#">-->
+          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">-->
+        <!--<a href="#">-->
+          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="col-lg-3 col-md-6 d-flex justify-content-lg-end justify-content-center mt-5 mt-lg-0">-->
+        <!--<a href="#">-->
+          <!--<img src="images/companies-logo.png" class="companies__image"/>-->
+        <!--</a>-->
+      <!--</div>-->
   </div>
   <div class="container">
     <div class="row">
