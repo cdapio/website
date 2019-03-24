@@ -442,7 +442,7 @@ img {
       color: $white;
     }
 
-    @media screen and (max-width: 1440px) {
+    @include media-breakpoint-down(md) {
       margin-right: 53px;
     }
 
@@ -461,7 +461,7 @@ img {
     letter-spacing: .3px;
     padding-bottom: 8px;
 
-    @media screen and (max-width: 1440px) {
+    @include media-breakpoint-down(md) {
       font-size: 13px;
       letter-spacing: .26px;
     }
@@ -562,11 +562,11 @@ section.announcement {
     border-bottom: solid 1px $gray-5;
     padding: 0 0 0 0;
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(md) {
       padding: 0 0 50px 0;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       padding: 0 0 60px 0;
     }
 
@@ -586,7 +586,7 @@ section.announcement {
     padding-left: 57px;
     padding-right: 86px;
 
-    @media screen and (max-width: 1440px) {
+    @include media-breakpoint-down(md) {
       margin-top: 73px;
       padding-left: 44px;
       padding-right: 48px;
@@ -608,10 +608,34 @@ section.announcement {
   &__media-body {
     letter-spacing: .17px;
     margin-top: 25px;
+    height: 111px;
+    @include media-breakpoint-down(md) {
+      height: 225px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 11px;
+    }
+
+    h2 {
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 40px;
+      @include media-breakpoint-down(md) {
+        max-height: 85px;
+      }
+    }
 
     p {
       color: $brownish-grey;
       font-size: 18px;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 25px;
+      @include media-breakpoint-down(md) {
+        max-height: 105px;
+      }
     }
 
     .btn {
@@ -624,7 +648,7 @@ section.announcement {
     height: 171px;
     width: 252px;
     margin-right: 28px;
-    @media screen and (max-width: 1440px) {
+    @include media-breakpoint-down(md) {
       align-self: self-start;
     }
 

@@ -14,7 +14,7 @@ The following will give you a project that is set up and ready to use (don't for
 
 ```bash
 git clone --recurse-submodules --depth 1 https://github.com/cdapio/website.git
-cd docsy-example
+cd website
 hugo server
 ```
 
