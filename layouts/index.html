@@ -4,47 +4,42 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
-        <h3 class="hero__c-title not-apply">CDAP</h3>
-        <h2 class="hero__title mt-4 not-apply">The Data Analytics Platform</h2>
-        <p class="hero__paragraph not-apply">A 100% open source, integrated framework that accelerates application
-          development for
-          data analytics</p>
+        <h3 class="hero__c-title not-apply">{{ .Site.Params.Title }}</h3>
+        <h2 class="hero__title mt-4 not-apply">{{ .Site.Params.description | safeHTML }}</h2>
+        <p class="hero__paragraph not-apply">{{ .Site.Params.about | safeHTML }}</p>
       </div>
       <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
         <div class="hero__block">
           <ul class="hero__nav-tabs nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="hero__nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                 aria-controls="home"
-                 aria-selected="true">On Cloud</a>
-            </li>
-            <li class="nav-item">
-              <a class="hero__nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                 aria-controls="profile"
-                 aria-selected="false">On Premises</a>
-            </li>
+            {{ $data := index .Site.Data .Site.Language.Lang }}
+            {{ with $tabs := $data.tabs }}
+            {{ range $tabs }}
+              <li class="nav-item">
+                <a class="hero__nav-link {{ if .active }} active {{ end }}"
+                   id="{{ .id }}-tab"
+                   data-toggle="tab"
+                   href="#{{ .id }}"
+                   role="tab"
+                   aria-controls="{{ .id }}"
+                   aria-selected="true">{{ .tabTitle }}</a>
+              </li>
+            {{ end }}
+            {{ end }}
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="hero__tab-pane tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <h3 class="hero__tab-title text-center mt-4">Get Started in the Cloud</h3>
-              <div class="hero__tab-body text-center mt-4">Run CDAP on any major public cloud provideer including Amazon
-                Web
-                Services,
-                Microsoft Azure and
-                Google Cloud Platform
-              </div>
-              <button class="btn-cta mt-3">Get started</button>
+            {{ $data := index .Site.Data .Site.Language.Lang }}
+            {{ with $tabs := $data.tabs }}
+            {{ range $tabs }}
+            <div class="hero__tab-pane tab-pane fade {{ if .active }} show active {{ end }}"
+                 id="{{ .id }}"
+                 role="tabpanel"
+                 aria-labelledby="home-tab">
+              <h3 class="hero__tab-title text-center mt-4">{{ .title }}</h3>
+              <div class="hero__tab-body text-center mt-4">{{ .description }}</div>
+              <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
             </div>
-            <div class="hero__tab-pane tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <h3 class="hero__tab-title text-center mt-4">Get Started in the Cloud</h3>
-              <div class="hero__tab-body text-center mt-4">Run CDAP on any major public cloud provideer including Amazon
-                Web
-                Services,
-                Microsoft Azure and
-                Google Cloud Platform
-              </div>
-              <button class="btn-cta mt-3">Get started</button>
-            </div>
+            {{ end }}
+            {{ end }}
           </div>
         </div>
       </div>
@@ -52,60 +47,66 @@
   </div>
 </section>
 
-<section class="announcement">
+<section class="announcement not-apply">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="announcement__wrapper">
-          <div id="carouselCaptions"
-               class="carousel slide main__carousel"
-               data-ride="carousel"
-               data-interval="false">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselCaptions" data-slide-to="2"></li>
-              <li data-target="#carouselCaptions" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-              {{ partial "gallery.html" . }}
-            </div>
-          </div>
+          {{ partial "gallery.html" . }}
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="why">
+
+{{ with .GetPage "why.md" }}
+  {{ .Content }}
+{{ end }}
+
+<section class="features">
   <div class="container">
     <div class="row">
-      <div class="col-8 offset-2">
-        <h2 class="why__title text-center">
-          {{ with .GetPage "why.md" }}
+      <div class="col-12">
+        <h2 class="features__title">
+          {{ with .GetPage "features" }}
             {{ .Title }}
           {{ end }}
         </h2>
-        <p class="why__paragraph text-center mt-3 d-sm-flex d-none">
-          {{ with .GetPage "why.md" }}
-            {{ .Description }}
-          {{ end }}
-        </p>
       </div>
     </div>
-    <div class="row mt-5 pb-5">
-      {{ with .GetPage "why.md" }}
-        {{ .Content }}
-      {{ end }}
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        {{ $data := index .Site.Data .Site.Language.Lang }}
+        {{ with $data.features_homepage }}
+        {{ range $element := first 3 . }}
+        <div class="features__block mt-5">
+          <h4 class="features__title mb-4">{{ $element.header }}</h4>
+          <p class="features__body">{{ $element.paragraph }} <a href="#">Learn More</a></p>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-lg-6 col-md-12">
+        {{ $data := index .Site.Data .Site.Language.Lang }}
+        {{ with $data.features_homepage }}
+        {{ range $element := first 3 . }}
+        <div class="features__block mt-5">
+          <h4 class="features__title mb-4">{{ $element.header }}</h4>
+          <p class="features__body">{{ $element.paragraph }} <a href="#">Learn More</a></p>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
     </div>
   </div>
-</section>
-
-<section class="features">
-  {{ partial "features.html" . }}
-  <div class="row">
-    <div class="col-12 text-center pb-5">
-      <button class="btn-cta mt-5">Get started</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center pb-5">
+        <button class="btn-cta mt-5">Get Started</button>
+      </div>
     </div>
   </div>
 </section>
@@ -116,15 +117,37 @@
       <div class="col-12">
         <h2 class="accelerators__title">
           {{ with .GetPage "accelerators.md" }}
-          {{ .Title }}
+            {{ .Title }}
           {{ end }}
         </h2>
       </div>
     </div>
   </div>
-  {{ with .GetPage "accelerators.md" }}
-  {{ .Content }}
-  {{ end }}
+  <div class="container mt-5">
+    <div class="row">
+      {{ $blocks := where .Site.RegularPages "Type" "in" (slice "resources" "accelerators") }}
+      {{ $blocks := $blocks | intersect (where .Site.RegularPages "Params.image" "!=" nil) }}
+      {{ range $blocks }}
+        <div class="col-lg-3 col-md-6 mb-5">
+          <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1" onclick="window.location='{{ .Params.url | relURL }}'">
+            <img src="{{ .Params.image }}" class="accelerators__item-image"/>
+            <div class="accelerators__inner-wrapper">
+              <h4 class="accelerators__item-title">{{ .Params.blockTitle }}</h4>
+              <p class="accelerators__item-body not-apply">{{ .Content | markdownify }}</p>
+              <a href="{{ .Params.url }}" class="d-flex accelerators__link">{{ .Params.urlTitle }}</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <div class="container accelerators__btnBlock">
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn-cta mt-3">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="testimonials">
@@ -147,7 +170,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <button class="btn-cta mt-5">Get started</button>
+          <button class="btn-cta mt-5">Get Started</button>
         </div>
       </div>
     </div>

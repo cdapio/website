@@ -5,15 +5,16 @@
         <div class="header__wrapper d-flex flex-column flex-md-row justify-content-between">
           <div class="media navbar navbar-dark">
             <a href="/">
-              <img class="header__logo" src="{{.Site.BaseURL}}{{ .Site.Params.logo }}" alt="logo">
+              <img class="header__logo" src="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" alt="logo">
             </a>
-            <button class="navbar-toggler"
+            <button class="navbar-toggler collapsed"
                     type="button"
                     data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
+              <span class="my-1 close">X</span>
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>

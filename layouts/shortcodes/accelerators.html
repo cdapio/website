@@ -1,24 +1,18 @@
-{{ $data := $.Site.Data.accelerators }}
 <div class="container mt-5">
   <div class="row">
-    {{ range $data }}
-      <div class="col-lg-3 col-md-6">
-        <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1">
-          <img src="/images/{{ .imageUrl }}.png" class="accelerators__item-image"/>
-          <div class="accelerators__inner-wrapper">
-            <h4 class="accelerators__item-title">{{ .title }}</h4>
-            <p class="accelerators__item-body not-apply">{{ .description }}</p>
-            <a href="{{ .linkUrl }}" class="d-flex accelerators__link">{{ .linkTitle }}</a>
-          </div>
-        </div>
-      </div>
-    {{ end }}
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <button class="btn-cta mt-5">Get started</button>
+    {{ $blocks := where .Site.RegularPages "Type" "in" (slice "resources" "accelerators") }}
+    {{ $blocks := $blocks | intersect (where .Site.RegularPages "Params.image" "!=" nil) }}
+    {{ range $blocks }}
+    <div class="accelerators-info__wrapper col-lg-6 col-md-12">
+      <div class="accelerators-info__block" onclick="window.location='{{ .Params.url | relURL }}'">
+        <img class="accelerators-info__image" src="{{ .Params.image | relURL }}" alt="Pipelines">
+        <h4 class="accelerators-info__title mb-4 mt-3">{{ .Title }}</h4>
+        <p class="accelerators-info__body">
+          {{ .Content | markdownify }}
+          <a href="{{ .Params.url | relURL }}">{{ .Params.urlTitle }}</a>
+        </p>
       </div>
     </div>
+    {{ end }}
   </div>
 </div>

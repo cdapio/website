@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Google Cloud Platform",
+    "image": "/images/pipelines-plugins/google-cloud-platform.png"
+  },
+  {
+    "title": "Microsoft Azure",
+    "image": "/images/pipelines-plugins/microsoft-azure.png"
+  },
+  {
+    "title": "Amazon Web Services",
+    "image": "/images/pipelines-plugins/amozon-web-servies.png"
+  },
+  {
+    "title": "Hadoop",
+    "image": "/images/pipelines-plugins/hadoop.png"
+  }
+]

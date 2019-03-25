@@ -51,10 +51,20 @@ section.hero {
 
   &__title {
     font-size: 55px;
+    letter-spacing: .17px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 35px;
+    }
   }
 
   &__paragraph {
     font-size: 25px;
+    letter-spacing: .17px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
   }
 
   &__block {
@@ -164,8 +174,12 @@ section.hero {
 .why {
   color: $greyish-brown;
 
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
   &__title {
-    font-family: "Lucida Grande", sans-serif;
+    color: $greyish-brown;
   }
 
   &__image {
@@ -174,7 +188,6 @@ section.hero {
   }
 
   &__block-title {
-    font-family: $base-font-family;
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.2px;
@@ -185,6 +198,7 @@ section.hero {
   }
 
   &__block-body {
+    color: $greyish-brown;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.2px;
@@ -193,8 +207,7 @@ section.hero {
 
   &__block {
     border-right: solid 1px $gray;
-    height: 238px;
-    max-height: 238px;
+
     &:last-child {
       border-right: 0;
     }
@@ -218,7 +231,7 @@ section.hero {
 }
 
 .features {
-  background-color: $silver;
+  background-color: $gray-10;
   position: relative;
   overflow: hidden;
 
@@ -330,6 +343,12 @@ section.hero {
       min-height: 100px;
     }
   }
+
+  &__btnBlock {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
 }
 
 .testimonials {
@@ -363,6 +382,7 @@ section.hero {
       display: flex;
       justify-content: center;
     }
+
     @include media-breakpoint-between(sm, md) {
       width: 50%;
       display: flex;
@@ -380,7 +400,7 @@ section.hero {
   }
 
   &__cta {
-    font-size: 25px;
+    font-size: 16px;
     letter-spacing: 0.2px;
     cursor: pointer;
   }
@@ -436,9 +456,10 @@ img {
 
 .footer {
   background-color: $dark-grey;
+  font-size: 14px;
 
   &__title {
-    font-size: 16px;
+    font-size: inherit;
   }
 
   a {
@@ -472,13 +493,8 @@ img {
   }
 
   &__line {
-    width: 100%;
     height: 1px;
     border: solid 0.5px $gray-5;
-
-    @include media-breakpoint-up(sm) {
-      width: 80%;
-    }
 
     &--small {
       border: 0;
@@ -505,6 +521,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @include media-breakpoint-down(sm) {
       align-items: flex-end;
     }
@@ -515,6 +532,7 @@ img {
     height: 30px;
     display: none;
     border: none;
+
     @include media-breakpoint-down(sm) {
       display: inline-block;
     }
@@ -523,6 +541,17 @@ img {
       outline: none;
       box-shadow: none;
     }
+  }
+
+  .navbar-toggler > .close {
+    display: inline;
+    color: $white;
+    margin-right: -20px;
+    width: 25px;
+  }
+
+  .navbar-toggler.collapsed > .close, .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
+    display: none;
   }
 
   &__wrapper {
@@ -567,6 +596,10 @@ img {
     color: white;
     letter-spacing: .3px;
     padding-bottom: 8px;
+
+    & > span {
+      text-transform: uppercase;
+    }
 
     @include media-breakpoint-down(md) {
       font-size: 13px;
@@ -625,6 +658,9 @@ img {
     @include media-breakpoint-down(sm) {
       top: 0;
       margin-top: 4px;
+      border: none;
+      background-color: $black;
+      box-shadow: none;
     }
 
     a {
@@ -633,6 +669,10 @@ img {
       letter-spacing: .29px;
       color: $greyish-brown;
       padding: 0;
+
+      @include media-breakpoint-down(sm) {
+        color: $white;
+      }
 
       .external-link-icon {
         opacity: 0.3;
@@ -733,9 +773,11 @@ section.announcement {
     letter-spacing: .17px;
     margin-top: 25px;
     height: 111px;
+
     @include media-breakpoint-down(md) {
       height: 225px;
     }
+
     @include media-breakpoint-down(sm) {
       margin-top: 11px;
     }
@@ -744,7 +786,8 @@ section.announcement {
       margin: 0;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-height: 40px;
+      max-height: 42px;
+
       @include media-breakpoint-down(md) {
         max-height: 85px;
       }
@@ -757,6 +800,7 @@ section.announcement {
       overflow: hidden;
       text-overflow: ellipsis;
       max-height: 25px;
+
       @include media-breakpoint-down(md) {
         max-height: 105px;
       }
@@ -772,6 +816,7 @@ section.announcement {
     height: 171px;
     width: 252px;
     margin-right: 28px;
+
     @include media-breakpoint-down(md) {
       align-self: self-start;
     }
@@ -847,15 +892,16 @@ section.announcement {
 .accelerators-info {
   padding: 48px 72px 100px 24px;
   color: black;
+
   @include media-breakpoint-down(lg) {
     padding: 47px 40px 0 24px;
   }
+
   @include media-breakpoint-down(sm) {
     padding: 35px 1px 0 0;
   }
 
   &__wrapper {
-
     @include media-breakpoint-up(lg) {
       &:nth-child(even) {
         display: flex;
@@ -866,8 +912,9 @@ section.announcement {
 
   &__block {
     margin-bottom: 70px;
-    font-family: Roboto;
+    cursor: pointer;
     letter-spacing: .22px;
+
     @include media-breakpoint-up(lg) {
       max-width: 580px;
     }
@@ -875,9 +922,19 @@ section.announcement {
 
   &__title {
     font-size: 25px;
+    color: $black;
   }
+
   &__body {
     font-size: 18px;
+  }
+}
+
+.videos {
+  &__video {
+    min-height: 168px;
+    background-color: $white-20;
+    border: 1px solid $gray-5;
   }
 }
 
@@ -885,11 +942,13 @@ section.announcement {
   background-color: #012f4b;
   min-height: 440px;
   font-size: 25px;
+
   @include media-breakpoint-down(sm) {
     min-height: 575px;
   }
 
   .container {
+
     @include media-breakpoint-up(sm) {
       padding: 0;
     }
@@ -902,6 +961,7 @@ section.announcement {
     img {
       margin-top: 29px;
       margin-bottom: 40px;
+
       @include media-breakpoint-down(md) {
         display: none;
       }
@@ -917,11 +977,11 @@ section.announcement {
   }
 
   &__paragraph {
-    font-family: Roboto;
     margin-top: 70px;
     line-height: 35px;
     letter-spacing: .17px;
     max-width: 540px;
+
     @include media-breakpoint-down(md) {
       max-width: 580px;
     }
@@ -933,6 +993,7 @@ section.announcement {
     top: 351px;
     background: url("/images/features-bottom.svg") no-repeat;
     background-size: cover;
+
     @include media-breakpoint-down(sm) {
       top: 486px;
     }

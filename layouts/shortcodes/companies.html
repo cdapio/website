@@ -1,18 +1,7 @@
-{{ $data := $.Site.Data.companies }}
-<div class="row justify-content-between mt-5 no-gutters">
-  {{ range first 4 $data }}
-    <div class="companies__custom">
-      <a href="{{ .url }}">
-        <img src="images/{{ .image }}" class="companies__image"/>
-      </a>
-    </div>
-  {{ end }}
-</div>
-
-<div class="companies__wrapper mt-0 mt-sm-5">
-  <div class="collapse" id="companies">
-    <div class="row justify-content-between no-gutters">
-      {{ range after 4 $data }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $companies := $data.companies }}
+    <div class="row justify-content-between mt-5 no-gutters">
+      {{ range first 4 $companies }}
         <div class="companies__custom">
           <a href="{{ .url }}">
             <img src="images/{{ .image }}" class="companies__image"/>
@@ -20,5 +9,18 @@
         </div>
       {{ end }}
     </div>
+
+  <div class="companies__wrapper mt-0 mt-sm-5">
+    <div class="collapse" id="companies">
+      <div class="row justify-content-between no-gutters">
+        {{ range after 4 $companies }}
+          <div class="companies__custom">
+            <a href="{{ .url }}">
+              <img src="images/{{ .image }}" class="companies__image"/>
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
   </div>
-</div>
+{{ end }}

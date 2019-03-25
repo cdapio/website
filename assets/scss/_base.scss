@@ -1,14 +1,27 @@
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/functions",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/bootstrap-reboot",
+        "../../themes/docsy/assets/vendor/bootstrap/scss/variables";
+
+@import "_define-variables",
+        "_fonts";
+
 :root {
   body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: $base-font-family;
+    font-weight: 400;
     color: $white;
   }
 
   main {
     flex: 1 0 auto;
+  }
+
+  button {
+    font-weight: 500;
   }
 
   p {
@@ -20,9 +33,9 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font-family;
     &:not(.not-apply) {
       margin: 0;
-      font-weight: 400;
       line-height: 1.71;
       letter-spacing: 0.2px;
     }
@@ -31,16 +44,23 @@
   h2 {
     &:not(.not-apply) {
       font-size: 35px;
+      @include media-breakpoint-down(sm) {
+        font-size: 30px;
+      }
     }
   }
 
   h4 {
     &:not(.not-apply) {
       font-size: 25px;
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+      }
     }
   }
 
   a {
+    font-family: $secondary-font-family;
     color: $azure;
 
     &:hover {
@@ -53,7 +73,7 @@
       padding: 25px 0 12px;
 
       @include media-breakpoint-up(sm) {
-        padding: 100px 0 50px;
+        padding: 70px 0 50px;
       }
     }
   }

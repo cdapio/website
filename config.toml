@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "localhost:1313/"
 title = "CDAP"
 
 enableRobotsTXT = true
@@ -70,6 +70,7 @@ time_format_blog = "02.01.2006"
 
 [params]
 copyright = "Global Inc"
+learnMore = "Learn More"
 privacy_policy = "https://policies.google.com/privacy"
 github_repo = "https://github.com/google/docsy-example"
 logo = "/images/logo.svg"

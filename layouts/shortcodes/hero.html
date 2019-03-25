@@ -9,7 +9,9 @@
       <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
         <div class="hero__block">
           <ul class="hero__nav-tabs nav nav-tabs" id="myTab" role="tablist">
-            {{ range $index, $element := .Site.Data.tabs }}
+            {{ $data := index .Site.Data .Site.Language.Lang }}
+            {{ with $data.tabs }}
+            {{ range $index, $element := . }}
             <li class="nav-item">
               <a class="hero__nav-link {{ if .active }} active {{ end }}"
                  id="{{ .id }}-tab"
@@ -20,9 +22,12 @@
                  aria-selected="true">{{ $element.tabTitle }}</a>
             </li>
             {{ end }}
+            {{ end }}
           </ul>
           <div class="tab-content" id="myTabContent">
-            {{ range $index, $element := .Site.Data.tabs }}
+            {{ $data := index .Site.Data .Site.Language.Lang }}
+            {{ with $data.tabs }}
+            {{ range $index, $element := . }}
             <div class="hero__tab-pane tab-pane fade {{ if .active }} show active {{ end }}"
                  id="{{ .id }}"
                  role="tabpanel"
@@ -31,6 +36,7 @@
               <div class="hero__tab-body text-center mt-4">{{ $element.description }}</div>
               <button class="btn-cta mt-3">{{ $element.buttonTitle }}</button>
             </div>
+            {{ end }}
             {{ end }}
           </div>
         </div>
