@@ -1,0 +1,28 @@
+{{ $title := .Get "title" }}
+{{ $buttonTitle := .Get "buttonTitle" }}
+{{ $hrefTitle := .Get "hrefTitle" }}
+
+<section class="plugins">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="plugins__title">{{ $title }}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="plugins-small__wrapper">
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $plugins := $data.plugins_small }}
+        {{ range $plugins }}
+          <div class="plugins-small__item mt-5 mr-4">
+              <div class="plugins-small__image">
+                {{ .Icon | safeHTML }}
+              </div>
+          <div class="plugins-small__title mt-3">{{ with (index . "Display Name") }}{{ . }}{{ end }}</div>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

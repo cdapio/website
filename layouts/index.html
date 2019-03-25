@@ -108,7 +108,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center pb-5">
-        <button class="btn-cta mt-5">Get Started</button>
+        {{ with .Site.Params.cta.title }}
+          <button class="btn-cta mt-3">{{ . }}</button>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -146,7 +148,9 @@
     <div class="container accelerators__btnBlock">
       <div class="row">
         <div class="col-12 text-center">
-          <button class="btn-cta mt-3">Get Started</button>
+          {{ with .Site.Params.cta.title }}
+            <button class="btn-cta mt-3">{{ . }}</button>
+          {{ end }}
         </div>
       </div>
     </div>
@@ -173,7 +177,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <button class="btn-cta mt-5">Get Started</button>
+          {{ with .Site.Params.cta.title }}
+            <button class="btn-cta mt-3">{{ . }}</button>
+          {{ end }}
         </div>
       </div>
     </div>

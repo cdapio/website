@@ -897,6 +897,42 @@ section.announcement {
   }
 }
 
+.plugins-small {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__image {
+    min-height: 50px;
+    color: $black;
+
+    img {
+      height: auto;
+      width: 53px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    color: $black;
+    width: 80%;
+    overflow-wrap: break-word
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 26px 13px;
+    width: 146px;
+    min-height: 195px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
+  }
+}
+
 .accelerators-info {
   padding: 48px 72px 100px 24px;
   color: black;

@@ -14,4 +14,4 @@ without having to worry about infrastructure and integration.
 
 {{< features title="Pipeline features" >}}
 
-{{< plugins buttonTitle="View all connectors" hrefTitle="View all transformations" >}}
+{{< plugins buttonTitle="View all connectors" buttonHref="./resources/plugins" hrefTitle="View all transformations" >}}
