@@ -235,6 +235,13 @@ section.hero {
   position: relative;
   overflow: hidden;
 
+  a {
+    display: none;
+    @include media-breakpoint-down(sm) {
+      display: inline-block;
+    }
+  }
+
   &:before {
     @include background(top);
   }
@@ -267,6 +274,7 @@ section.hero {
     letter-spacing: 0.2px;
     color: $greyish-brown;
   }
+
 }
 
 .accelerators {
@@ -969,7 +977,7 @@ section.announcement {
   }
 
   &__title {
-    background: url('/images/background-cover.jpg');
+    background: url('/images/background-cover-secondary.jpg');
     background-position: center;
     height: 60px;
     padding-top: 8px;

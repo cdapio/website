@@ -69,9 +69,8 @@
     <div class="row">
       <div class="col-12">
         <h2 class="features__title">
-          {{ with .GetPage "features" }}
-            {{ .Title }}
-          {{ end }}
+          {{ $data := index .Site.Data .Site.Language.Lang }}
+          {{ $data.features_homepage.title }}
         </h2>
       </div>
     </div>
@@ -81,10 +80,12 @@
       <div class="col-lg-6 col-md-12">
         {{ $data := index .Site.Data .Site.Language.Lang }}
         {{ with $data.features_homepage }}
-        {{ range $element := first 3 . }}
+        {{ range $element := $data.features_homepage.firstColumn }}
         <div class="features__block mt-5">
           <h4 class="features__title mb-4">{{ $element.header }}</h4>
-          <p class="features__body">{{ $element.paragraph }} <a href="#">Learn More</a></p>
+          <p id="{{ $element.id }}" class="features__body d-sm-flex collapse">{{ $element.paragraph }}</p>
+          <a id="{{ $element.id }}btn" class="d-sm-none d-flex mt-4" href="#" data-toggle="collapse" data-target="#{{ $element.id }}"
+             onclick="learnMore({{ $element.id }})">Learn more</a>
         </div>
         {{ end }}
         {{ end }}
@@ -92,10 +93,12 @@
       <div class="col-lg-6 col-md-12">
         {{ $data := index .Site.Data .Site.Language.Lang }}
         {{ with $data.features_homepage }}
-        {{ range $element := first 3 . }}
+        {{ range $element := $data.features_homepage.secondColumn }}
         <div class="features__block mt-5">
           <h4 class="features__title mb-4">{{ $element.header }}</h4>
-          <p class="features__body">{{ $element.paragraph }} <a href="#">Learn More</a></p>
+          <p id="{{ $element.id }}" class="features__body d-sm-flex collapse">{{ $element.paragraph }}</p>
+          <a id="{{ $element.id }}btn" class="d-sm-none d-flex mt-4" href="#" data-toggle="collapse" data-target="#{{ $element.id }}"
+             onclick="learnMore({{ $element.id }})">Learn more</a>
         </div>
         {{ end }}
         {{ end }}

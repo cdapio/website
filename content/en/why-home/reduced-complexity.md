@@ -1,6 +1,7 @@
 ---
 title: Reduced complexity
 icon: images/icons/icon-1.svg
+id: reduced-complexity
 weight: 10
 ---
 

@@ -32,7 +32,7 @@
           <img class="why__image" src="{{ .Params.icon }}">
           {{ end }}
           <h3 class="why__block-title text-center mt-4 not-apply">{{ .Title }}</h3>
-          <div class="why__block-body text-center mt-4 d-sm-flex collapse">
+          <div class="why__block-body text-center mt-4 d-sm-flex">
             {{ .Content | markdownify }}
           </div>
         </div>
@@ -47,9 +47,11 @@
           <img class="why__image" src="{{ .Params.icon }}">
           {{ end }}
           <h3 class="why__block-title text-center mt-4 not-apply">{{ .Title }}</h3>
-          <div class="why__block-body text-center mt-4 d-sm-flex collapse">
+          <div id="{{ .Params.id }}" class="why__block-body text-center mt-4 d-sm-flex collapse">
             {{ .Content | markdownify }}
           </div>
+          <a id="{{ .Params.id }}btn" class="d-sm-none d-flex mt-4" href="#" data-toggle="collapse" data-target="#{{ .Params.id }}"
+             onclick="learnMore({{ .Params.id }})">Learn more</a>
         </div>
       </div>
       {{ end }}

@@ -1,6 +1,7 @@
 ---
 title: Increased velocity
 icon: images/icons/icon-2.svg
+id: increased-velocity
 weight: 20
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Increased flexibility
 icon: images/icons/icon-3.svg
+id: increased-flexibility
 weight: 30
 ---
 

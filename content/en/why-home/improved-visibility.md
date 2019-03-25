@@ -1,6 +1,7 @@
 ---
 title: Improved visibility
 icon: images/icons/icon-4.svg
+id: improved-visibility
 weight: 40
 ---
 
