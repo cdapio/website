@@ -32,10 +32,11 @@
       {{ with $plugins := $data.plugins_small }}
         {{ range $plugins }}
           <div class="plugins-small__item mt-5 ml-auto mr-auto ml-md-0 mr-md-4">
-              <div class="plugins-small__image">
-                {{ .Icon | safeHTML }}
-              </div>
-          <div class="plugins-small__title mt-3">{{ with (index . "Display Name") }}{{ . }}{{ end }}</div>
+            <div class="plugins-small__image">
+              {{ .Icon | safeHTML }}
+            </div>
+            <div class="plugins-small__title mt-3">{{ with (index . "Display Name") }}{{ . }}{{ end }}</div>
+            <div class="plugins-small__type mt-4">{{ with (index . "Type") }}{{ . }}{{ end }}</div>
           </div>
         {{ end }}
       {{ end }}

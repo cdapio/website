@@ -927,13 +927,17 @@ section.announcement {
     overflow-wrap: break-word
   }
 
+  &__type {
+    font-size: 14px;
+    color: $brownish-grey;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 26px 13px;
     width: 146px;
-    min-height: 195px;
     border-radius: 8px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
   }
