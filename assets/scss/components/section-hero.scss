@@ -5,8 +5,9 @@ section.hero {
 }
 
 .hero {
-  background: url('/images/background-cover.jpg');
+  background: url('/images/background-cover.jpg') no-repeat;
   background-position: center;
+  background-size: cover;
   min-height: 505px;
 
   @include media-breakpoint-up(sm) {
@@ -188,8 +189,9 @@ section.hero {
   }
 
   &__title {
-    background: url('/images/background-cover-secondary.jpg');
+    background: url('/images/background-cover-secondary.jpg') no-repeat;
     background-position: center;
+    background-size: cover;
     height: 60px;
     padding-top: 8px;
     line-height: .6;

@@ -1,8 +1,8 @@
 ---
 blockTitle: Analytics 
-image: images/accellerators-details-analytics.png
+image: images/accellerators-details-analytics.jpg
 urlTitle: Show more
-url: resources/accelerators/analytics/
+url: /resources/accelerators/analytics/
 ---
 
 Description of Analytics features and capabilities goes here. 

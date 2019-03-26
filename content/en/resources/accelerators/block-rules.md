@@ -1,8 +1,8 @@
 ---
-blockTitle: Rules
-image: images/accellerators-details-rules.png
+blockTitle: Rules Engine
+image: images/accellerators-details-rules.jpg
 urlTitle: Show more
-url: resources/accelerators/rules-engine/
+url: /resources/accelerators/rules-engine/
 ---
 
 Description of Rules features and capabilities goes here. 

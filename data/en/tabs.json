@@ -4,14 +4,14 @@
     "active": true,
     "tabTitle": "On Cloud",
     "title": "Get Started in the Cloud",
-    "description": "Run CDAP on any major public cloud provider including Amazon Web Services, Microsoft Azure and Google Cloud Platform",
+    "description": "Run CDAP on any major public cloud provider including <span style='white-space: nowrap;'>Amazon Web Services</span>, <span style='white-space: nowrap;',>Microsoft Azure</span> and <span style='white-space: nowrap;'>Google Cloud Platform</span>",
     "buttonTitle": "Get Started"
   },
   {
     "id": "profile",
     "tabTitle": "On Premises",
     "title": "Get Started in the Cloud",
-    "description": "Run CDAP on any major public cloud provider including Amazon Web Services, Microsoft Azure and Google Cloud Platform",
+    "description": "Run CDAP on any major public cloud provider including <span style='white-space: nowrap;'>Amazon Web Services</span>, <span style='white-space: nowrap;',>Microsoft Azure</span> and <span style='white-space: nowrap;'>Google Cloud Platform</span>",
     "buttonTitle": "Get Started"
   }
 ]
