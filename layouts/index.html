@@ -35,7 +35,7 @@
                  role="tabpanel"
                  aria-labelledby="home-tab">
               <h3 class="hero__tab-title text-center mt-4">{{ .title }}</h3>
-              <div class="hero__tab-body text-center mt-4">{{ .description }}</div>
+              <div class="hero__tab-body text-center mt-4">{{ .description | safeHTML }}</div>
               <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
             </div>
             {{ end }}

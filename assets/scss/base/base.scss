@@ -51,6 +51,7 @@
   a {
     font-family: $secondary-font-family;
     color: $azure;
+    white-space: nowrap;
 
     &:hover {
       color: $azure;

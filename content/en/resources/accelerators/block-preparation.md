@@ -1,8 +1,8 @@
 ---
 blockTitle: Preparation
-image: images/accellerators-details-preparation.png
+image: images/accellerators-details-preparation.jpg
 urlTitle: Show more
-url: resources/accelerators/preparation/
+url: /resources/accelerators/preparation/
 ---
 
 Description of Pipelines features and capabilities goes here. Lorem ipsum dolor sit amet, 
