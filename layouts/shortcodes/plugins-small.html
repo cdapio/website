@@ -27,20 +27,20 @@
     </div>
   </div>
   <div class="container">
-    <div class="plugins-small__wrapper">
+    <ul class="plugins-small__wrapper">
       {{ $data := index .Site.Data .Site.Language.Lang }}
       {{ with $plugins := $data.plugins_small }}
         {{ range $plugins }}
-          <div class="plugins-small__item mt-5 ml-auto mr-auto ml-md-0 mr-md-4">
+          <li class="plugins-small__item mt-5 ml-auto mr-auto ml-md-0 mr-md-4">
             <div class="plugins-small__image">
               {{ .Icon | safeHTML }}
             </div>
             <div class="plugins-small__title mt-3">{{ with (index . "Display Name") }}{{ . }}{{ end }}</div>
             <div class="plugins-small__type mt-4">{{ with (index . "Type") }}{{ . }}{{ end }}</div>
-          </div>
+          </li>
         {{ end }}
       {{ end }}
-    </div>
-    <div class="plugins-small__search-result" style="display: none">No results found</div>
+    </ul>
+    <div class="plugins-small__search-result" style="display: none">{{ .Site.Params.noResults.title }}</div>
   </div>
 </section>
