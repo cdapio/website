@@ -525,16 +525,6 @@ img {
     }
   }
 
-  .media {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include media-breakpoint-down(sm) {
-      align-items: flex-end;
-    }
-  }
-
   .navbar-toggler {
     width: 30px;
     height: 30px;
@@ -551,20 +541,12 @@ img {
     }
   }
 
-  .navbar-toggler > .close {
-    display: inline;
-    color: $white;
-    margin-right: -20px;
-    width: 25px;
-  }
-
-  .navbar-toggler.collapsed > .close, .navbar-toggler:not(.collapsed) > .navbar-toggler-icon {
-    display: none;
-  }
-
   &__wrapper {
     height: 100%;
     padding: 9px 25px;
+    @include media-breakpoint-down(sm) {
+      padding: 9px 0;
+    }
 
     .navbar {
       @include media-breakpoint-down(sm) {
@@ -573,9 +555,18 @@ img {
     }
   }
 
+  &__home {
+    @include media-breakpoint-down(sm) {
+      margin-left: 30px;
+    }
+  }
+
   &__logo {
     height: 21px;
     width: 100px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 7px;
+    }
   }
 
   .nav-item {
@@ -616,24 +607,44 @@ img {
 
     @include media-breakpoint-down(sm) {
       padding-bottom: 0;
+      padding-left: 1rem;
+      border-left: solid 8px $black;
     }
 
     &:hover {
       text-decoration: none;
       color: white;
       border-bottom: solid 8px $brownish-grey;
+      @include media-breakpoint-down(sm) {
+        border-left: solid 8px $brownish-grey;
+        border-bottom: none;
+      }
     }
 
     &:active {
       text-decoration: none;
       color: white;
       border-bottom: solid 8px $deep-orange;
+      @include media-breakpoint-down(sm) {
+        border-left: solid 8px $deep-orange;
+        border-bottom: none;
+      }
     }
   }
 
   &__item-dropdown {
+    &:hover, &:focus, &:active {
+      @include media-breakpoint-down(sm) {
+        border-left: solid 8px $deep-orange;
+        border-bottom: none;
+      }
+    }
+
     &:after {
       @include rotate(rotate(45deg), 3px);
+      @include media-breakpoint-down(sm) {
+        @include rotate(rotate(-45deg), 0);
+      }
     }
 
     &:hover::after {
@@ -663,24 +674,12 @@ img {
     background-color: $white-10;
     top: 37px;
 
-    @include media-breakpoint-down(sm) {
-      top: 0;
-      margin-top: 4px;
-      border: none;
-      background-color: $black;
-      box-shadow: none;
-    }
-
     a {
       font-size: 16px;
       line-height: 34px;
       letter-spacing: .29px;
       color: $greyish-brown;
       padding: 0;
-
-      @include media-breakpoint-down(sm) {
-        color: $white;
-      }
 
       .external-link-icon {
         opacity: 0.3;
@@ -697,6 +696,99 @@ img {
 
         .external-link-icon {
           opacity: 1;
+        }
+      }
+    }
+  }
+
+  .sideMenu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 208px;
+    height: 100vh;
+    background-color: $black;
+    border: solid 1px $gray-5;
+    @include media-breakpoint-up(md) {
+      display: none !important;
+    }
+
+    .close {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background: $gray-5;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    span {
+      color: $white;
+    }
+
+    .navbar-toggler {
+      margin-left: calc(1rem + 8px);
+      border: none;
+      &:focus, &:active {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .navbar {
+      padding: 0;
+    }
+
+    .navbar-nav .dropdown-menu {
+      width: 207px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      border-radius: 0;
+      border: none;
+
+      a, span {
+        font-size: 16px;
+        line-height: 34px;
+        letter-spacing: .29px;
+        color: $greyish-brown;
+        padding: 0;
+
+        .external-link-icon {
+          opacity: 0.3;
+          margin-left: 3px;
+        }
+
+        &:hover {
+          background: none;
+        }
+
+        &:active {
+          color: $deep-orange;
+          background: none;
+
+          .external-link-icon {
+            opacity: 1;
+          }
         }
       }
     }

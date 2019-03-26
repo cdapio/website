@@ -9,6 +9,13 @@ collapseContainer.on('hidden.bs.collapse', () => {
   toggleButton.innerText = 'Show more';
 });
 
+const menuButton = $('#menuBtn');
+const closeButton = $('#closeBtn');
+const mobileMenu = $('#mobileMenu');
+
+menuButton.on('click', () => mobileMenu.show(300));
+closeButton.on('click', () => mobileMenu.hide(300));
+
 function learnMore(id) {
   const toggleButton = $(`#${id}btn`)[0];
   const collapseContainer = $(`#${id}`);
