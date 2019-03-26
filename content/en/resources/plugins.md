@@ -14,4 +14,3 @@ Fusce eget pharetra nulla, vel fermentum ante. Phasellus gravida non diam sed ve
 {{% /hero-panel %}}
 
 {{% plugins-small title="Connectors" %}}
-

@@ -70,7 +70,6 @@ time_format_blog = "02.01.2006"
 
 [params]
 copyright = "Global Inc"
-learnMore = "Learn More"
 privacy_policy = "https://policies.google.com/privacy"
 github_repo = "https://github.com/google/docsy-example"
 logo = "/images/logo.svg"
@@ -78,6 +77,9 @@ logo = "/images/logo.svg"
   [params.cta]
     enable = true
     title = "Get Started"
+  [params.learnMore]
+    enable = true
+    title = "Learn More"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"
