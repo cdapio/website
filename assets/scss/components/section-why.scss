@@ -1,0 +1,58 @@
+.why {
+  color: $greyish-brown;
+
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+
+  &__title {
+    color: $greyish-brown;
+  }
+
+  &__image {
+    height: 38px;
+    opacity: .43;
+  }
+
+  &__block-title {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: $greyish-brown;
+    width: 90%;
+    margin: 0;
+  }
+
+  &__block-body {
+    color: $greyish-brown;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  &__block {
+    border-right: solid 1px $gray;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      border-bottom: 0;
+      border-right: solid 1px $gray;
+      &:nth-child(2) {
+        border-right: 0;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      border-bottom: solid 1px $gray;
+      border-right: 0;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}

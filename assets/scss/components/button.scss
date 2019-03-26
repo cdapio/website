@@ -1,0 +1,42 @@
+.btn-cta {
+  align-self: center;
+  width: 100%;
+  height: 67px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: $white;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, $orange, $dark-orange);
+  transition: all .3s;
+  border: 3px transparent;
+
+  @include media-breakpoint-up(sm) {
+    width: 269px;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to bottom, $orange-5, $orange-5);
+    transition: all .3s;
+  }
+
+  &:focus {
+    border: 3px solid $orange
+  }
+}
+
+.btn-small {
+  padding: 12px 49px 11px 43px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #fd6003, $dark-orange);
+
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(to bottom, $orange-5, $orange-5);
+    transition: all .3s;
+  }
+}
