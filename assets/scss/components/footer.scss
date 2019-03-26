@@ -1,0 +1,50 @@
+.footer {
+  background-color: $dark-grey;
+  font-size: 14px;
+
+  &__title {
+    font-size: inherit;
+  }
+
+  a {
+    color: $white;
+    line-height: 1.88;
+    letter-spacing: 0.3px;
+
+    &:link, &:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+
+  &__block {
+    &--margin-right {
+      margin-right: 96px;
+
+      @include media-breakpoint-up(md) {
+        margin-right: 155px;
+      }
+    }
+  }
+
+  &__upper {
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+  &__lower {
+    padding-top: 14px;
+  }
+
+  &__line {
+    height: 1px;
+    border: solid 0.5px $gray-5;
+
+    &--small {
+      border: 0;
+      width: 141px;
+      height: 2px;
+      background-color: $gray-5;
+    }
+  }
+}

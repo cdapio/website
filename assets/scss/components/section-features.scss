@@ -1,0 +1,46 @@
+.features {
+  background-color: $gray-10;
+  position: relative;
+  overflow: hidden;
+
+  a {
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+      display: inline-block;
+    }
+  }
+
+  &:before {
+    @include background(top);
+  }
+
+  &:after {
+    @include background(bottom);
+
+    @include media-breakpoint-down(xs) {
+      bottom: -60px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      bottom: -50px;
+    }
+
+    @include media-breakpoint-up(md) {
+      bottom: -30px;
+    }
+  }
+
+  &__title {
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: $greyish-brown;
+  }
+
+  &__block {
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: 0.2px;
+    color: $greyish-brown;
+  }
+}
