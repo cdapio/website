@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# production
+public/
+tech-doc-hugo/
+/resources/
+
+# IDE
+.idea/
+
+# misc
+.DS_Store
+.env
+npm-debug.log*

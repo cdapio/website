@@ -1,0 +1,16 @@
+.testimonials {
+  background-color: $silver;
+
+  &__testimonial {
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    color: $black;
+  }
+
+  &__author {
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+  }
+}

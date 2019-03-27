@@ -1,0 +1,83 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: $base-font-family;
+    font-weight: 400;
+    color: $white;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  button {
+    font-weight: 500;
+  }
+
+  p {
+    &:not(.not-apply) {
+      color: $black;
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font-family;
+    &:not(.not-apply) {
+      margin: 0;
+      line-height: 1.71;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  h2 {
+    &:not(.not-apply) {
+      font-size: 35px;
+      @include media-breakpoint-down(sm) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  h4 {
+    &:not(.not-apply) {
+      font-size: 25px;
+    }
+  }
+
+  a {
+    font-family: $secondary-font-family;
+    color: $azure;
+    white-space: nowrap;
+
+    &:hover {
+      color: $azure;
+    }
+  }
+
+  section {
+    &:not(.not-apply) {
+      padding: 25px 0 12px;
+
+      @include media-breakpoint-up(sm) {
+        padding: 70px 0 50px;
+      }
+    }
+  }
+
+  footer {
+    padding: 36px 0 90px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 40px 0 176px;
+    }
+  }
+}

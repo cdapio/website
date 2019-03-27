@@ -1,0 +1,36 @@
+@mixin rotate($transform, $margin) {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: $transform;
+  transition: all .4s;
+  border: solid $white;
+  border-width: 0 1px 1px 0;
+  margin-left: 3px;
+  margin-bottom: $margin;
+  @include media-breakpoint-down(sm) {
+    margin-left: 25px;
+  }
+}
+
+@mixin background($position) {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: .43;
+  background-image: url('/images/features-#{$position}.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @if $position == 'top' {
+    top: 0;
+    height: 83px;
+  }
+
+  @if $position == 'bottom' {
+    bottom: 0;
+    height: 139px;
+  }
+}

@@ -1,0 +1,87 @@
+<header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="w-100">
+        <div class="header__wrapper d-flex flex-column flex-md-row justify-content-between">
+          <div class="navbar navbar-dark justify-content-start">
+            <button id="menuBtn"
+                    class="navbar-toggler"
+                    type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="header__home" href="/">
+              <img class="header__logo" src="{{ .Site.Params.logo }}" alt="logo">
+            </a>
+          </div>
+          <nav class="navbar navbar-expand-md p-0 mt-2">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                  {{ if .HasChildren }}
+                    <li class="nav-item dropdown">
+                      <a class="header__item header__item-dropdown">
+                        {{ .Name }}
+                      </a>
+                      <div class="dropdown-menu">
+                        {{ range .Children }}
+                          <a class="dropdown-item" href="{{ .URL }}">
+                            <span>{{ .Name }}</span>
+                            {{ .Post }}
+                          </a>
+                        {{ end }}
+                      </div>
+                    </li>
+                    {{ else }}
+                    <li class="nav-item {{ if $currentPage.HasMenuCurrent " main" . }}active{{ end }}">
+                      <a class="header__item" href="{{ .URL }}">
+                        <span>{{ .Name }}</span>
+                        {{ .Post }}
+                      </a>
+                    </li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobileMenu" class="sideMenu collapse">
+    <button id="closeBtn"
+            class="navbar-toggler mt-3"
+            type="button">
+      <span class="close"></span>
+    </button>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="nav-item mt-4">
+          <a class="header__item header__item-dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ .Name }}
+          </a>
+          <div class="dropdown-menu container-fluid" aria-labelledby="dropdownMenuButton">
+            {{ range .Children }}
+            <a class="dropdown-item" href="{{ .URL }}">
+              <span>{{ .Name }}</span>
+              {{ .Post }}
+            </a>
+            {{ end }}
+          </div>
+        </li>
+        {{ else }}
+        <li class="nav-item mt-4 {{ if $currentPage.HasMenuCurrent " main" . }}active{{ end }}">
+        <a class="header__item" href="{{ .URL }}">
+          <span>{{ .Name }}</span>
+          {{ .Post }}
+        </a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

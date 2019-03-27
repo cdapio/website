@@ -1,0 +1,232 @@
+{{ define "main" }}
+
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <h3 class="hero__c-title not-apply">{{ .Site.Params.Title }}</h3>
+        <h2 class="hero__title mt-4 not-apply">{{ .Site.Params.description | safeHTML }}</h2>
+        <p class="hero__paragraph not-apply">{{ .Site.Params.about | safeHTML }}</p>
+      </div>
+      <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
+        <div class="hero__block">
+          <ul class="hero__nav-tabs nav nav-tabs" id="myTab" role="tablist">
+            {{ $data := index .Site.Data .Site.Language.Lang }}
+            {{ with $tabs := $data.tabs }}
+            {{ range $tabs }}
+              <li class="nav-item">
+                <a class="hero__nav-link {{ if .active }} active {{ end }}"
+                   id="{{ .id }}-tab"
+                   data-toggle="tab"
+                   href="#{{ .id }}"
+                   role="tab"
+                   aria-controls="{{ .id }}"
+                   aria-selected="true">{{ .tabTitle }}</a>
+              </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            {{ $data := index .Site.Data .Site.Language.Lang }}
+            {{ with $tabs := $data.tabs }}
+            {{ range $tabs }}
+            <div class="hero__tab-pane tab-pane fade {{ if .active }} show active {{ end }}"
+                 id="{{ .id }}"
+                 role="tabpanel"
+                 aria-labelledby="home-tab">
+              <h3 class="hero__tab-title text-center mt-4">{{ .title }}</h3>
+              <div class="hero__tab-body text-center mt-4">{{ .description | safeHTML }}</div>
+              <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
+            </div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="announcement not-apply">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="announcement__wrapper">
+          {{ partial "gallery.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ with .GetPage "why.md" }}
+  {{ .Content }}
+{{ end }}
+
+<section class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="features__title">
+          {{ $data := index .Site.Data .Site.Language.Lang }}
+          {{ $data.features_homepage.title }}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        {{ $data := index .Site.Data .Site.Language.Lang }}
+        {{ with $data.features_homepage }}
+          {{ range $element := $data.features_homepage.firstColumn }}
+            <div class="features__block mt-5">
+              <h4 class="features__title mb-4">{{ $element.header }}</h4>
+              <p id="{{ $element.id }}" class="features__body d-sm-flex collapse">{{ $element.paragraph }}</p>
+              <a id="{{ $element.id }}btn"
+               class="d-sm-none d-flex mt-4"
+               href="#"
+               data-toggle="collapse"
+               data-target="#{{ $element.id }}"
+               onclick="learnMore({{ $element.id }})">
+                Learn More
+              </a>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-lg-6 col-md-12">
+        {{ $data := index .Site.Data .Site.Language.Lang }}
+        {{ with $data.features_homepage }}
+          {{ range $element := $data.features_homepage.secondColumn }}
+            <div class="features__block mt-5">
+              <h4 class="features__title mb-4">{{ $element.header }}</h4>
+              <p id="{{ $element.id }}" class="features__body d-sm-flex collapse">{{ $element.paragraph }}</p>
+              <a id="{{ $element.id }}btn"
+                 class="d-sm-none d-flex mt-4"
+                 href="#"
+                 data-toggle="collapse"
+                 data-target="#{{ $element.id }}"
+                 onclick="learnMore({{ $element.id }})">
+                Learn More
+              </a>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center pb-5">
+        {{ with .Site.Params.cta.title }}
+          <button class="btn-cta mt-3">{{ . }}</button>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="accelerators">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="accelerators__title">
+          {{ with .GetPage "accelerators.md" }}
+            {{ .Title }}
+          {{ end }}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      {{ $blocks := where .Site.RegularPages "Type" "in" (slice "resources" "accelerators") }}
+      {{ $blocks := $blocks | intersect (where .Site.RegularPages "Params.image" "!=" nil) }}
+      {{ range $blocks }}
+        <div class="col-lg-3 col-md-6 mb-5">
+          <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1" onclick="window.location='{{ .Params.url | relURL }}'">
+            <img src="{{ .Params.image }}" class="accelerators__item-image"/>
+            <div class="accelerators__inner-wrapper">
+              <h4 class="accelerators__item-title">{{ .Params.blockTitle }}</h4>
+              <p class="accelerators__item-body not-apply">{{ .Content | markdownify }}</p>
+              <a href="{{ .Params.url }}" class="d-flex accelerators__link">{{ .Params.urlTitle }}</a>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    <div class="container accelerators__btnBlock">
+      <div class="row">
+        <div class="col-12 text-center">
+          {{ with .Site.Params.cta.title }}
+            <button class="btn-cta mt-3">{{ . }}</button>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="accelerators__title">Testimonials</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{ range where .Site.RegularPages "Type" "in" (slice "testimonials") }}
+      <div class="col-lg-6 col-md-12 mt-5 mt-lg-4">
+        <p class="testimonials__testimonial font-italic">{{ .Content | markdownify }}</p>
+        <p class="testimonials__author">– {{ .Params.name }}, {{ .Params.job }}, {{ .Params.company }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          {{ with .Site.Params.cta.title }}
+            <button class="btn-cta mt-3">{{ . }}</button>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="companies">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="companies__title">
+          {{ with .GetPage "companies.md" }}
+            {{ .Title }}
+          {{ end }}
+        </h2>
+        <a href="#">Read case studies</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    {{ with .GetPage "companies.md" }}
+      {{ .Content }}
+    {{ end }}
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="companies__wrapper">
+          <div class="companies__cta mt-4" id="toggleBtn" data-toggle="collapse" href="#companies" aria-expanded="false"
+               aria-controls="companies">Show more
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

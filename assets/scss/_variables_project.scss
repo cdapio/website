@@ -1,0 +1,31 @@
+/*
+
+Add styles or override variables from the theme here.
+
+*/
+
+/* Vendors */
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints";
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/functions";
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/bootstrap-reboot";
+@import "../../themes/docsy/assets/vendor/bootstrap/scss/variables";
+
+/* Base */
+@import "base/variables";
+@import "base/base";
+@import "base/fonts";
+@import "base/mixins";
+
+/* Components */
+@import "components/button";
+@import "components/footer";
+@import "components/header";
+@import "components/section-accelerators";
+@import "components/section-announcement";
+@import "components/section-companies";
+@import "components/section-features";
+@import "components/section-hero";
+@import "components/section-plugins";
+@import "components/section-testimonials";
+@import "components/section-video";
+@import "components/section-why";
