@@ -5,22 +5,22 @@
 {{ $image := .Get "image" }}
 
 <section class="hero-panel not-apply">
-  <div class="container-fluid hero-panel__title">
-    <div class="container">
+  <div class="container-fluid hero-panel__title px-0">
+    <div class="container pl-sm-3">
       {{ if $hrefTitle }}
-      <a href="/resources/accelerators" class="m-0 p-0">« {{ $hrefTitle }}</a>
+      <a href="/resources/accelerators">« {{ $hrefTitle }}</a>
       {{ end }}
-      <h4 class="m-0 p-0">{{ $title }}</h4>
+      <h4>{{ $title }}</h4>
     </div>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="hero-panel__info col-lg-6 col-md-12">
-        <p class="hero-panel__paragraph not-apply">{{ .Inner | markdownify }}</p>
+    <div class="row no-gutters px-sm-3 px-sm-0">
+      <div class="col-lg-6 col-md-12">
+        <p class="hero-panel__paragraph pr-lg-3 not-apply">{{ .Inner | markdownify }}</p>
         <a href="#">{{ $hrefDoc }}</a>
       </div>
       {{ if $image }}
-      <div class="hero-panel__info col-lg-6 col-md-12">
+      <div class="col-lg-6 col-md-12">
         <img src="/images/{{ $image }}">
       </div>
       {{ end }}

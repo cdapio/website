@@ -189,12 +189,11 @@ section.hero {
   }
 
   &__title {
-    background: url('/images/background-cover-secondary.jpg') no-repeat;
-    background-position: center;
+    background: url('/images/background-cover-secondary.jpg') no-repeat center;
     background-size: cover;
     height: 60px;
     padding-top: 8px;
-    line-height: .6;
+    line-height: .55;
   }
 
   &__paragraph {
