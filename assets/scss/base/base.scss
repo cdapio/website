@@ -53,16 +53,6 @@ img {
     }
   }
 
-  a {
-    font-family: $secondary-font-family;
-    color: $azure;
-    white-space: nowrap;
-
-    &:hover {
-      color: $azure;
-    }
-  }
-
   section {
     &:not(.not-apply) {
       padding: 25px 0 12px;

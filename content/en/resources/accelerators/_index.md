@@ -5,6 +5,7 @@ menu:
     weight: 2
     name: "Accelerators"
     parent: "RESOURCES"
+backgroundImage: images/hero-background-blue.svg
 ---
 
 {{% hero-panel title="Accelerators" %}}

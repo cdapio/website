@@ -1,3 +1,4 @@
+{{ $title := .Get "title" }}
 {{ $buttonTitle := .Get "buttonTitle" }}
 {{ $buttonHref := .Get "buttonHref" }}
 {{ $hrefTitle := .Get "hrefTitle" }}
@@ -6,8 +7,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="plugins__title">{{ $.Page.Title }}</h2>
-        <p class="mt-4 mt-lg-0">{{ $.Page.Description }}</p>
+        <h2 class="plugins__title">{{ $title }}</h2>
+        <p class="mt-4 mt-lg-0">{{ .Inner | markdownify }}</p>
       </div>
     </div>
   </div>

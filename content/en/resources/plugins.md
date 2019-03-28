@@ -13,4 +13,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis e
 Fusce eget pharetra nulla, vel fermentum ante. Phasellus gravida non diam sed vehicula.
 {{% /hero-panel %}}
 
-{{% plugins-small title="Connectors" %}}
+{{% plugins-list title="Connectors" %}}

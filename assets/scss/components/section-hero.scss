@@ -45,6 +45,12 @@ section.hero {
     }
   }
 
+  &__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   &__paragraph {
     font-size: 25px;
     letter-spacing: .17px;
@@ -159,9 +165,14 @@ section.hero {
 }
 
 .hero-panel {
-  background-color: #012f4b;
+  display: flex;
+  flex-direction: column;
   min-height: 440px;
   font-size: 25px;
+  background-image: url('/images/background-cover-secondary.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @include media-breakpoint-down(sm) {
     min-height: 575px;
@@ -171,11 +182,6 @@ section.hero {
 
     @include media-breakpoint-up(sm) {
       padding: 0;
-    }
-
-    a {
-      font-size: 16px;
-      color: #03d7f6;
     }
 
     img {
@@ -188,12 +194,76 @@ section.hero {
     }
   }
 
+  &__link {
+    font-size: 16px;
+    color: #03d7f6;
+
+    &:hover {
+      color: #03d7f6;
+      text-decoration: underline;
+    }
+  }
+
   &__title {
-    background: url('/images/background-cover-secondary.jpg') no-repeat center;
-    background-size: cover;
     height: 60px;
     padding-top: 8px;
-    line-height: .55;
+    line-height: .6;
+  }
+
+  &__navigation {
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  &__navigation-item {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: $white;
+    padding: 0 62px;
+
+    &:link, &:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    &.active {
+      border-bottom: 14px solid $deep-orange;
+    }
+  }
+
+  &__outer {
+    display: flex;
+    flex-direction: column;
+
+    .background-image {
+      background-position: bottom right;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include media-breakpoint-up(md) {
+        background-position: center right;
+        background-size: unset;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__bottom-paragraph {
+    font-size: 20px;
+    color: $white;
+    margin-top: 113px;
   }
 
   &__paragraph {

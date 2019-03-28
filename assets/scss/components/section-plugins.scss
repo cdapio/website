@@ -41,15 +41,15 @@
 
 .plugins-small {
   &__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 1rem;
     justify-content: space-between;
     margin: 0;
     padding: 0;
 
-    &:after {
-      content: "";
-      flex: 0 0 170px;
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(auto-fill, 146px);
     }
   }
 
@@ -82,6 +82,7 @@
     align-items: center;
     padding: 26px 13px;
     width: 146px;
+    height: 235px;
     border-radius: 8px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
   }

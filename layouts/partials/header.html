@@ -16,30 +16,31 @@
           <nav class="navbar navbar-expand-md p-0 mt-2">
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav">
-                {{ $currentPage := . }}
+                {{ $currentNode := . }}
+                {{ $url := .URL }}
                 {{ range .Site.Menus.main }}
-                  {{ if .HasChildren }}
-                    <li class="nav-item dropdown">
-                      <a class="header__item header__item-dropdown">
-                        {{ .Name }}
-                      </a>
-                      <div class="dropdown-menu">
-                        {{ range .Children }}
-                          <a class="dropdown-item" href="{{ .URL }}">
-                            <span>{{ .Name }}</span>
-                            {{ .Post }}
-                          </a>
-                        {{ end }}
-                      </div>
-                    </li>
+                    {{ if .HasChildren }}
+                      <li class="nav-item dropdown">
+                        <a class="header__item header__item-dropdown">
+                          {{ .Name }}
+                        </a>
+                        <div class="dropdown-menu">
+                          {{ range .Children }}
+                            <a class="dropdown-item" href="{{ .URL }}">
+                              <span>{{ .Name }}</span>
+                              {{ .Post }}
+                            </a>
+                          {{ end }}
+                        </div>
+                      </li>
                     {{ else }}
-                    <li class="nav-item {{ if $currentPage.HasMenuCurrent " main" . }}active{{ end }}">
-                      <a class="header__item" href="{{ .URL }}">
-                        <span>{{ .Name }}</span>
-                        {{ .Post }}
-                      </a>
-                    </li>
-                  {{ end }}
+                      <li class="nav-item {{ if eq $url .URL }}active {{ end }}">
+                        <a class="header__item" href="{{ .URL | relURL }}">
+                          <span>{{ .Name }}</span>
+                          {{ .Post }}
+                        </a>
+                      </li>
+                    {{ end }}
                 {{ end }}
               </ul>
             </div>

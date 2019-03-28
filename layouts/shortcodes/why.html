@@ -15,7 +15,7 @@
         </h2>
         <p class="why__paragraph text-center mt-3 d-sm-flex d-none">
           {{ if $description }}
-          {{ .Inner }}
+          {{ .Inner | markdownify }}
           {{ else }}
           {{ $.Page.Description }}
           {{ end }}
