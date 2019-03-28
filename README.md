@@ -1,5 +1,8 @@
 # CDAP website
 
+[![Build Status](https://travis-ci.org/cdapio/website.svg?branch=develop)](https://travis-ci.org/cdapio/website)
+
+
 This site is built using [hugo](https://gohugo.io).
 Follow [instruction](https://gohugo.io/getting-started/installing/) to install hugo.
 
