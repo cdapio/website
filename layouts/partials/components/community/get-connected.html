@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="not-apply">{{ .title }}</h3>
+      <p class="not-apply">{{ .description }}</p>
+    </div>
+  </div>
+  <div class="row">
+    {{ range .items }}
+      <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+        <div class="get-connected__item">
+          <h4 class="not-apply">{{ .title }}</h4>
+          <p class="not-apply">{{ .body }}</p>
+          {{ range .links }}
+          <div class="d-flex align-items-center mt-auto">
+            {{ with .icon }}
+            <div class="get-connected__wrapper">
+              <img  src="{{ . }}" />
+            </div>
+            {{ end }}
+            <a href="#">{{ .title }}</a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>

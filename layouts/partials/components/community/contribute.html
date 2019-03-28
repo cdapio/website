@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="not-apply">{{ .title }}</h3>
+      <p class="not-apply">{{ .description }}</p>
+    </div>
+  </div>
+  <div class="row">
+    {{ range .items }}
+    <div class="col-lg-6 col-sm-12 mt-4">
+      <h4 class="not-apply">{{ .title }}</h4>
+      <p class="not-apply">{{ .body | safeHTML }}</p>
+      {{ range .links }}
+      <div>
+        <a href="#">{{ .title }}</a>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,30 @@
+{{- define "main" -}}
+<div class="community">
+  <section class="get-connected">
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    {{ with $tabs := $data.community.get_connected }}
+      {{ range $tabs }}
+        {{ partial "components/community/get-connected" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+
+  <section class="contribute">
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    {{ with $tabs := $data.community.contribute}}
+      {{ range $tabs }}
+        {{ partial "components/community/contribute" . }}
+    {{ end }}
+    {{ end }}
+  </section>
+
+  <section class="twitter">
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    {{ with $tabs := $data.community.twitter }}
+      {{ range $tabs }}
+        {{ partial "components/community/twitter" . }}
+    {{ end }}
+    {{ end }}
+  </section>
+</div>
+{{ end }}

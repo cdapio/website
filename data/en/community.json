@@ -1,0 +1,70 @@
+{
+  "get_connected": [
+    {
+      "title": "Get connected",
+      "description": "We’re here to help if you’ve hit an issue or even if you just have a question about CDAP.",
+      "items": [
+        {
+          "title": "Ask a question",
+          "body": "You get in touch with the community using any of the following links:",
+          "links": [
+            {
+              "title": "Mailing List",
+              "icon": "/images/icons/mailing.png"
+            },
+            {
+              "title": "Slack",
+              "icon": "/images/icons/slack.jpg"
+            },
+            {
+              "title": "Stack Overflow",
+              "icon": "/images/icons/stackoverflow.png"
+            }
+          ]
+        },
+        {
+          "title": "Report a bug",
+          "body": "Tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
+          "links": [
+            {
+              "title": "Jira",
+              "icon": "/images/icons/jira.png"
+            }
+          ]
+        },
+        {
+          "title": "Join the BDAM group",
+          "body": "community focused on solving real world problems using Big Data technologies.",
+          "links": [
+            {
+              "title": "View Meetup",
+              "icon": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contribute": [
+    {
+      "title": "Contribute",
+      "description": "You can either contribute to the core CDAP framework, or to one of the plugins. ",
+      "items": [
+        {
+          "title": "Contribute to core CDAP",
+          "body": "The CDAP repository contains the source code of the core CDAP framework. <a href='#'>Create a pull</a> request for your bug today.:"
+        },
+        {
+          "title": "Contribute to a plugin",
+          "body": "To contribute to a CDAP plugin, <a href='#'>create a pull</a> request to one of the many plugin repositories under the Data Integrations organization on Github."
+        }
+      ]
+    }
+  ],
+  "twitter": [
+    {
+      "title": "Stay informed",
+      "description": "Stay informed about the latest news and announcements by following us on Twitter, subscribing to our YouTube channel, or meeting us at meetups and conferences."
+    }
+  ]
+}

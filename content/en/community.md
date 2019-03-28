@@ -1,5 +1,6 @@
 ---
 backgroundImage: images/hero-background-grey.svg
+type: community
 ---
 
 {{% hero-panel title="Community" 

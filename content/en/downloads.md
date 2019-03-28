@@ -1,3 +1,4 @@
 ---
 title: Downloads
+type: downloads
 ---

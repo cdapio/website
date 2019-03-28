@@ -103,7 +103,7 @@ enable = true
 
 [[languages.en.menu.main]]
 identifier = "Get started"
-url = "/get-started/"
+url = "/cloud/"
 name = "Get started"
 weight = 10
 
@@ -120,18 +120,16 @@ weight = 30
 
 [[languages.en.menu.main]]
 identifier = "Community"
-url = "/comm/"
+url = "/community/"
 name = "Community"
 weight = 40
 
 [[languages.en.menu.get_started]]
 identifier = "Cloud"
-url = "/get-started/cloud/"
+url = "/cloud/"
 name = "Cloud"
-weight = 40
 
 [[languages.en.menu.get_started]]
 identifier = "Premises"
-url = "/get-started/on-premises/"
+url = "/on-premises/"
 name = "On Premises"
-weight = 40
