@@ -72,11 +72,6 @@
         text-decoration: none;
         color: white;
         background-color: $deep-orange;
-
-        @include media-breakpoint-down(sm) {
-          border-left: solid 8px $deep-orange;
-          border-bottom: none;
-        }
       }
     }
 
@@ -121,6 +116,12 @@
       border-bottom: solid 8px $brownish-grey;
       @include media-breakpoint-down(sm) {
         border-left: solid 8px $brownish-grey;
+        border-bottom: none;
+      }
+    }
+    &.active {
+      @include media-breakpoint-down(sm) {
+        border-left: solid 8px $deep-orange;
         border-bottom: none;
       }
     }
@@ -176,7 +177,6 @@
       padding: 0;
 
       .external-link-icon {
-        opacity: 0.3;
         margin-left: 3px;
       }
 
@@ -192,6 +192,12 @@
           opacity: 1;
         }
       }
+    }
+
+    img {
+      height: 16px;
+      width: 20px;
+      margin-left: 4px;
     }
   }
 

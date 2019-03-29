@@ -28,10 +28,22 @@
                           {{ range .Children }}
                             <a class="dropdown-item" href="{{ .URL }}">
                               <span>{{ .Name }}</span>
-                              {{ .Post }}
+                              {{ $post_status := .Post }}
+                              {{ with $post_status }}
+                                <span class="external-link-icon">
+                                  {{ partial "svg/external-link.svg" (dict "size" "10") }}
+                                </span>
+                              {{ end }}
                             </a>
                           {{ end }}
                         </div>
+                      </li>
+                    {{ else if eq $url "/on-premises/" }}
+                      <li class="nav-item {{ if eq "/cloud/" .URL }}active {{ end }}">
+                        <a class="header__item" href="{{ .URL | relURL }}">
+                          <span>{{ .Name }}</span>
+                          {{ .Post }}
+                        </a>
                       </li>
                     {{ else }}
                       <li class="nav-item {{ if eq $url .URL }}active {{ end }}">
@@ -74,8 +86,8 @@
           </div>
         </li>
         {{ else }}
-        <li class="nav-item mt-4 {{ if $currentPage.HasMenuCurrent " main" . }}active{{ end }}">
-        <a class="header__item" href="{{ .URL }}">
+        <li class="nav-item mt-4">
+        <a class="header__item {{ if eq $url .URL }}active {{ end }}" href="{{ .URL }}">
           <span>{{ .Name }}</span>
           {{ .Post }}
         </a>

@@ -1,0 +1,45 @@
+<section class="hero-panel not-apply">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="hero-panel__title mt-4">
+        {{ with .Params.hero.link_back_title }}
+        <a href="/accelerators" class="hero-panel__link">« {{ . | markdownify }}</a>
+        {{ end }}
+        {{ with .Params.hero.title }}
+        <h4 class="not-apply">{{ . | markdownify }}</h4>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column w-100">
+    <div class="hero-panel__outer flex-grow-1" {{ with .Params.hero.background_color }} style="background-color: {{ . }}" {{ end }}>
+      <div class="container background-image" {{ with .Params.hero.background_image }} style="background-image: url('{{ . | relURL }}')" {{ end }}>
+        <div class="row">
+          <div class="hero-panel__info col-lg-6 col-md-12">
+            <p class="hero-panel__paragraph not-apply">{{ .Params.hero.body | markdownify }}</p>
+            {{ with .Params.hero.link_documentation_title }}
+              <a href="#" class="hero-panel__link">{{ . }}</a>
+            {{ end }}
+            {{ with .Params.hero.bottom_paragraph }}
+              <p class="hero-panel__bottom-paragraph not-apply">{{ . }}</p>
+            {{ end }}
+            {{ $url := .Page.URL }}
+            {{ if .Page.Params.navigation }}
+            <div class="hero-panel__navigation">
+              {{ range $element := .Site.Menus.get_started }}
+              <a href="{{ $element.URL | relURL }}"
+                 class="hero-panel__navigation-item not-apply {{ if eq $url $element.URL }}active {{ end }}">{{ $element.Name }}</a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+          <div class="hero-panel__info col-lg-6 col-md-12">
+            {{ with .Params.hero.image }}
+              <img src="/{{ . }}">
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

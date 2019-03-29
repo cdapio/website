@@ -1,0 +1,133 @@
+{
+  "cloud": [
+    {
+      "evaluate": [
+        {
+          "subTitle": "evaluate",
+          "title": "Spin up CDAP in the Cloud for Evaluation",
+          "description": "The CDAP Cloud Sandbox is a single-process package of CDAP optimized for the Cloud. Functionally identical with the CDAP Local Sandbox, it may differ in nomenclature, and may have additional optimizations - such as dedicated tabs in the Hub - specific to individual cloud providers. The CDAP Cloud Sandbox is available from the respective cloud providers&apos; Marketplaces.",
+          "items": [
+            {
+              "title": "Google Cloud Platform",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
+              "img": "/images/pipelines-plugins/google-cloud-platform.png",
+              "linkTitle": "Go to GCP Console",
+              "link": "https://cloud.google.com/cloud-console/"
+            },
+            {
+              "title": " Amazon Web Service",
+              "description": "Spin up a single-process instance of CDAP on AWS Marketplace.",
+              "img": "/images/get-started/amazon-web-services.png",
+              "linkTitle": "Go to AWS Marketplace",
+              "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
+            },
+            {
+              "title": "Microsoft Azure",
+              "description": "Spin up a single-process instance of CDAP on Azure Marketplace.",
+              "img": "/images/pipelines-plugins/microsoft-azure.png",
+              "linkTitle": "Go to Azure Marketplace",
+              "link": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cask.cdap-cloud-sandbox"
+            }
+          ]
+        }
+      ],
+      "on_production": [
+        {
+          "subTitle": "on-production",
+          "title": "Install CDAP in Mission-Critical Environments",
+          "description": "If you are ready to install CDAP on your Hadoop cluster, in your Development, Testing, or Production environments, the following options are available to you: To add CDAP to your Cloudera Manager installations, using the CDAP Custom Service Descriptor (CSD) is the way to go. To use CDAP within your Hortonworks Data Platform (HDP) environment, use Apache Ambari (note that Apache Ambari can only be used to add CDAP to an existing Hadoop cluster). If you are using MapR, BigTop or the Apache distribution of Hadoop, we provide RPM and Debian distributions of CDAP to support your varied installation needs.",
+          "items": [
+            {
+              "title": "Cloud Data Fusion on GCP",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
+              "img": "/images/get-started/data-hub.svg",
+              "linkTitle": "Go to GCP Console",
+              "link": "https://cloud.google.com/cloud-console/",
+              "id": "newFeature"
+            },
+            {
+              "title": "CDAP for Amazon EMR",
+              "description": "Installation scripts hosted on Github for running and managing CDAP on an Amazon EMR cluster.",
+              "img": "/images/get-started/amazon-emr.png",
+              "linkTitle": "Get CDAP for Amazon EMR",
+              "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
+            },
+            {
+              "title": "CDAP for Azure HDInsight",
+              "description": "Package containing installation scripts for running and managing CDAP on an Azure HDInsight cluster.",
+              "img": "/images/get-started/hd-insights-details.png",
+              "linkTitle": "Get CDAP for Azure HDInsight",
+              "link": "https://azuremarketplace.microsoft.com/en-en/marketplace/apps/cask.cdap-for-hdinsight?tab=Overview"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "on_premises": [
+    {
+      "evaluate": [
+        {
+          "subTitle": "evaluate",
+          "title": "Run CDAP Locally for Evaluation",
+          "description": "CDAP is available as four single-process packages that can be installed and run locally, i.e. without the need to install on a cluster. These packages consist of the CDAP SDK, a local runtime, the CDAP UI, the CDAP CLI, tools and examples. Everything to get you started immediately on experimenting with data applications on your laptop or desktop. Once you are ready, your local copy can be easily moved to a distributed environment. These packages are not meant for production use and no patching is available for those images once deployed.",
+          "items": [
+            {
+              "title": "Linux/Mac OSX",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
+              "img": "/images/get-started/linux-mac.png",
+              "linkTitle": "Go to GCP Console",
+              "link": "https://cloud.google.com/cloud-console/"
+            },
+            {
+              "title": "VM",
+              "description": "Spin up a single-process instance of CDAP on AWS Marketplace.",
+              "img": "/images/get-started/vm.svg",
+              "linkTitle": "Go to AWS Marketplace",
+              "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
+            },
+            {
+              "title": "Docker",
+              "description": "Spin up a single-process instance of CDAP on Azure Marketplace.",
+              "img": "/images/get-started/docker.png",
+              "linkTitle": "Go to Azure Marketplace",
+              "link": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cask.cdap-cloud-sandbox"
+            }
+          ]
+        }
+      ],
+      "on_production": [
+        {
+          "subTitle": "evaluate",
+          "title": "Get connected",
+          "description": "We’re here to help if you’ve hit an issue or even if you just have a question about CDAP.",
+          "items": [
+            {
+              "title": "CDAP for CDH",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
+              "img": "/images/get-started/cdh.png",
+              "linkTitle": "Get CDAP for CDH",
+              "link": "https://www.cloudera.com/downloads/partner/cdap.html"
+            },
+            {
+              "title": "CDAP for Ambari",
+              "description": "Installation scripts hosted on Github for running and managing CDAP on an Amazon EMR cluster.",
+              "img": "/images/get-started/ambari.png",
+              "linkTitle": "Get CDAP for Ambari",
+              "link": "https://github.com/cdapio/cdap-ambari-service"
+            },
+            {
+              "title": "CDAP for MapR, BigTop and more",
+              "description": "Package containing installation scripts for running and managing CDAP on an Azure HDInsight cluster.",
+              "img": "/images/get-started/marp.png",
+              "linkTitle": "Get CDAP for RPM/DEB",
+              "link": "https://docs.cask.co/cdap/current/en/admin-manual/installation/mapr.html"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+

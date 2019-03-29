@@ -5,13 +5,15 @@
     "tabTitle": "On Cloud",
     "title": "Get Started in the Cloud",
     "description": "Run CDAP on any major public cloud provider including <span style='white-space: nowrap;'>Amazon Web Services</span>, <span style='white-space: nowrap;',>Microsoft Azure</span> and <span style='white-space: nowrap;'>Google Cloud Platform</span>",
-    "buttonTitle": "Get Started"
+    "buttonTitle": "Get Started",
+    "url": "/cloud"
   },
   {
     "id": "profile",
     "tabTitle": "On Premises",
     "title": "Get Started in the Cloud",
     "description": "Run CDAP on any major public cloud provider including <span style='white-space: nowrap;'>Amazon Web Services</span>, <span style='white-space: nowrap;',>Microsoft Azure</span> and <span style='white-space: nowrap;'>Google Cloud Platform</span>",
-    "buttonTitle": "Get Started"
+    "buttonTitle": "Get Started",
+    "url": "/on-premises"
   }
 ]

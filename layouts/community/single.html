@@ -1,4 +1,7 @@
-{{- define "main" -}}
+{{ define "main" }}
+
+{{ partial "components/hero-panel" . }}
+
 <div class="community">
   <section class="get-connected">
     {{ $data := index .Site.Data .Site.Language.Lang }}

@@ -36,7 +36,7 @@
                  aria-labelledby="home-tab">
               <h3 class="hero__tab-title text-center mt-4">{{ .title }}</h3>
               <div class="hero__tab-body text-center mt-4">{{ .description | safeHTML }}</div>
-              <a href="{{ "/get-started" | relURL }}" class="d-flex justify-content-center hero__link">
+              <a href="{{ .url  | relURL }}" class="d-flex justify-content-center hero__link">
                 <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
               </a>
             </div>
@@ -61,10 +61,36 @@
   </div>
 </section>
 
-
-{{ with .GetPage "why.md" }}
-  {{ .Content }}
-{{ end }}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h2 class="why__title text-center">
+          {{ $data := index .Site.Data .Site.Language.Lang }}
+          {{ with $features := $data.homepage.why }}
+            {{ range $features }}
+              {{ .title }}
+            {{ end }}
+          {{ end }}
+        </h2>
+        <p class="why__paragraph text-center mt-3 d-sm-flex d-none">
+          {{ $data := index .Site.Data .Site.Language.Lang }}
+          {{ with $features := $data.homepage.why }}
+            {{ range $features }}
+              {{ .description }}
+            {{ end }}
+          {{ end }}
+        </p>
+      </div>
+    </div>
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $why := $data.homepage.why }}
+        {{ range $why }}
+          {{ partial "components/why/why" . }}
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
 
 <section class="features">
   <div class="container">
@@ -72,58 +98,66 @@
       <div class="col-12">
         <h2 class="features__title">
           {{ $data := index .Site.Data .Site.Language.Lang }}
-          {{ $data.features_homepage.title }}
+          {{ with $features := $data.features.features_home }}
+            {{ range $features }}
+              {{ .title }}
+            {{ end }}
+          {{ end }}
         </h2>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-12">
-        {{ $data := index .Site.Data .Site.Language.Lang }}
-        {{ with $data.features_homepage }}
-          {{ range $element := $data.features_homepage.firstColumn }}
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $features := $data.features.features_home }}
+      {{ range $features }}
+        {{ range .left_column }}
+          <div class="col-lg-6 col-md-12">
             <div class="features__block mt-5">
-              <h4 class="features__title mb-4">{{ $element.header }}</h4>
-              <p id="{{ $element.id }}" class="features__body d-sm-flex collapse">{{ $element.paragraph }}</p>
-              <a id="{{ $element.id }}btn"
+              <h4 class="features__title mb-4">{{ .header }}</h4>
+              <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
+              <a id="{{ .id }}btn"
                class="d-sm-none d-flex mt-4"
                href="#"
                data-toggle="collapse"
-               data-target="#{{ $element.id }}"
-               onclick="learnMore({{ $element.id }})">
+               data-target="#{{ .id }}"
+               onclick="learnMore({{ .id }})">
                 Learn More
               </a>
             </div>
-          {{ end }}
-        {{ end }}
-      </div>
+          </div>
+      {{ end }}
+      {{ end }}
+      {{ end }}
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $features := $data.features.features_home }}
+      {{ range $features }}
+      {{ range .right_column }}
       <div class="col-lg-6 col-md-12">
-        {{ $data := index .Site.Data .Site.Language.Lang }}
-        {{ with $data.features_homepage }}
-          {{ range $element := $data.features_homepage.secondColumn }}
-            <div class="features__block mt-5">
-              <h4 class="features__title mb-4">{{ $element.header }}</h4>
-              <p id="{{ $element.id }}" class="features__body d-sm-flex collapse">{{ $element.paragraph }}</p>
-              <a id="{{ $element.id }}btn"
-                 class="d-sm-none d-flex mt-4"
-                 href="#"
-                 data-toggle="collapse"
-                 data-target="#{{ $element.id }}"
-                 onclick="learnMore({{ $element.id }})">
-                Learn More
-              </a>
-            </div>
-          {{ end }}
-        {{ end }}
+        <div class="features__block mt-5">
+          <h4 class="features__title mb-4">{{ .header }}</h4>
+          <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
+          <a id="{{ .id }}btn"
+             class="d-sm-none d-flex mt-4"
+             href="#"
+             data-toggle="collapse"
+             data-target="#{{ .id }}"
+             onclick="learnMore({{ .id }})">
+            Learn More
+          </a>
+        </div>
       </div>
+      {{ end }}
+      {{ end }}
+      {{ end }}
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-12 text-center pb-5">
         {{ with .Site.Params.cta.title }}
-          <button class="btn-cta mt-3">{{ . }}</button>
+          <button class="btn-cta mt-3" onclick="location.href='/cloud'">{{ . }}</button>
         {{ end }}
       </div>
     </div>
@@ -144,26 +178,27 @@
   </div>
   <div class="container mt-5">
     <div class="row">
-      {{ $blocks := where .Site.RegularPages "Type" "in" (slice "resources" "accelerators") }}
-      {{ $blocks := $blocks | intersect (where .Site.RegularPages "Params.image" "!=" nil) }}
-      {{ range $blocks }}
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $accelerators := $data.accelerators.pipelines }}
+      {{ range $accelerators }}
         <div class="col-lg-3 col-md-6 mb-5">
-          <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1" onclick="window.location='{{ .Params.url | relURL }}'">
-            <img src="{{ .Params.image }}" class="accelerators__item-image"/>
+          <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1" onclick="window.location='{{ .url | relURL }}'">
+            <img src="{{ .image }}" class="accelerators__item-image"/>
             <div class="accelerators__inner-wrapper">
-              <h4 class="accelerators__item-title">{{ .Params.blockTitle }}</h4>
-              <p class="accelerators__item-body not-apply">{{ .Content | markdownify }}</p>
-              <a href="{{ .Params.url }}" class="d-flex accelerators__link">{{ .Params.urlTitle }}</a>
+              <h4 class="accelerators__item-title">{{ .title }}</h4>
+              <p class="accelerators__item-body not-apply">{{ .body | safeHTML }}</p>
+              <a href="{{ .url }}" class="d-flex accelerators__link">{{ .urlTitle }}</a>
             </div>
           </div>
         </div>
+      {{ end }}
       {{ end }}
     </div>
     <div class="container accelerators__btnBlock">
       <div class="row">
         <div class="col-12 text-center">
           {{ with .Site.Params.cta.title }}
-            <button class="btn-cta mt-3">{{ . }}</button>
+            <button class="btn-cta mt-3" onclick="location.href='/cloud'">{{ . }}</button>
           {{ end }}
         </div>
       </div>
@@ -192,7 +227,7 @@
       <div class="row">
         <div class="col-12 text-center">
           {{ with .Site.Params.cta.title }}
-            <button class="btn-cta mt-3">{{ . }}</button>
+            <button class="btn-cta mt-3" onclick="location.href='/cloud'">{{ . }}</button>
           {{ end }}
         </div>
       </div>

@@ -167,18 +167,14 @@ section.hero {
 .hero-panel {
   display: flex;
   flex-direction: column;
-  min-height: 440px;
   font-size: 25px;
   background-image: url('/images/background-cover-secondary.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @include media-breakpoint-down(sm) {
-    min-height: 575px;
-  }
-
   .container {
+    height: 60px;
 
     @include media-breakpoint-up(sm) {
       padding: 0;
@@ -205,9 +201,8 @@ section.hero {
   }
 
   &__title {
+    line-height: .8;
     height: 60px;
-    padding-top: 8px;
-    line-height: .6;
   }
 
   &__navigation {
@@ -235,11 +230,19 @@ section.hero {
   &__outer {
     display: flex;
     flex-direction: column;
+    min-height: 380px;
+    @include media-breakpoint-down(sm) {
+      min-height: 515px;
+    }
 
     .background-image {
       background-position: bottom right;
       background-repeat: no-repeat;
       background-size: cover;
+      min-height: 380px;
+      @include media-breakpoint-down(sm) {
+        min-height: 515px;
+      }
 
       @include media-breakpoint-up(md) {
         background-position: center right;

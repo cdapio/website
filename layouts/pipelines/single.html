@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+{{ partial "components/hero-panel" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $features := $data.features.features_pipeline }}
+{{ range $features }}
+  {{ partial "components/feature/feature" . }}
+{{ end }}
+{{ end }}
+
+<section class="plugins">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="plugins__title"></h2>
+        <p class="mt-4 mt-lg-0"></p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $plugins := $data.plugins }}
+      {{ range $plugins }}
+      <div class="col-lg-3 col-md-6">
+        <div class="plugins__item mt-5 mt-lg-0">
+          <div class="plugins__image-wrapper">
+            <img src="{{ .image }}" class="plugins__image"/>
+          </div>
+          <div class="plugins__block-title">{{ .title }}</div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="plugins__footer d-flex flex-column flex-lg-row align-items-center">
+          <a href="">
+            <button class="btn-small">View all connectors</button>
+          </a>
+          <a href="#" class="plugins__link mt-5 ml-0 mt-lg-0 ml-lg-5">View all transformations</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

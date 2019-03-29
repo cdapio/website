@@ -1,0 +1,31 @@
+<section class="features">
+  <div class="container mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="features__title">{{ .title }}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          {{ range .left_column }}
+            <div class="features__block mt-5">
+              <h4 class="features__title">{{ .header }}</h4>
+              <p class="features__body">{{ .paragraph }}</p>
+            </div>
+          {{ end }}
+        </div>
+        <div class="col-lg-6 col-md-12">
+          {{ range .right_column }}
+          <div class="features__block mt-5">
+            <h4 class="features__title">{{ .header }}</h4>
+            <p class="features__body">{{ .paragraph }}</p>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

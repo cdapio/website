@@ -1,0 +1,34 @@
+{
+  "why": [
+    {
+      "title": "Why CDAP",
+      "description": "CDAP lets developers, business analysts and data scientists focus on insights, analytics and business value instead of wrestling with infrastructure, and integration.",
+      "items": [
+        {
+          "header": "Reduced complexity",
+          "icon": "images/icons/icon-1.svg",
+          "paragraph": "CDAP lowers barrier to entry to complex technologies. It increases developer productivity through focus on business logic; and leads to accelerated ROI",
+          "id": "reduced-complexity"
+        },
+        {
+          "header": "Increased velocity",
+          "icon": "images/icons/icon-2.svg",
+          "paragraph": "CDAP platform and intuitive UI allow, rapid onboarding and faster time to production. It provides business value, by reducing repetition and silos, and promoting reuse and self service: build once, run anywhere",
+          "id": "increased-velocity"
+        },
+        {
+          "header": "Increased flexibility",
+          "icon": "images/icons/icon-3.svg",
+          "paragraph": "CDAP is 100% open source, portable and extensible. It integrates with latest Big Data and Cloud technologies.",
+          "id": "increased-flexibility"
+        },
+        {
+          "header": "Improved visibility",
+          "icon": "images/icons/icon-4.svg",
+          "paragraph": "CDAP gives greater visibility on your data, by allowing to search metadata, and providing insight into data lineage.",
+          "id": "improved-visibility"
+        }
+      ]
+    }
+  ]
+}
