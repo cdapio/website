@@ -4,12 +4,12 @@
     {{ $blocks := $blocks | intersect (where .Site.RegularPages "Params.image" "!=" nil) }}
     {{ range $blocks }}
     <div class="accelerators-info__wrapper col-lg-6 col-md-12">
-      <div class="accelerators-info__block" onclick="window.location='{{ .Params.url | relURL }}'">
+      <div class="accelerators-info__block" onclick="window.location='{{ .Params.url }}'">
         <img class="accelerators-info__image" src="{{ .Params.image | relURL }}" alt="Pipelines">
         <h4 class="accelerators-info__title mb-4 mt-3">{{ .Params.blockTitle }}</h4>
         <p class="accelerators-info__body">
           {{ .Content | markdownify }}
-          <a href="{{ .Params.url | relURL }}">{{ .Params.urlTitle }}</a>
+          <a href="{{ .Params.url }}">{{ .Params.urlTitle }}</a>
         </p>
       </div>
     </div>

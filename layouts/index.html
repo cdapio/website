@@ -36,7 +36,9 @@
                  aria-labelledby="home-tab">
               <h3 class="hero__tab-title text-center mt-4">{{ .title }}</h3>
               <div class="hero__tab-body text-center mt-4">{{ .description | safeHTML }}</div>
-              <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
+              <a href="{{ "/get-started" | relURL }}" class="d-flex justify-content-center hero__link">
+                <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
+              </a>
             </div>
             {{ end }}
             {{ end }}

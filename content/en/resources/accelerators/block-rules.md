@@ -1,9 +1,10 @@
 ---
 blockTitle: Rules Engine
-image: images/accellerators-details-rules.jpg
+image: images/accelerators-details-rules.jpg
 urlTitle: Show more
 url: /resources/accelerators/rules-engine/
 ---
 
-Description of Rules features and capabilities goes here. 
-Lorem ipsum dolor sit amet, consecteru adipiscing elit.Lorem ipsum dolor sit amet, consecteru adipiscing elit.
+Rules Engine provides a way for business analysts to create and manage a knowledge base of data transformation rules 
+that need to be automatically applied to your data. It contains an intuitive UI for business analysts to set up 
+business rules that can be executed in a data pipeline. 

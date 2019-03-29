@@ -29,7 +29,7 @@
   <div class="container">
     <ul class="plugins-small__wrapper">
       {{ $data := index .Site.Data .Site.Language.Lang }}
-      {{ with $plugins := $data.plugins_small }}
+      {{ with $plugins := $data.plugins_list }}
         {{ range $plugins }}
           <li class="plugins-small__item mt-5 ml-auto mr-auto ml-md-0 mr-md-4">
             <div class="plugins-small__image">

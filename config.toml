@@ -102,11 +102,36 @@ enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
 
 [[languages.en.menu.main]]
+identifier = "Get started"
+url = "/get-started/"
+name = "Get started"
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "Downloads"
+url = "/downloads/"
+name = "Downloads"
+weight = 20
+
+[[languages.en.menu.main]]
 identifier = "RESOURCES"
-name = "RESOURCES"
+name = "Resources"
 weight = 30
 
 [[languages.en.menu.main]]
 identifier = "Community"
-name = "COMMUNITY"
+url = "/comm/"
+name = "Community"
+weight = 40
+
+[[languages.en.menu.get_started]]
+identifier = "Cloud"
+url = "/get-started/cloud/"
+name = "Cloud"
+weight = 40
+
+[[languages.en.menu.get_started]]
+identifier = "Premises"
+url = "/get-started/on-premises/"
+name = "On Premises"
 weight = 40

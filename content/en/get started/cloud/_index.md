@@ -1,7 +1,5 @@
 ---
-title: Get Started
-name: "Get Started"
-backgroundImage: images/hero-background-grey.svg
+title: Cloud
 navigation: true
 ---
 

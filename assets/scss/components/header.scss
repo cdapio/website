@@ -57,8 +57,28 @@
   }
 
   .nav-item {
+    position: relative;
     margin-right: 56px;
     cursor: pointer;
+
+    &.active {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 110%;
+        left: -5%;
+        bottom: -15px;
+        height: 11px;
+        text-decoration: none;
+        color: white;
+        background-color: $deep-orange;
+
+        @include media-breakpoint-down(sm) {
+          border-left: solid 8px $deep-orange;
+          border-bottom: none;
+        }
+      }
+    }
 
     .header__item {
       color: $white;
@@ -82,10 +102,7 @@
     color: white;
     letter-spacing: .3px;
     padding-bottom: 8px;
-
-    & > span {
-      text-transform: uppercase;
-    }
+    text-transform: uppercase;
 
     @include media-breakpoint-down(md) {
       font-size: 13px;
@@ -104,16 +121,6 @@
       border-bottom: solid 8px $brownish-grey;
       @include media-breakpoint-down(sm) {
         border-left: solid 8px $brownish-grey;
-        border-bottom: none;
-      }
-    }
-
-    &:active {
-      text-decoration: none;
-      color: white;
-      border-bottom: solid 8px $deep-orange;
-      @include media-breakpoint-down(sm) {
-        border-left: solid 8px $deep-orange;
         border-bottom: none;
       }
     }

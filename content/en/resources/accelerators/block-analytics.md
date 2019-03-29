@@ -1,9 +1,10 @@
 ---
 blockTitle: Analytics 
-image: images/accellerators-details-analytics.jpg
+image: images/accelerators-details-analytics.jpg
 urlTitle: Show more
 url: /resources/accelerators/analytics/
 ---
 
-Description of Analytics features and capabilities goes here. 
-Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.
+Analytics provides a simple, interactive, UI-driven approach to machine learning. It provides a seamless, 
+automated interface for users to easily develop, train, test, evaluate and deploy their machine learning models. 
+It reduces the need for ad-hoc custom tooling and promotes reusability and collaboration.  
