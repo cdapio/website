@@ -4,14 +4,15 @@ Add styles or override variables from the theme here.
 
 */
 
+@import "base/variables";
 /* Vendors */
-@import "../../themes/docsy/assets/vendor/bootstrap/scss/mixins/breakpoints";
-@import "../../themes/docsy/assets/vendor/bootstrap/scss/functions";
-@import "../../themes/docsy/assets/vendor/bootstrap/scss/bootstrap-reboot";
-@import "../../themes/docsy/assets/vendor/bootstrap/scss/variables";
+@import "../vendor/bootstrap/scss/bootstrap";
+@import "../vendor/bootstrap/scss/mixins/breakpoints";
+@import "../vendor/bootstrap/scss/functions";
+@import "../vendor/bootstrap/scss/bootstrap-reboot";
+@import "../vendor/bootstrap/scss/variables";
 
 /* Base */
-@import "base/variables";
 @import "base/base";
 @import "base/fonts";
 @import "base/mixins";

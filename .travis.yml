@@ -13,6 +13,7 @@ addons:
 before_install:
   - sudo snap install hugo --channel=extended
   - nvm install 10.4.0
+  - git submodule update --init --recursive
 
 install:
   - rm -rf public 2> /dev/null
