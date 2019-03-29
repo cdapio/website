@@ -54,7 +54,10 @@
     <div class="row">
       <div class="col-12">
         <div class="announcement__wrapper">
+          {{ $data := index .Site.Data .Site.Language.Lang }}
+          {{ with $data.gallery }}
           {{ partial "gallery.html" . }}
+          {{ end }}
         </div>
       </div>
     </div>
@@ -179,7 +182,7 @@
   <div class="container mt-5">
     <div class="row">
       {{ $data := index .Site.Data .Site.Language.Lang }}
-      {{ with $accelerators := $data.accelerators.pipelines }}
+      {{ with $accelerators := $data.accelerators.home }}
       {{ range $accelerators }}
         <div class="col-lg-3 col-md-6 mb-5">
           <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1" onclick="window.location='{{ .url | relURL }}'">

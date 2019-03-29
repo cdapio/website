@@ -22,11 +22,41 @@
       "body": "Preparation allows you to visually and interactively cleanse and prepare raw data, with the aim of making it consumable for further processing. It provides a standardized UI driven interactive flow that takes the pain out of preprocessing tasks for data engineering, data science and data analysis. <a href='#'>Learn More</a>"
     },
     {
-      "title": "Rules Engine",
+      "title": "Rules",
       "url": "/accelerators/rules-engine/",
       "urlTitle": "Show more",
       "image": "/images/accelerators-details-rules.jpg",
       "body": "Rules Engine provides a way for business analysts to create and manage a knowledge base of data transformation rules that need to be automatically applied to your data. It contains an intuitive UI for business analysts to set up business rules that can be executed in a data pipeline. <a href='#'>Learn More</a>"
+    }
+  ],
+  "home": [
+    {
+      "title": "Analytics",
+      "url": "/accelerators/analytics/",
+      "urlTitle": "Show more",
+      "image": "/images/accelerators-details-analytics.jpg",
+      "body": "Analytics provides a simple, interactive, automated interface for users to easily develop, train, test, evaluate and deploy their machine learning models."
+    },
+    {
+      "title": "Pipelines",
+      "url": "/accelerators/pipelines/",
+      "urlTitle": "Show more",
+      "image": "/images/accelerators-details-pipeline.jpg",
+      "body": "Pipelines provides an easy-to-use graphical data integration interface to bring together data from a myriad of different sources and define transformations visually."
+    },
+    {
+      "title": "Preparation",
+      "url": "/accelerators/preparation/",
+      "urlTitle": "Show more",
+      "image": "/images/accelerators-details-preparation.jpg",
+      "body": "Preparation allows you to visually and interactively cleanse and prepare raw data, to make it consumable for further processing."
+    },
+    {
+      "title": "Rules",
+      "url": "/accelerators/rules-engine/",
+      "urlTitle": "Show more",
+      "image": "/images/accelerators-details-rules.jpg",
+      "body": "Rules Engine provides a way for business analysts to create and manage a knowledge base of data transformation rules that need to be automatically applied to your data."
     }
   ]
 }

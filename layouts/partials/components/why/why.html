@@ -5,7 +5,7 @@
       {{ with .icon }}
         <img class="why__image" src="{{ . }}">
       {{ end }}
-      <h3 class="why__block-title text-center mt-4 not-apply">{{ .header }}</h3>
+      <h3 class="why__block-title text-center mt-4 not-apply">{{ .header | safeHTML }}</h3>
       <div id="{{ .id }}" class="why__block-body text-center mt-4 d-sm-flex collapse">
         {{ .paragraph }}
       </div>

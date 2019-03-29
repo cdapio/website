@@ -3,29 +3,23 @@
      data-ride="carousel"
      data-interval="false">
   <ol class="carousel-indicators">
-    {{ $data := index .Site.Data .Site.Language.Lang }}
-    {{ with $data.gallery }}
       {{ range $index, $element := . }}
         <li data-target="#carouselCaptions" data-slide-to="{{ $index }}" class="{{ if $element.active }} active {{ end }}"></li>
       {{ end }}
-    {{ end }}
   </ol>
   <div class="carousel-inner">
-    {{ $data := index .Site.Data .Site.Language.Lang }}
-    {{ with $gallery := $data.gallery }}
-      {{ range $gallery }}
-        <div class="carousel-item {{ if .active }} active {{ end }}">
+      {{ range $item := . }}
+        <div class="carousel-item {{ if $item.active }} active {{ end }}">
           <div class="announcement__media d-flex flex-column flex-md-row">
-            <img src="{{ .imageUrl }}.jpg" class="announcement__carousel-img align-self-top"
+            <img src="{{ $item.imageUrl }}.jpg" class="announcement__carousel-img align-self-top"
                  alt="announcement">
             <div class="announcement__media-body">
-              <h2 class="announcement__title not-apply">{{ .title }}</h2>
-              <p class="not-apply"> {{ .description }}  </p>
-              <a class="btn btn-link mt-3" href="#"> {{ .linkTitle }} </a>
+              <h2 class="announcement__title not-apply">{{ $item.title }}</h2>
+              <p class="not-apply"> {{ $item.description }}  </p>
+              <a class="btn btn-link mt-3" href="#"> {{ $item.linkTitle }} </a>
             </div>
           </div>
         </div>
-      {{ end }}
     {{ end }}
   </div>
 </div>

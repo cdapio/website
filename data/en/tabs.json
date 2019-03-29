@@ -11,8 +11,8 @@
   {
     "id": "profile",
     "tabTitle": "On Premises",
-    "title": "Get Started in the Cloud",
-    "description": "Run CDAP on any major public cloud provider including <span style='white-space: nowrap;'>Amazon Web Services</span>, <span style='white-space: nowrap;',>Microsoft Azure</span> and <span style='white-space: nowrap;'>Google Cloud Platform</span>",
+    "title": "Get Started on premises",
+    "description": "Run CDAP on-premises on your own Apache Hadoop or Kubernetes based clusters.",
     "buttonTitle": "Get Started",
     "url": "/on-premises"
   }

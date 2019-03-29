@@ -2,6 +2,37 @@
 
 {{ partial "components/hero-panel" . }}
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 offset-2">
+        <h2 class="why__title text-center">
+          {{ $data := index .Site.Data .Site.Language.Lang }}
+          {{ with $features := $data.why_pipelines.why }}
+          {{ range $features }}
+          {{ .title }}
+          {{ end }}
+          {{ end }}
+        </h2>
+        <p class="why__paragraph text-center mt-3 d-sm-flex d-none">
+          {{ $data := index .Site.Data .Site.Language.Lang }}
+          {{ with $features := $data.why_pipelines.why }}
+          {{ range $features }}
+          {{ .description }}
+          {{ end }}
+          {{ end }}
+        </p>
+      </div>
+    </div>
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    {{ with $why := $data.why_pipelines.why }}
+    {{ range $why }}
+    {{ partial "components/why/why" . }}
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ with $features := $data.features.features_pipeline }}
 {{ range $features }}
@@ -13,8 +44,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="plugins__title"></h2>
-        <p class="mt-4 mt-lg-0"></p>
+        <h2 class="plugins__title">Plugins</h2>
+        <p class="mt-4 mt-lg-0">Pipelines support a variety of plugins for connecting to cloud and onprem services as well as to perform data transformations. </p>
       </div>
     </div>
   </div>

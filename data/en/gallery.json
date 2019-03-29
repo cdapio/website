@@ -1,6 +1,6 @@
 [
   {
-    "imageUrl": "images/announcement-1",
+    "imageUrl": "/images/announcement-1",
     "active": true,
     "title": "Annoucement title goes here",
     "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
@@ -8,21 +8,21 @@
     "linkUrl": "#"
   },
   {
-    "imageUrl": "images/announcement-2",
+    "imageUrl": "/images/announcement-2",
     "title": "Annoucement title goes here",
     "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
     "linkTitle": "Learn more",
     "linkUrl": "#"
   },
   {
-    "imageUrl": "images/announcement-3",
+    "imageUrl": "/images/announcement-3",
     "title": "Annoucement title goes here",
     "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
     "linkTitle": "Learn more",
     "linkUrl": "#"
   },
   {
-    "imageUrl": "images/announcement-4",
+    "imageUrl": "/images/announcement-4",
     "title": "Annoucement title goes here",
     "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
     "linkTitle": "Learn more",
