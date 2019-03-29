@@ -1,40 +1,26 @@
-# copy from https://axdlog.com/zh/2018/using-hugo-and-travis-ci-to-deploy-blog-to-github-pages-automatically/
-# https://docs.travis-ci.com/user/deployment/pages/
-# https://docs.travis-ci.com/user/languages/python/
 language: python
+dist: xenial
+cache: npm
 
 python:
-    - "3.6"
-
-notifications:
-  email:
-    on_success: always # default: change
-    on_failure: always # default: always
-
+  - "3.6"
 
 addons:
   apt:
     packages:
       - python-pygments
 
-# ref: https://discourse.gohugo.io/t/solved-hugo-v44-extended-and-relocation-errors-on-travis/13029/3
 before_install:
-  # This workaround is required to avoid libstdc++ errors while running "extended" hugo with SASS support.
-  - wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
-  - sudo dpkg --force-all -i libstdc++6
+  - sudo snap install hugo --channel=extended
+  - git submodule update --init --remote --recursive
+  - nvm install 10.4.0
 
 install:
-    # install latest release version
-    #- wget $(wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}')
-    #- wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{/extended/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}}' | xargs wget
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.50/hugo_extended_0.50_Linux-64bit.deb
-    - sudo dpkg -i hugo*.deb
-    - rm -rf public 2> /dev/null
-    - nvm install 6.4.0
-    - npm install -g markdown-spellcheck
-    - npm install -g link-checker
+  - rm -rf public 2> /dev/null
+  - npm install
 
 script:
-    - hugo
-    - mdspell "content/**/*.md" --ignore-numbers --ignore-acronyms --report
-    - link-checker public
+  - hugo
+  # TODO: enable after adding dictionary
+  - npm run test:spelling || true
+  - npm run test:links || true
