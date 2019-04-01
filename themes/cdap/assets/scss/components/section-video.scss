@@ -1,7 +1,26 @@
 .videos {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: .5rem;
+    grid-column-gap: 10px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(auto-fill, 260px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+  }
+
   &__video {
-    min-height: 168px;
-    background-color: $white-20;
+    height: 168px;
+    width: 270px;
     border: 1px solid $gray-5;
+    margin-top: 40px;
   }
 }

@@ -46,19 +46,3 @@ function search() {
   });
   searchResult.style.display = !showPlugins.length ? '' : 'none';
 }
-
-// New feature date check
-
-$(document).ready( () => {
-
-  const current = new Date();
-  const expiry = new Date("April 11, 2019 00:00:00");
-
-  if (current.getTime() < expiry.getTime()) {
-    $('#newFeature').remove();
-  }
-  $('.services').animate({
-    opacity: 1
-  }, 500 );
-
-});

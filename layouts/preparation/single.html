@@ -1,40 +1,19 @@
 {{ define "main" }}
-  {{ partial "components/hero-panel" . }}
-  {{ $data := index .Site.Data .Site.Language.Lang }}
-  {{ with $features := $data.features.features_preparation }}
-    {{ range $features }}
-      {{ partial "components/feature/feature" . }}
-    {{ end }}
-  {{ end }}
 
-<section class="videos" id="videos">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="plugins__title">Videos</h2>
-      </div>
-    </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="videos__video mt-5 mt-lg-0">
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="videos__video mt-5 mt-lg-0">
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="videos__video mt-5 mt-lg-0">
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="videos__video mt-5 mt-lg-0">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "components/hero-panel" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $features := $data.features.features_preparation }}
+{{ range $features }}
+{{ partial "components/feature/feature" . }}
+{{ end }}
+{{ end }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $videos := $data.preparations.videos }}
+{{ range $videos }}
+{{ partial "components/preparations/videos" . }}
+{{ end }}
+{{ end }}
 
 {{ end }}
