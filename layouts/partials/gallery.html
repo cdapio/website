@@ -16,8 +16,10 @@
             {{ range $item := . }}
             <div class="carousel-item {{ if $item.active }} active {{ end }}">
               <div class="announcement__media d-flex flex-column flex-md-row">
-                <img src="{{ $item.imageUrl }}.jpg" class="announcement__carousel-img align-self-top"
-                     alt="announcement">
+                <div class="announcement__carousel-figure">
+                  <img src="{{ $item.imageUrl }}" class="announcement__carousel-img align-self-top"
+                      alt="announcement">
+                </div>
                 <div class="announcement__media-body">
                   <h2 class="announcement__title not-apply">{{ $item.title }}</h2>
                   <p class="not-apply"> {{ $item.description }} </p>

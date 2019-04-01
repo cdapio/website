@@ -10,15 +10,18 @@
           "links": [
             {
               "title": "Mailing List",
-              "icon": "/images/icons/mailing.png"
+              "icon": "/images/icons/mailing.png",
+              "href": "https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/cdap-user"
             },
             {
               "title": "Slack",
-              "icon": "/images/icons/slack.jpg"
+              "icon": "/images/icons/slack.jpg",
+              "href": "https://cdap-users.herokuapp.com/"
             },
             {
               "title": "Stack Overflow",
-              "icon": "/images/icons/stackoverflow.png"
+              "icon": "/images/icons/stackoverflow.png",
+              "href": "https://stackoverflow.com/questions/tagged/cdap"
             }
           ]
         },
@@ -28,7 +31,8 @@
           "links": [
             {
               "title": "Jira",
-              "icon": "/images/icons/jira.png"
+              "icon": "/images/icons/jira.png",
+              "href": "https://issues.cask.co/projects/CDAP/issues"
             }
           ]
         },
@@ -38,7 +42,8 @@
           "links": [
             {
               "title": "View Meetup",
-              "icon": false
+              "icon": false,
+              "href": "https://www.meetup.com/BigDataApps/"
             }
           ]
         }
@@ -52,11 +57,13 @@
       "items": [
         {
           "title": "Contribute to core CDAP",
-          "body": "The CDAP repository contains the source code of the core CDAP framework. <a href='#'>Create a pull</a> request for your bug today.:"
+          "body": "The CDAP repository contains the source code of the core CDAP framework. <a href=\"https://github.com/cdapio/cdap\" target=\"_blank\">Create a pull</a> request for your bug today.:",
+          "href": ""
         },
         {
           "title": "Contribute to a plugin",
-          "body": "To contribute to a CDAP plugin, <a href='#'>create a pull</a> request to one of the many plugin repositories under the Data Integrations organization on Github."
+          "body": "To contribute to a CDAP plugin, <a href=\"https://github.com/data-integrations\" target=\"_blank\">create a pull</a> request to one of the many plugin repositories under the Data Integrations organization on Github.",
+          "href": ""
         }
       ]
     }
@@ -70,19 +77,17 @@
   "announcement":
   [
     {
-      "imageUrl": "/images/bdam-header",
+      "imageUrl": "/images/bdam-header.jpg",
       "active": true,
       "title":"Big Data Applications Meetup",
       "description": "Join us for the next Big Data Applications Meetup at Google San Francisco on 04/10. ",
       "linkTitle": "RSVP here",
-      "linkUrl": "#"
+      "linkUrl": "https://www.meetup.com/BigDataApps/events/259996482/"
     },
     {
-      "imageUrl": "/images/bdam-header",
-      "title": "Big Data Applications Meetup",
-      "description": "Join us for the next Big Data Applications Meetup at Google San Francisco on 04/10. ",
-      "linkTitle": "RSVP here",
-      "linkUrl": "#"
+      "imageUrl": "/images/get-started/google-cloud-platform.png",
+      "title": "Google CloudNext ’19",
+      "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center"
     }
   ]
 }

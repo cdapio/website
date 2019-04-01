@@ -115,9 +115,14 @@ section.announcement {
     }
   }
 
+  &__carousel-figure {
+    min-width: 252px;
+    text-align: center;
+  }
+
   &__carousel-img {
     height: 171px;
-    width: 252px;
+    width: auto;
     margin-right: 28px;
 
     @include media-breakpoint-down(md) {

@@ -18,7 +18,9 @@
               <img  src="{{ . }}" />
             </div>
             {{ end }}
-            <a href="#">{{ .title }}</a>
+            <a href="{{ .href | default "#"}}" target="_blank">
+              {{ .title }}
+            </a>
           </div>
           {{ end }}
         </div>
