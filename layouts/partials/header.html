@@ -80,7 +80,12 @@
             {{ range .Children }}
             <a class="dropdown-item" href="{{ .URL }}">
               <span>{{ .Name }}</span>
-              {{ .Post }}
+              {{ $post_status := .Post }}
+              {{ with $post_status }}
+              <span class="external-link-icon">
+                                  {{ partial "svg/external-link.svg" (dict "size" "10") }}
+                                </span>
+              {{ end }}
             </a>
             {{ end }}
           </div>

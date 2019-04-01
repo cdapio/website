@@ -161,6 +161,14 @@
     }
   }
 
+  .dropdown-item {
+    &:active {
+      path {
+        fill: $deep-orange;
+      }
+    }
+  }
+
   .dropdown-menu {
     padding: 12px 25px 22px 17px;
     margin: 0;
