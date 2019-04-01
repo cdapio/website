@@ -174,7 +174,6 @@ section.hero {
   background-size: cover;
 
   .container {
-    height: 60px;
 
     @include media-breakpoint-up(sm) {
       padding: 0;
@@ -202,7 +201,10 @@ section.hero {
 
   &__title {
     line-height: .8;
-    height: 60px;
+    height: 70px;
+    @include media-breakpoint-up(lg) {
+      padding-left: 0.5rem;
+    }
   }
 
   &__navigation {
@@ -233,6 +235,9 @@ section.hero {
     min-height: 380px;
     @include media-breakpoint-down(sm) {
       min-height: 515px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 1rem;
     }
 
     .background-image {
