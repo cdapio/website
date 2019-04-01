@@ -1,1 +1,23 @@
+.get-started {
+  .background-image {
+    min-height: unset;
 
+    @include media-breakpoint-down(sm) {
+      min-height: unset;
+    }
+  }
+
+  .hero-panel {
+    &__navigation {
+      margin-bottom: 0;
+    }
+
+    &__outer {
+      min-height: unset;
+
+      @include media-breakpoint-down(sm) {
+        min-height: unset;
+      }
+    }
+  }
+}

@@ -8,5 +8,5 @@ hero:
   navigation: true
   bottom_paragraph: "Start by selecting where your CDAP is going to run"
   background_color: "#6E6E6E"
-  background_image: /images/hero-background-grey.svg
+  background_image_secondary: /images/hero-background-grey.svg
 ---

@@ -173,6 +173,21 @@ section.hero {
   background-position: center;
   background-size: cover;
 
+  .background-image {
+    background-position: 90% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 380px;
+
+    @include media-breakpoint-down(sm) {
+      min-height: 515px;
+    }
+
+    @include media-breakpoint-up(md) {
+      background-size: unset;
+    }
+  }
+
   .container {
 
     @include media-breakpoint-up(sm) {
@@ -208,8 +223,14 @@ section.hero {
   }
 
   &__navigation {
+    display: flex;
     margin-top: 35px;
     margin-bottom: 10px;
+    justify-content: center;
+
+    @include media-breakpoint-up(sm) {
+      justify-content: flex-start;
+    }
   }
 
   &__navigation-item {
@@ -217,7 +238,11 @@ section.hero {
     font-weight: bold;
     letter-spacing: 0.2px;
     color: $white;
-    padding: 0 62px;
+    padding: 0 10px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 62px;
+    }
 
     &:link, &:hover {
       color: inherit;
@@ -233,26 +258,13 @@ section.hero {
     display: flex;
     flex-direction: column;
     min-height: 380px;
+
     @include media-breakpoint-down(sm) {
       min-height: 515px;
     }
+
     @include media-breakpoint-up(lg) {
       padding-left: 1rem;
-    }
-
-    .background-image {
-      background-position: bottom right;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 380px;
-      @include media-breakpoint-down(sm) {
-        min-height: 515px;
-      }
-
-      @include media-breakpoint-up(md) {
-        background-position: center right;
-        background-size: unset;
-      }
     }
   }
 

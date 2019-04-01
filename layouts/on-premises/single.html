@@ -1,18 +1,20 @@
 {{ define "main" }}
-  {{ partial "components/hero-panel" . }}
-  {{ $data := index .Site.Data .Site.Language.Lang }}
-  {{ with $tabs := $data.get_started.on_premises }}
-    {{ range $tabs }}
-      {{ range .evaluate }}
-        {{ partial "components/services/services" . }}
+  <div class="get-started">
+    {{ partial "components/hero-panel" . }}
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    {{ with $tabs := $data.get_started.on_premises }}
+      {{ range $tabs }}
+        {{ range .evaluate }}
+          {{ partial "components/services/services" . }}
+        {{ end }}
       {{ end }}
     {{ end }}
-  {{ end }}
-  {{ with $tabs := $data.get_started.on_premises }}
-    {{ range $tabs }}
-      {{ range .on_production }}
-        {{ partial "components/services/services" . }}
+    {{ with $tabs := $data.get_started.on_premises }}
+      {{ range $tabs }}
+        {{ range .on_production }}
+          {{ partial "components/services/services" . }}
+        {{ end }}
       {{ end }}
     {{ end }}
-  {{ end }}
+  </div>
 {{ end }}

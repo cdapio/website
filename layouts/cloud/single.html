@@ -1,37 +1,38 @@
 {{ define "main" }}
-  {{ partial "components/hero-panel" . }}
-  {{ $data := index .Site.Data .Site.Language.Lang }}
-  {{ with $tabs := $data.get_started.cloud }}
-    {{ range $tabs }}
-      {{ range .evaluate }}
-        {{ partial "components/services/services" . }}
+  <div class="get-started">
+    {{ partial "components/hero-panel" . }}
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    {{ with $tabs := $data.get_started.cloud }}
+      {{ range $tabs }}
+        {{ range .evaluate }}
+          {{ partial "components/services/services" . }}
+        {{ end }}
       {{ end }}
     {{ end }}
-  {{ end }}
-  {{ with $tabs := $data.get_started.cloud }}
-    {{ range $tabs }}
-      {{ range .on_production }}
-        {{ partial "components/services/services" . }}
+    {{ with $tabs := $data.get_started.cloud }}
+      {{ range $tabs }}
+        {{ range .on_production }}
+          {{ partial "components/services/services" . }}
+        {{ end }}
       {{ end }}
     {{ end }}
-  {{ end }}
 
-<section class="resources">
-  <div class="container">
-    <div class="row">
-      <h2 class="resources__title"></h2>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="resources__block">
-        <img src=""/>
-        <h4 class="resources__header"></h4>
-        <p class="resources__description"></p>
-        <a href=""></a>
+    <section class="resources">
+      <div class="container">
+        <div class="row">
+          <h2 class="resources__title"></h2>
+        </div>
       </div>
-    </div>
+      <div class="container">
+        <div class="row">
+          <div class="resources__block">
+            <img src=""/>
+            <h4 class="resources__header"></h4>
+            <p class="resources__description"></p>
+            <a href=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-</section>
-
 {{ end }}

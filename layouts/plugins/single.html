@@ -29,16 +29,18 @@
   <div class="container">
     <ul class="plugins-small__wrapper">
       {{ $data := index .Site.Data .Site.Language.Lang }}
-      {{ with $plugins := $data.plugins_list }}
-      {{ range $plugins }}
+      {{ range $plugins := $data.plugins_list }}
       <li class="plugins-small__item mt-5 ml-auto mr-auto ml-md-0 mr-md-4">
         <div class="plugins-small__image">
-          {{ .Icon | safeHTML }}
+          {{ if or (eq (index . "Icon") "N/A") (not (index . "Icon")) }}
+            <img src="/images/icons/socket.png" />
+          {{ else }}
+            {{ .Icon | safeHTML }}
+          {{ end }}
         </div>
         <div class="plugins-small__title mt-3">{{ with (index . "Display Name") }}{{ . }}{{ end }}</div>
         <div class="plugins-small__type mt-4">{{ with (index . "Type") }}{{ . }}{{ end }}</div>
       </li>
-      {{ end }}
       {{ end }}
     </ul>
     <div class="plugins-small__search-result" style="display: none">{{ .Site.Params.noResults.title }}</div>
