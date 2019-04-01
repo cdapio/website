@@ -33,18 +33,10 @@
 </div>
 
 <section class="announcement not-apply my-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="announcement__wrapper">
-          {{ $data := index .Site.Data .Site.Language.Lang }}
-          {{ with $data.announcement_community }}
-          {{ partial "gallery.html" . }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $data.community.announcement }}
+  {{ partial "gallery.html" . }}
+  {{ end }}
 </section>
 
 {{ end }}

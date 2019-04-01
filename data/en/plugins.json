@@ -1,18 +1,26 @@
-[
-  {
-    "title": "Google Cloud Platform",
-    "image": "/images/pipelines-plugins/google-cloud-platform.png"
-  },
-  {
-    "title": "Microsoft Azure",
-    "image": "/images/pipelines-plugins/microsoft-azure.png"
-  },
-  {
-    "title": "Amazon Web Services",
-    "image": "/images/pipelines-plugins/amazon-web-services.png"
-  },
-  {
-    "title": "Hadoop",
-    "image": "/images/pipelines-plugins/hadoop.png"
-  }
-]
+{
+  "title": "Plugins",
+  "description": "Pipelines support a variety of plugins for connecting to cloud and onprem services as well as to perform data transformations.",
+  "btnTitle": "View all connectors",
+  "btnLInk": "/plugins/#connectors",
+  "linkTitle": "View all transformations",
+  "linkUrl": "/plugins/#transformations",
+  "items": [
+    {
+      "title": "Google Cloud Platform",
+      "image": "/images/pipelines-plugins/google-cloud-platform.png"
+    },
+    {
+      "title": "Microsoft Azure",
+      "image": "/images/pipelines-plugins/microsoft-azure.png"
+    },
+    {
+      "title": "Amazon Web Services",
+      "image": "/images/pipelines-plugins/amazon-web-services.png"
+    },
+    {
+      "title": "Hadoop",
+      "image": "/images/pipelines-plugins/hadoop.png"
+    }
+  ]
+}

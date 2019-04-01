@@ -50,49 +50,19 @@
 </section>
 
 <section class="announcement not-apply">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="announcement__wrapper">
-          {{ $data := index .Site.Data .Site.Language.Lang }}
-          {{ with $data.gallery }}
-          {{ partial "gallery.html" . }}
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $data.gallery }}
+  {{ partial "gallery.html" . }}
+  {{ end }}
 </section>
 
 <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h2 class="why__title text-center">
-          {{ $data := index .Site.Data .Site.Language.Lang }}
-          {{ with $features := $data.homepage.why }}
-            {{ range $features }}
-              {{ .title }}
-            {{ end }}
-          {{ end }}
-        </h2>
-        <p class="why__paragraph text-center mt-3 d-sm-flex d-none">
-          {{ $data := index .Site.Data .Site.Language.Lang }}
-          {{ with $features := $data.homepage.why }}
-            {{ range $features }}
-              {{ .description }}
-            {{ end }}
-          {{ end }}
-        </p>
-      </div>
-    </div>
-    {{ $data := index .Site.Data .Site.Language.Lang }}
-      {{ with $why := $data.homepage.why }}
-        {{ range $why }}
-          {{ partial "components/why/why" . }}
-      {{ end }}
-    {{ end }}
-  </div>
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $why := $data.homepage.why }}
+  {{ range $why }}
+  {{ partial "components/why/why" . }}
+  {{ end }}
+  {{ end }}
 </section>
 
 <section class="features">
