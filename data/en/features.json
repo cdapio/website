@@ -131,7 +131,7 @@
   ],
   "features_pipeline": [
     {
-      "title": "Pipelines",
+      "title": "Pipeline features",
       "left_column": [
         {
           "header": "Connector Ecosystem",

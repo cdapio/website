@@ -11,13 +11,7 @@
     }
   }
 
-  &:before {
-    @include background(top);
-  }
-
   &:after {
-    @include background(bottom);
-
     @include media-breakpoint-down(xs) {
       bottom: -60px;
     }
@@ -28,6 +22,16 @@
 
     @include media-breakpoint-up(md) {
       bottom: -30px;
+    }
+  }
+
+  &__home-features {
+    &:before {
+      @include background(top);
+    }
+
+    &:after {
+      @include background(bottom);
     }
   }
 
@@ -42,5 +46,17 @@
     line-height: 1.39;
     letter-spacing: 0.2px;
     color: $greyish-brown;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 95px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      min-height: 125px;
+    }
+
+    @include media-breakpoint-down(md) {
+      min-height: 50px;
+    }
   }
 }
