@@ -3,6 +3,10 @@ img {
   height: auto;
 }
 
+@include media-breakpoint-up(xl) {
+  @include container(90%, 1324px);
+}
+
 :root {
   body {
     display: flex;

@@ -35,14 +35,15 @@
   &__block {
     border-right: solid 1px $gray;
 
-    &:last-child {
+    &:nth-child(4n) {
       border-right: 0;
     }
 
     @include media-breakpoint-down(md) {
       border-bottom: 0;
       border-right: solid 1px $gray;
-      &:nth-child(2) {
+
+      &:nth-child(2n) {
         border-right: 0;
       }
     }
@@ -50,6 +51,7 @@
     @include media-breakpoint-down(sm) {
       border-bottom: solid 1px $gray;
       border-right: 0;
+
       &:last-child {
         border-bottom: 0;
       }

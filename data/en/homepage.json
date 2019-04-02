@@ -30,5 +30,24 @@
         }
       ]
     }
+  ],
+  "testimonials": [
+    {
+      "title": "Testimonials",
+      "items" : [
+        {
+          "name": "Name Last name",
+          "job": "job title",
+          "company": "Company name",
+          "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed. Fusce eget pharetra nulla, vel fermentum ante. Phasellus gravida non diam sed vehicula."
+        },
+        {
+          "name": "Name Last name",
+          "job": "job title",
+          "company": "Company name",
+          "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed. Fusce eget pharetra nulla, vel fermentum ante."
+        }
+      ]
+    }
   ]
 }

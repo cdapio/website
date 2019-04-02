@@ -13,9 +13,9 @@ Add styles or override variables from the theme here.
 @import "../vendor/bootstrap/scss/variables";
 
 /* Base */
+@import "base/mixins";
 @import "base/base";
 @import "base/fonts";
-@import "base/mixins";
 
 /* Components */
 @import "components/button";

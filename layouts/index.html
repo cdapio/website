@@ -182,29 +182,18 @@
 </section>
 
 <section class="testimonials">
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $testimonials := $data.homepage.testimonials }}
+  {{ range $testimonials }}
+  {{ partial "components/testimonials/testimonials" . }}
+  {{ end }}
+  {{ end }}
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h2 class="accelerators__title">Testimonials</h2>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      {{ range where .Site.RegularPages "Type" "in" (slice "testimonials") }}
-      <div class="col-lg-6 col-md-12 mt-5 mt-lg-4">
-        <p class="testimonials__testimonial font-italic">{{ .Content | markdownify }}</p>
-        <p class="testimonials__author">– {{ .Params.name }}, {{ .Params.job }}, {{ .Params.company }}</p>
-      </div>
-      {{ end }}
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          {{ with .Site.Params.cta.title }}
-            <button class="btn-cta mt-5" onclick="location.href='/cloud'">{{ . }}</button>
-          {{ end }}
-        </div>
+      <div class="col-12 text-center">
+        <button class="btn-cta mt-3" onclick="location.href='/cloud'">
+          {{ $.Site.Params.cta.title }}
+        </button>
       </div>
     </div>
   </div>
