@@ -127,13 +127,13 @@
         {{ end }}
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center pb-5">
-          {{ with .Site.Params.cta.title }}
-          <button class="btn-cta mt-5" onclick="location.href='/cloud'">{{ . }}</button>
-          {{ end }}
-        </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center pb-5">
+        {{ with .Site.Params.cta.title }}
+        <button class="btn-cta mt-5" onclick="location.href='/cloud'">{{ . }}</button>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -200,34 +200,10 @@
 </section>
 
 <section class="companies">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="companies__title">
-          {{ with .GetPage "companies.md" }}
-            {{ .Title }}
-          {{ end }}
-        </h2>
-        <a href="#">Read case studies</a>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    {{ with .GetPage "companies.md" }}
-      {{ .Content }}
-    {{ end }}
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="companies__wrapper">
-          <div class="companies__cta mt-4" id="toggleBtn" data-toggle="collapse" href="#companies" aria-expanded="false"
-               aria-controls="companies">Show more
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $companies := $data.homepage.companies }}
+  {{ partial "components/companies/companies" . }}
+  {{ end }}
 </section>
 
 {{ end }}

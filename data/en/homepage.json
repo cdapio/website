@@ -49,5 +49,43 @@
         }
       ]
     }
-  ]
+  ],
+  "companies":
+    {
+      "title": "Companies using CDAP",
+      "items": [
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        },
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        },
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        },
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        },
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        },
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        },
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        },
+        {
+          "url": "#",
+          "image": "companies-logo.png"
+        }
+      ]
+    }
 }
