@@ -90,7 +90,7 @@
       ],
       "on_production": [
         {
-          "subTitle": "evaluate",
+          "subTitle": "on-production",
           "title": "Get connected",
           "description": "We’re here to help if you’ve hit an issue or even if you just have a question about CDAP.",
           "items": [
@@ -116,6 +116,34 @@
               "link": "https://docs.cask.co/cdap/current/en/admin-manual/installation/mapr.html"
             }
           ]
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Resources",
+      "items": [
+        {
+          "img": "/images/get-started/noun-manual-book.svg",
+          "title": "User guide",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed.",
+          "linkTitle": "View",
+          "linkUrl": "#"
+        },
+        {
+          "img": "/images/get-started/noun-tutorial.svg",
+          "title": "Tutorial & samples",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed.",
+          "linkTitle": "View",
+          "linkUrl": "#"
+        },
+        {
+          "img": "/images/get-started/noun-documentation.svg",
+          "title": "Documentation",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed.",
+          "linkTitle": "View",
+          "linkUrl": "https://docs.cdap.io/current"
         }
       ]
     }
