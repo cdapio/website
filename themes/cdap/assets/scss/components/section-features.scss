@@ -48,10 +48,6 @@
     color: $greyish-brown;
 
     @include media-breakpoint-up(lg) {
-      min-height: 95px;
-    }
-
-    @include media-breakpoint-down(lg) {
       min-height: 125px;
     }
 
