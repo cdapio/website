@@ -1,4 +1,38 @@
 {
+  "hero_tabs": [
+    {
+      "id": "home",
+      "active": true,
+      "tabTitle": "On Cloud",
+      "title": "Get Started in the Cloud",
+      "description": "Run CDAP on any major public cloud provider including <span style='white-space: nowrap;'>Amazon Web Services</span>, <span style='white-space: nowrap;',>Microsoft Azure</span> and <span style='white-space: nowrap;'>Google Cloud Platform</span>",
+      "buttonTitle": "Get Started",
+      "url": "/cloud"
+    },
+    {
+      "id": "profile",
+      "tabTitle": "On Premises",
+      "title": "Get Started on premises",
+      "description": "Run CDAP on-premises on your own Apache Hadoop or Kubernetes based clusters.",
+      "buttonTitle": "Get Started",
+      "url": "/on-premises"
+    }
+  ],
+  "announcement_home": [
+    {
+      "imageUrl": "/images/bdam-header.jpg",
+      "active": true,
+      "title": "Big Data Applications Meetup",
+      "description": "Join us for the next Big Data Applications Meetup at Google San Francisco on 04/10. ",
+      "linkTitle": "RSVP here",
+      "linkUrl": "https://www.meetup.com/BigDataApps/events/259996482/"
+    },
+    {
+      "imageUrl": "/images/get-started/google-cloud-platform.png",
+      "title": "Google Cloud Next ’19",
+      "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center"
+    }
+  ],
   "why": [
     {
       "title": "Why CDAP",
@@ -31,10 +65,84 @@
       ]
     }
   ],
+  "features_home": [
+    {
+      "title": "CDAP features",
+      "left_column": [
+        {
+          "header": "Rapid development",
+          "paragraph": "Developer SDK and APIs with abstractions over common data processing patterns; Sandbox mode, programmatic and UI driven debugging; In-memory mode and testing framework to simplify testing; Support for cutting edge Cloud, Apache Hadoop and Apache Spark technologies.",
+          "id": "feature_1"
+        },
+        {
+          "header": "Enterprise ready",
+          "paragraph": "Metadata repository with automatic technical and operational metadata capture; Business metadata annotations; Data discovery through search based on metadata; Data governance with dataset and field level lineage and auditing; Integration with enterprise security systems.",
+          "id": "feature_4"
+        },
+        {
+          "header": "Seamless operations",
+          "paragraph": "REST APIs and CLI for every interaction; Time and process based scheduling; Standardized logs and metrics for all execution environments.",
+          "id": "feature_2"
+        }
+      ],
+      "right_column": [
+        {
+          "header": "Portable runtime environments",
+          "paragraph": "Build once, run anywhere through portability across runtime environments such as Kubernetes, Apache Hadoop YARN and Docker.",
+          "id": "feature_5"
+        },
+        {
+          "header": "Extensible and reusable",
+          "paragraph": "Templates and blueprints for common use-cases; Hub for sharing pre-built plugins, applications and solutions; Extensible APIs for security, metadata, runtimes and storage.",
+          "id": "feature_3"
+        },
+        {
+          "header": "Hybrid and multi cloud",
+          "paragraph": "Interoperability across on-premises and Cloud environments; Support for all major public cloud providers such as Amazon Web Services, Microsoft Azure and Google Cloud Platform.",
+          "id": "feature_6"
+        }
+      ]
+    }
+  ],
+  "accelerators_home": [
+    {
+      "title": "Accelerators",
+      "items": [
+        {
+          "title": "Pipelines",
+          "url": "/accelerators/pipelines/",
+          "urlTitle": "Learn more",
+          "image": "/images/accelerators-details-pipeline.jpg",
+          "body": "Pipelines is an accelerator for data integration use cases. It provides an easy-to-use graphical interface that allows you to bring together data from a myriad of different sources and define transformations visually. It lowers the barrier to data integration, and enables developers, business analysts and data scientists to quickly derive insights from data by cleansing, preparing, blending, transforming and transferring data without having to worry about infrastructure and integration.  <a href='#'>Learn More</a>"
+        },
+        {
+          "title": "Preparation",
+          "url": "/accelerators/preparation/",
+          "urlTitle": "Learn more",
+          "image": "/images/accelerators-details-preparation.jpg",
+          "body": "Preparation allows you to visually and interactively cleanse and prepare raw data, with the aim of making it consumable for further processing. It provides a standardized UI driven interactive flow that takes the pain out of preprocessing tasks for data engineering, data science and data analysis. <a href='#'>Learn More</a>"
+        },
+        {
+          "title": "Analytics",
+          "url": "/accelerators/analytics/",
+          "urlTitle": "Learn more",
+          "image": "/images/accelerators-details-analytics.jpg",
+          "body": "Analytics provides a simple, interactive, UI-driven approach to machine learning. It provides a seamless, automated interface for users to easily develop, train, test, evaluate and deploy their machine learning models. It reduces the need for ad-hoc custom tooling and promotes reusability and collaboration.  <a href='#'>Learn More</a>"
+        },
+        {
+          "title": "Rules",
+          "url": "/accelerators/rules-engine/",
+          "urlTitle": "Learn more",
+          "image": "/images/accelerators-details-rules.jpg",
+          "body": "Rules Engine provides a way for business analysts to create and manage a knowledge base of data transformation rules that need to be automatically applied to your data. It contains an intuitive UI for business analysts to set up business rules that can be executed in a data pipeline. <a href='#'>Learn More</a>"
+        }
+      ]
+    }
+  ],
   "testimonials": [
     {
       "title": "Testimonials",
-      "items" : [
+      "items": [
         {
           "name": "Name Last name",
           "job": "job title",
@@ -50,42 +158,41 @@
       ]
     }
   ],
-  "companies":
-    {
-      "title": "Companies using CDAP",
-      "items": [
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        },
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        },
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        },
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        },
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        },
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        },
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        },
-        {
-          "url": "#",
-          "image": "companies-logo.png"
-        }
-      ]
-    }
+  "companies": {
+    "title": "Companies using CDAP",
+    "items": [
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      },
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      },
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      },
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      },
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      },
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      },
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      },
+      {
+        "url": "#",
+        "image": "companies-logo.png"
+      }
+    ]
+  }
 }

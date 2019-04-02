@@ -4,21 +4,25 @@
 
 <section>
   {{ $data := index .Site.Data .Site.Language.Lang }}
-  {{ with $features := $data.why_pipelines }}
-  {{ partial "components/why/why" . }}
+  {{ with $why := $data.pipelines.why }}
+  {{ range $why }}
+  {{ partial "components/why" . }}
+  {{ end }}
   {{ end }}
 </section>
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
-{{ with $features := $data.features.features_pipeline }}
+{{ with $features := $data.pipelines.features_pipeline }}
 {{ range $features }}
-  {{ partial "components/feature/feature" . }}
+{{ partial "components/features" . }}
 {{ end }}
 {{ end }}
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
-{{ with $plugins := $data.plugins }}
+{{ with $plugins := $data.pipelines.pipeline_plugins }}
+{{ range  $plugins }}
 {{ partial "components/pipelines/plugins" . }}
+{{ end }}
 {{ end }}
 
 {{ end }}

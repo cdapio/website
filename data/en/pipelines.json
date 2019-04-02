@@ -1,0 +1,92 @@
+{
+  "why": [
+    {
+      "title": "Pipelines benefits",
+      "description": "Pipelines accelerator enables developers, business analysts and data scientists to quickly derive insights from data, without having to worry about infrastructure and integration.",
+      "items": [
+        {
+          "header": "Integrated with any and all data",
+          "paragraph": "Pipelines offers a rich ecosystem of connectors for a variety of legacy systems, relational databases, file systems, cloud services, object stores, NoSQL, EBCDIC, and more.",
+          "id": "reduced-complexity"
+        },
+        {
+          "header": "Increased </br>flexibility",
+          "paragraph": "Pipelines allows portability across on-premises and public cloud environments",
+          "id": "increased-velocity"
+        },
+        {
+          "header": "Reduced complexity, increased productivity",
+          "paragraph": "Pipelines has a visual interface for building data pipelines, code free transformations, and reusable pipeline blueprints.",
+          "id": "increased-flexibility"
+        },
+        {
+          "header": "Improved data trustworthiness",
+          "paragraph": "Pipelines offers data quality libraries, metadata and lineage capture, audit logging.",
+          "id": "improved-visibility"
+        }
+      ]
+    }
+  ],
+  "features_pipeline": [
+    {
+      "title": "Pipeline features",
+      "left_column": [
+        {
+          "header": "Connector Ecosystem",
+          "paragraph": "Built-in connectors to a variety of cloud and on-prem, modern and legacy systems; public APIs to build custom connectors"
+        },
+        {
+          "header": "Visual data pipeline designer",
+          "paragraph": "UI to build data pipelines using a point and click designer studio"
+        },
+        {
+          "header": "Data Discovery and Governance",
+          "paragraph": "UI to build data pipelines using a point and click designer studio"
+        }
+      ],
+      "right_column": [
+        {
+          "header": "Comprehensive integration toolkit",
+          "paragraph": "Conditionals and pre/post processing actions; Alerting and Notifications; Error processing"
+        },
+        {
+          "header": "Interactive, code-free transformations",
+          "paragraph": "Wide variety of built-in data transformation plugins; Interactive data transformation interface with feedback at each step."
+        },
+        {
+          "header": "Seamless operations",
+          "paragraph": "Time and process based scheduling, monitoring via logs, metrics, dashboards and reporting"
+        }
+      ]
+    }
+  ],
+  "pipeline_plugins": [
+    {
+      "title": "Plugins",
+      "description": "Pipelines support a variety of plugins for connecting to cloud and onprem services as well as to perform data transformations.",
+      "btnTitle": "View all connectors",
+      "btnLInk": "/plugins/#connectors",
+      "linkTitle": "View all transformations",
+      "linkUrl": "/plugins/#transformations",
+      "items": [
+        {
+          "title": "Google Cloud Platform",
+          "image": "/images/pipelines-plugins/google-cloud-platform.png"
+        },
+        {
+          "title": "Microsoft Azure",
+          "image": "/images/pipelines-plugins/microsoft-azure.png"
+        },
+        {
+          "title": "Amazon Web Services",
+          "image": "/images/pipelines-plugins/amazon-web-services.png"
+        },
+        {
+          "title": "Hadoop",
+          "image": "/images/pipelines-plugins/hadoop.png"
+        }
+      ]
+    }
+  ]
+}
+

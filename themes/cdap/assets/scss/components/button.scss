@@ -10,6 +10,7 @@
   transition: all .3s;
   border: 3px transparent;
 
+
   @include media-breakpoint-up(sm) {
     width: 269px;
   }

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="accelerators__title">
+        {{ .title }}
+      </h2>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    {{ range $item := .items }}
+    <div class="col-lg-3 col-md-6 mb-5">
+      <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1" onclick="window.location='{{ $item.url | relURL }}'">
+        <img src="{{ $item.image }}" class="accelerators__item-image"/>
+        <div class="accelerators__inner-wrapper">
+          <h4 class="accelerators__item-title">{{ $item.title }}</h4>
+          <p class="accelerators__item-body not-apply">{{ $item.body | safeHTML }}</p>
+          <a href="{{ $item.url }}" class="d-flex accelerators__link">{{ $item.urlTitle }}</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

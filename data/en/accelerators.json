@@ -1,5 +1,5 @@
 {
-  "pipelines": [
+  "accelerators": [
     {
       "title": "Pipelines",
       "url": "/accelerators/pipelines/",
@@ -27,66 +27,6 @@
       "urlTitle": "Learn more",
       "image": "/images/accelerators-details-rules.jpg",
       "body": "Rules Engine provides a way for business analysts to create and manage a knowledge base of data transformation rules that need to be automatically applied to your data. It contains an intuitive UI for business analysts to set up business rules that can be executed in a data pipeline. <a href='#'>Learn More</a>"
-    },
-    {
-      "why": [
-        {
-          "title": "Pipelines benefits",
-          "description": "Pipelines accelerator enables developers, business analysts and data scientists to quickly derive insights from data, without having to worry about infrastructure and integration.",
-          "items": [
-            {
-              "header": "Integrated with any and all data",
-              "paragraph": "Pipelines offers a rich ecosystem of connectors for a variety of legacy systems, relational databases, file systems, cloud services, object stores, NoSQL, EBCDIC, and more.",
-              "id": "reduced-complexity"
-            },
-            {
-              "header": "Increased </br>flexibility",
-              "paragraph": "Pipelines allows portability across on-premises and public cloud environments",
-              "id": "increased-velocity"
-            },
-            {
-              "header": "Reduced complexity, increased productivity",
-              "paragraph": "Pipelines has a visual interface for building data pipelines, code free transformations, and reusable pipeline blueprints.",
-              "id": "increased-flexibility"
-            },
-            {
-              "header": "Improved data trustworthiness",
-              "paragraph": "Pipelines offers data quality libraries, metadata and lineage capture, audit logging.",
-              "id": "improved-visibility"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "home": [
-    {
-      "title": "Analytics",
-      "url": "/accelerators/analytics/",
-      "urlTitle": "Learn more",
-      "image": "/images/accelerators-details-analytics.jpg",
-      "body": "Analytics provides a simple, interactive, automated interface for users to easily develop, train, test, evaluate and deploy their machine learning models."
-    },
-    {
-      "title": "Pipelines",
-      "url": "/accelerators/pipelines/",
-      "urlTitle": "Learn more",
-      "image": "/images/accelerators-details-pipeline.jpg",
-      "body": "Pipelines provides an easy-to-use graphical data integration interface to bring together data from a myriad of different sources and define transformations visually."
-    },
-    {
-      "title": "Preparation",
-      "url": "/accelerators/preparation/",
-      "urlTitle": "Learn more",
-      "image": "/images/accelerators-details-preparation.jpg",
-      "body": "Preparation allows you to visually and interactively cleanse and prepare raw data, to make it consumable for further processing."
-    },
-    {
-      "title": "Rules Engine",
-      "url": "/accelerators/rules-engine/",
-      "urlTitle": "Learn more",
-      "image": "/images/accelerators-details-rules.jpg",
-      "body": "Rules Engine provides a way for business analysts to create and manage a knowledge base of data transformation rules that need to be automatically applied to your data."
     }
   ]
 }

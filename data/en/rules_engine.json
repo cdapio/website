@@ -1,0 +1,31 @@
+{
+  "features_rules_engine": [
+    {
+      "title": "Rules Engine features",
+      "left_column": [
+        {
+          "header": "Code-free business rules UI",
+          "paragraph": "Intuitive, code-free UI for business analysts to build and manage transformation rules"
+        },
+        {
+          "header": "Fully integrated",
+          "paragraph": "Available as a library to integrate with JBoss, Spring, WebLogic and SQL tools"
+        },
+        {
+          "header": "Easy governance",
+          "paragraph": "Centralized repository of policies and transformation rules"
+        }
+      ],
+      "right_column": [
+        {
+          "header": "Flexible and intuitive rules management",
+          "paragraph": "Easy organization and grouping of rules using rulebooks; Intuitive business UI for creation and management of rules and rulebooks."
+        },
+        {
+          "header": "Scalable",
+          "paragraph": "Integrates with CDAP data pipelines for horizontal scalability"
+        }
+      ]
+    }
+  ]
+}

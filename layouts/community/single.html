@@ -35,7 +35,7 @@
 <section class="announcement not-apply my-5">
   {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ with $data.community.announcement }}
-  {{ partial "gallery.html" . }}
+  {{ partial "components/gallery.html" . }}
   {{ end }}
 </section>
 

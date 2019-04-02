@@ -1,0 +1,35 @@
+{
+  "features_analytics": [
+    {
+      "title": "Analytics features",
+      "left_column": [
+        {
+          "header": "UI driven data preparation and cleansing",
+          "paragraph": "Seamless, integrated experience from data preparation and cleansing to model development, evaluation and deployment."
+        },
+        {
+          "header": "Support for popular ML libraries",
+          "paragraph": "Out of the box  support for common ML libraries such as SparkML"
+        },
+        {
+          "header": "Scoring plugins for running predictions",
+          "paragraph": "Built in scoring plugins take you from model development to running predictions on data in a few seconds."
+        }
+      ],
+      "right_column": [
+        {
+          "header": "UI driven data preparation and cleansing",
+          "paragraph": "Seamless, integrated experience from data preparation and cleansing to model development, evaluation and deployment."
+        },
+        {
+          "header": "Support for popular ML libraries",
+          "paragraph": "Out of the box  support for common ML libraries such as SparkML"
+        },
+        {
+          "header": "Scoring plugins for running predictions",
+          "paragraph": "Built in scoring plugins take you from model development to running predictions on data in a few seconds."
+        }
+      ]
+    }
+  ]
+}

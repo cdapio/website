@@ -8,51 +8,18 @@
         <h2 class="hero__title mt-4 not-apply">{{ .Site.Params.description | safeHTML }}</h2>
         <p class="hero__paragraph not-apply">{{ .Site.Params.about | safeHTML }}</p>
       </div>
-      <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
-        <div class="hero__block">
-          <ul class="hero__nav-tabs nav nav-tabs" id="myTab" role="tablist">
-            {{ $data := index .Site.Data .Site.Language.Lang }}
-            {{ with $tabs := $data.tabs }}
-            {{ range $tabs }}
-              <li class="nav-item">
-                <a class="hero__nav-link {{ if .active }} active {{ end }}"
-                   id="{{ .id }}-tab"
-                   data-toggle="tab"
-                   href="#{{ .id }}"
-                   role="tab"
-                   aria-controls="{{ .id }}"
-                   aria-selected="true">{{ .tabTitle }}</a>
-              </li>
-            {{ end }}
-            {{ end }}
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            {{ $data := index .Site.Data .Site.Language.Lang }}
-            {{ with $tabs := $data.tabs }}
-            {{ range $tabs }}
-            <div class="hero__tab-pane tab-pane fade {{ if .active }} show active {{ end }}"
-                 id="{{ .id }}"
-                 role="tabpanel"
-                 aria-labelledby="home-tab">
-              <h3 class="hero__tab-title text-center mt-4">{{ .title }}</h3>
-              <div class="hero__tab-body text-center mt-4">{{ .description | safeHTML }}</div>
-              <a href="{{ .url  | relURL }}" class="d-flex justify-content-center hero__link">
-                <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
-              </a>
-            </div>
-            {{ end }}
-            {{ end }}
-          </div>
-        </div>
-      </div>
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $tabs := $data.homepage.hero_tabs }}
+      {{ partial "components/homepage/hero-tabs" . }}
+      {{ end }}
     </div>
   </div>
 </section>
 
 <section class="announcement not-apply">
   {{ $data := index .Site.Data .Site.Language.Lang }}
-  {{ with $data.gallery }}
-  {{ partial "gallery.html" . }}
+  {{ with $data.homepage.announcement_home }}
+  {{ partial "components/gallery.html" . }}
   {{ end }}
 </section>
 
@@ -60,123 +27,35 @@
   {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ with $why := $data.homepage.why }}
   {{ range $why }}
-  {{ partial "components/why/why" . }}
+  {{ partial "components/why" . }}
   {{ end }}
   {{ end }}
 </section>
 
 <section class="features">
-  <div class="features__home-features">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="features__title">
-            {{ $data := index .Site.Data .Site.Language.Lang }}
-            {{ with $features := $data.features.features_home }}
-            {{ range $features }}
-            {{ .title }}
-            {{ end }}
-            {{ end }}
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        {{ $data := index .Site.Data .Site.Language.Lang }}
-        {{ with $features := $data.features.features_home }}
-        {{ range $features }}
-        {{ range .left_column }}
-        <div class="col-lg-6 col-md-12">
-          <div class="features__block mt-5">
-            <h4 class="features__title mb-4">{{ .header }}</h4>
-            <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
-            <a id="{{ .id }}btn"
-               class="d-sm-none d-flex mt-4"
-               href="#"
-               data-toggle="collapse"
-               data-target="#{{ .id }}"
-               onclick="learnMore({{ .id }})">
-              Learn More
-            </a>
-          </div>
-        </div>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ $data := index .Site.Data .Site.Language.Lang }}
-        {{ with $features := $data.features.features_home }}
-        {{ range $features }}
-        {{ range .right_column }}
-        <div class="col-lg-6 col-md-12">
-          <div class="features__block mt-5">
-            <h4 class="features__title mb-4">{{ .header }}</h4>
-            <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
-            <a id="{{ .id }}btn"
-               class="d-sm-none d-flex mt-4"
-               href="#"
-               data-toggle="collapse"
-               data-target="#{{ .id }}"
-               onclick="learnMore({{ .id }})">
-              Learn More
-            </a>
-          </div>
-        </div>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-  <div class="container">
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $features := $data.homepage.features_home }}
+  {{ range $features }}
+  {{ partial "components/homepage/features" .}}
+  {{ end }}
+  {{ end }}
+  <div class="container my-5">
     <div class="row">
-      <div class="col-12 text-center pb-5">
-        {{ with .Site.Params.cta.title }}
-        <button class="btn-cta mt-5" onclick="location.href='/cloud'">{{ . }}</button>
-        {{ end }}
-      </div>
+      {{ partial "components/homepage/get-started-button" . }}
     </div>
   </div>
 </section>
 
 <section class="accelerators">
-  <div class="container">
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $accelerators := $data.homepage.accelerators_home }}
+  {{ range $accelerators }}
+  {{ partial "components/homepage/accelerators" . }}
+  {{ end }}
+  {{ end }}
+  <div class="container accelerators__btnBlock mt-3">
     <div class="row">
-      <div class="col-12">
-        <h2 class="accelerators__title">
-          {{ with .GetPage "accelerators.md" }}
-            {{ .Title }}
-          {{ end }}
-        </h2>
-      </div>
-    </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row">
-      {{ $data := index .Site.Data .Site.Language.Lang }}
-      {{ with $accelerators := $data.accelerators.home }}
-      {{ range $accelerators }}
-        <div class="col-lg-3 col-md-6 mb-5">
-          <div class="accelerators__item mt-md-5 mt-lg-0" tabindex="-1" onclick="window.location='{{ .url | relURL }}'">
-            <img src="{{ .image }}" class="accelerators__item-image"/>
-            <div class="accelerators__inner-wrapper">
-              <h4 class="accelerators__item-title">{{ .title }}</h4>
-              <p class="accelerators__item-body not-apply">{{ .body | safeHTML }}</p>
-              <a href="{{ .url }}" class="d-flex accelerators__link">{{ .urlTitle }}</a>
-            </div>
-          </div>
-        </div>
-      {{ end }}
-      {{ end }}
-    </div>
-    <div class="container accelerators__btnBlock">
-      <div class="row">
-        <div class="col-12 text-center">
-          {{ with .Site.Params.cta.title }}
-            <button class="btn-cta mt-3" onclick="location.href='/cloud'">{{ . }}</button>
-          {{ end }}
-        </div>
-      </div>
+      {{ partial "components/homepage/get-started-button" . }}
     </div>
   </div>
 </section>
@@ -185,16 +64,12 @@
   {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ with $testimonials := $data.homepage.testimonials }}
   {{ range $testimonials }}
-  {{ partial "components/testimonials/testimonials" . }}
+  {{ partial "components/homepage/testimonials" . }}
   {{ end }}
   {{ end }}
-  <div class="container">
+  <div class="container mt-3">
     <div class="row">
-      <div class="col-12 text-center">
-        <button class="btn-cta mt-3" onclick="location.href='/cloud'">
-          {{ $.Site.Params.cta.title }}
-        </button>
-      </div>
+      {{ partial "components/homepage/get-started-button" . }}
     </div>
   </div>
 </section>
@@ -202,7 +77,7 @@
 <section class="companies">
   {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ with $companies := $data.homepage.companies }}
-  {{ partial "components/companies/companies" . }}
+  {{ partial "components/homepage/companies" . }}
   {{ end }}
 </section>
 

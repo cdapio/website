@@ -1,0 +1,31 @@
+<div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
+  <div class="hero__block">
+    <ul class="hero__nav-tabs nav nav-tabs" id="myTab" role="tablist">
+      {{ range . }}
+      <li class="nav-item">
+        <a class="hero__nav-link {{ if .active }} active {{ end }}"
+           id="{{ .id }}-tab"
+           data-toggle="tab"
+           href="#{{ .id }}"
+           role="tab"
+           aria-controls="{{ .id }}"
+           aria-selected="true">{{ .tabTitle }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      {{ range . }}
+      <div class="hero__tab-pane tab-pane fade {{ if .active }} show active {{ end }}"
+           id="{{ .id }}"
+           role="tabpanel"
+           aria-labelledby="home-tab">
+        <h3 class="hero__tab-title text-center mt-4">{{ .title }}</h3>
+        <div class="hero__tab-body text-center mt-4">{{ .description | safeHTML }}</div>
+        <a href="{{ .url  | relURL }}" class="d-flex justify-content-center hero__link">
+          <button class="btn-cta mt-3">{{ .buttonTitle }}</button>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="features__home-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="features__title">
+          {{ .title }}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{ range .left_column }}
+      <div class="col-lg-6 col-md-12">
+        <div class="features__block mt-5">
+          <h4 class="features__title mb-4">{{ .header }}</h4>
+          <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
+          <a id="{{ .id }}btn"
+             class="d-sm-none d-flex mt-4"
+             href="#"
+             data-toggle="collapse"
+             data-target="#{{ .id }}"
+             onclick="learnMore({{ .id }})">
+            Learn More
+          </a>
+        </div>
+      </div>
+      {{ end }}
+      {{ range .right_column }}
+      <div class="col-lg-6 col-md-12">
+        <div class="features__block mt-5">
+          <h4 class="features__title mb-4">{{ .header }}</h4>
+          <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
+          <a id="{{ .id }}btn"
+             class="d-sm-none d-flex mt-4"
+             href="#"
+             data-toggle="collapse"
+             data-target="#{{ .id }}"
+             onclick="learnMore({{ .id }})">
+            Learn More
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

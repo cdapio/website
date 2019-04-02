@@ -1,4 +1,33 @@
 {
+  "features_preparation": [
+    {
+      "title": "Preparation features",
+      "left_column": [
+        {
+          "header": "Code free transformations",
+          "paragraph": "Interactive, code-free transformations with feedback at each step using a powerful graphical UI"
+        },
+        {
+          "header": "Extensible, comprehensive transformation library",
+          "paragraph": "Comprehensive library with over 1000+ built-in transformations; Extensible API for adding more transformations"
+        },
+        {
+          "header": "Comprehensive data source support",
+          "paragraph": "Built-in connections to popular cloud and on-prem data sources such as relational databases, file systems, object stores such as AWS S3 and Cloud Storage, Kafka, NoSQL stores"
+        }
+      ],
+      "right_column": [
+        {
+          "header": "Operationalization using pipelines",
+          "paragraph": "One-click pipeline creation for creating scalable and reliable pipelines for mission critical environments"
+        },
+        {
+          "header": "Automatic data quality and profiling",
+          "paragraph": "Data quality indicators for determining data quality; data quality library for improving trust and quality; profiling to understand data distribution and column relationships after every transformation"
+        }
+      ]
+    }
+  ],
   "videos": [
     {
       "title": "Videos",
