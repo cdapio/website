@@ -2,8 +2,8 @@
 
 {{ partial "components/hero-panel" . }}
 
+{{ $data := index .Site.Data .Site.Language.Lang }}
 <section>
-  {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ with $why := $data.pipelines.why }}
   {{ range $why }}
   {{ partial "components/why" . }}
@@ -11,14 +11,12 @@
   {{ end }}
 </section>
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
 {{ with $features := $data.pipelines.features_pipeline }}
 {{ range $features }}
 {{ partial "components/features" . }}
 {{ end }}
 {{ end }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
 {{ with $plugins := $data.pipelines.pipeline_plugins }}
 {{ range  $plugins }}
 {{ partial "components/pipelines/plugins" . }}

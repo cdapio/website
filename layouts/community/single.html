@@ -2,30 +2,28 @@
 
 {{ partial "components/hero-panel" . }}
 
+{{ $data := index .Site.Data .Site.Language.Lang }}
 <div class="community">
   <section class="get-connected">
-    {{ $data := index .Site.Data .Site.Language.Lang }}
     {{ with $tabs := $data.community.get_connected }}
-      {{ range $tabs }}
-        {{ partial "components/community/get-connected" . }}
-      {{ end }}
+    {{ range $tabs }}
+    {{ partial "components/community/get-connected" . }}
+    {{ end }}
     {{ end }}
   </section>
 
   <section class="contribute">
-    {{ $data := index .Site.Data .Site.Language.Lang }}
     {{ with $tabs := $data.community.contribute}}
-      {{ range $tabs }}
-        {{ partial "components/community/contribute" . }}
-      {{ end }}
+    {{ range $tabs }}
+    {{ partial "components/community/contribute" . }}
+    {{ end }}
     {{ end }}
   </section>
 
   <section class="twitter">
-    {{ $data := index .Site.Data .Site.Language.Lang }}
     {{ with $tabs := $data.community.twitter }}
-      {{ range $tabs }}
-        {{ partial "components/community/twitter" . }}
+    {{ range $tabs }}
+    {{ partial "components/community/twitter" . }}
     {{ end }}
     {{ end }}
   </section>
@@ -33,9 +31,8 @@
 </div>
 
 <section class="announcement not-apply my-5">
-  {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ with $data.community.announcement }}
-  {{ partial "components/gallery.html" . }}
+  {{ partial "components/announcement.html" . }}
   {{ end }}
 </section>
 

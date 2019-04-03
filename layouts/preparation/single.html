@@ -9,7 +9,6 @@
 {{ end }}
 {{ end }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
 {{ with $videos := $data.preparations.videos }}
 {{ range $videos }}
 {{ partial "components/preparations/videos" . }}
