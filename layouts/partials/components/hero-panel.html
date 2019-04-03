@@ -28,12 +28,20 @@
               <p class="hero-panel__bottom-paragraph not-apply">{{ . }}</p>
             {{ end }}
             {{ $url := .Page.URL }}
+            {{ $currentTag := replace (index (last 1 (split .URL "#")) 0) "/" "" }}
             {{ if .Page.Params.navigation }}
             <div class="hero-panel__navigation">
-              {{ range $element := .Site.Menus.get_started }}
-              <a href="{{ $element.URL | relURL }}"
-                 class="hero-panel__navigation-item not-apply {{ if eq $url $element.URL }}active {{ end }}">{{ $element.Name }}</a>
-              {{ end }}
+              <ul class="nav nav-tabs">
+                {{ $data := index .Site.Data .Site.Language.Lang }}
+                {{ range $element := $data.get_started.tabs }}
+                <li>
+                  <a id="on-{{ .id }}"
+                     class="hero-panel__navigation-item not-apply"
+                     data-toggle="tab"
+                     href="#{{ .id }}-tab">{{ .title}}</a>
+                </li>
+                {{ end }}
+              </ul>
             </div>
             {{ end }}
           </div>

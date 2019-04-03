@@ -1,4 +1,14 @@
 {
+  "tabs": [
+    {
+      "title": "Cloud",
+      "id": "cloud"
+    },
+    {
+      "title": "On Premises",
+      "id": "premises"
+    }
+  ],
   "cloud": [
     {
       "evaluate": [

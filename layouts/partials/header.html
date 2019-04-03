@@ -39,7 +39,7 @@
                         </div>
                       </li>
                     {{ else if eq $url "/on-premises/" }}
-                      <li class="nav-item {{ if eq "/cloud/" .URL }}active {{ end }}">
+                      <li class="nav-item {{ if eq "/get-started/" .URL }}active {{ end }}">
                         <a class="header__item" href="{{ .URL | relURL }}">
                           <span>{{ .Name }}</span>
                           {{ .Post }}

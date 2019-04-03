@@ -12,6 +12,21 @@
       margin-bottom: 0;
     }
 
+    .nav-tabs {
+      border: none;
+    }
+
+    ul {
+      display: flex;
+      width: 100%;
+      @include media-breakpoint-down(sm) {
+        justify-content: space-between;
+      }
+      li {
+        display: flex;
+      }
+    }
+
     &__outer {
       min-height: unset;
 

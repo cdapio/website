@@ -65,7 +65,7 @@
       "title": "Plugins",
       "description": "Pipelines support a variety of plugins for connecting to cloud and onprem services as well as to perform data transformations.",
       "btnTitle": "View all connectors",
-      "btnLInk": "/plugins/#connectors",
+      "btnLink": "/plugins/#connectors",
       "linkTitle": "View all transformations",
       "linkUrl": "/plugins/#transformations",
       "items": [

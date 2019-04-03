@@ -46,3 +46,15 @@ function search() {
   });
   searchResult.style.display = !showPlugins.length ? '' : 'none';
 }
+
+$(document).ready(() => {
+  if (window.location.hash === "#premises") {
+    $("#on-premises").addClass("active");
+    $("#premises-tab").addClass("in active show");
+    window.location.hash = '';
+  } else {
+    $("#on-cloud").addClass("active");
+    $("#cloud-tab").addClass("in active show");
+  }
+  }
+);

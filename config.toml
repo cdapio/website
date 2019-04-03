@@ -91,7 +91,7 @@ logo = "/images/logo.svg"
   [params.cta]
     enable = true
     title = "Get STARTED"
-    url = "/cloud"
+    url = "/get-started"
   [params.learnMore]
     enable = true
     title = "Learn More"
@@ -118,7 +118,7 @@ enable = true
 
 [[languages.en.menu.main]]
 identifier = "Get started"
-url = "/cloud/"
+url = "/get-started/"
 name = "Get started"
 weight = 10
 
@@ -176,12 +176,3 @@ url = "/community/"
 name = "Community"
 weight = 40
 
-[[languages.en.menu.get_started]]
-identifier = "Cloud"
-url = "/cloud/"
-name = "Cloud"
-
-[[languages.en.menu.get_started]]
-identifier = "Premises"
-url = "/on-premises/"
-name = "On Premises"
