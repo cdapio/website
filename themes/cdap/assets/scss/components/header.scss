@@ -72,11 +72,6 @@
         text-decoration: none;
         color: white;
         background-color: $deep-orange;
-
-        @include media-breakpoint-down(sm) {
-          border-left: solid 8px $deep-orange;
-          border-bottom: none;
-        }
       }
     }
 
@@ -124,6 +119,12 @@
         border-bottom: none;
       }
     }
+    &.active {
+      @include media-breakpoint-down(sm) {
+        border-left: solid 8px $deep-orange;
+        border-bottom: none;
+      }
+    }
   }
 
   &__item-dropdown {
@@ -160,6 +161,14 @@
     }
   }
 
+  .dropdown-item {
+    &:active {
+      path {
+        fill: $deep-orange;
+      }
+    }
+  }
+
   .dropdown-menu {
     padding: 12px 25px 22px 17px;
     margin: 0;
@@ -176,7 +185,6 @@
       padding: 0;
 
       .external-link-icon {
-        opacity: 0.3;
         margin-left: 3px;
       }
 
@@ -192,6 +200,12 @@
           opacity: 1;
         }
       }
+    }
+
+    img {
+      height: 16px;
+      width: 20px;
+      margin-left: 4px;
     }
   }
 

@@ -76,7 +76,7 @@ logo = "/images/logo.svg"
 
   [params.cta]
     enable = true
-    title = "Get Started"
+    title = "Get STARTED"
   [params.learnMore]
     enable = true
     title = "Learn More"
@@ -103,35 +103,70 @@ enable = true
 
 [[languages.en.menu.main]]
 identifier = "Get started"
-url = "/get-started/"
+url = "/cloud/"
 name = "Get started"
 weight = 10
 
 [[languages.en.menu.main]]
-identifier = "Downloads"
-url = "/downloads/"
-name = "Downloads"
+identifier = "Accelerators"
+url = "/accelerators/"
+name = "Accelerators"
 weight = 20
 
 [[languages.en.menu.main]]
-identifier = "RESOURCES"
+identifier = "Resources"
 name = "Resources"
 weight = 30
 
 [[languages.en.menu.main]]
+identifier = "Case Studies"
+url = "/case-studies"
+parent = "Resources"
+name = "Case Studies"
+weight = 10
+
+[[languages.en.menu.main]]
+identifier = "Plugins"
+url = "/plugins"
+parent = "Resources"
+name = "Plugins"
+weight = 30
+
+[[languages.en.menu.main]]
+identifier = "Videos"
+url = "/accelerators/preparation/#videos"
+parent = "Resources"
+name = "Videos"
+weight = 40
+
+[[languages.en.menu.main]]
+identifier = "Documentation"
+post = "external"
+url = "https://docs.cdap.io/current"
+parent = "Resources"
+name = "Documentation"
+weight = 50
+
+[[languages.en.menu.main]]
+identifier = "Blog"
+post = "external"
+url = "https://cdap.io/"
+parent = "Resources"
+name = "Blog"
+weight = 60
+
+[[languages.en.menu.main]]
 identifier = "Community"
-url = "/comm/"
+url = "/community/"
 name = "Community"
 weight = 40
 
 [[languages.en.menu.get_started]]
 identifier = "Cloud"
-url = "/get-started/cloud/"
+url = "/cloud/"
 name = "Cloud"
-weight = 40
 
 [[languages.en.menu.get_started]]
 identifier = "Premises"
-url = "/get-started/on-premises/"
+url = "/on-premises/"
 name = "On Premises"
-weight = 40

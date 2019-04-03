@@ -1,0 +1,92 @@
+{
+  "get_connected": [
+    {
+      "title": "Get connected",
+      "description": "We’re here to help if you’ve hit an issue or even if you just have a question about CDAP.",
+      "items": [
+        {
+          "title": "Ask a question",
+          "body": "You get in touch with the community using any of the following links:",
+          "links": [
+            {
+              "title": "Mailing List",
+              "icon": "/images/icons/mailing.png",
+              "href": "https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/cdap-user"
+            },
+            {
+              "title": "Slack",
+              "icon": "/images/icons/slack.jpg",
+              "href": "https://cdap-users.herokuapp.com/"
+            },
+            {
+              "title": "Stack Overflow",
+              "icon": "/images/icons/stackoverflow.png",
+              "href": "https://stackoverflow.com/questions/tagged/cdap"
+            }
+          ]
+        },
+        {
+          "title": "Report a bug",
+          "body": "Tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
+          "links": [
+            {
+              "title": "Jira",
+              "icon": "/images/icons/jira.png",
+              "href": "https://issues.cask.co/projects/CDAP/issues"
+            }
+          ]
+        },
+        {
+          "title": "Join the BDAM group",
+          "body": "community focused on solving real world problems using Big Data technologies.",
+          "links": [
+            {
+              "title": "View Meetup",
+              "icon": false,
+              "href": "https://www.meetup.com/BigDataApps/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contribute": [
+    {
+      "title": "Contribute",
+      "description": "You can either contribute to the core CDAP framework, or to one of the plugins. ",
+      "items": [
+        {
+          "title": "Contribute to core CDAP",
+          "body": "The CDAP repository contains the source code of the core CDAP framework. <a href=\"https://github.com/cdapio/cdap\" target=\"_blank\">Create a pull</a> request for your bug today.:",
+          "href": ""
+        },
+        {
+          "title": "Contribute to a plugin",
+          "body": "To contribute to a CDAP plugin, <a href=\"https://github.com/data-integrations\" target=\"_blank\">create a pull</a> request to one of the many plugin repositories under the Data Integrations organization on Github.",
+          "href": ""
+        }
+      ]
+    }
+  ],
+  "twitter": [
+    {
+      "title": "Stay informed",
+      "description": "Stay informed about the latest news and announcements by following us on Twitter, subscribing to our YouTube channel, or meeting us at meetups and conferences."
+    }
+  ],
+  "announcement": [
+    {
+      "imageUrl": "/images/bdam-header.jpg",
+      "active": true,
+      "title":"Big Data Applications Meetup",
+      "description": "Join us for the next Big Data Applications Meetup at Google San Francisco on 04/10. ",
+      "linkTitle": "RSVP here",
+      "linkUrl": "https://www.meetup.com/BigDataApps/events/259996482/"
+    },
+    {
+      "imageUrl": "/images/get-started/google-cloud-platform.png",
+      "title": "Google Cloud Next ’19",
+      "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center"
+    }
+  ]
+}

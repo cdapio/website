@@ -1,0 +1,34 @@
+.resources {
+  min-height: 594px;
+  background-color: $white-15;
+  color: $black;
+
+  &__block {
+    height: 308px;
+    max-width: 376px;
+    padding: 20px 52px 18px 35px;
+    background-color: $white;
+    border: solid 1px #979797;
+    @include media-breakpoint-down(lg) {
+      padding: 20px 1rem 18px 1rem;
+    }
+  }
+
+  &__image {
+    height: 59px;
+  }
+
+  &__body {
+    height: 194px;
+  }
+
+  &__description {
+    font-size: 16px;
+  }
+
+  a {
+    color: #0092ff;
+    font-size: 18px;
+  }
+
+}

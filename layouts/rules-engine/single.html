@@ -1,0 +1,9 @@
+{{ define "main" }}
+  {{ partial "components/hero-panel" . }}
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $features := $data.features.features_rules_engine }}
+    {{ range $features }}
+      {{ partial "components/feature/feature" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}

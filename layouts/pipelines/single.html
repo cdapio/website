@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ partial "components/hero-panel" . }}
+
+<section>
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $features := $data.why_pipelines }}
+  {{ partial "components/why/why" . }}
+  {{ end }}
+</section>
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $features := $data.features.features_pipeline }}
+{{ range $features }}
+  {{ partial "components/feature/feature" . }}
+{{ end }}
+{{ end }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $plugins := $data.plugins }}
+{{ partial "components/pipelines/plugins" . }}
+{{ end }}
+
+{{ end }}

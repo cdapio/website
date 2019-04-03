@@ -167,15 +167,25 @@ section.hero {
 .hero-panel {
   display: flex;
   flex-direction: column;
-  min-height: 440px;
   font-size: 25px;
   background-image: url('/images/background-cover-secondary.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @include media-breakpoint-down(sm) {
-    min-height: 575px;
+  .background-image {
+    background-position: 90% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 380px;
+
+    @include media-breakpoint-down(sm) {
+      min-height: 515px;
+    }
+
+    @include media-breakpoint-up(md) {
+      background-size: unset;
+    }
   }
 
   .container {
@@ -205,14 +215,22 @@ section.hero {
   }
 
   &__title {
-    height: 60px;
-    padding-top: 8px;
-    line-height: .6;
+    line-height: .8;
+    height: 70px;
+    @include media-breakpoint-up(lg) {
+      padding-left: 0.5rem;
+    }
   }
 
   &__navigation {
+    display: flex;
     margin-top: 35px;
     margin-bottom: 10px;
+    justify-content: center;
+
+    @include media-breakpoint-up(sm) {
+      justify-content: flex-start;
+    }
   }
 
   &__navigation-item {
@@ -220,7 +238,11 @@ section.hero {
     font-weight: bold;
     letter-spacing: 0.2px;
     color: $white;
-    padding: 0 62px;
+    padding: 0 10px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 62px;
+    }
 
     &:link, &:hover {
       color: inherit;
@@ -235,16 +257,14 @@ section.hero {
   &__outer {
     display: flex;
     flex-direction: column;
+    min-height: 380px;
 
-    .background-image {
-      background-position: bottom right;
-      background-repeat: no-repeat;
-      background-size: cover;
+    @include media-breakpoint-down(sm) {
+      min-height: 515px;
+    }
 
-      @include media-breakpoint-up(md) {
-        background-position: center right;
-        background-size: unset;
-      }
+    @include media-breakpoint-up(lg) {
+      padding-left: 1rem;
     }
   }
 

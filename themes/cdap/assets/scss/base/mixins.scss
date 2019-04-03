@@ -19,7 +19,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  opacity: .43;
+  opacity: .23;
   background-image: url('/images/features-#{$position}.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,5 +32,17 @@
   @if $position == 'bottom' {
     bottom: 0;
     height: 139px;
+  }
+}
+
+@mixin container($width, $maxWidth: 100%) {
+  .container {
+    width: $width;
+    max-width: $maxWidth;
+
+    .container {
+      width: 100%;
+      padding: 0;
+    }
   }
 }

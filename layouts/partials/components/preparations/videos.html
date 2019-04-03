@@ -1,0 +1,16 @@
+<section class="videos pb-5" id="videos">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="plugins__title ml-3">{{ .title }}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="videos__wrapper">
+      {{ range $videos := .items}}
+        <iframe class="videos__video ml-auto mr-auto" src="{{ $videos.url }}"></iframe>
+      {{ end }}
+    </div>
+  </div>
+</section>

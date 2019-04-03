@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="accelerators__title">
+        {{ .title }}
+      </h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-start">
+    {{ range .items }}
+    <div class="col-lg-6 col-md-12 mt-5 mt-lg-4">
+      <p class="testimonials__testimonial font-italic not-apply">{{ .paragraph }}</p>
+      <p class="testimonials__author not-apply">– {{ .name }}, {{ .job }}, {{ .company }}</p>
+    </div>
+    {{ end }}
+  </div>
+</div>

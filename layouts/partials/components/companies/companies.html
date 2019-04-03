@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="companies__title">
+        {{ .title }}
+      </h2>
+      <a href="/case-studies">Read case studies</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-between mt-5 no-gutters">
+    {{ range first 4 .items }}
+    <div class="companies__custom">
+      <a href="{{ .url }}">
+        <img src="images/{{ .image }}" class="companies__image"/>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</div>
+<div class="container">
+  <div class="companies__wrapper mt-0 mt-sm-5">
+    <div class="collapse" id="companies">
+      <div class="row justify-content-between no-gutters">
+        {{ range after 4 .items }}
+        <div class="companies__custom">
+          <a href="{{ .url }}">
+            <img src="images/{{ .image }}" class="companies__image"/>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="companies__wrapper">
+        <div class="companies__cta mt-4" id="toggleBtn" data-toggle="collapse" href="#companies" aria-expanded="false"
+             aria-controls="companies">Show more
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
