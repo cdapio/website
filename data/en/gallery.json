@@ -1,31 +1,15 @@
 [
   {
-    "imageUrl": "/images/announcement-1.jpg",
+    "imageUrl": "/images/bdam-header.jpg",
     "active": true,
-    "title": "Annoucement title goes here",
-    "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
-    "linkTitle": "Learn more",
-    "linkUrl": "#"
+    "title":"Big Data Applications Meetup",
+    "description": "Join us for the next Big Data Applications Meetup at Google San Francisco on 04/10. ",
+    "linkTitle": "RSVP here",
+    "linkUrl": "https://www.meetup.com/BigDataApps/events/259996482/"
   },
   {
-    "imageUrl": "/images/announcement-2.jpg",
-    "title": "Annoucement title goes here",
-    "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
-    "linkTitle": "Learn more",
-    "linkUrl": "#"
-  },
-  {
-    "imageUrl": "/images/announcement-3.jpg",
-    "title": "Annoucement title goes here",
-    "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
-    "linkTitle": "Learn more",
-    "linkUrl": "#"
-  },
-  {
-    "imageUrl": "/images/announcement-4.jpg",
-    "title": "Annoucement title goes here",
-    "description": "Lorem ipsum dolor sit amet, consecteru adipiscing elit. Lorem ipsum dolor sit amet, consecteru adipiscing elit.",
-    "linkTitle": "Learn more",
-    "linkUrl": "#"
+    "imageUrl": "/images/get-started/google-cloud-platform.png",
+    "title": "Google Cloud Next ’19",
+    "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center"
   }
 ]

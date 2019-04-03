@@ -74,8 +74,7 @@
       "description": "Stay informed about the latest news and announcements by following us on Twitter, subscribing to our YouTube channel, or meeting us at meetups and conferences."
     }
   ],
-  "announcement":
-  [
+  "announcement": [
     {
       "imageUrl": "/images/bdam-header.jpg",
       "active": true,
