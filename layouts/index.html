@@ -5,8 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
-        <h3 class="hero__c-title not-apply">{{ .Site.Params.Title }}</h3>
-        <h2 class="hero__title mt-4 not-apply">{{ .Site.Params.description | safeHTML }}</h2>
+        <h2 class="hero__title not-apply">{{ .Site.Params.description | safeHTML }}</h2>
         <p class="hero__paragraph not-apply">{{ .Site.Params.about | safeHTML }}</p>
       </div>
       {{ with $tabs := $data.homepage.hero_tabs }}

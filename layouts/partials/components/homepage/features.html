@@ -14,14 +14,14 @@
       <div class="col-lg-6 col-md-12">
         <div class="features__block mt-5">
           <h4 class="features__title mb-4">{{ .header }}</h4>
-          <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
+          <p id="{{ .id }}" class="features__body d-sm-flex collapse show">{{ .paragraph }}</p>
           <a id="{{ .id }}btn"
              class="d-sm-none d-flex mt-4"
              href="#"
              data-toggle="collapse"
              data-target="#{{ .id }}"
              onclick="learnMore({{ .id }})">
-            Learn More
+            Hide
           </a>
         </div>
       </div>
@@ -30,14 +30,14 @@
       <div class="col-lg-6 col-md-12">
         <div class="features__block mt-5">
           <h4 class="features__title mb-4">{{ .header }}</h4>
-          <p id="{{ .id }}" class="features__body d-sm-flex collapse">{{ .paragraph }}</p>
+          <p id="{{ .id }}" class="features__body d-sm-flex collapse show">{{ .paragraph }}</p>
           <a id="{{ .id }}btn"
              class="d-sm-none d-flex mt-4"
              href="#"
              data-toggle="collapse"
              data-target="#{{ .id }}"
              onclick="learnMore({{ .id }})">
-            Learn More
+            Hide
           </a>
         </div>
       </div>

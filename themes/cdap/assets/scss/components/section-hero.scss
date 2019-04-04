@@ -14,31 +14,14 @@ section.hero {
     max-height: 400px;
   }
 
-  &__c-title {
-    display: inline-flex;
-    position: relative;
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 0;
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      height: 1px;
-      background-color: $gray-5;
-      width: 100%;
-
-      @include media-breakpoint-up(sm) {
-        width: 135px;
-      }
-    }
-  }
-
   &__title {
     font-size: 55px;
     letter-spacing: .17px;
+    margin-top: 50px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 20px;
+    }
 
     @include media-breakpoint-down(sm) {
       font-size: 35px;
@@ -58,6 +41,10 @@ section.hero {
     @include media-breakpoint-down(lg) {
       font-size: 20px;
     }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
   }
 
   &__block {
@@ -72,6 +59,7 @@ section.hero {
     background-image: linear-gradient(to bottom, $white, $white-15);
 
     @include media-breakpoint-down(sm) {
+      height: 401px;
       position: relative;
       box-shadow: 0 0 12px 5px rgba(87, 87, 87, 0.76);
       padding: 17px 15px;
@@ -155,12 +143,26 @@ section.hero {
 
   &__tab-title {
     color: $greyish-brown;
+    font-size: 25px;
   }
 
   &__tab-body {
     font-size: 18px;
     letter-spacing: 0.2px;
     color: $greyish-brown;
+    min-height: 81px;
+
+    @include media-breakpoint-down(lg) {
+      min-height: 108px;
+    }
+
+    @include media-breakpoint-down(md) {
+      min-height: 81px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: 135px;
+    }
   }
 }
 
@@ -217,9 +219,6 @@ section.hero {
   &__title {
     line-height: .8;
     height: 70px;
-    @include media-breakpoint-up(lg) {
-      padding-left: 0.5rem;
-    }
   }
 
   &__navigation {

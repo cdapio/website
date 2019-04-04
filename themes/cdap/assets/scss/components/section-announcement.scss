@@ -1,27 +1,14 @@
-section.announcement {
-  padding: 0;
-  margin-top: 100px;
-
-  @include media-breakpoint-up(sm) {
-    margin-top: 380px;
-  }
-
-  @include media-breakpoint-up(md) {
-    margin-top: 280px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    margin-top: 0;
-  }
-
-  @include media-breakpoint-up(lg) {
-    margin-top: 80px;
-  }
-}
-
 .announcement {
-  padding: 0 30px;
-  color: $black;
+  padding: 0;
+  margin-top: 66px;
+
+  @include media-breakpoint-between(sm, md) {
+    margin-top: 210px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 49px;
+  }
 
   &__wrapper {
     position: relative;

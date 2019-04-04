@@ -20,13 +20,17 @@
     letter-spacing: 0.2px;
     text-align: center;
     color: $greyish-brown;
-    width: 90%;
+    width: 70%;
     margin: 0;
+
+    @include media-breakpoint-down(md) {
+      width: 60%;
+    }
   }
 
   &__block-body {
-    color: $greyish-brown;
-    font-size: 16px;
+    color: $brownish-grey;
+    font-size: 20px;
     line-height: 1.25;
     letter-spacing: 0.2px;
     text-align: center;
@@ -34,6 +38,7 @@
 
   &__block {
     border-right: solid 1px $gray;
+    padding: 0 25px;
 
     &:nth-child(4n) {
       border-right: 0;

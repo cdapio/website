@@ -1,8 +1,13 @@
 .header {
-  min-height: 60px;
+  height: 60px;
   border: solid 1px $gray-5;
   background-color: $black;
   border-bottom: solid 2px $deep-orange;
+
+  @include media-breakpoint-down(sm) {
+    border: none;
+    border-bottom: solid 2px $deep-orange;
+  }
 
   .container-fluid {
     @include media-breakpoint-up(xl) {
@@ -49,7 +54,7 @@
 
   &__logo {
     height: 21px;
-    width: 100px;
+    width: 85px;
 
     @include media-breakpoint-down(sm) {
       margin-top: 7px;

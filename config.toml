@@ -90,7 +90,7 @@ logo = "/images/logo.svg"
 
   [params.cta]
     enable = true
-    title = "Get STARTED"
+    title = "Get Started"
     url = "/get-started"
   [params.learnMore]
     enable = true
