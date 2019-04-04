@@ -3,11 +3,9 @@
     <div class="container">
       <div class="hero-panel__title d-flex align-items-center">
         <div>
-          {{ with .Params.hero.link_back_title }}
-          <a href="/accelerators" class="hero-panel__link">« {{ . | markdownify }}</a>
-          {{ end }}
-          {{ with .Params.hero.title }}
-          <h4 class="not-apply m-0" >{{ . | markdownify }}</h4>
+          {{ with .Params.hero }}
+          <a href="{{ .link_back_url | markdownify }}" class="hero-panel__link">{{ .link_back_title | markdownify }}</a>
+          <h4 class="not-apply m-0" >{{ .title | markdownify }}</h4>
           {{ end }}
         </div>
       </div>
@@ -21,14 +19,12 @@
         <div class="row">
           <div class="hero-panel__info col-lg-6 col-md-12">
             <p class="hero-panel__paragraph not-apply">{{ .Params.hero.body | markdownify }}</p>
-            {{ with .Params.hero.link_documentation_title }}
-              <a href="#" class="hero-panel__link">{{ . }}</a>
+            {{ with .Params.hero }}
+              <a href="{{ .link_documentation_url }}" class="hero-panel__link">{{ .link_documentation_title | markdownify }}</a>
             {{ end }}
             {{ with .Params.hero.bottom_paragraph }}
               <p class="hero-panel__bottom-paragraph not-apply">{{ . }}</p>
             {{ end }}
-            {{ $url := .Page.URL }}
-            {{ $currentTag := replace (index (last 1 (split .URL "#")) 0) "/" "" }}
             {{ if .Page.Params.navigation }}
             <div class="hero-panel__navigation">
               <ul class="nav nav-tabs">

@@ -22,7 +22,7 @@
       "body": "Analytics provides a simple, interactive, UI-driven approach to machine learning. It provides a seamless, automated interface for users to easily develop, train, test, evaluate and deploy their machine learning models. It reduces the need for ad-hoc custom tooling and promotes reusability and collaboration.  <a href='#'>Learn More</a>"
     },
     {
-      "title": "Rules",
+      "title": "Rules Engine",
       "url": "/accelerators/rules-engine/",
       "urlTitle": "Learn more",
       "image": "/images/accelerators-details-rules.jpg",

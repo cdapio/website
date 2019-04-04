@@ -142,7 +142,7 @@ weight = 10
 
 [[languages.en.menu.main]]
 identifier = "Plugins"
-url = "/plugins"
+url = "/resources/plugins"
 parent = "Resources"
 name = "Plugins"
 weight = 30

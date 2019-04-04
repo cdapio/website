@@ -43,6 +43,12 @@
     }
   }
 
+  &__image-block {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
   &__image {
     height: 80px;
     width: auto;

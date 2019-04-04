@@ -28,6 +28,7 @@
               "title": " Amazon Web Service",
               "description": "Spin up a single-process instance of CDAP on AWS Marketplace.",
               "img": "/images/get-started/amazon-web-services.png",
+              "imgHeight": "70px",
               "linkTitle": "Go to AWS Marketplace",
               "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
             },
