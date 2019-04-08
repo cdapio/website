@@ -90,7 +90,8 @@ logo = "/images/logo.svg"
 
   [params.cta]
     enable = true
-    title = "Get STARTED"
+    title = "Get Started"
+    url = "/get-started"
   [params.learnMore]
     enable = true
     title = "Learn More"
@@ -117,7 +118,7 @@ enable = true
 
 [[languages.en.menu.main]]
 identifier = "Get started"
-url = "/cloud/"
+url = "/get-started/"
 name = "Get started"
 weight = 10
 
@@ -141,7 +142,7 @@ weight = 10
 
 [[languages.en.menu.main]]
 identifier = "Plugins"
-url = "/plugins"
+url = "/resources/plugins"
 parent = "Resources"
 name = "Plugins"
 weight = 30
@@ -175,12 +176,3 @@ url = "/community/"
 name = "Community"
 weight = 40
 
-[[languages.en.menu.get_started]]
-identifier = "Cloud"
-url = "/cloud/"
-name = "Cloud"
-
-[[languages.en.menu.get_started]]
-identifier = "Premises"
-url = "/on-premises/"
-name = "On Premises"

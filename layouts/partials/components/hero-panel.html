@@ -3,11 +3,11 @@
     <div class="container">
       <div class="hero-panel__title d-flex align-items-center">
         <div>
-          {{ with .Params.hero.link_back_title }}
-          <a href="/accelerators" class="hero-panel__link">« {{ . | markdownify }}</a>
+          {{ with .Params.hero }}
+          {{ if .link_back_url }}
+          <a href="{{ .link_back_url | markdownify }}" class="hero-panel__link">{{ .link_back_title | markdownify }}</a>
           {{ end }}
-          {{ with .Params.hero.title }}
-          <h4 class="not-apply m-0" >{{ . | markdownify }}</h4>
+          <h4 class="not-apply m-0" >{{ .title | markdownify }}</h4>
           {{ end }}
         </div>
       </div>
@@ -16,24 +16,32 @@
   {{ $backgroundColor := .Params.hero.background_color }}
   {{ $background_image_secondary := .Params.hero.background_image_secondary  }}
   <div class="d-flex flex-column w-100" {{ with $backgroundColor }} style="background-color: {{ . }}" {{ end }}>
-    <div class="hero-panel__outer flex-grow-1 background-image" {{ with $background_image_secondary }} style="background-image: url('{{ . | relURL }}')" {{ end }}>
-      <div class="container">
+    <div class="hero-panel__outer">
+      <div class="container background-image" {{ with $background_image_secondary }} style="background-image: url('{{ . | relURL }}')" {{ end }}>
         <div class="row">
           <div class="hero-panel__info col-lg-6 col-md-12">
             <p class="hero-panel__paragraph not-apply">{{ .Params.hero.body | markdownify }}</p>
-            {{ with .Params.hero.link_documentation_title }}
-              <a href="#" class="hero-panel__link">{{ . }}</a>
+            {{ with .Params.hero }}
+              {{ if .link_documentation_url }}
+              <a href="{{ .link_documentation_url }}" class="hero-panel__link">{{ .link_documentation_title | markdownify }}</a>
+              {{ end }}
             {{ end }}
             {{ with .Params.hero.bottom_paragraph }}
               <p class="hero-panel__bottom-paragraph not-apply">{{ . }}</p>
             {{ end }}
-            {{ $url := .Page.URL }}
             {{ if .Page.Params.navigation }}
             <div class="hero-panel__navigation">
-              {{ range $element := .Site.Menus.get_started }}
-              <a href="{{ $element.URL | relURL }}"
-                 class="hero-panel__navigation-item not-apply {{ if eq $url $element.URL }}active {{ end }}">{{ $element.Name }}</a>
-              {{ end }}
+              <ul class="nav nav-tabs">
+                {{ $data := index .Site.Data .Site.Language.Lang }}
+                {{ range $element := $data.get_started.tabs }}
+                <li>
+                  <a id="on-{{ .id }}"
+                     class="hero-panel__navigation-item not-apply"
+                     data-toggle="tab"
+                     href="#{{ .id }}-tab">{{ .title}}</a>
+                </li>
+                {{ end }}
+              </ul>
             </div>
             {{ end }}
           </div>

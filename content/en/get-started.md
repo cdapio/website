@@ -1,7 +1,7 @@
 ---
-title: On Premises
+title: Get Started
 navigation: true
-type: on-premises
+type: get-started
 hero:
   title: Get Started
   body: "CDAP is an open source framework that can run on either the cloud or on-premises"

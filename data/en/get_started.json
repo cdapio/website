@@ -1,11 +1,21 @@
 {
+  "tabs": [
+    {
+      "title": "Cloud",
+      "id": "cloud"
+    },
+    {
+      "title": "On Premises",
+      "id": "premises"
+    }
+  ],
   "cloud": [
     {
       "evaluate": [
         {
           "subTitle": "evaluate",
           "title": "Spin up CDAP in the Cloud for Evaluation",
-          "description": "The CDAP Cloud Sandbox is a single-process package of CDAP optimized for the Cloud. Functionally identical with the CDAP Local Sandbox, it may differ in nomenclature, and may have additional optimizations - such as dedicated tabs in the Hub - specific to individual cloud providers. The CDAP Cloud Sandbox is available from the respective cloud providers&apos; Marketplaces.",
+          "description": "The CDAP Cloud Sandbox is a single-process package of CDAP optimized for the Cloud. Functionally identical with the CDAP Local Sandbox, it may differ in nomenclature, and may have additional optimizations - such as dedicated tabs in the Hub - specific to individual cloud providers. The CDAP Cloud Sandbox is available from the respective cloud providers`  Marketplaces.",
           "items": [
             {
               "title": "Google Cloud Platform",
@@ -18,6 +28,7 @@
               "title": " Amazon Web Service",
               "description": "Spin up a single-process instance of CDAP on AWS Marketplace.",
               "img": "/images/get-started/amazon-web-services.png",
+              "imgHeight": "70px",
               "linkTitle": "Go to AWS Marketplace",
               "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
             },

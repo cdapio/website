@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <div class="get-started">
+    {{ partial "components/hero-panel" . }}
+
+    {{ $data := index .Site.Data .Site.Language.Lang }}
+    <div class="tab-content">
+      <div id="cloud-tab" class="tab-pane fade">
+        {{ with $tabs := $data.get_started.cloud }}
+        {{ range $tabs }}
+
+        {{ range .evaluate }}
+        {{ partial "components/get-started/services" . }}
+        {{ end }}
+
+        {{ range .on_production }}
+        {{ partial "components/get-started/services" . }}
+        {{ end }}
+
+        {{ end }}
+        {{ end }}
+      </div>
+      <div id="premises-tab" class="tab-pane fade">
+        {{ with $tabs := $data.get_started.on_premises }}
+        {{ range $tabs }}
+
+        {{ range .evaluate }}
+        {{ partial "components/get-started/services" . }}
+        {{ end }}
+
+        {{ range .on_production }}
+        {{ partial "components/get-started/services" . }}
+        {{ end }}
+
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ with $tabs := $data.get_started.resources }}
+    {{ range $tabs }}
+    {{ partial "components/get-started/resources" . }}
+    {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

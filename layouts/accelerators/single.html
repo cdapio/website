@@ -5,17 +5,9 @@
 <div class="container mt-5">
   <div class="row">
     {{ $data := index .Site.Data .Site.Language.Lang }}
-    {{ with $accelerators := $data.accelerators.pipelines }}
-    {{ range first 4 $accelerators }}
-    <div class="accelerators-info__wrapper col-lg-6 col-md-12">
-      <div class="accelerators-info__block" onclick="window.location='{{ .url }}'">
-        <img class="accelerators-info__image" src="{{ .image | relURL }}" alt="Pipelines">
-        <h4 class="accelerators-info__title mb-4 mt-3">{{ .title }}</h4>
-        <p class="accelerators-info__body">
-          {{ .body | safeHTML }}
-        </p>
-      </div>
-    </div>
+    {{ with $accelerators := $data.accelerators.accelerators }}
+    {{ range $accelerators }}
+    {{ partial "components/accelerators/accelerators" . }}
     {{ end }}
     {{ end }}
   </div>

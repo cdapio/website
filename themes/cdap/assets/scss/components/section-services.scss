@@ -43,8 +43,14 @@
     }
   }
 
+  &__image-block {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
   &__image {
-    height: 110px;
+    height: 80px;
     width: auto;
   }
 

@@ -1,8 +1,13 @@
 .header {
-  min-height: 60px;
+  height: 60px;
   border: solid 1px $gray-5;
   background-color: $black;
   border-bottom: solid 2px $deep-orange;
+
+  @include media-breakpoint-down(sm) {
+    border: none;
+    border-bottom: solid 2px $deep-orange;
+  }
 
   .container-fluid {
     @include media-breakpoint-up(xl) {
@@ -49,7 +54,7 @@
 
   &__logo {
     height: 21px;
-    width: 100px;
+    width: 85px;
 
     @include media-breakpoint-down(sm) {
       margin-top: 7px;
@@ -67,8 +72,8 @@
         position: absolute;
         width: 110%;
         left: -5%;
-        bottom: -15px;
-        height: 11px;
+        bottom: -12px;
+        height: 8px;
         text-decoration: none;
         color: white;
         background-color: $deep-orange;
@@ -96,12 +101,13 @@
     font-size: 14px;
     color: white;
     letter-spacing: .3px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
     text-transform: uppercase;
 
     @include media-breakpoint-down(md) {
       font-size: 13px;
       letter-spacing: .26px;
+      padding-bottom: 8px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -119,6 +125,7 @@
         border-bottom: none;
       }
     }
+
     &.active {
       @include media-breakpoint-down(sm) {
         border-left: solid 8px $deep-orange;
@@ -257,6 +264,7 @@
     .navbar-toggler {
       margin-left: calc(1rem + 8px);
       border: none;
+
       &:focus, &:active {
         outline: none;
         box-shadow: none;

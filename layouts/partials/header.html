@@ -18,9 +18,10 @@
               <ul class="navbar-nav">
                 {{ $currentNode := . }}
                 {{ $url := .URL }}
+                {{ $firstUrlElement := index (split .URL "/") 1 }}
                 {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
-                      <li class="nav-item dropdown">
+                      <li class="nav-item {{ if eq $firstUrlElement "resources" }}active {{ end }} dropdown">
                         <a class="header__item header__item-dropdown">
                           {{ .Name }}
                         </a>
@@ -38,8 +39,8 @@
                           {{ end }}
                         </div>
                       </li>
-                    {{ else if eq $url "/on-premises/" }}
-                      <li class="nav-item {{ if eq "/cloud/" .URL }}active {{ end }}">
+                    {{ else if eq $firstUrlElement "accelerators" }}
+                      <li class="nav-item {{ if eq "/accelerators/" .URL }}active {{ end }}">
                         <a class="header__item" href="{{ .URL | relURL }}">
                           <span>{{ .Name }}</span>
                           {{ .Post }}
@@ -73,7 +74,11 @@
         {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item mt-4">
-          <a class="header__item header__item-dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="header__item {{ if eq $firstUrlElement "resources" }}active {{ end }} header__item-dropdown"
+             id="dropdownMenuButton"
+             data-toggle="dropdown"
+             aria-haspopup="true"
+             aria-expanded="false">
             {{ .Name }}
           </a>
           <div class="dropdown-menu container-fluid" aria-labelledby="dropdownMenuButton">
@@ -89,6 +94,13 @@
             </a>
             {{ end }}
           </div>
+        </li>
+        {{ else if eq $firstUrlElement "accelerators" }}
+        <li class="nav-item mt-4">
+        <a class="header__item {{ if eq "/accelerators/" .URL }}active {{ end }}" href="{{ .URL | relURL }}">
+          <span>{{ .Name }}</span>
+          {{ .Post }}
+        </a>
         </li>
         {{ else }}
         <li class="nav-item mt-4">

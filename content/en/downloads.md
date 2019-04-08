@@ -1,4 +1,0 @@
----
-title: Downloads
-type: downloads
----

@@ -7,7 +7,7 @@
   transition: all .4s;
   border: solid $white;
   border-width: 0 1px 1px 0;
-  margin-left: 3px;
+  margin-left: 8px;
   margin-bottom: $margin;
   @include media-breakpoint-down(sm) {
     margin-left: 25px;

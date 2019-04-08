@@ -3,9 +3,9 @@
 {{ partial "components/hero-panel" . }}
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
-{{ with $features := $data.features.features_analytics }}
-  {{ range $features }}
-    {{ partial "components/feature/feature" . }}
-  {{ end }}
+{{ with $features := $data.analytics.features_analytics }}
+{{ range $features }}
+{{ partial "components/features" . }}
+{{ end }}
 {{ end }}
 {{ end }}
