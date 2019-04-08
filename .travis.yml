@@ -37,4 +37,4 @@ install:
 script:
   - hugo
   - npm run test:spelling
-  - ./bin/htmltest --skip-external
+  - ./bin/htmltest
