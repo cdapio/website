@@ -28,6 +28,15 @@ const mobileMenu = $('#mobileMenu');
 menuButton.on('click', () => mobileMenu.show(300));
 closeButton.on('click', () => mobileMenu.hide(300));
 
+const hideTeamButton = $('#hideTeamBtn');
+const showTeamButton = $('#showTeamBtn');
+const heroDescription = $('#heroDescription');
+const hero = $('#hero');
+const heroTeam = $('#heroTeam');
+
+showTeamButton.on('click', () => { heroTeam.show(300); heroDescription.hide(300); hero.addClass('opened'); });
+hideTeamButton.on('click', () => { heroTeam.hide(300); heroDescription.show(300); hero.removeClass('opened'); });
+
 function learnMore(id) {
   const toggleButton = $(`#${id}btn`)[0];
   const collapseContainer = $(`#${id}`);

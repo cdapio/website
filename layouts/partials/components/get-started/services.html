@@ -19,7 +19,7 @@
                  {{ end }}>
           </div>
           <h3 class="text-center mt-4 not-apply">{{ $item.title }}</h3>
-          <p class="text-center mt-1 d-sm-flex not-apply">{{ $item.description }}</p>
+          <p class="text-center mt-1 d-sm-flex not-apply">{{ $item.description | safeHTML }}</p>
           <div class="w-100">
             <button class="services__button" onclick="location.href='{{ $item.link }}'">{{ $item.linkTitle }}</button>
           </div>

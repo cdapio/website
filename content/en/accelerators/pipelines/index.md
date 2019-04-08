@@ -1,6 +1,6 @@
 ---
-title: Preparation
-type: preparation
+title: Pipelines
+type: pipelines
 hero:
   title: Pipelines
   link_back_title: « Accelerators

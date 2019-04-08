@@ -7,22 +7,18 @@
   }
 
   &__custom {
+    justify-content: center;
     @include media-breakpoint-down(sm) {
       width: 100%;
-      display: flex;
-      justify-content: center;
     }
-
     @include media-breakpoint-between(sm, md) {
       width: 50%;
-      display: flex;
-      justify-content: center;
     }
   }
 
   &__image {
-    width: 167px;
-    height: 71px;
+    width: auto;
+    height: 40px;
   }
 
   &__wrapper {

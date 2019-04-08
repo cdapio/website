@@ -15,7 +15,7 @@
         {
           "subTitle": "evaluate",
           "title": "Spin up CDAP in the Cloud for Evaluation",
-          "description": "The CDAP Cloud Sandbox is a single-process package of CDAP optimized for the Cloud. Functionally identical with the CDAP Local Sandbox, it may differ in nomenclature, and may have additional optimizations - such as dedicated tabs in the Hub - specific to individual cloud providers. The CDAP Cloud Sandbox is available from the respective cloud providers&apos; Marketplaces.",
+          "description": "The CDAP Cloud Sandbox is a single-process package of CDAP optimized for the Cloud. Functionally identical with the CDAP Local Sandbox, it may differ in nomenclature, and may have additional optimizations - such as dedicated tabs in the Hub - specific to individual cloud providers. The CDAP Cloud Sandbox is available from the respective cloud providers`  Marketplaces.",
           "items": [
             {
               "title": "Google Cloud Platform",

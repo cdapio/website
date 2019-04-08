@@ -9,9 +9,9 @@
   </div>
 </div>
 <div class="container">
-  <div class="row justify-content-between mt-5 no-gutters">
+  <div class="row justify-content-between mt-4 no-gutters">
     {{ range first 4 .items }}
-    <div class="companies__custom">
+    <div class="companies__custom d-flex align-items-center my-4">
       <a href="{{ .url }}">
         <img src="images/{{ .image }}" class="companies__image"/>
       </a>
@@ -34,14 +34,18 @@
     </div>
   </div>
 </div>
+{{ $list := .items }}
+{{ $len := (len $list) }}
+{{ if gt $len 4 }}
 <div class="container">
   <div class="row">
     <div class="col-12 text-center">
       <div class="companies__wrapper">
-        <div class="companies__cta mt-4" id="toggleBtn" data-toggle="collapse" href="#companies" aria-expanded="false"
+        <div class="companies__cta mt-3" id="toggleBtn" data-toggle="collapse" href="#companies" aria-expanded="false"
              aria-controls="companies">Show more
         </div>
       </div>
     </div>
   </div>
 </div>
+{{ end }}

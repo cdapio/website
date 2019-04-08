@@ -2,12 +2,16 @@
   padding: 0;
   margin-top: 66px;
 
+  @include media-breakpoint-up(lg) {
+    margin-top: 49px;
+  }
+
   @include media-breakpoint-between(sm, md) {
     margin-top: 210px;
   }
 
-  @include media-breakpoint-up(lg) {
-    margin-top: 49px;
+  @include media-breakpoint-down(sm) {
+    margin-top: 66px;
   }
 
   &__wrapper {

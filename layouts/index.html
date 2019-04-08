@@ -1,12 +1,18 @@
 {{ define "main" }}
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
-<section class="hero">
+<section id="hero" class="hero">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
-        <h2 class="hero__title not-apply">{{ .Site.Params.description | safeHTML }}</h2>
-        <p class="hero__paragraph not-apply">{{ .Site.Params.about | safeHTML }}</p>
+        <div id="showTeamBtn">&#5867;</div>
+        <div id="heroDescription" class="collapse show">
+          <h2 class="hero__title pr-3 not-apply">{{ .Site.Params.description | safeHTML }}</h2>
+          <p class="hero__paragraph not-apply">{{ .Site.Params.about | safeHTML }}</p>
+        </div>
+        <div id="heroTeam" class="hero__teamTab collapse py-md-4 px-md-4 p-sm-3">
+          {{ partial "components/homepage/cdap.html" }}
+        </div>
       </div>
       {{ with $tabs := $data.homepage.hero_tabs }}
       {{ partial "components/homepage/hero-tabs" . }}
