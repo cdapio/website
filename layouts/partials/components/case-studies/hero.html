@@ -1,0 +1,38 @@
+{{ $backgroundColor := .Params.hero.background_color }}
+
+<section class="hero-panel case-studies not-apply">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="hero-panel__title d-flex align-items-center">
+        <div>
+          {{ with .Params.hero }}
+            <a href="{{ .link_back_url | relURL }}" class="hero-panel__link">{{ .link_back_title | markdownify }}</a>
+            <h4 class="not-apply m-0" >{{ .title | markdownify }}</h4>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column w-100" {{ with $backgroundColor }} style="background-color: {{ . }}" {{ end }}>
+    <div class="hero-panel__outer">
+      <div class="container">
+        <div class="row">
+          <div class="hero-panel__info col-lg-5 col-md-12">
+            <h2 class="hero-panel__second-title not-apply">Title goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <p class="hero-panel__paragraph not-apply">{{ .Params.hero.body | markdownify }}</p>
+          </div>
+          <div class="hero-panel__info col-lg-7 col-md-12">
+            <div class="panel">
+              {{ range .Params.hero.table }}
+                <div class="panel__row-wrapper">
+                  <div class="panel__title">{{ .title }}</div>
+                  <div class="panel__description">{{ .body }}</div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

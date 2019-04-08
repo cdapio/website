@@ -1,0 +1,73 @@
+{
+  "solutions_by_industry": [
+    {
+      "title": "Solutions by industry",
+      "items": [
+        {
+          "img": "/images/case-studies/industry-1.svg",
+          "title": "Telecommunications",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./telecommunications"
+        },
+        {
+          "img": "/images/case-studies/industry-2.svg",
+          "title": "Healthcare",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./healthcare"
+        },
+        {
+          "img": "/images/case-studies/industry-3.svg",
+          "title": "Retail",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./retail"
+        },
+        {
+          "img": "/images/case-studies/industry-4.svg",
+          "title": "Finance",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./finance"
+        }
+      ]
+    }
+  ],
+  "solutions_by_customer": [
+    {
+      "title": "Solutions by customer needs",
+      "isGray": true,
+      "items": [
+        {
+          "img": "/images/case-studies/customer-1.svg",
+          "title": "BI migration",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./bi-migration"
+        },
+        {
+          "img": "/images/case-studies/customer-2.svg",
+          "title": "Fraud detection",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./fraud-detection"
+        },
+        {
+          "img": "/images/case-studies/customer-3.svg",
+          "title": "Data lake",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./data-lake"
+        },
+        {
+          "img": "/images/case-studies/customer-4.svg",
+          "title": "Risk analytics",
+          "description": "Title of the use case goes here. Lorem ipsum dolor.",
+          "linkTitle": "View",
+          "linkUrl": "./risk-analytics"
+        }
+      ]
+    }
+  ]
+}
