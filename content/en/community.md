@@ -7,5 +7,6 @@ hero:
   as well as contribute to the project."
   navigation: false
   background_color: "#466071"
+  link_color: "#06f1f9"
   background_image_secondary: /images/hero-background-grey.svg
 ---

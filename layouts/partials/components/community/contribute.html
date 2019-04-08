@@ -5,11 +5,23 @@
       <p class="not-apply">{{ .description }}</p>
     </div>
   </div>
-  <div class="row">
+</div>
+<div class="container">
+  <div class="row px-3 justify-content-center justify-content-lg-between">
     {{ range .items }}
-    <div class="col-lg-6 col-sm-12 mt-4">
-      <h4 class="not-apply">{{ .title }}</h4>
-      <p class="not-apply">{{ .body | safeHTML }}</p>
+    <div class="contribute__block col-lg-4 col-md-12">
+      <div class="contribute__inner">
+        <div class="pb-5">
+          <img src="{{ .icon }}" />
+        </div>
+        <div class="w-100 pl-3">
+          <h4 class="not-apply">{{ .title }}</h4>
+          <p class="not-apply mb-0">{{ .body | safeHTML }}</p>
+          <p class="not-apply mb-0 pt-4">
+            <a href="{{ .href }}">{{ .linkTitle }}</a>
+          </p>
+        </div>
+      </div>
       {{ range .links }}
       <div>
         <a href="#">{{ .title }}</a>

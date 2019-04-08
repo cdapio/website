@@ -1,23 +1,46 @@
 .community {
   h1, h2, h3, h4 {
-    color: $greyish-brown;
+    color: $black;
   }
 
   p {
     color: $black;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.2px;
   }
 
   img {
-    width: unset;
-    height: 25px;
+    width: 61px;
+    max-height: 78px;
   }
 }
 
 .contribute {
   background-color: $white-15;
+
+  &__block {
+    border: solid 1px #979797;
+    background-color: $white;
+    max-width: 383px;
+    margin: 25px 0 45px 0;
+
+    @include media-breakpoint-down(md) {
+      margin: 15px 0 15px 0;
+      padding: 20px 1rem 18px 1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      height: 175px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
 }
 
 .get-connected {
@@ -25,10 +48,53 @@
     display: flex;
     flex-direction: column;
     min-height: 240px;
-    border-right: solid 1px #bbbbbb;
+  }
+
+  &__paragraph {
+    min-height: 108px;
+    margin-bottom: 45px;
+
+    @include media-breakpoint-down(lg) {
+      min-height: 135px;
+      margin-bottom: 35px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+      min-height: 105px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0;
+      min-height: 135px;
+    }
+  }
+
+  &__icon {
+    min-width: 41px;
+    min-height: 94px;
   }
 
   &__wrapper {
-    min-width: 41px;
+    max-width: 383px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 39px;
+    }
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(3n+2), &:nth-child(3n+3) {
+      border-left: 1px solid $gray-5;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 0 0 25px 0;
+      &:nth-child(3n+2), &:nth-child(3n+3) {
+        border-left: none;
+      }
+    }
   }
 }

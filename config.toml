@@ -90,13 +90,8 @@ logo = "/images/logo.svg"
 
   [params.cta]
     enable = true
-<<<<<<< HEAD
     title = "Get Started"
     url = "/get-started"
-=======
-    title = "Get STARTED"
-    url = "/cloud"
->>>>>>> Data/layaouts structure refactoring
   [params.learnMore]
     enable = true
     title = "Learn More"

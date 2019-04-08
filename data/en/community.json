@@ -41,8 +41,8 @@
           "body": "community focused on solving real world problems using Big Data technologies.",
           "links": [
             {
-              "title": "View Meetup",
-              "icon": false,
+              "title": "Meet Up",
+              "icon": "/images/icons/meetup.png",
               "href": "https://www.meetup.com/BigDataApps/"
             }
           ]
@@ -53,17 +53,28 @@
   "contribute": [
     {
       "title": "Contribute",
-      "description": "You can either contribute to the core CDAP framework, or to one of the plugins. ",
+      "description": "The CDAP community welcomes and greatly appreciates your contributions. To get started, view our contributing guide. Here are a few ways you can contribute to CDAP: ",
       "items": [
         {
-          "title": "Contribute to core CDAP",
-          "body": "The CDAP repository contains the source code of the core CDAP framework. <a href=\"https://github.com/cdapio/cdap\" target=\"_blank\">Create a pull</a> request for your bug today.:",
-          "href": ""
+          "title": "Get familiar",
+          "body": "Start by fixing a simple issue",
+          "icon": "/images/icons/jira.png",
+          "linkTitle": "Go to Jira",
+          "href": "#"
         },
         {
-          "title": "Contribute to a plugin",
-          "body": "To contribute to a CDAP plugin, <a href=\"https://github.com/data-integrations\" target=\"_blank\">create a pull</a> request to one of the many plugin repositories under the Data Integrations organization on Github.",
-          "href": ""
+          "title": "Submit a proposal",
+          "body": "Lorem ipsum slkea lsei slskneos",
+          "icon": "/images/icons/confluence.png",
+          "linkTitle": "Go to Confluence",
+          "href": "#"
+        },
+        {
+          "title": "Create a pull request",
+          "body": "Lorem ipsum slkea lsei slskneos",
+          "icon": "/images/icons/github.png",
+          "linkTitle": "Go to Github",
+          "href": "#"
         }
       ]
     }
