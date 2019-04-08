@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+  {{ partial "components/hero-panel" . }}
+
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+
+  {{ with $tabs := $data.case_studies.solutions_by_industry }}
+
+    {{ range $tabs }}
+
+      {{ partial "components/case-studies/solutions" . }}
+
+    {{ end }}
+
+  {{ end }}
+
+  {{ with $tabs := $data.case_studies.solutions_by_customer }}
+
+    {{ range $tabs }}
+
+      {{ partial "components/case-studies/solutions" . }}
+
+    {{ end }}
+
+  {{ end }}
+
+{{ end }}
