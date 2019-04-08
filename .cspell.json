@@ -1,0 +1,39 @@
+{
+  "language": "en",
+  "words": ["Kubernetes", "CDAP", "BDAM", "bdam", "stackoverflow", "Jira", "jira"],
+  "flagWords": [],
+  "maxNumberOfProblems": 10000,
+  "ignorePaths": [
+  ],
+  "allowCompoundWords": true,
+  "dictionaries": ["whitelist"],
+  "dictionaryDefinitions": [
+    {
+      "name": "whitelist",
+      "path": ".whitelist"
+    }
+  ],
+  "languageSettings": [
+    {
+      "languageId": "markdown",
+      "ignoreRegExpList": ["/&[a-z]+;/g"]
+    },
+    {
+      "languageId": "json, jsonc",
+      "ignoreRegExpList": [
+        "/img.+/g",
+        "/'/g"
+      ]
+    },
+    {
+      "languageId": "html",
+      "patterns":
+      [
+        {
+          "name": "href",
+          "pattern": "/^\\b$/"
+        }
+      ]
+    }
+  ]
+}

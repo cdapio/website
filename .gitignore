@@ -4,7 +4,8 @@ node_modules/
 # production
 public/
 tech-doc-hugo/
-/resources/
+resources/
+tmp/
 
 # IDE
 .idea/
@@ -13,3 +14,5 @@ tech-doc-hugo/
 .DS_Store
 .env
 npm-debug.log*
+htmltest.log
+refcache.json
