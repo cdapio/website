@@ -1,5 +1,7 @@
 ---
 title: BI migration
+aliases:
+- "/resources/case-studies/bi-migration/"
 hero:
   title: BI migration
   second_title: Title goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit.

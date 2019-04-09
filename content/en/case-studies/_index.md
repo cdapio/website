@@ -1,6 +1,8 @@
 ---
 type: case-studies
 title: Case Studies
+aliases:
+- "/resources/case-studies"
 hero:
   title: Case Studies
   body: "CDAP powers mission-critical use cases in a variety of industries such as healthcare, 
