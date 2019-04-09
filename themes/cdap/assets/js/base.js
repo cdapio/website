@@ -12,6 +12,15 @@ $(document).ready(() => {
 
 const toggleButton = $('#toggleBtn')[0];
 const collapseContainer = $('#companies');
+const collapseVideos = $('#videos');
+
+collapseVideos.on('show.bs.collapse', () => {
+  toggleButton.innerText = 'Show less';
+});
+
+collapseVideos.on('hidden.bs.collapse', () => {
+  toggleButton.innerText = 'Show more';
+});
 
 collapseContainer.on('show.bs.collapse', () => {
   toggleButton.innerText = 'Show less';
@@ -48,6 +57,16 @@ function learnMore(id) {
   collapseContainer.on('hidden.bs.collapse', () => {
     toggleButton.innerText = 'Learn more';
   });
+}
+
+function openVideoModal(title, link) {
+  const videoModal = $('#video-modal');
+  const videoLink = $('#videoModalLink');
+  const videoTitle = $('#videoModalTitle')[0];
+
+  videoLink.attr("src", link);
+  videoTitle.innerText = title;
+  videoModal.modal('show');
 }
 
 if (window.location.href.match("plugins")) {

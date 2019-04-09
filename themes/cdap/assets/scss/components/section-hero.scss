@@ -264,6 +264,7 @@ section.hero.opened {
 .hero-panel {
   display: flex;
   flex-direction: column;
+  color: $white;
   font-size: 25px;
   background-image: url('/images/background-cover-secondary.jpg');
   background-repeat: no-repeat;

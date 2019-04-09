@@ -1,0 +1,41 @@
+.videos-page {
+  color: $black;
+
+  h5 {
+    line-height: 24px;
+    letter-spacing: .35px;
+  }
+
+  &__video-block {
+    width: 290px;
+  }
+
+  &__video {
+    height: 168px;
+    width: 290px;
+  }
+
+  &__modal-video {
+    height: 380px;
+    width: 766px;
+    @include media-breakpoint-down(md) {
+      height: 260px;
+      width: 460px;
+    }
+    @media screen and (max-width: 575px) {
+      height: 168px;
+      width: 290px;
+    }
+  }
+
+  &__modalBtn {
+    position: absolute;
+    height: 168px;
+    width: 290px;
+    cursor: pointer;
+  }
+
+  &__description {
+    height: 129px;
+  }
+}
