@@ -135,7 +135,7 @@ weight = 30
 
 [[languages.en.menu.main]]
 identifier = "Case Studies"
-url = "/case-studies"
+url = "/resources/case-studies"
 parent = "Resources"
 name = "Case Studies"
 weight = 10
@@ -149,7 +149,7 @@ weight = 30
 
 [[languages.en.menu.main]]
 identifier = "Videos"
-url = "/accelerators/preparation/#videos"
+url = "/resources/videos"
 parent = "Resources"
 name = "Videos"
 weight = 40

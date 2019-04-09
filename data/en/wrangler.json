@@ -1,7 +1,7 @@
 {
-  "features_preparation": [
+  "features_wrangler": [
     {
-      "title": "Preparation features",
+      "title": "Wrangler features",
       "left_column": [
         {
           "header": "Code free transformations",

@@ -4,7 +4,7 @@
       "title": "Analytics features",
       "left_column": [
         {
-          "header": "UI driven data preparation and cleansing",
+          "header": "UI driven data wrangler and cleansing",
           "paragraph": "Seamless, integrated experience from data preparation and cleansing to model development, evaluation and deployment."
         },
         {
