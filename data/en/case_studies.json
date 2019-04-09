@@ -5,6 +5,7 @@
       "items": [
         {
           "img": "/images/case-studies/industry-1.svg",
+          "imgHeight": "92px",
           "title": "Telecommunications",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",
@@ -12,6 +13,7 @@
         },
         {
           "img": "/images/case-studies/industry-2.svg",
+          "imgHeight": "55px",
           "title": "Healthcare",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",
@@ -19,6 +21,7 @@
         },
         {
           "img": "/images/case-studies/industry-3.svg",
+          "imgHeight": "51px",
           "title": "Retail",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",
@@ -26,6 +29,7 @@
         },
         {
           "img": "/images/case-studies/industry-4.svg",
+          "imgHeight": "61px",
           "title": "Finance",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",
@@ -48,6 +52,7 @@
         },
         {
           "img": "/images/case-studies/customer-2.svg",
+          "imgHeight": "52px",
           "title": "Fraud detection",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",
@@ -62,6 +67,7 @@
         },
         {
           "img": "/images/case-studies/customer-4.svg",
+          "imgHeight": "43px",
           "title": "Risk analytics",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",

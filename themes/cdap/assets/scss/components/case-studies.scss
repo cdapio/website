@@ -3,23 +3,31 @@
 
   &__block {
     max-width: 290px;
+    width: 100%;
     border-radius: 8px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
     background-color: $white;
-    padding: 19px 27px 39px;
+    padding: 19px 27px 42px;
     margin-right: 15px;
 
     @include media-breakpoint-down(md) {
       margin-right: 45px;
+      max-width: 290px;
     }
 
     @include media-breakpoint-down(sm) {
-      margin-right: 0;
+      margin: 0 auto;
     }
   }
 
   &__header {
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+
+  &__image-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
   }
 
   &__image {
@@ -27,7 +35,6 @@
   }
 
   &__body {
-    height: 194px;
   }
 
   &__title {
@@ -46,6 +53,7 @@
     font-size: 16px;
     line-height: 1.13;
     color: #0775f4;
+    margin-top: 10px;
   }
 }
 
@@ -54,7 +62,6 @@
   font-size: 14px;
   line-height: 2.86;
   letter-spacing: 0.3px;
-
 
   &__row-wrapper {
     display: flex;
@@ -70,6 +77,11 @@
     min-height: 36px;
     min-width: 200px;
     font-weight: bold;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 0 0 15px;
+      min-width: 140px;
+    }
   }
 
   &__description {
@@ -77,46 +89,63 @@
   }
 }
 
-.case-studies {
-  &--background-gray {
-    background-color: $white-5;
-  }
-  &__body {
-    h1, h2, h3, h4, h5, h6 {
-      color: $black;
+:root {
+  .case-studies {
+    &--background-gray {
+      background-color: $white-5;
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.56;
-      letter-spacing: 0.3px;
-      color: #0c0c0c;
-      margin: 20px 0 0 0;
+    &__body {
+      h1, h2, h3, h4, h5, h6 {
+        color: $black;
+        margin-top: 50px;
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.56;
+        letter-spacing: 0.3px;
+        color: #0c0c0c;
+        margin: 20px 0 0 0;
+      }
+
+      ul {
+        margin: 0;
+        list-style-type: none;
+        color: $black;
+        margin-top: 25px;
+
+        li {
+          text-indent: -5px;
+
+          &:before {
+            content: "-";
+            text-indent: -5px;
+            margin-right: 5px;
+          }
+        }
+      }
     }
 
-    ul {
-      color: $black;
-      margin-top: 25px;
-    }
-  }
+    .hero-panel {
+      &__outer {
+        min-height: auto;
+        padding: 58px 0 77px 0;
+      }
 
-  .hero-panel {
-    &__outer {
-      min-height: auto;
-      padding: 58px 0 77px 0;
-    }
+      &__second-title {
+        font-size: 25px;
+        line-height: 1.4;
+      }
 
-    &__second-title {
-      font-size: 25px;
-      line-height: 1.4;
-    }
-
-    &__paragraph {
-      font-size: 18px;
-      line-height: 1.39;
-      letter-spacing: 0.2px;
-      color: $white;
-      margin-top: 50px;
+      &__paragraph {
+        font-size: 18px;
+        line-height: 1.39;
+        letter-spacing: 0.2px;
+        color: $white;
+        margin-top: 50px;
+      }
     }
   }
 }
