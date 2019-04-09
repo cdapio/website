@@ -1,9 +1,5 @@
 <div class="videos-page__video-block mx-auto" data-title="{{ .title }}">
   <div class="videos-page__modalBtn" onclick="openVideoModal({{ .title }}, 'https://www.youtube.com/embed/'+{{ .videoId }})"></div>
-  <iframe class="videos-page__video m-auto"
-          src="https://www.youtube.com/embed/{{ .videoId }}"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-  </iframe>
-  <p class="videos-page__description font-weight-bold not-apply">{{ .title }}</p>
+  <img class="videos-page__video m-auto" src="{{ .preview }}">
+  <p class="videos-page__description font-weight-bold mt-3 not-apply">{{ .title }}</p>
 </div>

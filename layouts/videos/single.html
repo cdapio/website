@@ -28,7 +28,7 @@
 
   {{ $data := index .Site.Data .Site.Language.Lang }}
   {{ with $videos := $data.videos.videos }}
-  <div class="container">
+  <div id="firstVideos" class="container">
     <div class="row">
       {{ range first 16 $videos }}
       {{ partial "components/videos/videos" . }}
@@ -42,6 +42,13 @@
       {{ end }}
     </div>
   </div>
+  <div id="searchedVideos" class="container collapse">
+    <div class="row">
+      {{ range $videos }}
+      {{ partial "components/videos/videos" . }}
+      {{ end }}
+    </div>
+  </div>
   {{ end }}
   {{ $list := $data.videos.videos }}
   {{ $len := (len $list) }}
@@ -50,7 +57,7 @@
     <div class="row">
       <div class="col-12">
         <div class="companies__wrapper">
-          <div class="companies__cta" id="toggleBtn" data-toggle="collapse" href="#videos" aria-expanded="false">Show more
+          <div class="companies__cta" id="toggleBtn" data-toggle="collapse" onclick="" href="#videos" aria-expanded="false">Show more
           </div>
         </div>
       </div>

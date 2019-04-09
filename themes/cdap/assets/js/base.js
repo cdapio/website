@@ -10,24 +10,20 @@ $(document).ready(() => {
   }
 );
 
-const toggleButton = $('#toggleBtn')[0];
+const toggleButton = $('#toggleBtn');
 const collapseContainer = $('#companies');
 const collapseVideos = $('#videos');
 
 collapseVideos.on('show.bs.collapse', () => {
-  toggleButton.innerText = 'Show less';
-});
-
-collapseVideos.on('hidden.bs.collapse', () => {
-  toggleButton.innerText = 'Show more';
+  toggleButton.hide();
 });
 
 collapseContainer.on('show.bs.collapse', () => {
-  toggleButton.innerText = 'Show less';
+  toggleButton[0].innerText = 'Show less';
 });
 
 collapseContainer.on('hidden.bs.collapse', () => {
-  toggleButton.innerText = 'Show more';
+  toggleButton[0].innerText = 'Show more';
 });
 
 const menuButton = $('#menuBtn');
@@ -184,7 +180,21 @@ if (window.location.href.match('plugins')) {
 
 function searchVideos() {
   const searchCriteria = document.querySelector('#searchInput').value.toUpperCase().replace(/\s/g, '');
-  console.log(searchCriteria)
+  const searchedVideos = $('#searchedVideos');
+  const firstVideos = $('#firstVideos');
+  const allVideos = $('#videos');
+
+  if (document.querySelector('#searchInput').value.length > 0) {
+    firstVideos.hide();
+    allVideos.hide();
+    $('#toggleBtn').hide();
+    searchedVideos.show();
+  } else {
+    searchedVideos.hide();
+    firstVideos.show();
+    allVideos.show();
+  }
+
   Array.from(document.querySelectorAll('.videos-page__video-block'))
     .map(video => {
       console.log(video)

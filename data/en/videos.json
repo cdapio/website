@@ -2,370 +2,462 @@
   "videos": [
     {
       "videoId": "nZO8fkOE8P0",
+      "preview": "https://i.ytimg.com/vi/nZO8fkOE8P0/hqdefault.jpg",
       "title": "Rapid Time to Value with CDAP: Enterprise-Ready Machine Learning in under Three Minutes"
     },
     {
       "videoId": "r0eK95-WFT0",
+      "preview": "https://i.ytimg.com/vi/r0eK95-WFT0/hqdefault.jpg",
       "title": "Rapid Time to Value with CDAP: From Data File to Apache Kudu in Under 5 Minutes"
     },
     {
       "videoId": "pvdEqCrsnvk",
+      "preview": "https://i.ytimg.com/vi/pvdEqCrsnvk/hqdefault.jpg",
       "title": "HEDIS Cask Demo Video"
     },
     {
       "videoId": "ntOXeYecj7o",
+      "preview": "https://i.ytimg.com/vi/ntOXeYecj7o/hqdefault.jpg",
       "title": "Cask Product Tour"
     },
     {
       "videoId": "ezTzYIS88YU",
+      "preview": "https://i.ytimg.com/vi/ezTzYIS88YU/hqdefault.jpg",
       "title": "Introducing Cask Hydrator"
     },
     {
       "videoId": "vTXAwV3r0zU",
+      "preview": "https://i.ytimg.com/vi/vTXAwV3r0zU/hqdefault.jpg",
       "title": "CDAP - the first Unified Integration Platform for Big Data (cask.co)"
     },
     {
       "videoId": "k9ESaATI1mQ",
+      "preview": "https://i.ytimg.com/vi/k9ESaATI1mQ/hqdefault.jpg",
       "title": "Learn CDAP: Hive Export and Import  using CDAP Pipelines"
     },
     {
       "videoId": "XD_LnkVo_t8",
+      "preview": "https://i.ytimg.com/vi/XD_LnkVo_t8/hqdefault.jpg",
       "title": "Learn CDAP: Transfer data from Oracle DB to CDAP Table"
     },
     {
       "videoId": "gDnINRBzg2s",
+      "preview": "https://i.ytimg.com/vi/gDnINRBzg2s/hqdefault.jpg",
       "title": "Learn CDAP: Legacy Spark programs in CDAP"
     },
     {
       "videoId": "fCmX2PDXJ4A",
+      "preview": "https://i.ytimg.com/vi/fCmX2PDXJ4A/hqdefault.jpg",
       "title": "Learn CDAP: MongoDB to CDAP Table"
     },
     {
       "videoId": "S-Qil98OQLs",
+      "preview": "https://i.ytimg.com/vi/S-Qil98OQLs/hqdefault.jpg",
       "title": "Cask Demo - Using CDAP with Cloudera"
     },
     {
       "videoId": "K0l68KpkT_Y",
+      "preview": "https://i.ytimg.com/vi/K0l68KpkT_Y/hqdefault.jpg",
       "title": "Rapid Time to Value with CDAP: EDW Optimization - Netezza Offload to Cloudera"
     },
     {
       "videoId": "_IAXi36tsws",
+      "preview": "https://i.ytimg.com/vi/_IAXi36tsws/hqdefault.jpg",
       "title": "Using CDAP with Cloudera Manager and Cloudera Impala"
     },
     {
       "videoId": "cGYmMtGO9Lo",
+      "preview": "https://i.ytimg.com/vi/cGYmMtGO9Lo/hqdefault.jpg",
       "title": "Learn CDAP: CDAP Data Prep and Pipelines Tutorial"
     },
     {
       "videoId": null,
+      "preview": "https://i.ytimg.com/vi/D_tfFQz0IK8/hqdefault.jpg",
       "title": "Big Data Application Meetups"
     },
     {
       "videoId": null,
+      "preview": "https://i.ytimg.com/vi/fCmX2PDXJ4A/hqdefault.jpg",
       "title": "Learn CDAP"
     },
     {
       "videoId": null,
+      "preview": "https://i.ytimg.com/vi/GlQjkTFMoXE/hqdefault.jpg",
       "title": "Cask Intern Experiences"
     },
     {
       "videoId": null,
+      "preview": "https://yt3.ggpht.com/-NbBsxdsViUo/AAAAAAAAAAI/AAAAAAAAAAA/oty7pBPIFW8/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "title": "Cask"
     },
     {
       "videoId": "QqXC0k7sxRI",
+      "preview": "https://i.ytimg.com/vi/QqXC0k7sxRI/hqdefault.jpg",
       "title": "#BDAM: Agile Data Science: Full-Stack Analytics App Dev"
     },
     {
       "videoId": "_eKH5YnvO-0",
+      "preview": "https://i.ytimg.com/vi/_eKH5YnvO-0/hqdefault.jpg",
       "title": "Learn CDAP: Preview for Realtime Data Pipelines"
     },
     {
       "videoId": "Jh9JvmWL1oY",
+      "preview": "https://i.ytimg.com/vi/Jh9JvmWL1oY/hqdefault.jpg",
       "title": "Learn CDAP: Preview for Batch Data Pipelines"
     },
     {
       "videoId": "efm-GOF25K4",
+      "preview": "https://i.ytimg.com/vi/efm-GOF25K4/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Creating Lookup Dataset and Joining in DataPrep"
     },
     {
       "videoId": "Fs2mw6ll6B4",
+      "preview": "https://i.ytimg.com/vi/Fs2mw6ll6B4/hqdefault.jpg",
       "title": "#BDAM: Introduction to Apache Beam, by Jean-Baptiste Onofré, Talend"
     },
     {
       "videoId": "Q0pzUVEF9WE",
+      "preview": "https://i.ytimg.com/vi/Q0pzUVEF9WE/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] How to create workflows from your existing Spark applications"
     },
     {
       "videoId": "-sNKkXztoYE",
+      "preview": "https://i.ytimg.com/vi/-sNKkXztoYE/hqdefault.jpg",
       "title": "Learn CDAP: Sneak peek into CDAP&#39;s User Defined/Custom Directives in Data Prep"
     },
     {
       "videoId": "77DozERBqAA",
+      "preview": "https://i.ytimg.com/vi/77DozERBqAA/hqdefault.jpg",
       "title": "Data Lake Challenges"
     },
     {
       "videoId": "LrC1FLUDvis",
+      "preview": "https://i.ytimg.com/vi/LrC1FLUDvis/hqdefault.jpg",
       "title": "#BDAM: Introducing Pachyderm, by Joe Doliner from Pachyderm"
     },
     {
       "videoId": "ygK4G-UEk3M",
+      "preview": "https://i.ytimg.com/vi/ygK4G-UEk3M/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Data Cleansing capability with send-to-error directive"
     },
     {
       "videoId": "D_tfFQz0IK8",
+      "preview": "https://i.ytimg.com/vi/D_tfFQz0IK8/hqdefault.jpg",
       "title": "#BDAM: How TiDB Helps Scale World&#39;s Largest Bikesharing Platform, by Kevin Xu, PingCap"
     },
     {
       "videoId": "jVZnJCj1iKQ",
+      "preview": "https://i.ytimg.com/vi/jVZnJCj1iKQ/hqdefault.jpg",
       "title": "#BDAM: Apache Kafka - Leveraging Real-time Data at Scale: 06/23 Big Data Application Meetup, Talk #1"
     },
     {
       "videoId": "SQrM39FoPvo",
+      "preview": "https://i.ytimg.com/vi/SQrM39FoPvo/hqdefault.jpg",
       "title": "Strata NYC 2017: Hybrid data lakes: Unlocking the inevitable"
     },
     {
       "videoId": "KAmpkrQ7fDk",
+      "preview": "https://i.ytimg.com/vi/KAmpkrQ7fDk/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Shows how to trigger next pipeline"
     },
     {
       "videoId": "4nxyzxINtp4",
+      "preview": "https://i.ytimg.com/vi/4nxyzxINtp4/hqdefault.jpg",
       "title": "Learn CDAP: EDW Optimization with Hadoop and CDAP (CDC)"
     },
     {
       "videoId": "V8e6yr8hpZA",
+      "preview": "https://i.ytimg.com/vi/V8e6yr8hpZA/hqdefault.jpg",
       "title": "Learn CDAP: Analyzing and Masking IoT Device Data"
     },
     {
       "videoId": "ZoO9H_uddqU",
+      "preview": "https://i.ytimg.com/vi/ZoO9H_uddqU/hqdefault.jpg",
       "title": "Cask Intern Experience - Shilpa Subrahmanyam, Summer 2015"
     },
     {
       "videoId": "3vncr5EE2Mk",
+      "preview": "https://i.ytimg.com/vi/3vncr5EE2Mk/hqdefault.jpg",
       "title": "Learn CDAP: Realtime IOT data Ingestion Using Azure Event Hub and CDAP Pipelines"
     },
     {
       "videoId": "JeqJrBW1UCU",
+      "preview": "https://i.ytimg.com/vi/JeqJrBW1UCU/hqdefault.jpg",
       "title": "Using Cask Hydrator to easily build reliable and repeatable data pipelines on Hadoop"
     },
     {
       "videoId": "5Yk4ixqbXLY",
+      "preview": "https://i.ytimg.com/vi/5Yk4ixqbXLY/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Reading from Kafka into Data Prep"
     },
     {
       "videoId": "FnQwDaKii2U",
+      "preview": "https://i.ytimg.com/vi/FnQwDaKii2U/hqdefault.jpg",
       "title": "#BDAM: Introducing a Rules Engine for Big Data processing, by Nitin Motgi, Cask"
     },
     {
       "videoId": "e-5K4cxwGrc",
+      "preview": "https://i.ytimg.com/vi/e-5K4cxwGrc/hqdefault.jpg",
       "title": "Learn CDAP: Working with New York Times XML Feed Data"
     },
     {
       "videoId": "_LB3_qm5yQM",
+      "preview": "https://i.ytimg.com/vi/_LB3_qm5yQM/hqdefault.jpg",
       "title": "Learn CDAP: Building a Stock Selection Pipeline"
     },
     {
       "videoId": "9LHmTybkU50",
+      "preview": "https://i.ytimg.com/vi/9LHmTybkU50/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Parse as Avro using Schema Registry"
     },
     {
       "videoId": "90Kub6hSQrg",
+      "preview": "https://i.ytimg.com/vi/90Kub6hSQrg/hqdefault.jpg",
       "title": "What&#39;s New in CDAP 4"
     },
     {
       "videoId": "XzT1vDaAhys",
+      "preview": "https://i.ytimg.com/vi/XzT1vDaAhys/hqdefault.jpg",
       "title": "#BDAM: Simplifying big data analytics with Apache Kudu, by Mike Percy - Cloudera"
     },
     {
       "videoId": "jrNYCQRj6Ds",
+      "preview": "https://i.ytimg.com/vi/jrNYCQRj6Ds/hqdefault.jpg",
       "title": "Hybrid Data Lake"
     },
     {
       "videoId": "u63G_RQs2RU",
+      "preview": "https://i.ytimg.com/vi/u63G_RQs2RU/hqdefault.jpg",
       "title": "Learn CDAP: Offloading Mainframe Data  Into Hadoop"
     },
     {
       "videoId": "39SH1xqWVb0",
+      "preview": "https://i.ytimg.com/vi/39SH1xqWVb0/hqdefault.jpg",
       "title": "Interview with Nitin Motgi, Cask CTO at DataWorks Summit 2017"
     },
     {
       "videoId": "ncZuhyLmnyU",
+      "preview": "https://i.ytimg.com/vi/ncZuhyLmnyU/hqdefault.jpg",
       "title": "Learn CDAP: Data Driven Schedules"
     },
     {
       "videoId": "kYSs87Da9jY",
+      "preview": "https://i.ytimg.com/vi/kYSs87Da9jY/hqdefault.jpg",
       "title": "#BDAM: Scalable Clusters on Demand, by Gustavo Torres and Bogdan Kyryliuk, Opendoor"
     },
     {
       "videoId": "z6NhFHaMP3Q",
+      "preview": "https://i.ytimg.com/vi/z6NhFHaMP3Q/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Parse Excel files in CDAP"
     },
     {
       "videoId": "hGSXlRohdCU",
+      "preview": "https://i.ytimg.com/vi/hGSXlRohdCU/hqdefault.jpg",
       "title": "#BDAM: Introduction EsgynDB, based on Apache Trafodion, by Rao Kakarlamudi, Esgyn"
     },
     {
       "videoId": "d-HfyVTfdM8",
+      "preview": "https://i.ytimg.com/vi/d-HfyVTfdM8/hqdefault.jpg",
       "title": "Learn CDAP: EDW Optimization - Offloading data from Oracle to HBase"
     },
     {
       "videoId": "wJEY1dtabNQ",
+      "preview": "https://i.ytimg.com/vi/wJEY1dtabNQ/hqdefault.jpg",
       "title": "Learn CDAP: Data Ingest from Azure Blob Store and ADLS using CDAP Pipelines"
     },
     {
       "videoId": "RKp0Uj-wGEM",
+      "preview": "https://i.ytimg.com/vi/RKp0Uj-wGEM/hqdefault.jpg",
       "title": "#BDAM: Kite SDK: Helping Hadoop projects work together - 06/23 Big Data Application Meetup, Talk #2"
     },
     {
       "videoId": "j7Tu6kPKnrQ",
+      "preview": "https://i.ytimg.com/vi/j7Tu6kPKnrQ/hqdefault.jpg",
       "title": "Learn CDAP:  Spark Interpreter Demo - Writing custom Spark code  in a CDAP Pipeline"
     },
     {
       "videoId": "CwFDxLaaPTQ",
+      "preview": "https://i.ytimg.com/vi/CwFDxLaaPTQ/hqdefault.jpg",
       "title": "#BDAM: Data Pipelines in Kubernetes, by Sean Suchter, Pepperdata"
     },
     {
       "videoId": "rOZ0N9gbDuc",
+      "preview": "https://i.ytimg.com/vi/rOZ0N9gbDuc/hqdefault.jpg",
       "title": "#BDAM: SQL-on-Everything with Apache Drill by Julien Le Dem, Dremio"
     },
     {
       "videoId": "bt_qTj63c04",
+      "preview": "https://i.ytimg.com/vi/bt_qTj63c04/hqdefault.jpg",
       "title": "Learn CDAP: Building a Fraud Classification Machine Learning Model"
     },
     {
       "videoId": "f8kg-01YHac",
+      "preview": "https://i.ytimg.com/vi/f8kg-01YHac/hqdefault.jpg",
       "title": "Hadoop Applications Simplified - Nitin Motgi"
     },
     {
       "videoId": "YJB5tdY_GvQ",
+      "preview": "https://i.ytimg.com/vi/YJB5tdY_GvQ/hqdefault.jpg",
       "title": "CDAP for Telecoms -- @Telecom Council Jan 21st, 2016"
     },
     {
       "videoId": "HQgjPBMVLuk",
+      "preview": "https://i.ytimg.com/vi/HQgjPBMVLuk/hqdefault.jpg",
       "title": "#BDAM: Building a Self-Service Data Lake on Google Cloud Platform, by Ali Anwar, Cask"
     },
     {
       "videoId": "13qi5UIObCs",
+      "preview": "https://i.ytimg.com/vi/13qi5UIObCs/hqdefault.jpg",
       "title": "Hydrator: Open Source, Code Free Data Pipelines, by Jon Gray CEO, Cask"
     },
     {
       "videoId": "E_RZCEFIS6c",
+      "preview": "https://i.ytimg.com/vi/E_RZCEFIS6c/hqdefault.jpg",
       "title": "#BDAM: Apache Phoenix: OLTP in Hadoop, by James Taylor, Saleforce.com"
     },
     {
       "videoId": "YAgAWfOLObM",
+      "preview": "https://i.ytimg.com/vi/YAgAWfOLObM/hqdefault.jpg",
       "title": "QCon SF 2016: Unified Integration for Data-Driven Applications"
     },
     {
       "videoId": "XUkANr9iag0",
+      "preview": "https://i.ytimg.com/vi/XUkANr9iag0/hqdefault.jpg",
       "title": "Cask Webinar: What&#39;s new in CDAP 3.5?"
     },
     {
       "videoId": "I1GLRXyQlx8",
+      "preview": "https://i.ytimg.com/vi/I1GLRXyQlx8/hqdefault.jpg",
       "title": "#BDAM: Building Enterprise Grade Applications in Yarn with Apache Twill, by Poorna Chandra, Cask"
     },
     {
       "videoId": "tGfPKYizZWY",
+      "preview": "https://i.ytimg.com/vi/tGfPKYizZWY/hqdefault.jpg",
       "title": "#BDAM: One size doesn’t fit all: Federated Data Science using Ampool"
     },
     {
       "videoId": "5Qgqb76bsds",
+      "preview": "https://i.ytimg.com/vi/5Qgqb76bsds/hqdefault.jpg",
       "title": "#BDAM: Turning a data pond into a data lake with Apache NiFi, by Gene Peters from Telligent Data"
     },
     {
       "videoId": "YqZ5to0l-Ik",
+      "preview": "https://i.ytimg.com/vi/YqZ5to0l-Ik/hqdefault.jpg",
       "title": "#BDAM: Improving App and Cluster perf for Big Data Stacks, by Kunal Agarwal, Unravel Data"
     },
     {
       "videoId": "pRpTodNcNJY",
+      "preview": "https://i.ytimg.com/vi/pRpTodNcNJY/hqdefault.jpg",
       "title": "#BDAM: Designing Modern Data Pipelines with Apache Kafka"
     },
     {
       "videoId": "0SFjE_Yc2aE",
+      "preview": "https://i.ytimg.com/vi/0SFjE_Yc2aE/hqdefault.jpg",
       "title": "#BDAM: Building an ECA Rules Engine for IoT with CDAP, by Bhooshan Mogal, Cask"
     },
     {
       "videoId": "1J-W_4Ld1RU",
+      "preview": "https://i.ytimg.com/vi/1J-W_4Ld1RU/hqdefault.jpg",
       "title": "#BDAM: Building Data pipelines with Cask Hydrator, by Gokul Gunasekaran from Cask"
     },
     {
       "videoId": "mZErrxU-79Y",
+      "preview": "https://i.ytimg.com/vi/mZErrxU-79Y/hqdefault.jpg",
       "title": "Learn CDAP: Data Migration  from Amazon S3 to ADLS  using a CDAP Pipelines"
     },
     {
       "videoId": "juqPL5UFaDM",
+      "preview": "https://i.ytimg.com/vi/juqPL5UFaDM/hqdefault.jpg",
       "title": "#BDAM: Ambry: Linkedin&#39;s Scalable Geo-distributed Object Store, by Sivabalan Narayanan, LinkedIn"
     },
     {
       "videoId": "BH01X1kI4mY",
+      "preview": "https://i.ytimg.com/vi/BH01X1kI4mY/hqdefault.jpg",
       "title": "#BDAM: Scaling tribal knowledge at Airbnb"
     },
     {
       "videoId": "b5BVljC8MKU",
+      "preview": "https://i.ytimg.com/vi/b5BVljC8MKU/hqdefault.jpg",
       "title": "JONATHAN GRAY CEO of Cask, at HP Vertica - Big Data Day LA, June 27, 2015"
     },
     {
       "videoId": "Zu18mM6nLg4",
+      "preview": "https://i.ytimg.com/vi/Zu18mM6nLg4/hqdefault.jpg",
       "title": "Building Spark Streaming Pipelines with Cask Hydrator, by Gokul Gunasekaran, Cask"
     },
     {
       "videoId": "BW9mRj3f9UM",
+      "preview": "https://i.ytimg.com/vi/BW9mRj3f9UM/hqdefault.jpg",
       "title": "Cask: About and what we look for"
     },
     {
       "videoId": "Y83sydxN3U8",
+      "preview": "https://i.ytimg.com/vi/Y83sydxN3U8/hqdefault.jpg",
       "title": "#BDAM: Leveraging Big Data at TubeMogul, by Murtaza Doctor and John Trenkle from TubeMogul"
     },
     {
       "videoId": "-e9mwP-6iT0",
+      "preview": "https://i.ytimg.com/vi/-e9mwP-6iT0/hqdefault.jpg",
       "title": "Strata SJ 2016: Fixing What&#39;s Broken - Big Data in the Enterprise"
     },
     {
       "videoId": "f7NG3_QNKFY",
+      "preview": "https://i.ytimg.com/vi/f7NG3_QNKFY/hqdefault.jpg",
       "title": "Cask Intern Experience - Ashley Taylor, Summer 2015"
     },
     {
       "videoId": "CEkDgwlve2M",
+      "preview": "https://i.ytimg.com/vi/CEkDgwlve2M/hqdefault.jpg",
       "title": "Brown Bag Session at Cask HQ  Ad hoc SQL Queries"
     },
     {
       "videoId": "CES7aBf82DU",
+      "preview": "https://i.ytimg.com/vi/CES7aBf82DU/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Fixed Length To JSON Processing"
     },
     {
       "videoId": "wmXyjA0-Hwc",
+      "preview": "https://i.ytimg.com/vi/wmXyjA0-Hwc/hqdefault.jpg",
       "title": "#BDAM: Analyze Ad impressions at speed of thought using Spark 2.0 and Snappydata"
     },
     {
       "videoId": "Zt_mzikca94",
+      "preview": "https://i.ytimg.com/vi/Zt_mzikca94/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Quantize a column - Digitize"
     },
     {
       "videoId": "mSKwjKvYUtI",
+      "preview": "https://i.ytimg.com/vi/mSKwjKvYUtI/hqdefault.jpg",
       "title": "#BDAM:  EDW Optimization with Hadoop and CDAP, by Sagar Kapare from Cask"
     },
     {
       "videoId": "S6bRBzojObA",
+      "preview": "https://i.ytimg.com/vi/S6bRBzojObA/hqdefault.jpg",
       "title": "#BDAM: Future proof, portable pipelines using Apache Beam, by Malo Denielou from Google"
     },
     {
       "videoId": "j1DQ3FfduR0",
+      "preview": "https://i.ytimg.com/vi/j1DQ3FfduR0/hqdefault.jpg",
       "title": "Jonathan Gray, Cask - Hadoop Summit 2016 San Jose #HS16SJ #theCUBE"
     },
     {
       "videoId": "_tPix15gP3c",
+      "preview": "https://i.ytimg.com/vi/_tPix15gP3c/hqdefault.jpg",
       "title": "Introducing Coopr"
     },
     {
       "videoId": "x4RM3l86ZgM",
+      "preview": "https://i.ytimg.com/vi/x4RM3l86ZgM/hqdefault.jpg",
       "title": "Cask Intern Experience - Yue Gao, Summer 2016"
     },
     {
       "videoId": "735nEV7jxrs",
+      "preview": "https://i.ytimg.com/vi/735nEV7jxrs/hqdefault.jpg",
       "title": "#BDAM: Unified access framework for distributed data systems on HDFS, by Shivram Mani from Pivotal"
     },
     {
       "videoId": "t-FtGX_5UJI",
+      "preview": "https://i.ytimg.com/vi/t-FtGX_5UJI/hqdefault.jpg",
       "title": "The DAP Where YARN, HBase, Kafka and Spark go to Production - by Jonathan Gray, Cask - #HSSJ16"
     }
   ]
