@@ -64,12 +64,12 @@ function openVideoModal(title, link) {
   const videoLink = $('#videoModalLink');
   const videoTitle = $('#videoModalTitle')[0];
 
-  videoLink.attr("src", link);
+  videoLink.attr('src', link);
   videoTitle.innerText = title;
   videoModal.modal('show');
 }
 
-if (window.location.href.match("plugins")) {
+if (window.location.href.match('plugins')) {
   const quantityWrapper = document.querySelector('.plugins__quantity-wrapper');
   const quantity = document.querySelector('.plugins__quantity-wrapper > span');
   const plugins = document.querySelectorAll('.plugins-small__item');
@@ -180,4 +180,20 @@ if (window.location.href.match("plugins")) {
     const elementClassList = showMoreContainer[index].classList;
     elementClassList.contains('active') ? elementClassList.remove('active') : elementClassList.add('active');
   }
+}
+
+function searchVideos() {
+  const searchCriteria = document.querySelector('#searchInput').value.toUpperCase().replace(/\s/g, '');
+  console.log(searchCriteria)
+  Array.from(document.querySelectorAll('.videos-page__video-block'))
+    .map(video => {
+      console.log(video)
+      const title = video.dataset.title;
+      if (title.toUpperCase().replace(/\s/g, '').indexOf(searchCriteria) > -1) {
+        video.style.display = '';
+        return video;
+      } else {
+        video.style.display = 'none';
+      }
+    });
 }
