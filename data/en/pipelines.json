@@ -6,22 +6,22 @@
       "items": [
         {
           "header": "Integrated with any and all data",
-          "paragraph": "Pipelines offers a rich ecosystem of connectors for a variety of legacy systems, relational databases, file systems, cloud services, object stores, NoSQL, EBCDIC, and more.",
+          "paragraph": "Through a rich ecosystem of connectors for a variety of legacy systems, relational databases, file systems, cloud services, object stores, NoSQL, EBCDIC, and more.",
           "id": "reduced-complexity"
         },
         {
           "header": "Increased </br>flexibility",
-          "paragraph": "Pipelines allows portability across on-premises and public cloud environments",
+          "paragraph": "Through portability across on-premises and public cloud environments.",
           "id": "increased-velocity"
         },
         {
           "header": "Reduced complexity, increased productivity",
-          "paragraph": "Pipelines has a visual interface for building data pipelines, code free transformations, and reusable pipeline blueprints.",
+          "paragraph": "Through a visual interface for building data pipelines, code free transformations, and reusable pipeline blueprints.",
           "id": "increased-flexibility"
         },
         {
           "header": "Improved data trustworthiness",
-          "paragraph": "Pipelines offers data quality libraries, metadata and lineage capture, audit logging.",
+          "paragraph": "Through data quality libraries, metadata and lineage capture, audit logging.",
           "id": "improved-visibility"
         }
       ]
@@ -41,7 +41,7 @@
         },
         {
           "header": "Data Discovery and Governance",
-          "paragraph": "UI to build data pipelines using a point and click designer studio"
+          "paragraph": "Automatic technical and operational metadata capture; ability to annotate business metadata to datasets; Data discovery based on all dataset metadata; Lineage (at the dataset and field level) for root cause and impact analysis; Audit logging for traceability"
         }
       ],
       "right_column": [
@@ -51,7 +51,7 @@
         },
         {
           "header": "Interactive, code-free transformations",
-          "paragraph": "Wide variety of built-in data transformation plugins; Interactive data transformation interface with feedback at each step."
+          "paragraph": "Wide variety of built-in data transformation plugins; Interactive data transformation interface with feedback at each step"
         },
         {
           "header": "Seamless operations",
@@ -63,7 +63,7 @@
   "pipeline_plugins": [
     {
       "title": "Plugins",
-      "description": "Pipelines support a variety of plugins for connecting to cloud and onprem services as well as to perform data transformations.",
+      "description": "Pipelines support plugins for connecting to a variety of cloud and on-premises systems, as well as to perform data transformations.",
       "btnTitle": "View all connectors",
       "btnLink": "/plugins/#connectors",
       "linkTitle": "View all transformations",
