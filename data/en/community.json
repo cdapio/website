@@ -60,21 +60,21 @@
           "body": "Start by fixing a simple issue",
           "icon": "/images/icons/jira.png",
           "linkTitle": "Go to Jira",
-          "href": "#"
+          "href": "https://issues.cask.co/browse/CDAP-14707?jql=labels%20%3D%20newbie"
         },
         {
           "title": "Submit a proposal",
-          "body": "Lorem ipsum slkea lsei slskneos",
+          "body": "Review existing design proposals, or submit your own proposal for a new feature or an improvement",
           "icon": "/images/icons/confluence.png",
           "linkTitle": "Go to Confluence",
-          "href": "#"
+          "href": "https://wiki.cask.co"
         },
         {
           "title": "Create a pull request",
-          "body": "Lorem ipsum slkea lsei slskneos",
+          "body": "Contribute to core CDAP, pipeline plugin, documentation or the Hub",
           "icon": "/images/icons/github.png",
           "linkTitle": "Go to Github",
-          "href": "#"
+          "href": "https://github.com/cdapio"
         }
       ]
     }

@@ -8,5 +8,6 @@ hero:
   navigation: false
   background_color: "#466071"
   link_color: "#06f1f9"
+  link: https://github.com/cdapio/cdap/blob/develop/CODE_OF_CONDUCT.md
   background_image_secondary: /images/hero-background-grey.svg
 ---
