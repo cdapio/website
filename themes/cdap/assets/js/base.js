@@ -197,7 +197,6 @@ function searchVideos() {
 
   Array.from(document.querySelectorAll('.videos-page__video-block'))
     .map(video => {
-      console.log(video)
       const title = video.dataset.title;
       if (title.toUpperCase().replace(/\s/g, '').indexOf(searchCriteria) > -1) {
         video.style.display = '';

@@ -1,4 +1,4 @@
-<div class="videos-page__video-block mx-auto" data-title="{{ .title }}">
+<div class="videos-page__video-block mb-1 ml-auto mr-auto ml-md-0 mr-md-4" data-title="{{ .title }}">
   <div class="videos-page__modalBtn" onclick="openVideoModal({{ .title }}, 'https://www.youtube.com/embed/'+{{ .videoId }})"></div>
   <img class="videos-page__video m-auto" src="{{ .preview }}">
   <p class="videos-page__description font-weight-bold mt-3 not-apply">{{ .title }}</p>
