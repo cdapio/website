@@ -4,6 +4,7 @@
     <h4 class="accelerators-info__title mb-4 mt-3">{{ .title }}</h4>
     <p class="accelerators-info__body">
       {{ .body | safeHTML }}
+      <a href="{{ .url }}">{{ .urlTitle }}</a>
     </p>
   </div>
 </div>

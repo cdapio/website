@@ -302,6 +302,12 @@ section.hero.opened {
     }
   }
 
+  &__info {
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 20px;
+    }
+  }
+
   &__link {
     font-size: 16px;
     color: #03d7f6;

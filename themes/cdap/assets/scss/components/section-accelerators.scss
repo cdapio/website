@@ -58,19 +58,15 @@
   }
 
   &__item-body {
-    height: 140px;
+    height: 120px;
     overflow: hidden;
     font-size: 16px;
     letter-spacing: 0.15px;
     line-height: 20px;
     margin: 6px 0 0;
 
-    @include media-breakpoint-down(lg) {
-      min-height: 160px;
-    }
-
     @include media-breakpoint-down(md) {
-      min-height: 100px;
+      height: 100px;
     }
   }
 
