@@ -199,7 +199,7 @@ def add_display_name_and_icon(plugin_name, widgets, dict_to_update):
   parsed_widgets = json.loads(widgets)
   if 'display-name' in parsed_widgets:
     dict_to_update[plugin_name]['Display Name'] = parsed_widgets['display-name']
-  # add icon if available, else add N/A  
+  # add icon if available, else add N/A
   dict_to_update[plugin_name]['Icon'] = 'N/A'
   if 'icon' in parsed_widgets:
     dict_to_update[plugin_name]['Icon'] = get_icon(parsed_widgets['icon'])
@@ -306,6 +306,25 @@ def write_as_md(plugins_by_type, output_path):
   with open(output_path, "w") as output_file:
     output_file.write(output)
 
+def populate_black_list(path):
+  black_list = []
+  if path:
+    with open(path, "r") as fp:
+      plugin = fp.readline()
+      while plugin:
+        if not plugin.startswith('#'):
+          black_list.append(plugin.strip())
+        plugin = fp.readline()
+
+  return black_list
+
+
+# def main():
+#   parser = argparse.ArgumentParser()
+#   parser.add_argument('-i', '--ignore_plugins', help='Absolute path to file with plugins blacklist.')
+#   args = parser.parse_args()
+#   black_list = populate_black_list(args.ignore_plugins)
+#   print(black_list)
 
 def main():
   parser = argparse.ArgumentParser()
@@ -314,6 +333,7 @@ def main():
   parser.add_argument('-v', '--cdap_version', help='CDAP version to build plugin list for', default='5.0.0')
   parser.add_argument('-f', '--output_format', help='The format to generate output in', default='json')
   parser.add_argument('-o', '--output_path', help='Absolute path to output file. Output file must not exist. Containing directory must exist.', default='plugins')
+  parser.add_argument('-i', '--ignore_plugins', help='Absolute path to file with plugins blacklist.')
   args = parser.parse_args()
 
   artifacts_dir = os.path.join(args.cdap_sandbox_dir, 'artifacts')
@@ -324,20 +344,24 @@ def main():
   hub_plugins = populate_hub_plugins(args.hub_dir, args.cdap_version)
   # print "########### hub #########"
   # print json.dumps(hub_plugins)
+  ignore_plugins = populate_black_list(args.ignore_plugins)
 
   # combine/union
   all_plugins = {}
   all_plugins.update(built_in_plugins)
   all_plugins.update(hub_plugins)
+
+  for ignored in ignore_plugins:
+    all_plugins.pop(ignored)
   # print("########## everything #########")
   # print(json.dumps(all_plugins))
 
-  
+
   # generate output
   # JSON
   if args.output_format == 'json':
     f = open(args.output_path, 'w')
-    f.write(json.dumps(all_plugins))
+    f.write(json.dumps(all_plugins, indent=2))
   elif args.output_format == 'md':
     pivoted_by_plugin_type = pivot_by_plugin_type(all_plugins)
     # print(json.dumps(pivoted_by_plugin_type))
