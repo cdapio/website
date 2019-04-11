@@ -9,7 +9,7 @@ hero:
   interface for users to easily develop, train, test, evaluate and deploy their machine learning models. It reduces the need 
   for ad-hoc custom tooling and promotes reusability and collaboration."
   link_documentation_title: Go to Documentation
-  link_documentation_url: https://docs.cdap.io/current
+  link_documentation_url: https://docs.cdap.io/cdap/current/en/index.html
   navigation: false
   background_color: "#012F4B"
   background_image: images/hero-background-blue.svg
