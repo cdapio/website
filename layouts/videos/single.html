@@ -1,14 +1,15 @@
 {{ define "main" }}
+
 <div class="videos-page">
   {{ partial "components/hero-panel" . }}
 
   <div class="container">
-    <div class="row align-items-center my-5 flex-md-row flex-column-reverse">
+    <div class="row align-items-center flex-md-row flex-column-reverse">
       <div class="col-md-6 col-sm-12">
         <div class="plugins-small__field-wrapper input-group">
           <input type="text"
                  id="searchInput"
-                 class="plugins-small__search-input"
+                 class="plugins-small__search-input mb-3 mt-3"
                  placeholder="Search videos by name"
                  onkeyup="searchVideos()"
           >
@@ -26,47 +27,41 @@
     </div>
   </div>
 
-
-  {{ $data := index .Site.Data .Site.Language.Lang }}
-  {{ with $videos := $data.videos.videos }}
-  <div id="firstVideos" class="container">
-    <div class="videos-page__wrapper">
-      {{ range first 16 $videos }}
-      {{ partial "components/videos/videos" . }}
-      {{ end }}
-    </div>
-  </div>
-  <div id="videos" class="container collapse">
-    <div class="videos-page__wrapper">
-      {{ range after 16 $videos }}
-      {{ partial "components/videos/videos" . }}
-      {{ end }}
-    </div>
-  </div>
-  <div id="searchedVideos" class="container collapse">
-    <div class="videos-page__wrapper">
-      {{ range $videos }}
-      {{ partial "components/videos/videos" . }}
-      {{ end }}
-    </div>
-  </div>
-  {{ end }}
-  {{ $list := $data.videos.videos }}
-  {{ $len := (len $list) }}
-  {{ if gt $len 16 }}
-  <div class="container mb-5">
+  <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="companies__wrapper">
-          <div class="companies__cta" id="toggleBtn" data-toggle="collapse" onclick="" href="#videos" aria-expanded="false">Show more
-          </div>
+        <div class="plugins__quantity-wrapper" style="display: none">
+          <span class="plugins__quantity"></span>&nbsp;videos displayed
         </div>
       </div>
     </div>
   </div>
-  {{ end }}
+
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ $VIDEOS_TO_SHOW := 11 }}
+  <div class="container mt-3">
+    {{ with $videos := $data.videos.videos }}
+    <div class="videos-page__wrapper" data-videos-to-show="{{ $VIDEOS_TO_SHOW }}">
+      {{ range $index, $element := $videos }}
+        {{ partial "components/videos/videos" (dict "context" . "index" $index "VIDEOS_TO_SHOW" $VIDEOS_TO_SHOW) }}
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="plugins-small__search-result" style="display: none">{{ .Site.Params.noResults.title }}</div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="companies__wrapper">
+          <a class="companies__cta" id="toggleBtn">Show more</a>
+        </div>
+      </div>
+    </div>
+  </div>
   {{ partial "components/videos/video-modal" . }}
 </div>
 
 <script src="https://apis.google.com/js/platform.js"></script>
+
 {{ end }}

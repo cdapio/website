@@ -21,7 +21,7 @@
                 {{ $firstUrlElement := index (split .URL "/") 1 }}
                 {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
-                      <li class="nav-item {{ if eq $firstUrlElement "resources" }}active {{ end }} dropdown">
+                      <li class="nav-item {{ if or (eq $firstUrlElement "resources") (eq $firstUrlElement "case-studies") }}active {{ end }} dropdown">
                         <a class="header__item header__item-dropdown">
                           {{ .Name }}
                         </a>
