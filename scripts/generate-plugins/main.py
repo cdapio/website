@@ -319,13 +319,6 @@ def populate_black_list(path):
   return black_list
 
 
-# def main():
-#   parser = argparse.ArgumentParser()
-#   parser.add_argument('-i', '--ignore_plugins', help='Absolute path to file with plugins blacklist.')
-#   args = parser.parse_args()
-#   black_list = populate_black_list(args.ignore_plugins)
-#   print(black_list)
-
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('cdap_sandbox_dir', help='Absolute path to the directory containing the CDAP Sandbox')
