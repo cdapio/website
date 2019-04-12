@@ -49,8 +49,8 @@
           "description": "If you are ready to install CDAP on your Hadoop cluster, in your Development, Testing, or Production environments, the following options are available to you: To add CDAP to your Cloudera Manager installations, using the CDAP Custom Service Descriptor (CSD) is the way to go. To use CDAP within your Hortonworks Data Platform (HDP) environment, use Apache Ambari (note that Apache Ambari can only be used to add CDAP to an existing Hadoop cluster). If you are using MapR, BigTop or the Apache distribution of Hadoop, we provide RPM and Debian distributions of CDAP to support your varied installation needs.",
           "items": [
             {
-              "title": "Cloud Data Fusion on GCP",
-              "description": "Cloud native, enterprise data integration service on GCP for quickly building and managing data pipelines.",
+              "title": "Google Cloud Data Fusion <br /> (powered by CDAP)",
+              "description": "Fully-managed, cloud-native, enterprise data integration service for quickly building and managing data pipelines",
               "img": "/images/get-started/data-hub.svg",
               "linkTitle": "Go to GCP Console",
               "link": "https://cloud.google.com/data-fusion/"
