@@ -50,7 +50,7 @@
           "items": [
             {
               "title": "Cloud Data Fusion on GCP",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
+              "description": "Cloud native, enterprise data integration service on GCP for quickly building and managing data pipelines.",
               "img": "/images/get-started/data-hub.svg",
               "linkTitle": "Go to GCP Console",
               "link": "https://cloud.google.com/data-fusion/"
