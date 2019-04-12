@@ -6,7 +6,7 @@
       "items": [
         {
           "title": "Ask a question",
-          "body": " You get in touch with the community using any of the following channels:",
+          "body": "You get in touch with the community using any of the following channels:",
           "links": [
             {
               "title": "Mailing List",
@@ -33,7 +33,7 @@
         },
         {
           "title": "Report a bug",
-          "body": "To report bugs, please use the Jira Issue Tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
+          "body": "To report bugs, please use the Jira issue tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
           "links": [
             {
               "title": "Jira",
