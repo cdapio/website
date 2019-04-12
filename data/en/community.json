@@ -11,16 +11,22 @@
             {
               "title": "Mailing List",
               "icon": "/images/icons/mailing.png",
+              "height": "60px",
+              "width": "61px",
               "href": "https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/cdap-user"
             },
             {
               "title": "Slack",
               "icon": "/images/icons/slack.jpg",
+              "height": "57px",
+              "width": "85px",
               "href": "https://cdap-users.herokuapp.com/"
             },
             {
               "title": "Stack Overflow",
               "icon": "/images/icons/stackoverflow.png",
+              "height": "61px",
+              "width": "61px",
               "href": "https://stackoverflow.com/questions/tagged/cdap"
             }
           ]
@@ -31,7 +37,7 @@
           "links": [
             {
               "title": "Jira",
-              "icon": "/images/icons/jira.png",
+              "icon": "/images/icons/jira-blue.png",
               "href": "https://issues.cask.co/projects/CDAP/issues"
             }
           ]
@@ -41,7 +47,7 @@
           "body": "community focused on solving real world problems using Big Data technologies.",
           "links": [
             {
-              "title": "Meet Up",
+              "title": "Meetup",
               "icon": "/images/icons/meetup.png",
               "href": "https://www.meetup.com/BigDataApps/"
             }
@@ -66,7 +72,7 @@
           "title": "Submit a proposal",
           "body": "Review existing design proposals, or submit your own proposal for a new feature or an improvement",
           "icon": "/images/icons/confluence.png",
-          "linkTitle": "Go to Confluence",
+          "linkTitle": "Go to Wiki",
           "href": "https://wiki.cask.co"
         },
         {
@@ -75,6 +81,13 @@
           "icon": "/images/icons/github.png",
           "linkTitle": "Go to Github",
           "href": "https://github.com/cdapio"
+        },
+        {
+          "title": "Verify your code",
+          "body": "Using our build system to run unit and integration tests, as well as download the latest build",
+          "icon": "/images/icons/noun.png",
+          "linkTitle": "Go to builds",
+          "href": "https://builds.cask.co"
         }
       ]
     }

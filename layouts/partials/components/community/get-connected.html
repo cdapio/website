@@ -7,7 +7,7 @@
   </div>
 </div>
 <div class="container mt-4">
-  <div class="row px-3 justify-content-center justify-content-lg-between">
+  <div class="row px-3 justify-content-start justify-content-lg-between">
     {{ range .items }}
     <div class="get-connected__wrapper col-lg-4 col-md-12">
       <div class="get-connected__item">
@@ -16,11 +16,10 @@
         <div class="d-flex justify-content-between">
           {{ range .links }}
           <div class="d-flex flex-column align-items-center">
-            {{ with .icon }}
             <div class="get-connected__icon d-flex align-items-center pb-3">
-              <img src="{{ . }}" />
+              <img src="{{with .icon}}{{ . }}{{end}}"
+                   style="{{ with .height }}height: {{.}}{{end}};{{ with .width }}width: {{.}}{{end}}" />
             </div>
-            {{ end }}
             <a href="{{ .href | default "#"}}" target="_blank">
             {{ .title }}
             </a>

@@ -7,26 +7,26 @@
   </div>
 </div>
 <div class="container">
-  <div class="row px-3 justify-content-center justify-content-lg-between">
+  <div class="row">
     {{ range .items }}
-    <div class="contribute__block col-lg-4 col-md-12">
-      <div class="contribute__inner">
-        <div class="pb-5">
+    <div class="col-lg-3 col-md-6">
+      <div class="contribute__block ">
+        <div class="contribute__image-wrapper">
           <img src="{{ .icon }}" />
         </div>
-        <div class="w-100 pl-3">
+        <div class="contribute__inner-block w-100 pl-3">
           <h4 class="contribute__title not-apply">{{ .title }}</h4>
           <p class="contribute__paragraph not-apply mb-0">{{ .body | safeHTML }}</p>
-          <p class="not-apply mb-0 pt-4">
+          <p class="contribute__href not-apply">
             <a href="{{ .href }}">{{ .linkTitle }}</a>
           </p>
         </div>
+        {{ range .links }}
+        <div>
+          <a href="#">{{ .title }}</a>
+        </div>
+        {{ end }}
       </div>
-      {{ range .links }}
-      <div>
-        <a href="#">{{ .title }}</a>
-      </div>
-      {{ end }}
     </div>
     {{ end }}
   </div>

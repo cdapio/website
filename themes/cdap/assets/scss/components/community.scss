@@ -9,41 +9,77 @@
     line-height: 1.7;
     letter-spacing: 0.2px;
   }
-
-  img {
-    width: 61px;
-    max-height: 78px;
-  }
 }
 
 .contribute {
   background-color: $white-15;
 
   &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: solid 1px #979797;
     background-color: $white;
     max-width: 383px;
-    min-height: 235px;
+    min-height: 414px;
     margin-top: 25px;
-    padding: 25px 20px;
+    padding: 52px 20px 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+      min-height: 494px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin: 25px auto;
+    }
 
     @include media-breakpoint-down(sm) {
       min-height: 290px;
       padding: 20px 1rem 18px 1rem;
-      margin: 0 0 25px 0;
     }
 
     @include media-breakpoint-up(lg) {
-      min-height: 160px;
       margin-bottom: 50px;
+    }
+  }
+
+  &__image-wrapper {
+    min-height: 100px;
+
+    @include media-breakpoint-down(md) {
+      min-height: 116px;
+    }
+  }
+
+  &__href {
+    margin-top: 10px;
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+      margin-top: auto;
+    }
+  }
+
+  &__inner-block {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+      min-height: 310px;
     }
   }
 
   &__inner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     height: 100%;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -57,7 +93,8 @@
   }
 
   &__paragraph {
-    min-height: 135px;
+    min-height: 105px;
+    margin-top: 37px;
 
     @include media-breakpoint-down(md) {
       min-height: 95px;
@@ -103,6 +140,10 @@
       padding: 0 39px;
     }
 
+    @include media-breakpoint-down(lg) {
+      padding: 0 15px;
+    }
+
     &:nth-child(1) {
       padding-left: 0;
     }
@@ -113,6 +154,7 @@
 
     @include media-breakpoint-down(md) {
       padding: 0 0 25px 0;
+
       &:nth-child(3n+2), &:nth-child(3n+3) {
         border-left: none;
       }
