@@ -21,7 +21,7 @@
               "title": "Google Cloud Platform",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
               "img": "/images/pipelines-plugins/google-cloud-platform.png",
-              "linkTitle": "Go to GCP Console",
+              "linkTitle": "Go to Google Cloud Console",
               "link": "https://cloud.google.com/cloud-console/"
             },
             {
@@ -52,7 +52,7 @@
               "title": "Google Cloud Data Fusion <br /> (powered by CDAP)",
               "description": "Fully-managed, cloud-native, enterprise data integration service for quickly building and managing data pipelines",
               "img": "/images/get-started/data-hub.svg",
-              "linkTitle": "Go to GCP Console",
+              "linkTitle": "Go to Google Cloud Console",
               "link": "https://cloud.google.com/data-fusion/"
             },
             {
@@ -86,7 +86,7 @@
               "title": "Linux/Mac OSX",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
               "img": "/images/get-started/linux-mac.png",
-              "linkTitle": "Go to GCP Console",
+              "linkTitle": "Go to Google Cloud Console",
               "link": "https://cloud.google.com/cloud-console/"
             },
             {
