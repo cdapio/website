@@ -42,7 +42,7 @@
   <div class="container mt-3">
     {{ with $videos := $data.videos.videos }}
     <div class="videos-page__wrapper" data-videos-to-show="{{ $VIDEOS_TO_SHOW }}">
-      {{ range $index, $element := $videos }}
+      {{ range $index, $element := where $videos "visible" true  }}
         {{ partial "components/videos/videos" (dict "context" . "index" $index "VIDEOS_TO_SHOW" $VIDEOS_TO_SHOW) }}
       {{ end }}
     </div>
