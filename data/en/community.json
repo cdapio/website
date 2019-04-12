@@ -6,43 +6,49 @@
       "items": [
         {
           "title": "Ask a question",
-          "body": "You get in touch with the community using any of the following links:",
+          "body": "You get in touch with the community using any of the following channels:",
           "links": [
             {
               "title": "Mailing List",
               "icon": "/images/icons/mailing.png",
+              "height": "60px",
+              "width": "61px",
               "href": "https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/cdap-user"
             },
             {
               "title": "Slack",
               "icon": "/images/icons/slack.jpg",
+              "height": "57px",
+              "width": "85px",
               "href": "https://cdap-users.herokuapp.com/"
             },
             {
               "title": "Stack Overflow",
               "icon": "/images/icons/stackoverflow.png",
+              "height": "61px",
+              "width": "61px",
               "href": "https://stackoverflow.com/questions/tagged/cdap"
             }
           ]
         },
         {
           "title": "Report a bug",
-          "body": "Tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
+          "body": "To report bugs, please use the Jira issue tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
           "links": [
             {
               "title": "Jira",
-              "icon": "/images/icons/jira.png",
-              "href": "https://issues.cask.co/projects/CDAP/issues"
+              "icon": "/images/icons/jira-blue.png",
+              "href": "https://issues.cask.co/"
             }
           ]
         },
         {
           "title": "Join the BDAM group",
-          "body": "community focused on solving real world problems using Big Data technologies.",
+          "body": "The Big Data Application Meetup is a community focused on solving real world problems using Big Data technologies.",
           "links": [
             {
-              "title": "View Meetup",
-              "icon": false,
+              "title": "Meetup",
+              "icon": "/images/icons/meetup.png",
               "href": "https://www.meetup.com/BigDataApps/"
             }
           ]
@@ -53,17 +59,35 @@
   "contribute": [
     {
       "title": "Contribute",
-      "description": "You can either contribute to the core CDAP framework, or to one of the plugins. ",
+      "description": "The CDAP community welcomes and greatly appreciates your contributions. To get started, view our contributing guide. Here are a few ways you can contribute to CDAP: ",
       "items": [
         {
-          "title": "Contribute to core CDAP",
-          "body": "The CDAP repository contains the source code of the core CDAP framework. <a href=\"https://github.com/cdapio/cdap\" target=\"_blank\">Create a pull</a> request for your bug today.:",
-          "href": ""
+          "title": "Get familiar",
+          "body": "Fix a newbie issue, to get familiar with the process of contributing to CDAP",
+          "icon": "/images/icons/jira.png",
+          "linkTitle": "Go to Jira",
+          "href": "https://issues.cask.co/browse/CDAP-14707?jql=labels%20%3D%20newbie"
         },
         {
-          "title": "Contribute to a plugin",
-          "body": "To contribute to a CDAP plugin, <a href=\"https://github.com/data-integrations\" target=\"_blank\">create a pull</a> request to one of the many plugin repositories under the Data Integrations organization on Github.",
-          "href": ""
+          "title": "Submit a proposal",
+          "body": "Review existing design proposals, or submit your own proposal for a new feature or an improvement",
+          "icon": "/images/icons/confluence.png",
+          "linkTitle": "Go to Wiki",
+          "href": "https://wiki.cask.co"
+        },
+        {
+          "title": "Create a pull request",
+          "body": "Contribute to core CDAP, pipeline plugin, documentation or the Hub",
+          "icon": "/images/icons/github.png",
+          "linkTitle": "Go to Github",
+          "href": "https://github.com/cdapio"
+        },
+        {
+          "title": "Verify your code",
+          "body": "Using our build system to run unit and integration tests, as well as download the latest build",
+          "icon": "/images/icons/noun.png",
+          "linkTitle": "Go to builds",
+          "href": "https://builds.cask.co"
         }
       ]
     }

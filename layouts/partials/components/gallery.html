@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="announcement__wrapper">
+        <div id="carouselCaptions"
+             class="carousel slide main__carousel"
+             data-ride="carousel"
+             data-interval="false">
+          <ol class="carousel-indicators">
+            {{ range $index, $element := . }}
+            <li data-target="#carouselCaptions" data-slide-to="{{ $index }}"
+                class="{{ if $element.active }} active {{ end }}"></li>
+            {{ end }}
+          </ol>
+          <div class="carousel-inner">
+            {{ range $item := . }}
+            <div class="carousel-item {{ if $item.active }} active {{ end }}">
+              <div class="announcement__media d-flex flex-column flex-md-row">
+                <div class="announcement__carousel-figure">
+                  <img src="{{ $item.imageUrl }}" class="announcement__carousel-img align-self-top"
+                      alt="announcement">
+                </div>
+                <div class="announcement__media-body">
+                  <h2 class="announcement__title not-apply">{{ $item.title }}</h2>
+                  <p class="not-apply"> {{ $item.description }} </p>
+                  <a class="btn btn-link mt-3" href="#"> {{ $item.linkTitle }} </a>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
