@@ -4,7 +4,7 @@
       "title": "Solutions by industry",
       "items": [
         {
-          "img": "/images/case-studies/industry-2.svg",
+          "img": "/images/case-studies/healthcare.svg",
           "imgHeight": "55px",
           "title": "Healthcare",
           "description": "Offloading data warehouse reporting workloads",
@@ -12,7 +12,7 @@
           "linkUrl": "./healthcare"
         },
         {
-          "img": "/images/case-studies/industry-2.svg",
+          "img": "/images/case-studies/healthcare.svg",
           "imgHeight": "55px",
           "title": "Sports and Entertainment",
           "description": "XML content ingestion",
@@ -20,7 +20,7 @@
           "linkUrl": "./sports-and-entertainment"
         },
         {
-          "img": "/images/case-studies/industry-4.svg",
+          "img": "/images/case-studies/finance.svg",
           "imgHeight": "61px",
           "title": "Finance",
           "description": "Information Security Analytics and Reporting",
@@ -28,23 +28,23 @@
           "linkUrl": "./finance"
         },
         {
-          "img": "/images/case-studies/industry-1.svg",
-          "imgHeight": "92px",
+          "img": "/images/case-studies/ecommerce.svg",
+          "imgHeight": "51px",
           "title": "E-commerce",
           "description": "In-flight brand sentiment analysis of the Twitter Firehose",
           "linkTitle": "View",
           "linkUrl": "./e-commerce"
         },
         {
-          "img": "/images/case-studies/industry-3.svg",
-          "imgHeight": "51px",
+          "img": "/images/case-studies/telecom.svg",
+          "imgHeight": "92px",
           "title": "Telco",
           "description": "Encrypting and Data Masking",
           "linkTitle": "View",
           "linkUrl": "./telco"
         },
         {
-          "img": "/images/case-studies/industry-4.svg",
+          "img": "/images/case-studies/finance.svg",
           "imgHeight": "61px",
           "title": "Finance",
           "description": "Data cleansing and validation of 3 billion records",
@@ -60,14 +60,14 @@
       "isGray": true,
       "items": [
         {
-          "img": "/images/case-studies/customer-1.svg",
+          "img": "/images/case-studies/bimigration.svg",
           "title": "BI migration",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",
           "linkUrl": "./bi-migration"
         },
         {
-          "img": "/images/case-studies/customer-2.svg",
+          "img": "/images/case-studies/fraud.svg",
           "imgHeight": "52px",
           "title": "Fraud detection",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
@@ -75,14 +75,14 @@
           "linkUrl": "./fraud-detection"
         },
         {
-          "img": "/images/case-studies/customer-3.svg",
+          "img": "/images/case-studies/datalake.svg",
           "title": "Data lake",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
           "linkTitle": "View",
           "linkUrl": "./data-lake"
         },
         {
-          "img": "/images/case-studies/customer-4.svg",
+          "img": "/images/case-studies/risks.svg",
           "imgHeight": "43px",
           "title": "Risk analytics",
           "description": "Title of the use case goes here. Lorem ipsum dolor.",
