@@ -138,23 +138,23 @@
         {
           "img": "/images/get-started/noun-manual-book.svg",
           "title": "User guide",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed.",
+          "description": "Hands on guides for developers, business analysts and data scientists to get started with CDAP",
           "linkTitle": "View",
-          "linkUrl": "#"
+          "linkUrl": "https://docs.cdap.io/cdap/current/en/user-guide/index.html"
         },
         {
           "img": "/images/get-started/noun-tutorial.svg",
           "title": "Tutorial & samples",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed.",
+          "description": "Step-by-step instructions for solving common use-cases using CDAP",
           "linkTitle": "View",
-          "linkUrl": "#"
+          "linkUrl": "https://docs.cdap.io/cdap/current/en/user-guide/tutorials/index.html"
         },
         {
           "img": "/images/get-started/noun-documentation.svg",
           "title": "Documentation",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed.",
+          "description": "Detailed technical documentation for using, extending and administering CDAP",
           "linkTitle": "View",
-          "linkUrl": "https://docs.cdap.io/current"
+          "linkUrl": "https://docs.cdap.io/cdap/current/en/index.html"
         }
       ]
     }
