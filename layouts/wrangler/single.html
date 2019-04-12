@@ -3,15 +3,15 @@
 {{ partial "components/hero-panel" . }}
 
 {{ $data := index .Site.Data .Site.Language.Lang }}
-{{ with $features := $data.preparations.features_preparation }}
+{{ with $features := $data.wrangler.features_wrangler }}
 {{ range $features }}
 {{ partial "components/features" . }}
 {{ end }}
 {{ end }}
 
-{{ with $videos := $data.preparations.videos }}
+{{ with $videos := $data.wrangler.videos }}
 {{ range $videos }}
-{{ partial "components/preparations/videos" . }}
+{{ partial "components/wrangler/videos" . }}
 {{ end }}
 {{ end }}
 

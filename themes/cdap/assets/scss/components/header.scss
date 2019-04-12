@@ -195,11 +195,7 @@
         margin-left: 3px;
       }
 
-      &:hover {
-        background: none;
-      }
-
-      &:active {
+      &:active, &:hover {
         color: $deep-orange;
         background: none;
 
@@ -290,15 +286,10 @@
         padding: 0;
 
         .external-link-icon {
-          opacity: 0.3;
           margin-left: 3px;
         }
 
-        &:hover {
-          background: none;
-        }
-
-        &:active {
+        &:active, &:hover {
           color: $deep-orange;
           background: none;
 
