@@ -1,23 +1,109 @@
 .community {
   h1, h2, h3, h4 {
-    color: $greyish-brown;
+    color: $black;
   }
 
   p {
     color: $black;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.2px;
-  }
-
-  img {
-    width: unset;
-    height: 25px;
   }
 }
 
 .contribute {
   background-color: $white-15;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px #979797;
+    background-color: $white;
+    max-width: 383px;
+    min-height: 414px;
+    margin-top: 25px;
+    padding: 52px 20px 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+      min-height: 494px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin: 25px auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: 290px;
+      padding: 20px 1rem 18px 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__image-wrapper {
+    min-height: 100px;
+
+    @include media-breakpoint-down(md) {
+      min-height: 116px;
+    }
+  }
+
+  &__href {
+    margin-top: 10px;
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+      margin-top: auto;
+    }
+  }
+
+  &__inner-block {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 992px) and (max-width: 1380px) {
+      min-height: 310px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    @include media-breakpoint-down(lg) {
+      font-size: 1.2rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__paragraph {
+    min-height: 105px;
+    margin-top: 37px;
+
+    @include media-breakpoint-down(md) {
+      min-height: 95px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: 135px;
+    }
+  }
 }
 
 .get-connected {
@@ -25,10 +111,53 @@
     display: flex;
     flex-direction: column;
     min-height: 240px;
-    border-right: solid 1px #bbbbbb;
+  }
+
+  &__paragraph {
+    min-height: 108px;
+    margin-bottom: 45px;
+
+    @include media-breakpoint-down(md) {
+      min-height: 54px;
+      margin-bottom: 35px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: 135px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    min-width: 41px;
+    min-height: 94px;
   }
 
   &__wrapper {
-    min-width: 41px;
+    max-width: 383px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 39px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding: 0 15px;
+    }
+
+    &:nth-child(1) {
+      padding-left: 0;
+    }
+
+    &:nth-child(3n+2), &:nth-child(3n+3) {
+      border-left: 1px solid $gray-5;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 0 0 25px 0;
+
+      &:nth-child(3n+2), &:nth-child(3n+3) {
+        border-left: none;
+      }
+    }
   }
 }
