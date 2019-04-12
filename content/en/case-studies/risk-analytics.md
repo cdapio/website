@@ -2,6 +2,7 @@
 title: Risk analytics
 hero:
   title: Risk analytics
+  second_title: Title goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   body: "Summary Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus."
   link_back_title: « Case studies
   link_back_url: /case-studies
@@ -9,7 +10,7 @@ hero:
   background_color: "#404244"
   table:
     - title: Categories
-      body: EDW offloaditng, Technology consolidation
+      body: EDW offloading, Technology consolidation
     - title: Audience
       body: Data Administrators, Data Analysts, Data Scientists, Engineers
     - title: Key themes

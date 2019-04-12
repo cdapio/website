@@ -10,9 +10,14 @@
     padding: 19px 27px 42px;
     margin-right: 15px;
 
+    @include media-breakpoint-down(lg) {
+      min-height: 404px;
+    }
+
     @include media-breakpoint-down(md) {
       margin-right: 45px;
       max-width: 290px;
+      min-height: 356px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -22,6 +27,14 @@
 
   &__header {
     margin-top: 20px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 0.8rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+    }
   }
 
   &__image-wrapper {
@@ -47,6 +60,15 @@
     line-height: 1.04;
     letter-spacing: 0.2px;
     text-align: center;
+    min-height: 156px;
+
+    @include media-breakpoint-down(md) {
+      min-height: 104px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      min-height: 104px;
+    }
   }
 
   a {
