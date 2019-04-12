@@ -6,7 +6,7 @@
       "items": [
         {
           "title": "Ask a question",
-          "body": "You get in touch with the community using any of the following links:",
+          "body": " You get in touch with the community using any of the following channels:",
           "links": [
             {
               "title": "Mailing List",
@@ -33,18 +33,18 @@
         },
         {
           "title": "Report a bug",
-          "body": "Tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
+          "body": "To report bugs, please use the Jira Issue Tracker. We recommend you to post your issues to the mailing list, and report a bug if it is confirmed as an issue there.",
           "links": [
             {
               "title": "Jira",
               "icon": "/images/icons/jira-blue.png",
-              "href": "https://issues.cask.co/projects/CDAP/issues"
+              "href": "https://issues.cask.co/"
             }
           ]
         },
         {
           "title": "Join the BDAM group",
-          "body": "community focused on solving real world problems using Big Data technologies.",
+          "body": "The Big Data Application Meetup is a community focused on solving real world problems using Big Data technologies.",
           "links": [
             {
               "title": "Meetup",
@@ -63,7 +63,7 @@
       "items": [
         {
           "title": "Get familiar",
-          "body": "Start by fixing a simple issue",
+          "body": "Fix a newbie issue, to get familiar with the process of contributing to CDAP",
           "icon": "/images/icons/jira.png",
           "linkTitle": "Go to Jira",
           "href": "https://issues.cask.co/browse/CDAP-14707?jql=labels%20%3D%20newbie"
