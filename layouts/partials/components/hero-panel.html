@@ -27,12 +27,13 @@
               {{ end }}
             {{ end }}
             {{ with .Params.hero.bottom_paragraph }}
-              <p class="hero-panel__bottom-paragraph not-apply">{{ . }}</p>
+              <p class="hero-panel__bottom-paragraph not-apply">{{ . | markdownify }}</p>
             {{ end }}
             {{ if .Page.Params.navigation }}
             <div class="hero-panel__navigation">
               <ul class="nav nav-tabs">
                 {{ $data := index .Site.Data .Site.Language.Lang }}
+                {{ if eq .Page.Params.type "get-started" }}
                 {{ range $element := $data.get_started.tabs }}
                 <li>
                   <a id="on-{{ .id }}"
@@ -40,6 +41,7 @@
                      data-toggle="tab"
                      href="#{{ .id }}-tab">{{ .title}}</a>
                 </li>
+                {{ end }}
                 {{ end }}
               </ul>
             </div>
