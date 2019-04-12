@@ -1,0 +1,8 @@
+<div class="videos-page__video-block mb-1 ml-auto mr-auto ml-md-0 mr-md-4"
+     data-title="{{ .context.title }}"
+     style="{{ if gt .index .VIDEOS_TO_SHOW }}display: none;{{ end }}">
+  <div class="videos-page__modalBtn" onclick="openVideoModal({{ .context.title }}, 'https://www.youtube.com/embed/'+{{ .context.videoId }})"></div>
+  <img class="videos-page__video m-auto" src="{{ .context.preview }}">
+  <p class="videos-page__title mt-3 not-apply">{{ .context.title }}</p>
+</div>
+

@@ -157,7 +157,7 @@ weight = 40
 [[languages.en.menu.main]]
 identifier = "Documentation"
 post = "external"
-url = "https://docs.cdap.io/current"
+url = "https://docs.cdap.io/cdap/current/en/index.html"
 parent = "Resources"
 name = "Documentation"
 weight = 50
@@ -165,7 +165,7 @@ weight = 50
 [[languages.en.menu.main]]
 identifier = "Blog"
 post = "external"
-url = "https://cdap.io/"
+url = "https://medium.com/cdapio"
 parent = "Resources"
 name = "Blog"
 weight = 60
