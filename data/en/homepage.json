@@ -144,16 +144,10 @@
       "title": "Testimonials",
       "items": [
         {
-          "name": "Name Last name",
-          "job": "job title",
-          "company": "Company name",
-          "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed. Fusce eget pharetra nulla, vel fermentum ante. Phasellus gravida non diam sed vehicula."
-        },
-        {
-          "name": "Name Last name",
-          "job": "job title",
-          "company": "Company name",
-          "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed. Fusce eget pharetra nulla, vel fermentum ante."
+          "name": "Stephen Spellicy",
+          "job": "SVP of Marketing and Products",
+          "company": "Guavus",
+          "paragraph": "CDAP provides great value for data pipeline creation, it’s very easy to use yet extremely powerful for our developers and data scientists. We’ve integrated it in our Guavus Reflex Analytics platform where we’re taking advantage of its runtime to accelerate pipeline creation, and we’re exploring additional areas of integration beyond that such as APIs, framework, and marketplace."
         }
       ]
     }
@@ -162,16 +156,24 @@
     "title": "Companies using CDAP",
     "items": [
       {
-        "url": "#",
+        "url": "https://google.com",
         "image": "googlelogo_color.png"
       },
       {
-        "url": "#",
+        "url": "https://www.guavus.com/",
         "image": "guavus-logo.png"
       },
       {
-        "url": "#",
+        "url": "https://www.amaris.ai/",
         "image": "amaris-logo.jpg"
+      },
+      {
+        "url": "https://www.publicissapient.com/",
+        "image": "publicissapient.svg"
+      },
+      {
+        "url": "http://www.cybervisiontech.com/",
+        "image": "cv-logo@3x.png"
       }
     ]
   }
