@@ -51,10 +51,14 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, 100%);
-    grid-gap: 1rem;
+    grid-gap: 6rem;
     justify-content: space-between;
     margin: 0;
     padding: 0;
+
+    @include media-breakpoint-down(md) {
+      grid-gap: 1rem;
+    }
 
     @include media-breakpoint-up(sm) {
       grid-template-columns: repeat(auto-fill, 192px);
