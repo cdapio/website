@@ -23,7 +23,7 @@
             <p class="hero-panel__paragraph not-apply">{{ .Params.hero.body | markdownify }}</p>
             {{ with .Params.hero }}
               {{ if .link_documentation_url }}
-              <a href="{{ .link_documentation_url }}" class="hero-panel__link">{{ .link_documentation_title | markdownify }}</a>
+              <a href="{{ .link_documentation_url }}" class="hero-panel__link" target="_blank">{{ .link_documentation_title | markdownify }}</a>
               {{ end }}
             {{ end }}
               {{if eq .Params.type "community"}}
