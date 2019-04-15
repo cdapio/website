@@ -10,9 +10,9 @@
   &__subTitle {
     font-size: 14px;
     line-height: 2.5;
-    width: 169px;
     border-bottom: 1px solid $greyish-brown;
     margin: 0 auto;
+    display: inline-block;
   }
 
   &__wrapper {

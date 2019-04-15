@@ -1,18 +1,22 @@
 <section class="resources px-3">
   <div class="container">
     <div class="row">
-      <h2 class="resources__title">{{ .title }}</h2>
+      <div class="col">
+        <h2 class="resources__title">{{ .title }}</h2>
+      </div>
     </div>
   </div>
   <div class="container mt-4">
     <div class="row justify-content-center justify-content-lg-between">
       {{ range $item := .items }}
-      <div class="col-lg-4 col-md-12 resources__block mb-3">
-        <img class="resources__image mb-2" src="{{ $item.img }}"/>
-        <div class="resources__body d-flex flex-column justify-content-between text-center">
-          <h4 class="resources__header mb-3">{{ $item.title }}</h4>
-          <p class="resources__description not-apply">{{ $item.description }}</p>
-          <a href="{{ $item.linkUrl }}">{{ $item.linkTitle }}</a>
+      <div class="col-lg-4 col-md-12 mb-3">
+        <div class="resources__block">
+          <img class="resources__image mb-2" src="{{ $item.img }}"/>
+          <div class="resources__body d-flex flex-column justify-content-between">
+            <h4 class="resources__header mb-3">{{ $item.title }}</h4>
+            <p class="resources__description not-apply">{{ $item.description }}</p>
+            <a href="{{ $item.linkUrl }}">{{ $item.linkTitle }}</a>
+          </div>
         </div>
       </div>
       {{ end }}

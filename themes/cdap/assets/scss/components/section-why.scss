@@ -11,6 +11,7 @@
 
   &__image {
     height: 38px;
+    width: auto;
     opacity: .43;
   }
 
@@ -18,7 +19,6 @@
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 0.2px;
-    text-align: center;
     color: $greyish-brown;
     width: 70%;
     margin: 0;
@@ -33,12 +33,10 @@
     font-size: 20px;
     line-height: 1.25;
     letter-spacing: 0.2px;
-    text-align: center;
   }
 
   &__block {
     border-right: solid 1px $gray;
-    padding: 0 25px;
 
     &:nth-child(4n) {
       border-right: 0;
