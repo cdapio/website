@@ -13,7 +13,7 @@
     {
       "evaluate": [
         {
-          "subTitle": "evaluate",
+          "subTitle": "Evaluation",
           "title": "Spin up CDAP in the Cloud for Evaluation",
           "description": "The CDAP Cloud Sandbox is a single-process package of CDAP optimized for the Cloud. Functionally identical with the CDAP Local Sandbox, it may differ in nomenclature, and may have additional optimizations - such as dedicated tabs in the Hub - specific to individual cloud providers. The CDAP Cloud Sandbox is available from the respective cloud providers`  Marketplaces.",
           "items": [
@@ -44,7 +44,7 @@
       ],
       "on_production": [
         {
-          "subTitle": "production",
+          "subTitle": "Production",
           "title": "Install CDAP in Mission-Critical Environments",
           "description": "If you are ready to install CDAP in mission critical Cloud environments, choose one of the options below",
           "items": [
@@ -78,7 +78,7 @@
     {
       "evaluate": [
         {
-          "subTitle": "evaluate",
+          "subTitle": "Evaluation",
           "title": "Run CDAP Locally for Evaluation",
           "description": "CDAP is available as a standalone package to install and run locally, including everything to get you started immediately on experimenting with data applications on your laptop or desktop. Once you are ready, your local copy can be easily moved to a distributed environment. These packages are not meant for production use and no patching is available for those images once deployed.",
           "items": [
@@ -108,27 +108,27 @@
       ],
       "on_production": [
         {
-          "subTitle": "production",
+          "subTitle": "Production",
           "title": "Get connected",
           "description": "If you are ready to install CDAP on your Kubernetes or Apache Hadoop clusters, in critical environments, choose from one of the following options:",
           "items": [
             {
               "title": "CDAP for CDH",
-              "description": "To add CDAP to your Cloudera Manager installations, using the CDAP Custom Service Descriptor (CSD) is the way to go.",
+              "description": "To add CDAP to your Cloudera Manager installations, use the CDAP Custom Service Descriptor (CSD).",
               "img": "/images/get-started/cdh.png",
               "linkTitle": "Get CDAP for CDH",
               "link": "https://www.cloudera.com/downloads/partner/cdap.html"
             },
             {
               "title": "CDAP for Ambari",
-              "description": "To use CDAP within your Hortonworks Data Platform (HDP) environment, use Apache Ambari (note that Apache Ambari can only be used to add CDAP to an existing Hadoop cluster).",
+              "description": "To use CDAP within your Hortonworks Data Platform (HDP) environment, use Apache Ambari.",
               "img": "/images/get-started/ambari.png",
               "linkTitle": "Get CDAP for Ambari",
               "link": "https://github.com/cdapio/cdap-ambari-service"
             },
             {
               "title": "CDAP for MapR, BigTop and more",
-              "description": "If you are using MapR, BigTop or the Apache distribution of Hadoop, we provide RPM and Debian distributions of CDAP to support your varied installation needs.",
+              "description": "If you are using MapR, BigTop or the Apache Hadoop, use RPM and Debian distributions of CDAP.",
               "img": "/images/get-started/mapr.png",
               "linkTitle": "Get CDAP for RPM/DEB",
               "link": "https://docs.cask.co/cdap/current/en/admin-manual/installation/mapr.html"
