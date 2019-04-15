@@ -33,14 +33,14 @@
       "title": "Videos",
       "items": [
         {
-          "videoId": "nZO8fkOE8P0",
-          "preview": "https://i.ytimg.com/vi/nZO8fkOE8P0/maxresdefault.jpg",
-          "title": "Rapid Time to Value with CDAP: Enterprise-Ready Machine Learning in under Three Minutes"
+          "videoId": "FnQwDaKii2U",
+          "preview": "https://i.ytimg.com/vi/FnQwDaKii2U/maxresdefault.jpg",
+          "title": "#BDAM: Introducing a Rules Engine for Big Data processing, by Nitin Motgi, Cask"
         },
         {
-          "videoId": "jk-QQitVECc",
-          "preview": "https://i.ytimg.com/vi/jk-QQitVECc/maxresdefault.jpg",
-          "title": "#BDAM: Machine Learning for the Masses, by Albert Shau, Cask"
+          "videoId": "0SFjE_Yc2aE",
+          "preview": "https://i.ytimg.com/vi/0SFjE_Yc2aE/maxresdefault.jpg",
+          "title": "#BDAM: Building an ECA Rules Engine for IoT with CDAP, by Bhooshan Mogal, Cask"
         }
       ]
     }

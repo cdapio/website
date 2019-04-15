@@ -10,7 +10,7 @@
   {{ end }}
 
 
-  {{ with $videos := $data.pipelines.videos }}
+  {{ with $videos := $data.wrangler.videos }}
     {{ range $videos }}
       {{ partial "components/videos/list" . }}
     {{ end }}
