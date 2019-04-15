@@ -84,7 +84,7 @@
           "items": [
             {
               "title": "Linux/Mac OSX",
-              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin",
+              "description": "CDAP is available as a standalone package to install and run locally, so you can get started immediately on experimenting with data applications on your laptop or desktop.",
               "img": "/images/get-started/linux-mac.png",
               "linkTitle": "Go to Google Cloud Console",
               "link": "https://cloud.google.com/cloud-console/"
