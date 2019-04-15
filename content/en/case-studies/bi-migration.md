@@ -1,15 +1,17 @@
 ---
 title: BI migration
+aliases:
+- "/resources/case-studies/bi-migration/"
 hero:
   title: BI migration
-  body: "Summary Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus."
+  second_title: Title goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   link_back_title: « Case studies
   link_back_url: /case-studies
   navigation: false
   background_color: "#404244"
   table:
     - title: Categories
-      body: EDW offloaditng, Technology consolidation
+      body: EDW offloading, Technology consolidation
     - title: Audience
       body: Data Administrators, Data Analysts, Data Scientists, Engineers
     - title: Key themes

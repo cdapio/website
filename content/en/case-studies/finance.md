@@ -1,49 +1,46 @@
 ---
 title: Finance
+aliases:
+- "/resources/case-studies/finance/"
 hero:
   title: Finance
-  body: "Summary Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus."
+  second_title: Information Security Analytics and Reporting
   link_back_title: « Case studies
-  link_back_url: /case-studies
+  link_back_url: /resources/case-studies
   navigation: false
   background_color: "#404244"
   table:
     - title: Categories
-      body: EDW offloaditng, Technology consolidation
+      body: Analytics and business intelligence
     - title: Audience
-      body: Data Administrators, Data Analysts, Data Scientists, Engineers
+      body: Business analysts, Data scientists
     - title: Key themes
-      body: Removal of departmental silos, IT dependency reduction, Extensibility
+      body: Code-free transformations, Faster TTM, Lower TCO
     - title: Industry segment
-      body: SMB
+      body: Large enterprise
     - title: Industry
-      body: Healthcare
+      body: Finance
     - title: Environment
-      body: On-premises
+      body: OSS CDAP on-premise
 ---
 
 ### Scenario
 
-The customer, a Health Insurance company, was using Netezza to aggregate and report on multiple dimensions on different health 
-care and services. They were looking for alternatives to offload the data from Netezza to reduce the workload for reducing the 
-cost. Data Administrators, Data Analysts, Data Scientist and Engineers were operating and supporting the loading, cleansing and 
-reporting efforts. They were facing a lot of difficulties in the following 
-areas that was hindering their transition into Hadoop:
+The customer, a Fortune 50 financial institution, created a pipeline that aggregates batched data into a 
+secured on-premise cluster to create daily aggregates and reports. The current system performed multiple 
+transformations, which created new datasets. The customer faced multiple issues: 
 
-* Current implementation of moving data into and out of Hadoop was 
-error prone and took a lot of effort and time to add new aggregations or reports
-* Data Administrator, Data Analyst and Data Engineers were spending a lot of building complex workflows 
-and less time on looking at data insights and reports
-* Every new report or data source ingestion from Netezza took months to generate
-* Due to the health industry regulations, they were not having a reliable solution to track the 
-flow of data in and out of cluster
-* Integrating and making the data available within Impala was challenging
+* The data pipeline was inefficient, took 6 hours to run, and required manual intervention almost on a daily basis
+* Reports were not aligning correctly with day boundaries.
+* Any points of failure require reconfiguring and restarting the pipeline, a time-consuming and frustrating task.
+* Major setup and development time was needed to add new sources.
+* The team was not able to test and validate the pipeline prior to deployment. 
+  As a result, testing was conducted directly on the cluster, which is an inappropriate use of resources.  
 
 ### CDAP value proposition(s)
 
-Customer was successfully able to extract data from Netezza and other SQL sources, perform complex joins, transformation and load it into distributed file system. They were then able to perform different aggregations and joins to generate the final reports. They were able to load the final report data back into Netezza seamlessly. 
+The customer’s data development team created independent parallel pipelines that moved the data from SQL Servers into their Hadoop based data lake.
 
-The company’s in-house team of Data Analysts, Data Scientists and Data Engineers built a data pipeline in less than a week using the drag-and-drop visual interface in CDAP. 
+Transformations were performed in-flight with the ability to handle error records.
 
-They were then able to operationalize (schedule to run on a daily basis) and report on errors in data giving them the visibility that they were looking for. 
-Beyond those capabilities, they were able to build pipeline level dashboard that provided them deep insights into how the offloading and report generation process was functioning.
+After completing the initial load, another pipeline fed the data into an aggregation and reporting pipeline.

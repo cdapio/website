@@ -1,15 +1,17 @@
 ---
 title: Healthcare 
+aliases:
+- "/resources/case-studies/healthcare/"
 hero:
   title: Healthcare 
-  body: "Summary Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus."
+  second_title: Offloading data warehouse reporting workloads
   link_back_title: « Case studies
-  link_back_url: /case-studies
+  link_back_url: /resources/case-studies
   navigation: false
   background_color: "#404244"
   table:
     - title: Categories
-      body: EDW offloaditng, Technology consolidation
+      body: EDW offloading, Technology consolidation
     - title: Audience
       body: Data Administrators, Data Analysts, Data Scientists, Engineers
     - title: Key themes

@@ -15,13 +15,11 @@
   {{ end }}
 
   {{ with $tabs := $data.case_studies.solutions_by_customer }}
-
-    {{ range $tabs }}
-
-      {{ partial "components/case-studies/solutions" . }}
-
+    {{ range $tab := $tabs }}
+      {{if gt (len $tab.items) 0 }}
+        {{ partial "components/case-studies/solutions" . }}
+      {{end}}
     {{ end }}
-
-  {{ end }}
+  {{end}}
 
 {{ end }}
