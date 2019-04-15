@@ -1,26 +1,31 @@
 {{ define "main" }}
 
-{{ partial "components/hero-panel" . }}
+  {{ partial "components/hero-panel" . }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
-<section>
-  {{ with $why := $data.pipelines.why }}
-  {{ range $why }}
-  {{ partial "components/why" . }}
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  <section>
+    {{ with $why := $data.pipelines.why }}
+      {{ range $why }}
+        {{ partial "components/why" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+
+  {{ with $features := $data.pipelines.features_pipeline }}
+    {{ range $features }}
+      {{ partial "components/features" . }}
+    {{ end }}
   {{ end }}
+
+  {{ with $plugins := $data.pipelines.pipeline_plugins }}
+    {{ range  $plugins }}
+      {{ partial "components/pipelines/plugins" . }}
+    {{ end }}
   {{ end }}
-</section>
 
-{{ with $features := $data.pipelines.features_pipeline }}
-{{ range $features }}
-{{ partial "components/features" . }}
-{{ end }}
-{{ end }}
-
-{{ with $plugins := $data.pipelines.pipeline_plugins }}
-{{ range  $plugins }}
-{{ partial "components/pipelines/plugins" . }}
-{{ end }}
-{{ end }}
-
+  {{ with $videos := $data.pipelines.videos }}
+    {{ range $videos }}
+      {{ partial "components/videos/list" . }}
+    {{ end }}
+  {{ end }}
 {{ end }}

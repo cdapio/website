@@ -6,4 +6,10 @@
       {{ partial "components/features" . }}
     {{ end }}
   {{ end }}
+
+  {{ with $videos := $data.rules_engine.videos }}
+    {{ range $videos }}
+      {{ partial "components/videos/list" . }}
+    {{ end }}
+  {{ end }}
 {{ end }}

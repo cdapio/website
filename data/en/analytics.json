@@ -35,5 +35,22 @@
         }
       ]
     }
+  ],
+  "videos": [
+    {
+      "title": "Videos",
+      "items": [
+        {
+          "videoId": "FnQwDaKii2U",
+          "preview": "https://i.ytimg.com/vi/FnQwDaKii2U/maxresdefault.jpg",
+          "title": "#BDAM: Introducing a Rules Engine for Big Data processing, by Nitin Motgi, Cask"
+        },
+        {
+          "videoId": "0SFjE_Yc2aE",
+          "preview": "https://i.ytimg.com/vi/0SFjE_Yc2aE/maxresdefault.jpg",
+          "title": "#BDAM: Building an ECA Rules Engine for IoT with CDAP, by Bhooshan Mogal, Cask"
+        }
+      ]
+    }
   ]
 }

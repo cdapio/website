@@ -27,5 +27,22 @@
         }
       ]
     }
+  ],
+  "videos": [
+    {
+      "title": "Videos",
+      "items": [
+        {
+          "videoId": "nZO8fkOE8P0",
+          "preview": "https://i.ytimg.com/vi/nZO8fkOE8P0/maxresdefault.jpg",
+          "title": "Rapid Time to Value with CDAP: Enterprise-Ready Machine Learning in under Three Minutes"
+        },
+        {
+          "videoId": "jk-QQitVECc",
+          "preview": "https://i.ytimg.com/vi/jk-QQitVECc/maxresdefault.jpg",
+          "title": "#BDAM: Machine Learning for the Masses, by Albert Shau, Cask"
+        }
+      ]
+    }
   ]
 }

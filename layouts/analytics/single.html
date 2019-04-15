@@ -1,11 +1,17 @@
 {{ define "main" }}
 
-{{ partial "components/hero-panel" . }}
+  {{ partial "components/hero-panel" . }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
-{{ with $features := $data.analytics.features_analytics }}
-{{ range $features }}
-{{ partial "components/features" . }}
-{{ end }}
-{{ end }}
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $features := $data.analytics.features_analytics }}
+    {{ range $features }}
+      {{ partial "components/features" . }}
+    {{ end }}
+  {{ end }}
+
+  {{ with $videos := $data.analytics.videos }}
+    {{ range $videos }}
+      {{ partial "components/videos/list" . }}
+    {{ end }}
+  {{ end }}
 {{ end }}

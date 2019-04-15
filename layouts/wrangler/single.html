@@ -1,20 +1,18 @@
 {{ define "main" }}
 
-{{ partial "components/hero-panel" . }}
+  {{ partial "components/hero-panel" . }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
-{{ with $features := $data.wrangler.features_wrangler }}
-{{ range $features }}
-{{ partial "components/features" . }}
-{{ end }}
-{{ end }}
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ with $features := $data.wrangler.features_wrangler }}
+    {{ range $features }}
+      {{ partial "components/features" . }}
+    {{ end }}
+  {{ end }}
 
-{{ with $videos := $data.wrangler.videos }}
-{{ range $videos }}
-{{ partial "components/wrangler/videos" . }}
-{{ end }}
-{{ end }}
 
-{{ partial "components/videos/video-modal" . }}
-
+  {{ with $videos := $data.pipelines.videos }}
+    {{ range $videos }}
+      {{ partial "components/videos/list" . }}
+    {{ end }}
+  {{ end }}
 {{ end }}
