@@ -84,21 +84,21 @@
           "items": [
             {
               "title": "Linux/Mac OSX",
-              "description": "CDAP is available as a standalone package to install and run locally, so you can get started immediately on experimenting with data applications on your laptop or desktop.",
+              "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
               "img": "/images/get-started/linux-mac.png",
               "linkTitle": "Go to Google Cloud Console",
               "link": "https://cloud.google.com/cloud-console/"
             },
             {
               "title": "VM",
-              "description": "Spin up a single-process instance of CDAP on AWS Marketplace.",
+              "description": "Download a pre-built virtual machine for trying out CDAP on your Linux, Mac OSX or Windows machines.",
               "img": "/images/get-started/vm.svg",
               "linkTitle": "Go to AWS Marketplace",
               "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
             },
             {
               "title": "Docker",
-              "description": "Spin up a single-process instance of CDAP on Azure Marketplace.",
+              "description": "Download a clean, pre-built Docker image for trying out CDAP on your Linux, MacOSX or Windows machines.",
               "img": "/images/get-started/docker.png",
               "linkTitle": "Go to Azure Marketplace",
               "link": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cask.cdap-cloud-sandbox"
