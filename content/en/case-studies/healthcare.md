@@ -5,7 +5,6 @@ aliases:
 hero:
   title: Healthcare 
   second_title: Offloading data warehouse reporting workloads
-  body: "Summary Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus."
   link_back_title: « Case studies
   link_back_url: /resources/case-studies
   navigation: false

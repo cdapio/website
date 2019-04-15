@@ -3,7 +3,6 @@ title: Healthcare
 hero:
   title: Sports and Entertainment 
   second_title: XML content ingestion
-  body: "Summary Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus."
   link_back_title: « Case studies
   link_back_url: /case-studies
   navigation: false

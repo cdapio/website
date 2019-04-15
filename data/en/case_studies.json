@@ -58,38 +58,7 @@
     {
       "title": "Solutions by customer needs",
       "isGray": true,
-      "items": [
-        {
-          "img": "/images/case-studies/bimigration.svg",
-          "title": "BI migration",
-          "description": "Title of the use case goes here. Lorem ipsum dolor.",
-          "linkTitle": "View",
-          "linkUrl": "./bi-migration"
-        },
-        {
-          "img": "/images/case-studies/fraud.svg",
-          "imgHeight": "52px",
-          "title": "Fraud detection",
-          "description": "Title of the use case goes here. Lorem ipsum dolor.",
-          "linkTitle": "View",
-          "linkUrl": "./fraud-detection"
-        },
-        {
-          "img": "/images/case-studies/datalake.svg",
-          "title": "Data lake",
-          "description": "Title of the use case goes here. Lorem ipsum dolor.",
-          "linkTitle": "View",
-          "linkUrl": "./data-lake"
-        },
-        {
-          "img": "/images/case-studies/risks.svg",
-          "imgHeight": "43px",
-          "title": "Risk analytics",
-          "description": "Title of the use case goes here. Lorem ipsum dolor.",
-          "linkTitle": "View",
-          "linkUrl": "./risk-analytics"
-        }
-      ]
+      "items": [ ]
     }
   ]
 }

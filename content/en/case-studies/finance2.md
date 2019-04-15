@@ -3,7 +3,6 @@ title: Finance
 hero:
   title: Finance
   second_title: Data cleansing and validation of 3 billion records
-  body: "Summary Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus."
   link_back_title: « Case studies
   link_back_url: /case-studies
   navigation: false
