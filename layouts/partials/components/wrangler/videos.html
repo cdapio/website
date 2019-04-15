@@ -8,8 +8,12 @@
   </div>
   <div class="container mt-3">
     <div class="videos__wrapper">
-      {{ range $videos := .items}}
-        <iframe class="videos__video ml-auto mr-auto" src="{{ $videos.url }}"></iframe>
+      {{ range $item := .items }}
+      <div class="videos-page__video-block mb-1 ml-auto mr-auto ml-md-0 mr-md-4">
+        <div class="videos-page__modalBtn" onclick="openVideoModal({{ $item.title }}, 'https://www.youtube.com/embed/'+{{ $item.videoId }})"></div>
+        <img class="videos-page__video m-auto" src="{{ $item.preview }}">
+        <p class="videos-page__title mt-3 text-dark not-apply">{{ $item.title }}</p>
+      </div>
       {{ end }}
     </div>
   </div>
