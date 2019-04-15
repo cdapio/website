@@ -33,16 +33,34 @@
       "title": "Videos",
       "items": [
         {
-          "url": "https://www.youtube.com/embed/_eKH5YnvO-0"
+          "videoId": "cGYmMtGO9Lo",
+          "preview": "https://i.ytimg.com/vi_webp/cGYmMtGO9Lo/maxresdefault.webp",
+          "title": "Learn CDAP: CDAP Data Prep and Pipelines Tutorial"
         },
         {
-          "url": "https://www.youtube.com/embed/_eKH5YnvO-0"
+          "videoId": "Zt_mzikca94",
+          "preview": "https://i.ytimg.com/vi_webp/Zt_mzikca94/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] Quantize a column - Digitize"
         },
         {
-          "url": "https://www.youtube.com/embed/_eKH5YnvO-0"
+          "videoId": "9LHmTybkU50",
+          "preview": "https://i.ytimg.com/vi_webp/9LHmTybkU50/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] Parse as Avro using Schema Registry"
         },
         {
-          "url": "https://www.youtube.com/embed/_eKH5YnvO-0"
+          "videoId": "0ZoTvyCD4tQ",
+          "preview": "https://i.ytimg.com/vi_webp/0ZoTvyCD4tQ/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] Parse AVRO Binary and Protobuf Records in DataPrep"
+        },
+        {
+          "videoId": "y-gPtDJtiSI",
+          "preview": "https://i.ytimg.com/vi_webp/y-gPtDJtiSI/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] New CDAP Connections"
+        },
+        {
+          "videoId": "OBIUBMKQHGo",
+          "preview": "https://i.ytimg.com/vi_webp/OBIUBMKQHGo/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] DataPrep - Restricted Directives"
         }
       ]
     }
