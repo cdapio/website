@@ -3,8 +3,7 @@ title: Plugins
 type: plugins
 hero:
   title: Plugins
-  body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo iaculis ex, non rhoncus arcu blandit sed. 
-  Fusce eget pharetra nulla, vel fermentum ante. Phasellus gravida non diam sed vehicula."
+  body: "CDAP is highly extensible, and exposes plugins, which allow users to extend its capabilities. On this page, you can see all the plugins available in CDAP. Refer to the community page to learn about writing your own plugin."
   link_back_title: « Pipelines
   link_back_url: /accelerators/pipelines
   navigation: false
