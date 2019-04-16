@@ -181,7 +181,7 @@ const videosByDisplayShow = Array.from(videos).filter(video => video.style.displ
 const videosWrapper = document.querySelector('.videos-page__wrapper');
 let VIDEOS_TO_SHOW;
 if (videosWrapper !== null) {
-  VIDEOS_TO_SHOW = videosWrapper.dataset.videosToShow
+  VIDEOS_TO_SHOW = videosWrapper.dataset.videosToShow;
 }
 
 function showVideos(videos, display, label) {

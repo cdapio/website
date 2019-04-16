@@ -19,43 +19,82 @@
 <div class="get-started">
     {{ partial "components/hero-panel" . }}
 
-    {{ $data := index .Site.Data .Site.Language.Lang }}
-    <div class="tab-content">
-      <div id="cloud-tab" class="tab-pane fade">
-        {{ with $tabs := $data.get_started.cloud }}
-        {{ range $tabs }}
+  <div class="container">
 
-        {{ range .evaluate }}
-        {{ partial "components/get-started/services" . }}
-        {{ end }}
-
-        {{ range .on_production }}
-        {{ partial "components/get-started/services" . }}
-        {{ end }}
-
-        {{ end }}
-        {{ end }}
-      </div>
-      <div id="premises-tab" class="tab-pane fade">
-        {{ with $tabs := $data.get_started.on_premises }}
-        {{ range $tabs }}
-
-        {{ range .evaluate }}
-        {{ partial "components/get-started/services" . }}
-        {{ end }}
-
-        {{ range .on_production }}
-        {{ partial "components/get-started/services" . }}
-        {{ end }}
-
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-    {{ with $tabs := $data.get_started.resources }}
-    {{ range $tabs }}
-    {{ partial "components/get-started/resources" . }}
-    {{ end }}
-    {{ end }}
   </div>
+
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  <div class="tab-content">
+    <div id="cloud-tab" class="tab-pane fade">
+      {{ with $tabs := $data.get_started.cloud }}
+      {{ range $tabs }}
+
+      {{ range $index, $item := .evaluate }}
+        {{ partial "components/get-started/services" (dict "context" . "index" $index) }}
+      {{ end }}
+
+      {{ range $index, $item := .on_production }}
+        {{ partial "components/get-started/services" (dict "context" . "index" $index) }}
+      {{ end }}
+
+      {{ end }}
+      {{ end }}
+    </div>
+    <div id="premises-tab" class="tab-pane fade">
+      {{ with $tabs := $data.get_started.on_premises }}
+      {{ range $tabs }}
+      {{ range $index, $item := .evaluate }}
+      {{ $wrapper := $item.subTitle }}
+        {{ partial "components/get-started/services" (dict "context" . "index" $index "wrapper" $wrapper "class" "premises") }}
+      {{ end }}
+
+      {{ range $index, $item := .on_production }}
+      {{ $wrapper := $item.subTitle }}
+        {{ partial "components/get-started/services" (dict "context" . "index" $index "wrapper" $wrapper "class" "premises") }}
+      {{ end }}
+
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+  {{ with $tabs := $data.get_started.resources }}
+  {{ range $tabs }}
+    {{ partial "components/get-started/resources" . }}
+  {{ end }}
+  {{ end }}
+</div>
+
+<script>
+  const ctaBtns = document.querySelectorAll('.premises-services__button');
+  const closeBtns = document.querySelectorAll('.get-started__close-wrapper');
+  let datasetContext = {};
+
+  function open() {
+    ctaBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        datasetContext = { linkId: this.dataset.linkId, wrapper: this.dataset.wrapper };
+        if (datasetContext) {
+          const button = document.querySelector(`#${datasetContext.linkId}`);
+          if (button !== null) {
+            button.classList.add('d-flex');
+          }
+          document.querySelector(`.${datasetContext.wrapper}-js`).classList.add('d-none');
+        }
+      });
+    });
+  }
+
+  function close() {
+    closeBtns.forEach(closeBtn => {
+      closeBtn.addEventListener('click', function() {
+        this.parentNode.classList.remove('d-flex');
+        document.querySelector(`.${this.dataset.reflect}`).classList.remove('d-none');
+      });
+    });
+  }
+
+  open();
+  close();
+</script>
+
 {{ end }}

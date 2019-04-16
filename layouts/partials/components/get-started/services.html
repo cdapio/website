@@ -19,17 +19,17 @@
   <div class="container">
     <div class="services__header">
       <div class="text-center">
-        <h6 class="services__subTitle not-apply">{{ .subTitle }}</h6>
+        <h6 class="services__subTitle not-apply">{{ .context.subTitle }}</h6>
       </div>
-      <h2 class="my-2">{{ .title }}</h2>
-      <p>{{ .description }}</p>
+      <h2 class="my-2">{{ .context.title }}</h2>
+      <p>{{ .context.description }}</p>
     </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row">
-      {{ range $index, $item := .items }}
-      <div {{ if $item.id }} id="{{ $item.id }}" {{ end }} class="col-lg-4 d-flex services__wrapper">
-        <div class="d-flex flex-column justify-content-between align-items-center services__block">
+    <div class="row {{ with .wrapper }}{{ lower . }}-js{{ end }} mt-5">
+      {{ $subTitle := .context.subTitle }}
+      {{ range $index, $item := .context.items }}
+      <div {{ if $item.id }} id="{{ $item.id }}" {{ end }}
+           class="col-lg-4 services__wrapper justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-between align-items-center services__block my-5">
           <div class="services__image-block">
             <img class="services__image"
                  src="{{ $item.img }}"
@@ -39,8 +39,13 @@
           </div>
           <h3 class="mt-4 not-apply text-center">{{ $item.title | safeHTML }}</h3>
           <p class="mt-1 d-sm-flex not-apply">{{ $item.description | safeHTML }}</p>
-          <div class="w-100">
-            <a role="button" class="btn services__button" href="{{ $item.link }}" target="_blank">
+          <div class="services__button-wrapper w-100">
+            <a class="{{ with $.class }}{{ . }}-{{ end }}services__button"
+               role="button"
+               target="_blank"
+               {{ with $item.link }} href="{{ . }}" {{ end }}
+               {{ with $item.linkId }} data-link-id="{{ . }}" {{ end }}
+               {{ with $.wrapper }} data-wrapper="{{ lower . }}" {{ end }}>
               {{ $item.linkTitle }}
             </a>
           </div>
@@ -48,5 +53,109 @@
       </div>
       {{ end }}
     </div>
+    {{ if .context.overlay }}
+    {{ range .context.overlay_items }}
+    {{ $id := .id }}
+    <div class="get-started__overlay d-none mt-5" id="{{ $id }}">
+      <div class="get-started__overlay-left">
+        {{ range $index, $item := $.context.items }}
+        {{ if eq $item.linkId $id }}
+        <div {{ with $item.id }} id="{{ . }}" {{ end }}
+             class="{{ with .linkId }}{{ . }}-js{{ end }} services__wrapper-overlay">
+          <div class="get-started__overlay-block">
+            <div class="services__image-block">
+              <img class="services__image"
+                   src="{{ $item.img }}"
+                   {{ with $item.imgHeight }}
+                   style="height:{{ $item.imgHeight }}"
+                   {{ end }}>
+            </div>
+            <h4 class="get-started__overlay-title not-apply">{{ $item.title | safeHTML }}</h4>
+            <div class="get-started__button-wrapper w-100">
+              {{ range $item.buttons }}
+              <a class="btn get-started__overlay-btn"
+                 target="_blank"
+                 href="{{ .buttonHref }}">{{ .buttonTitle }}
+              </a>
+              {{ end }}
+              <div class="get-started__tabs-wrapper dropdown w-100">
+                <button class="get-started__overlay-btn--toggle dropdown-toggle w-100"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                  Previous Versions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    {{ range $item.overlay_pane }}
+                    <li class="nav-item">
+                      <a class="{{ with .active }}active{{ end }}"
+                         id="{{ .id }}-tab"
+                         data-toggle="tab"
+                         href="#{{ .id }}"
+                         role="tab"
+                         aria-controls="{{ .id }}"
+                         aria-selected="true">{{ .linkTitle }}</a>
+                    </li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="get-started__overlay-right">
+        <div class="tab-content" id="overlayPane">
+          {{ range .overlay_right }}
+          <div class="tab-pane fade {{ with .active }}show active{{ end }}"
+               id="{{ .id }}" role="tabpanel"
+               aria-labelledby="{{ .id }}-tab">
+            <h3 class="get-started__overlay-title">
+              {{ .title }}
+            </h3>
+            <div class="get-started__overlay-wrapper">
+              <div class="get-started__overlay-small-title">
+                {{ .description }}
+              </div>
+              <div class="get-started__overlay-description">
+                {{ .description_body }}
+              </div>
+            </div>
+            <div class="get-started__overlay-wrapper">
+              <div class="get-started__overlay-small-title">
+                {{ .whats_new }}
+              </div>
+              <ul class="get-started__overlay-description">
+                {{ range .whats_new_body }}
+                <li>{{ . | safeHTML }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            <div class="get-started__overlay-wrapper">
+              <div class="get-started__overlay-small-title">
+                {{ .requirements }}
+              </div>
+              <ul class="get-started__overlay-description">
+                {{ range .requirements_list }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      <div data-reflect="{{ with $.wrapper }}{{ lower . }}{{ end }}-js" class="get-started__close-wrapper">
+        <span class="get-started__overlay-btn--close"></span>
+        <span class="get-started__overlay-btn-title">Close</span>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
   </div>
 </section>

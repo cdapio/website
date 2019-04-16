@@ -81,27 +81,181 @@
           "subTitle": "Evaluation",
           "title": "Run CDAP Locally for Evaluation",
           "description": "CDAP is available as a standalone package to install and run locally, including everything to get you started immediately on experimenting with data applications on your laptop or desktop. Once you are ready, your local copy can be easily moved to a distributed environment. These packages are not meant for production use and no patching is available for those images once deployed.",
+          "overlay": true,
+          "overlay_items": [
+            {
+              "id": "linux",
+              "title": "CDAP 5.1.2 for Linux/Mac",
+              "header": "Description",
+              "description": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
+              "overlay_right": [
+                {
+                  "active": true,
+                  "id": "version-512-mac",
+                  "linkTitle": "CDAP 5.1.2 Linux/Mac",
+                  "title": "CDAP 5.1.2 for Linux/Mac",
+                  "description": "Description",
+                  "description_body": "CDAP Docker provides a clean, contained environment for trying out CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"]
+                },
+                {
+                  "id": "version-435-mac",
+                  "linkTitle": "CDAP 4.3.5 Linux/Mac",
+                  "title": "CDAP 4.3.5 for Linux/Mac",
+                  "description": "Description",
+                  "description_body": "CDAP Docker provides a clean, contained environment for trying out CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>", "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"]
+                }
+              ]
+            },
+            {
+              "id": "vm",
+              "title": "CDAP 5.1.2 for Linux/Mac",
+              "header": "Description",
+              "description": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
+              "overlay_right": [
+                {
+                  "active": true,
+                  "id": "version-512-vm",
+                  "linkTitle": "CDAP 5.1.2 VM",
+                  "title": "CDAP 5.1.2 for VM",
+                  "description": "Description",
+                  "description_body": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"]
+                },
+                {
+                  "id": "version-435-vm",
+                  "linkTitle": "CDAP 4.3.5 VM",
+                  "title": "CDAP 4.3.5 for VM",
+                  "description": "Description",
+                  "description_body": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>", "Read the <a target='_blank' href='https://cdap.io/?new=blog'>engineering blog</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"]
+                }
+              ]
+            },
+            {
+              "id": "docker",
+              "title": "CDAP 5.1.2 for Linux/Mac",
+              "header": "Description",
+              "description": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
+              "overlay_right": [
+                {
+                  "active": true,
+                  "id": "version-512-docker",
+                  "linkTitle": "CDAP 5.1.2 Docker",
+                  "title": "CDAP 5.1.2 for Docker",
+                  "description": "Description",
+                  "description_body": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"]
+                },
+                {
+                  "id": "version-435-docker",
+                  "linkTitle": "CDAP 4.3.5 Docker",
+                  "title": "CDAP 4.3.5 for Docker",
+                  "description": "Description",
+                  "description_body": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://cdap.io/?new=blog'>release notes</a>", "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"]
+                }
+              ]
+            }
+          ],
           "items": [
             {
               "title": "Linux/Mac OSX",
               "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
               "img": "/images/get-started/linux-mac.png",
-              "linkTitle": "Go to Google Cloud Console",
-              "link": "https://cloud.google.com/cloud-console/"
+              "buttons": [
+                {
+                  "buttonTitle": "Download CDAP 5.1.2 for Linux/Mac",
+                  "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-5.1.2.zip"
+                }
+              ],
+              "linkTitle": "Get CDAP for Linux/Mac",
+              "linkId": "linux",
+              "link": "",
+              "overlay_pane": [
+                {
+                  "id": "version-512-mac",
+                  "linkTitle": "CDAP 5.1.2 Linux/Mac",
+                  "title": "CDAP 5.1.2 for Linux/Mac",
+                  "active": true
+                },
+                {
+                  "id": "version-435-mac",
+                  "linkTitle": "CDAP 4.3.5 Linux/Mac",
+                  "title": "CDAP 4.3.5 for Linux/Mac"
+                }
+              ]
             },
             {
               "title": "VM",
               "description": "Download a pre-built virtual machine for trying out CDAP on your Linux, Mac OSX or Windows machines.",
               "img": "/images/get-started/vm.svg",
-              "linkTitle": "Go to AWS Marketplace",
-              "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
+              "buttons": [
+                {
+                  "buttonTitle": "Download CDAP 5.1.2 for VM",
+                  "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-5.1.2.ova"
+                }
+              ],
+              "linkTitle": "Get CDAP for VM",
+              "linkId": "vm",
+              "link": "",
+              "overlay_pane": [
+                {
+                  "id": "version-512-vm",
+                  "linkTitle": "CDAP 5.1.2 VM",
+                  "title": "CDAP 5.1.2 for Linux/Mac"
+                },
+                {
+                  "id": "version-435-vm",
+                  "linkTitle": "CDAP 4.3.5 VM",
+                  "title": "CDAP 4.3.5 for Linux/Mac"
+                }
+              ]
             },
             {
               "title": "Docker",
               "description": "Download a clean, pre-built Docker image for trying out CDAP on your Linux, MacOSX or Windows machines.",
               "img": "/images/get-started/docker.png",
-              "linkTitle": "Go to Azure Marketplace",
-              "link": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cask.cdap-cloud-sandbox"
+              "buttons": [
+                {
+                  "buttonTitle": "Get CDAP 5.1.2 for Docker",
+                  "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
+                }
+              ],
+              "linkTitle": "Get CDAP for Docker",
+              "linkId": "docker",
+              "link": "",
+              "overlay_pane": [
+                {
+                  "id": "version-512-docker",
+                  "linkTitle": "CDAP 4.3.5 Docker",
+                  "title": "CDAP 5.1.2 for Linux/Mac"
+                },
+                {
+                  "id": "version-435-docker",
+                  "linkTitle": "CDAP 4.3.5 Docker",
+                  "title": "CDAP 5.1.2 for Linux/Mac"
+                }
+              ]
             }
           ]
         }
@@ -111,27 +265,189 @@
           "subTitle": "Production",
           "title": "Get connected",
           "description": "If you are ready to install CDAP on your Kubernetes or Apache Hadoop clusters, in critical environments, choose from one of the following options:",
+          "overlay": true,
+          "overlay_items": [
+            {
+              "id": "cloudera",
+              "title": "CDAP 5.1.2 for Linux/Mac",
+              "header": "Description",
+              "description": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
+              "overlay_right": [
+                {
+                  "active": true,
+                  "id": "version-512-cdh",
+                  "linkTitle": "CDAP 5.1.2 CDH",
+                  "title": "CDAP 5.1.2 for CDH",
+                  "description": "Description",
+                  "description_body": "Use the CDAP Custom Service Descriptor (CSD) to install and manage CDAP on CM managed Hadoop clusters.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian", "Supported CDH versions: CDH 5.1.x to 5.11.x", "Supported CM versions: CM 5.1 - CM 5.11", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8"]
+                },
+                {
+                  "id": "version-435-cdh",
+                  "linkTitle": "CDAP 4.3.5 CDH",
+                  "title": "CDAP 4.3.5 for Linux/Mac",
+                  "description": "Description",
+                  "description_body": "Use the CDAP Custom Service Descriptor (CSD) to install and manage CDAP on CM managed Hadoop clusters.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/4.3.5/en/reference-manual/release-notes.html#release-4-3-5'>release notes</a>", "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian", "Supported CDH versions: CDH 5.1.x to 5.11.x", "Supported CM versions: CM 5.1 - CM 5.11", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 7 or 8"]
+                }
+              ]
+            },
+            {
+              "id": "ambari",
+              "title": "CDAP 5.1.2 for Ambari",
+              "header": "Description",
+              "description": "Use Apache Ambari to add CDAP to an existing HDP cluster (which already has the required services installed).",
+              "overlay_right": [
+                {
+                  "active": true,
+                  "id": "version-512-am",
+                  "linkTitle": "CDAP 5.1.2 Ambari",
+                  "title": "CDAP 5.1.2 Ambari",
+                  "description": "Description",
+                  "description_body": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.0/en/reference-manual/release-notes.html#release-5-1-0'>release notes</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian", "Supported CDH versions: CDH 5.1.x to 5.11.x", "Supported CM versions: CM 5.1 - CM 5.11", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 8"]
+                },
+                {
+                  "id": "version-435-am",
+                  "linkTitle": "CDAP 4.3.5 Ambari",
+                  "title": "CDAP 4.3.5 Ambari",
+                  "description": "Description",
+                  "description_body": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/4.3.5/en/reference-manual/release-notes.html#release-4-3-5'>release notes</a>", "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian", "Supported CDH versions: CDH 5.1.x to 5.11.x", "Supported CM versions: CM 5.1 - CM 5.11", "Supported browsers: Chrome, Safari, Firefox", "Other requirements: JDK 7 or 8"]
+                }
+              ]
+            },
+            {
+              "id": "mapr",
+              "title": "CDAP 5.1.2 RPM/DEB",
+              "header": "Description",
+              "description": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
+              "overlay_right": [
+                {
+                  "active": true,
+                  "id": "version-512-mapr",
+                  "linkTitle": "CDAP 5.1.2 RPM/DEB",
+                  "title": "CDAP 5.1.2 for RPM/DEB",
+                  "description": "Description",
+                  "description_body": "RPM and Debian distributions of CDAP to support your MapR and other installation needs.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Supported Hadoop versions: MapR, Apache BigTop, Apache Hadoop"]
+                },
+                {
+                  "id": "version-435-mapr",
+                  "linkTitle": "CDAP 4.3.5 RPM/DEB",
+                  "title": "CDAP 4.3.5 for RPM/DEB",
+                  "description": "Description",
+                  "description_body": "RPM and Debian distributions of CDAP to support your MapR and other installation needs.",
+                  "whats_new": "What's new",
+                  "whats_new_body": ["View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>", "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"],
+                  "requirements": "System Requirements",
+                  "requirements_list": ["Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs", "Supported browsers: Chrome, Safari, Firefox", "Supported Hadoop versions: MapR, Apache BigTop, Apache Hadoop"]
+                }
+              ]
+            }
+          ],
           "items": [
             {
               "title": "CDAP for CDH",
               "description": "To add CDAP to your Cloudera Manager installations, use the CDAP Custom Service Descriptor (CSD).",
               "img": "/images/get-started/cdh.png",
+              "buttons": [
+                {
+                  "buttonTitle": "Download CDAP 5.1.2 for CDH",
+                  "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-5.1.0.jar"
+                }
+              ],
               "linkTitle": "Get CDAP for CDH",
-              "link": "https://www.cloudera.com/downloads/partner/cdap.html"
+              "linkId": "cloudera",
+              "link": "",
+              "overlay_pane": [
+                {
+                  "id": "version-512-cdh",
+                  "linkTitle": "CDAP 5.1.2 CDH",
+                  "title": "CDAP 5.1.2 for CDH",
+                  "active": true
+                },
+                {
+                  "id": "version-435-cdh",
+                  "linkTitle": "CDAP 4.3.5 CDH",
+                  "title": "CDAP 4.3.5 for CDH"
+                }
+              ]
             },
             {
               "title": "CDAP for Ambari",
               "description": "To use CDAP within your Hortonworks Data Platform (HDP) environment, use Apache Ambari.",
               "img": "/images/get-started/ambari.png",
+              "buttons": [
+                {
+                  "buttonTitle": "Get CDAP 5.1.2 for Ambari DEB",
+                  "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/5.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_5.1.0-1_all.deb"
+                },
+                {
+                  "buttonTitle": "Get CDAP 5.1.2 for Ambari RPM",
+                  "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/5.1/rpms/cdap-ambari-service-5.1.0-1.noarch.rpm"
+                }
+              ],
               "linkTitle": "Get CDAP for Ambari",
-              "link": "https://github.com/cdapio/cdap-ambari-service"
+              "linkId": "ambari",
+              "link": "",
+              "overlay_pane": [
+                {
+                  "id": "version-512-am",
+                  "linkTitle": "CDAP 5.1.2 Ambari",
+                  "title": "CDAP 5.1.2 for Ambari"
+                },
+                {
+                  "id": "version-435-am",
+                  "linkTitle": "CDAP 4.3.5 Ambari",
+                  "title": "CDAP 4.3.5 for Ambari"
+                }
+              ]
             },
             {
               "title": "CDAP for MapR, BigTop and more",
               "description": "If you are using MapR, BigTop or the Apache Hadoop, use RPM and Debian distributions of CDAP.",
               "img": "/images/get-started/mapr.png",
+              "buttons": [
+                {
+                  "buttonTitle": "Download CDAP 5.1.2 DEB",
+                  "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-5.1.2.tgz"
+                },
+                {
+                  "buttonTitle": "Download CDAP 5.1.2 RPM",
+                  "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-5.1.2.tgz"
+                }
+              ],
               "linkTitle": "Get CDAP for RPM/DEB",
-              "link": "https://docs.cask.co/cdap/current/en/admin-manual/installation/mapr.html"
+              "linkId": "mapr",
+              "link": "",
+              "overlay_pane": [
+                {
+                  "id": "version-512-mapr",
+                  "linkTitle": "CDAP 4.3.5 MapR",
+                  "title": "CDAP 5.1.2 for MapR"
+                },
+                {
+                  "id": "version-435-mapr",
+                  "linkTitle": "CDAP 4.3.5 MapR",
+                  "title": "CDAP 5.1.2 for MapR"
+                }
+              ]
             }
           ]
         }
