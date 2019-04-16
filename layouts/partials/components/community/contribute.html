@@ -18,7 +18,7 @@
           <h4 class="contribute__title not-apply">{{ .title }}</h4>
           <p class="contribute__paragraph not-apply mb-0">{{ .body | safeHTML }}</p>
           <p class="contribute__href not-apply">
-            <a href="{{ .href }}">{{ .linkTitle }}</a>
+            <a href="{{ .href }}" target="_blank">{{ .linkTitle }}</a>
           </p>
         </div>
         {{ range .links }}
