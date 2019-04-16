@@ -32,16 +32,16 @@
       "title": "Pipeline features",
       "left_column": [
         {
-          "header": "Connector Ecosystem",
+          "header": "Connector ecosystem",
           "paragraph": "Built-in connectors to a variety of cloud and on-prem, modern and legacy systems; public APIs to build custom connectors"
         },
         {
           "header": "Visual data pipeline designer",
-          "paragraph": "UI to build data pipelines using a point and click designer studio"
+          "paragraph": "Build data pipelines by stitching together sources, transformations, sinks and other nodes using a simple, point and click pipeline studio UI"
         },
         {
-          "header": "Data Discovery and Governance",
-          "paragraph": "Automatic technical and operational metadata capture; ability to annotate business metadata to datasets; Data discovery based on all dataset metadata; Lineage (at the dataset and field level) for root cause and impact analysis; Audit logging for traceability"
+          "header": "Data discovery and governance",
+          "paragraph": "Data discovery based on technical, operational and business metadata; Lineage for root cause and impact analysis"
         }
       ],
       "right_column": [
