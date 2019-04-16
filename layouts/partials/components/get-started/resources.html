@@ -10,10 +10,10 @@
     <div class="row justify-content-center justify-content-lg-between">
       {{ range $item := .items }}
       <div class="col-lg-4 col-md-12 mb-3">
-        <div class="resources__block">
+        <div class="resources__block align-items-center">
           <img class="resources__image mb-2" src="{{ $item.img }}"/>
           <div class="resources__body d-flex flex-column justify-content-between">
-            <h4 class="resources__header mb-3">{{ $item.title }}</h4>
+            <h4 class="resources__header mb-3 text-center">{{ $item.title }}</h4>
             <p class="resources__description not-apply">{{ $item.description }}</p>
             <a href="{{ $item.linkUrl }}">{{ $item.linkTitle }}</a>
           </div>

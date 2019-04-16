@@ -12,9 +12,9 @@
   <div class="row">
     {{ range $items := .items }}
     <div class="why__block col-md-6 col-lg-3 d-flex flex-column mt-5">
-      <div class="d-flex flex-column justify-content-center align-items-start mb-5">
+      <div class="d-flex flex-column justify-content-center align-items-center mb-5">
         {{ with $items.icon }}
-        <img class="why__image" src="{{ $items.icon }}">
+          <img class="why__image" src="{{ $items.icon }}">
         {{ end }}
         <h3 class="why__block-title mt-4 not-apply">{{ $items.header | safeHTML }}</h3>
         <div id="{{ .id }}" class="why__block-body mt-4 d-sm-flex collapse">
