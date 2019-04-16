@@ -41,13 +41,13 @@
         {
           "header": "Reduced complexity",
           "icon": "images/icons/icon-1.svg",
-          "paragraph": "CDAP lowers barrier to entry to complex technologies. It increases developer productivity through focus on business logic; and leads to accelerated ROI",
+          "paragraph": "CDAP's easy to use abstractions over complex technologies shift focus to insights from infrastructure and integration.",
           "id": "reduced-complexity"
         },
         {
           "header": "Increased velocity",
           "icon": "images/icons/icon-2.svg",
-          "paragraph": "CDAP platform and intuitive UI allow, rapid onboarding and faster time to production. It provides business value, by reducing repetition and silos, and promoting reuse and self service: build once, run anywhere",
+          "paragraph": "With an extensible framework and reusable templates, CDAP accelerates time to value and breaks down silos, so you can build once, run anywhere.",
           "id": "increased-velocity"
         },
         {
