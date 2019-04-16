@@ -23,7 +23,7 @@
                 <div class="announcement__media-body">
                   <h2 class="announcement__title not-apply">{{ $item.title }}</h2>
                   <p class="not-apply"> {{ $item.description }} </p>
-                  <a class="btn btn-link mt-3" href="#"> {{ $item.linkTitle }} </a>
+                  <a class="btn btn-link mt-3" href="{{ .linkUrl }}" target="_blank"> {{ $item.linkTitle }} </a>
                 </div>
               </div>
             </div>

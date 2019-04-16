@@ -5,7 +5,7 @@
       "url": "/accelerators/pipelines/",
       "urlTitle": "Learn more",
       "image": "/images/accelerators-details-pipeline.jpg",
-      "body": "Pipelines is an accelerator for data integration use cases. It provides an easy-to-use graphical interface that allows you to bring together data from a myriad of different sources and define transformations visually. It lowers the barrier to data integration, and enables developers, business analysts and data scientists to quickly derive insights from data by cleansing, preparing, blending, transforming and transferring data without having to worry about infrastructure and integration."
+      "body": "Pipelines provides an easy-to-use graphical data integration interface to bring together data from a myriad of different sources and define transformations visually. It enables developers, business analysts and data scientists to quickly cleanse, blend, transform and transfer data without having to worry about infrastructure and integration."
     },
     {
       "title": "Wrangler",

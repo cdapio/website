@@ -27,7 +27,7 @@
                         </a>
                         <div class="dropdown-menu">
                           {{ range .Children }}
-                            <a class="dropdown-item" href="{{ .URL }}">
+                            <a class="dropdown-item" href="{{ .URL }}" target="{{ with .Post }}_blank{{end}}">
                               <span>{{ .Name }}</span>
                               {{ $post_status := .Post }}
                               {{ with $post_status }}
