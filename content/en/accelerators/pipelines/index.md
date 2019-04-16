@@ -5,9 +5,7 @@ hero:
   title: Pipelines
   link_back_title: « Accelerators
   link_back_url: /accelerators
-  body: "Pipelines accelerates data integration with an 
-         easy-to-use graphical interface.
-         It allows to bring together data from different sources, lowers the barrier to data integration, and lets derive insight from data code-free."
+  body: "Pipelines accelerator enables developers, business analysts and data scientists to quickly derive insights from data, without having to worry about infrastructure and integration."
   link_documentation_title: Go to Documentation
   link_documentation_url: https://docs.cdap.io/cdap/current/en/user-guide/pipelines/index.html
   navigation: false
