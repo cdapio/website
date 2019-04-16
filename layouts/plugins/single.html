@@ -71,7 +71,7 @@
           {{end}}
         </div>
         <div class="plugins-small__inner-description" id="{{$index}}">
-          <div class="plugins-small__inner-description-title">ADLS Batch Sink</div>
+          <div class="plugins-small__inner-description-title">{{ (index . "Display Name") }}</div>
           <div class="plugins-small__inner-description-body">{{ .Description}}</div>
             <div class="plugins-small__cta-wrapper">
               <a class="plugins-small__cta-hide" onclick="toggleDetails({{$index}})">Hide details</a>

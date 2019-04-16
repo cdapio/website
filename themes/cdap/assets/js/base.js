@@ -75,14 +75,14 @@ function showPlugins() {
 
   const namesOfActiveCheckboxes = checkboxes
     .filter(checkbox => checkbox.checked)
-    .map(x => x.value);
+    .map(x => x.value.toLowerCase());
 
-  let selectedPlugins;
+  let selectedPlugins = [];
   if (namesOfActiveCheckboxes.length > 0) {
     const pluginTypes = Array.from(document.querySelectorAll('.plugins-small__type'))
       .map(el => el.innerText)
       .filter((x, index, self) => self.indexOf(x) === index)
-      .map(x => x.toLowerCase().replace(/\s/g, ''));
+      .map(x => x.toLowerCase().trim());
 
     const itemsByType = pluginTypes
       .map(type => ({ [type]: Array.from(document.querySelectorAll(`[data-select='${type}']`)) }))

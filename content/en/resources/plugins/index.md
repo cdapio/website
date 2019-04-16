@@ -13,8 +13,12 @@ hero:
   background_image_secondary: /images/hero-background-blue.svg
 filter_title: Filter By
 select_types:
-  - sink 
-  - source
-  - action
-  - transform
+  - Sink 
+  - Source
+  - Action
+  - Transform
+  - Alert Publisher
+  - Analytics
+  - Condition
+  - Error Handler
 ---
