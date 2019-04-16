@@ -167,7 +167,7 @@ def parse_plugin_json(plugin_json_file):
     if len(plugin_name_and_type) < 2:
       plugin_type = ""
     else:
-      plugin_type = plugin_name_and_type[1]
+      plugin_type = plugin_name_and_type[1].lower()
 
     # initialized plugin in result, if it is not already present
     if plugin_name not in parsed_plugins:
@@ -183,7 +183,8 @@ def parse_plugin_json(plugin_json_file):
     if plugin_type in PLUGIN_DISPLAY_TYPES:
       parsed_plugins[plugin_name]['Type'] = PLUGIN_DISPLAY_TYPES[plugin_type]
     else:
-      parsed_plugins[plugin_name]['Type'] = "Unknown"
+      print("Could not determine type for - {}. Current type is {}".format(plugin_name, plugin_type))
+      parsed_plugins[plugin_name]['Type'] = plugin_type
 
     if config_type == 'widgets':
       # add display name and icon
@@ -344,8 +345,12 @@ def main():
   all_plugins.update(built_in_plugins)
   all_plugins.update(hub_plugins)
 
+  # filter plugins using black list
   for ignored in ignore_plugins:
-    all_plugins.pop(ignored)
+    if ignored in all_plugins:
+      all_plugins.pop(ignored)
+    if ignored.lower() in all_plugins:
+      all_plugins.pop(ignored.lower())
   # print("########## everything #########")
   # print(json.dumps(all_plugins))
 

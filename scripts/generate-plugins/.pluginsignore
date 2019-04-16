@@ -1,0 +1,9 @@
+# Specify plugin names to ignore
+KAFKABATCHSOURCE
+KAFKASOURCE
+KAFKAWRITER
+RulesEngine
+CTSQLServer
+README
+KAFKA
+KUDU
