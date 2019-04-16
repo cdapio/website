@@ -5,18 +5,18 @@
       "description": "Pipelines accelerator enables developers, business analysts and data scientists to quickly derive insights from data, without having to worry about infrastructure and integration.",
       "items": [
         {
-          "header": "Integrated with any and all data",
-          "paragraph": "Through a rich ecosystem of connectors for a variety of legacy systems, relational databases, file systems, cloud services, object stores, NoSQL, EBCDIC, and more.",
+          "header": "Integrated with all data",
+          "paragraph": "Pipelines provide connectors to relational databases, flat files, mainframes, cloud services, NoSQL, and more.",
           "id": "reduced-complexity"
         },
         {
-          "header": "Increased\nflexibility",
+          "header": "Increased flexibility",
           "paragraph": "Through portability across on-premises and public cloud environments.",
           "id": "increased-velocity"
         },
         {
-          "header": "Reduced complexity, increased productivity",
-          "paragraph": "Through a visual interface for building data pipelines, code free transformations, and reusable pipeline blueprints.",
+          "header": "Reduced complexity",
+          "paragraph": "Pipelines reduce complexity through a graphical interface, code free transformations, and reusable tempates.",
           "id": "increased-flexibility"
         },
         {
