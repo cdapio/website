@@ -32,7 +32,6 @@ from collections import OrderedDict
 PLUGIN_DISPLAY_TYPES = {
   'batchsource': 'Source',
   'streamingsource': 'Source',
-  'sink': 'Sink',
   'batchsink': 'Sink',
   'sparksink': 'Sink',
   'realtimesink': 'Sink',
