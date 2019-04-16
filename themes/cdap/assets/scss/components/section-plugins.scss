@@ -165,6 +165,13 @@
     &-title {
       font-size: 20px;
       text-transform: capitalize;
+      flex-shrink: 0;
+    }
+
+    &-body {
+      height: 100%;
+      flex-grow: 1;
+      overflow: auto;
     }
   }
 

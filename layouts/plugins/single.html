@@ -66,17 +66,16 @@
         <div class="plugins-small__title mt-3">{{ with (index . "Display Name") }}{{ . }}{{ end }}</div>
         <div class="plugins-small__type mt-3">{{ with (index . "Type") }}{{ . }}{{ end }}</div>
         <div class="plugins-small__cta-wrapper" onclick="toggleDetails({{$index}})">
-          <a class="plugins-small__cta">View details</a>
+          {{if .Description}}
+            <a class="plugins-small__cta">View details</a>
+          {{end}}
         </div>
         <div class="plugins-small__inner-description" id="{{$index}}">
           <div class="plugins-small__inner-description-title">ADLS Batch Sink</div>
-          <div class="plugins-small__inner-description-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus tempor magna a tincidunt facilisis. Sed id pulvinar tellus. Nulla et massa lacus.
-          </div>
-          <div class="plugins-small__cta-wrapper">
-            <a class="plugins-small__cta-hide" onclick="toggleDetails({{$index}})">Hide details</a>
-          </div>
+          <div class="plugins-small__inner-description-body">{{ .Description}}</div>
+            <div class="plugins-small__cta-wrapper">
+              <a class="plugins-small__cta-hide" onclick="toggleDetails({{$index}})">Hide details</a>
+            </div>
         </div>
       </li>
       {{ end }}
