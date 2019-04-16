@@ -640,12 +640,6 @@
     "Icon": "N/A",
     "Description": "CDAP Plugin for reading data from Apache Kudu table."
   },
-  "KUDU": {
-    "Name": "KUDU",
-    "Display Name": "KUDU",
-    "Type": "source",
-    "Description": "CDAP Plugin for reading data from Apache Kudu table. "
-  },
   "DataProfiler": {
     "Name": "DataProfiler",
     "Display Name": "DataProfiler",

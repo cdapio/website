@@ -30,7 +30,6 @@ from collections import OrderedDict
 
 
 PLUGIN_DISPLAY_TYPES = {
-  # 'source': 'Source',
   'batchsource': 'Source',
   'streamingsource': 'Source',
   'sink': 'Sink',
@@ -40,7 +39,6 @@ PLUGIN_DISPLAY_TYPES = {
   'transform': 'Transform',
   'splittertransform': 'Transform',
   'alertpublisher': 'Alert Publisher',
-  # 'alert': 'Alert Publisher',
   'action': 'Action',
   'sparkprogram': 'Action',
   'postaction': 'Action',
