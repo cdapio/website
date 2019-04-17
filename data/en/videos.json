@@ -1,88 +1,123 @@
 {
   "videos": [
     {
+      "videoId": "0lO4robNF20",
+      "title": "Steve Huber, Cask - Spark Summit 2016 - #SparkSummit - #theCUBE",
+      "description": "June 8, 2016 Steve Huber, VP Global Sales, Cask, talks with John Walls & George Gilbert at Spark Summit 2016 in San Francisco, CA. #CaskData ...",
+      "preview": "https://i.ytimg.com/vi/0lO4robNF20/hqdefault.jpg",
+      "visible": true
+    },
+    {
+      "videoId": "nMR3A1k3bqU",
+      "title": "Cask Intern Experience - Chris Lu, Summer 2016",
+      "description": "Chris Lu interned at Cask for the summer of 2016, and here speaks about his summer internship experience. Chris is pursuing his Bachelor's degree in ...",
+      "preview": "https://i.ytimg.com/vi/nMR3A1k3bqU/hqdefault.jpg",
+      "visible": true
+    },
+    {
+      "videoId": "wmHeBU9rMHc",
+      "title": "Cask Intern Experience-   Shu Das, Summer 2014",
+      "description": "January 9, 2015 Founded by developers for developers, Cask is an open source software company bringing virtualization to Hadoop data and apps.",
+      "preview": "https://i.ytimg.com/vi/wmHeBU9rMHc/hqdefault.jpg",
+      "visible": true
+    },
+    {
       "videoId": "nZO8fkOE8P0",
       "preview": "https://i.ytimg.com/vi/nZO8fkOE8P0/hqdefault.jpg",
       "title": "Rapid Time to Value with CDAP: Enterprise-Ready Machine Learning in under Three Minutes",
-      "visible": true
+      "visible": true,
+      "description": "In this quick demo, we will demonstrate how you can build and operationalize an enterprise-ready Machine Learning model, in just a few minutes using Cask ..."
     },
     {
       "videoId": "r0eK95-WFT0",
       "preview": "https://i.ytimg.com/vi/r0eK95-WFT0/hqdefault.jpg",
       "title": "Rapid Time to Value with CDAP: From Data File to Apache Kudu in Under 5 Minutes",
-      "visible": true
+      "visible": true,
+      "description": "In this quick demo, we will demonstrate how you can go from a CSV data file to a Kudu table, queryable using Impala, in just a few minutes using Cask Data ..."
     },
     {
       "videoId": "pvdEqCrsnvk",
       "preview": "https://i.ytimg.com/vi/pvdEqCrsnvk/hqdefault.jpg",
       "title": "HEDIS CDAP Demo Video",
-      "visible": true
+      "visible": true,
+      "description": "HEDIS Healthcare Reporting enables healthcare organizations to calculate HEDIS measures faster and more frequently for increased compliance and ..."
     },
     {
       "videoId": "ntOXeYecj7o",
       "preview": "https://i.ytimg.com/vi/ntOXeYecj7o/hqdefault.jpg",
       "title": "Cask Product Tour",
-      "visible": false
+      "visible": false,
+      "description": "In this video, we take you on a product tour of CDAP, CDAP extensions and the Cask Market. Cask Data Application Platform (CDAP) is the first Unified ..."
     },
     {
       "videoId": "ezTzYIS88YU",
       "preview": "https://i.ytimg.com/vi/ezTzYIS88YU/hqdefault.jpg",
       "title": "Introducing Cask Hydrator",
-      "visible": false
+      "visible": false,
+      "description": "Cask Hydrator is a highly functional framework and UI to support self-service batch and real-time data ingestion, and ETL. Hydrator provides CDAP users a ..."
     },
     {
       "videoId": "vTXAwV3r0zU",
       "preview": "https://i.ytimg.com/vi/vTXAwV3r0zU/hqdefault.jpg",
       "title": "CDAP - the first Unified Integration Platform for Big Data (cdap.io)",
-      "visible": true
+      "visible": true,
+      "description": "CDAP is the first unified integration platform for big data that cuts down the time to production for data applications and data lakes by 80%. The 100% open ..."
     },
     {
       "videoId": "k9ESaATI1mQ",
       "preview": "https://i.ytimg.com/vi/k9ESaATI1mQ/hqdefault.jpg",
       "title": "Learn CDAP: Hive Export and Import  using CDAP Pipelines",
-      "visible": true
+      "visible": true,
+      "description": "In this video you will watch a use case in action to setup Hive Export and Import using CDAP Pipelines. We will demo a CDAP Pipeline to export Passenger data ..."
     },
     {
       "videoId": "XD_LnkVo_t8",
       "preview": "https://i.ytimg.com/vi/XD_LnkVo_t8/hqdefault.jpg",
       "title": "Learn CDAP: Transfer data from Oracle DB to CDAP Table",
-      "visible": true
+      "visible": true,
+      "description": "This short video demonstrates how you can use a CDAP Pipeline to transfers data from Oracle DB to CDAP Table. The demo shows: - Pipeline reads data from ..."
     },
     {
       "videoId": "gDnINRBzg2s",
       "preview": "https://i.ytimg.com/vi/gDnINRBzg2s/hqdefault.jpg",
       "title": "Learn CDAP: Legacy Spark programs in CDAP",
-      "visible": true
+      "visible": true,
+      "description": "This video demonstrates how to build and deploy legacy Spark Programs in CDAP. For any further queries please reach out to Cask: http://cask.co/contact ..."
     },
     {
       "videoId": "fCmX2PDXJ4A",
       "preview": "https://i.ytimg.com/vi/fCmX2PDXJ4A/hqdefault.jpg",
       "title": "Learn CDAP: MongoDB to CDAP Table",
-      "visible": true
+      "visible": true,
+      "description": "CDAP Version: 4.1.1 (upcoming) In this short video we will show you how we quickly setup a CDAP Pipeline that transfers data from MongoDB to CDAP Table."
     },
     {
       "videoId": "S-Qil98OQLs",
       "preview": "https://i.ytimg.com/vi/S-Qil98OQLs/hqdefault.jpg",
       "title": "Cask Demo - Using CDAP with Cloudera",
-      "visible": false
+      "visible": false,
+      "description": "This demo shows how to install Cask CDAP with Cloudera Manager along with Cask Hydrator to manage data pipelines."
     },
     {
       "videoId": "K0l68KpkT_Y",
       "preview": "https://i.ytimg.com/vi/K0l68KpkT_Y/hqdefault.jpg",
       "title": "Rapid Time to Value with CDAP: EDW Optimization - Netezza Offload to Cloudera",
-      "visible": true
+      "visible": true,
+      "description": "The ever increasing volume and variety of data being created today poses a challenge to companies leveraging enterprise data warehouses (EDW) for storage ..."
     },
     {
       "videoId": "_IAXi36tsws",
       "preview": "https://i.ytimg.com/vi/_IAXi36tsws/hqdefault.jpg",
       "title": "Using CDAP with Cloudera Manager and Cloudera Impala",
-      "visible": true
+      "visible": true,
+      "description": "February 11, 2015 Today we are very happy to introduce the integration of the Cloudera Enterprise Data Hub Edition (EDH) and the Cask Data Application ..."
     },
     {
       "videoId": "cGYmMtGO9Lo",
       "preview": "https://i.ytimg.com/vi/cGYmMtGO9Lo/hqdefault.jpg",
       "title": "Learn CDAP: CDAP Data Prep and Pipelines Tutorial",
-      "visible": true
+      "visible": true,
+      "description": "This CDAP tutorial demonstrates how to use CDAP's Data Preparation and Data Pipelines to clean, prepare, and store customer data from a MySQL database."
     },
     {
       "videoId": null,
@@ -112,373 +147,435 @@
       "videoId": "QqXC0k7sxRI",
       "preview": "https://i.ytimg.com/vi/QqXC0k7sxRI/hqdefault.jpg",
       "title": "#BDAM: Agile Data Science: Full-Stack Analytics App Dev",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Russell Jurney Big Data Applications Meetup, 02/08/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "_eKH5YnvO-0",
       "preview": "https://i.ytimg.com/vi/_eKH5YnvO-0/hqdefault.jpg",
       "title": "Learn CDAP: Preview for Realtime Data Pipelines",
-      "visible": true
+      "visible": true,
+      "description": "This video provides an example of using the Preview feature for your data pipeline, before running the pipeline. Hackbeat by Kevin MacLeod is licensed under a ..."
     },
     {
       "videoId": "Jh9JvmWL1oY",
       "preview": "https://i.ytimg.com/vi/Jh9JvmWL1oY/hqdefault.jpg",
       "title": "Learn CDAP: Preview for Batch Data Pipelines",
-      "visible": true
+      "visible": true,
+      "description": "This video provides an example of using the Preview feature for your data pipeline, before running the pipeline. You're free to use this song in any of your videos ..."
     },
     {
       "videoId": "efm-GOF25K4",
       "preview": "https://i.ytimg.com/vi/efm-GOF25K4/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Creating Lookup Dataset and Joining in DataPrep",
-      "visible": true
+      "visible": true,
+      "description": "This screencast shows how you use CDAP to wrangle and create lookup tables, and then join the table with another table while ingesting data. For more ..."
     },
     {
       "videoId": "Fs2mw6ll6B4",
       "preview": "https://i.ytimg.com/vi/Fs2mw6ll6B4/hqdefault.jpg",
-      "title": "#BDAM: Introduction to Apache Beam, by Jean-Baptiste Onofré, Talend",
-      "visible": true
+      "title": "#BDAM: Introduction to Apache Beam, by Jean-Baptiste Onofr\u00e9, Talend",
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Jean-Baptiste Onofr\u00e9, Talend Big Data Applications Meetup, 03/16/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "Q0pzUVEF9WE",
       "preview": "https://i.ytimg.com/vi/Q0pzUVEF9WE/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] How to create workflows from your existing Spark applications",
-      "visible": true
+      "visible": true,
+      "description": "This screecast shows how you can take your existing spark application(s) and create a notifiable workflow in CDAP. For more information on CDAP, please ..."
     },
     {
       "videoId": "-sNKkXztoYE",
       "preview": "https://i.ytimg.com/vi/-sNKkXztoYE/hqdefault.jpg",
       "title": "Learn CDAP: Sneak peek into CDAP's User Defined/Custom Directives in Data Prep",
-      "visible": true
+      "visible": true,
+      "description": "This video provides a sneak peek to User Defined Directives (UDD) or Custom Directives in DataPrep that will be available in a future release of CDAP."
     },
     {
       "videoId": "77DozERBqAA",
       "preview": "https://i.ytimg.com/vi/77DozERBqAA/hqdefault.jpg",
       "title": "Data Lake Challenges",
-      "visible": true
+      "visible": true,
+      "description": ""
     },
     {
       "videoId": "LrC1FLUDvis",
       "preview": "https://i.ytimg.com/vi/LrC1FLUDvis/hqdefault.jpg",
       "title": "#BDAM: Introducing Pachyderm, by Joe Doliner from Pachyderm",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Joe Doliner Big Data Applications Meetup, 04/27/2016 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ ..."
     },
     {
       "videoId": "ygK4G-UEk3M",
       "preview": "https://i.ytimg.com/vi/ygK4G-UEk3M/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Data Cleansing capability with send-to-error directive",
-      "visible": true
+      "visible": true,
+      "description": "In this screencast we show how you can use the send-to-error directive to cleanse the input stream based on rules. For more information ..."
     },
     {
       "videoId": "D_tfFQz0IK8",
       "preview": "https://i.ytimg.com/vi/D_tfFQz0IK8/hqdefault.jpg",
       "title": "#BDAM: How TiDB Helps Scale World's Largest Bikesharing Platform, by Kevin Xu, PingCap",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Kevin Xu, PingCap Big Data Applications Meetup, 04/18/2018 Redwood City, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "jVZnJCj1iKQ",
       "preview": "https://i.ytimg.com/vi/jVZnJCj1iKQ/hqdefault.jpg",
       "title": "#BDAM: Apache Kafka - Leveraging Real-time Data at Scale: 06/23 Big Data Application Meetup, Talk #1",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Neha Narkhede from Confluent Big Data Applications Meetup, 06/23/2015 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to ..."
     },
     {
       "videoId": "SQrM39FoPvo",
       "preview": "https://i.ytimg.com/vi/SQrM39FoPvo/hqdefault.jpg",
       "title": "Strata NYC 2017: Hybrid data lakes: Unlocking the inevitable",
-      "visible": true
+      "visible": true,
+      "description": "Enterprises benefit greatly from data lakes, but building an enterprise data lake isn't a simple task. The right platform must be implemented and optimized in ..."
     },
     {
       "videoId": "KAmpkrQ7fDk",
       "preview": "https://i.ytimg.com/vi/KAmpkrQ7fDk/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Shows how to trigger next pipeline",
-      "visible": true
+      "visible": true,
+      "description": "This short CDAP screencast video shows how you can configure a pipeline to trigger the next pipeline and also track lineage in CDAP. For more information on ..."
     },
     {
       "videoId": "4nxyzxINtp4",
       "preview": "https://i.ytimg.com/vi/4nxyzxINtp4/hqdefault.jpg",
       "title": "Learn CDAP: EDW Optimization with Hadoop and CDAP (CDC)",
-      "visible": true
+      "visible": true,
+      "description": "In this video, we will demonstrate offloading data from Oracle to Kudu."
     },
     {
       "videoId": "V8e6yr8hpZA",
       "preview": "https://i.ytimg.com/vi/V8e6yr8hpZA/hqdefault.jpg",
       "title": "Learn CDAP: Analyzing and Masking IoT Device Data",
-      "visible": true
+      "visible": true,
+      "description": "This tutorial demonstrates how to use CDAP's Data Preparation and Data Pipelines to clean, prepare, mask, and store IoT device data sent in JSON format."
     },
     {
       "videoId": "ZoO9H_uddqU",
       "preview": "https://i.ytimg.com/vi/ZoO9H_uddqU/hqdefault.jpg",
       "title": "Cask Intern Experience - Shilpa Subrahmanyam, Summer 2015",
-      "visible": false
+      "visible": false,
+      "description": "Shilpa Subrahmanyam interned at Cask for the summer of 2015, and here speaks about her summer internship experience. Shilpa is a rising senior at University ..."
     },
     {
       "videoId": "3vncr5EE2Mk",
       "preview": "https://i.ytimg.com/vi/3vncr5EE2Mk/hqdefault.jpg",
       "title": "Learn CDAP: Realtime IOT data Ingestion Using Azure Event Hub and CDAP Pipelines",
-      "visible": true
+      "visible": true,
+      "description": "In this video we will demonstrate a CDAP Pipeline to read IOT devices data in realtime: - from Azure Event Hub, - group by signal type, and - write results into ..."
     },
     {
       "videoId": "JeqJrBW1UCU",
       "preview": "https://i.ytimg.com/vi/JeqJrBW1UCU/hqdefault.jpg",
       "title": "Using CDAP pipelines to easily build reliable and repeatable data pipelines on Hadoop",
-      "visible": true
+      "visible": true,
+      "description": "In this video we are going to show you how to quickly and easily build a reliable and repeatable data pipelines on Hadoop using Cask Hydrator. Cask Hydrator ..."
     },
     {
       "videoId": "5Yk4ixqbXLY",
       "preview": "https://i.ytimg.com/vi/5Yk4ixqbXLY/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Reading from Kafka into Data Prep",
-      "visible": true
+      "visible": true,
+      "description": "This screencast video shows how you can create Kafka connection to ingest into CDAP. For more information on CDAP, please contact us: ..."
     },
     {
       "videoId": "FnQwDaKii2U",
       "preview": "https://i.ytimg.com/vi/FnQwDaKii2U/hqdefault.jpg",
       "title": "#BDAM: Introducing a Rules Engine for Big Data processing, by Nitin Motgi",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Nitin Motgi, Cask Big Data Applications Meetup, 09/20/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: About ..."
     },
     {
       "videoId": "e-5K4cxwGrc",
       "preview": "https://i.ytimg.com/vi/e-5K4cxwGrc/hqdefault.jpg",
       "title": "Learn CDAP: Working with New York Times XML Feed Data",
-      "visible": true
+      "visible": true,
+      "description": "This tutorial demonstrates how to use CDAP's Data Preparation and Data Pipelines to extract and serve business critical information drawn from the New York ..."
     },
     {
       "videoId": "_LB3_qm5yQM",
       "preview": "https://i.ytimg.com/vi/_LB3_qm5yQM/hqdefault.jpg",
       "title": "Learn CDAP: Building a Stock Selection Pipeline",
-      "visible": true
+      "visible": true,
+      "description": "This tutorial demonstrates how to use CDAP's Data Preparation and Data Pipelines to build a stock selection pipeline that ingests market data and identifies a ..."
     },
     {
       "videoId": "9LHmTybkU50",
       "preview": "https://i.ytimg.com/vi/9LHmTybkU50/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Parse as Avro using Schema Registry",
-      "visible": true
+      "visible": true,
+      "description": "This CDAP screencast shows how you can parse AVRO data using Dataprep in combination with Schema Registry. For more information on CDAP, please ..."
     },
     {
       "videoId": "90Kub6hSQrg",
       "preview": "https://i.ytimg.com/vi/90Kub6hSQrg/hqdefault.jpg",
       "title": "What's New in CDAP 4",
-      "visible": true
+      "visible": true,
+      "description": "Watch as Nitin Motgi, CTO of Cask, unveils the new features coming in the biggest release of CDAP in over a year: CDAP 4. CDAP 4 product highlights covered ..."
     },
     {
       "videoId": "XzT1vDaAhys",
       "preview": "https://i.ytimg.com/vi/XzT1vDaAhys/hqdefault.jpg",
       "title": "#BDAM: Simplifying big data analytics with Apache Kudu, by Mike Percy - Cloudera",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Mike Percy, Cloudera Big Data Applications Meetup, 01/27/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "jrNYCQRj6Ds",
       "preview": "https://i.ytimg.com/vi/jrNYCQRj6Ds/hqdefault.jpg",
       "title": "Hybrid Data Lake",
-      "visible": true
+      "visible": true,
+      "description": ""
     },
     {
       "videoId": "u63G_RQs2RU",
       "preview": "https://i.ytimg.com/vi/u63G_RQs2RU/hqdefault.jpg",
       "title": "Learn CDAP: Offloading Mainframe Data  Into Hadoop",
-      "visible": true
+      "visible": true,
+      "description": "This video shows you how to build a CDAP data pipeline to load dynamic length copybook data, write it to HDFS in Avro format, and expose data as an HTTP ..."
     },
     {
       "videoId": "39SH1xqWVb0",
       "preview": "https://i.ytimg.com/vi/39SH1xqWVb0/hqdefault.jpg",
       "title": "Interview with Nitin Motgi, Cask CTO at DataWorks Summit 2017",
-      "visible": false
+      "visible": false,
+      "description": "In this video from the DataWorks Summit 2017 conference in San Jose (June 13-15, 2017), insideBIGDATA's Managing Editor and resident data scientist Daniel ..."
     },
     {
       "videoId": "ncZuhyLmnyU",
       "preview": "https://i.ytimg.com/vi/ncZuhyLmnyU/hqdefault.jpg",
       "title": "Learn CDAP: Data Driven Schedules",
-      "visible": true
+      "visible": true,
+      "description": "This short CDAP video demonstrates a use case for CDAP's DataCleansing App. In this video we will schedule a workflow \u201cDataCleansingWorkflow\u201d to run after ..."
     },
     {
       "videoId": "kYSs87Da9jY",
       "preview": "https://i.ytimg.com/vi/kYSs87Da9jY/hqdefault.jpg",
       "title": "#BDAM: Scalable Clusters on Demand, by Gustavo Torres and Bogdan Kyryliuk, Opendoor",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Gustavo Torres and Bogdan Kyryliuk from Opendoor Big Data Applications Meetup, 01/31/2018 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "z6NhFHaMP3Q",
       "preview": "https://i.ytimg.com/vi/z6NhFHaMP3Q/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Parse Excel files in CDAP",
-      "visible": true
+      "visible": true,
+      "description": "This screencast shows how you can use the Data Prep feature in CDAP to wrangle Excel files and then build the pipeline. For more information on CDAP, ..."
     },
     {
       "videoId": "hGSXlRohdCU",
       "preview": "https://i.ytimg.com/vi/hGSXlRohdCU/hqdefault.jpg",
       "title": "#BDAM: Introduction EsgynDB, based on Apache Trafodion, by Rao Kakarlamudi, Esgyn",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Rao Kakarlamudi Big Data Applications Meetup, 03/16/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "d-HfyVTfdM8",
       "preview": "https://i.ytimg.com/vi/d-HfyVTfdM8/hqdefault.jpg",
       "title": "Learn CDAP: EDW Optimization - Offloading data from Oracle to HBase",
-      "visible": true
+      "visible": true,
+      "description": "The use case demonstrated here is as follows: At a company, the employee records need to be updated often to reflect the latest hiring changes Here, we use a ..."
     },
     {
       "videoId": "wJEY1dtabNQ",
       "preview": "https://i.ytimg.com/vi/wJEY1dtabNQ/hqdefault.jpg",
       "title": "Learn CDAP: Data Ingest from Azure Blob Store and ADLS using CDAP Pipelines",
-      "visible": true
+      "visible": true,
+      "description": "In this video, we're building a CDAP Pipeline that will: - Read passenger data Azure Data Lake Store, - Read airport data from Azure Blob Store, - Join ..."
     },
     {
       "videoId": "RKp0Uj-wGEM",
       "preview": "https://i.ytimg.com/vi/RKp0Uj-wGEM/hqdefault.jpg",
       "title": "#BDAM: Kite SDK: Helping Hadoop projects work together - 06/23 Big Data Application Meetup, Talk #2",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Ryan Blue from Cloudera Big Data Applications Meetup, 06/23/2015 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "j7Tu6kPKnrQ",
       "preview": "https://i.ytimg.com/vi/j7Tu6kPKnrQ/hqdefault.jpg",
       "title": "Learn CDAP:  Spark Interpreter Demo - Writing custom Spark code  in a CDAP Pipeline",
-      "visible": true
+      "visible": true,
+      "description": "This video demonstrates a CDAP Pipeline for Spark Interpreter. The pipeline is built as follows: Trainer: Interpreted Spark program that trains a DecisionTree ..."
     },
     {
       "videoId": "CwFDxLaaPTQ",
       "preview": "https://i.ytimg.com/vi/CwFDxLaaPTQ/hqdefault.jpg",
       "title": "#BDAM: Data Pipelines in Kubernetes, by Sean Suchter, Pepperdata",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Sean Suchter, Pepperdata Big Data Applications Meetup, 07/19/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to ..."
     },
     {
       "videoId": "rOZ0N9gbDuc",
       "preview": "https://i.ytimg.com/vi/rOZ0N9gbDuc/hqdefault.jpg",
       "title": "#BDAM: SQL-on-Everything with Apache Drill by Julien Le Dem, Dremio",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Julien Le Dem, Dremio Big Data Applications Meetup, 01/27/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "bt_qTj63c04",
       "preview": "https://i.ytimg.com/vi/bt_qTj63c04/hqdefault.jpg",
       "title": "Learn CDAP: Building a Fraud Classification Machine Learning Model",
-      "visible": true
+      "visible": true,
+      "description": "In this tutorial, you will learn how to use CDAP to build and operationalize an enterprise-ready Machine Learning for predicting credit fraud using only CDAP's ..."
     },
     {
       "videoId": "f8kg-01YHac",
       "preview": "https://i.ytimg.com/vi/f8kg-01YHac/hqdefault.jpg",
       "title": "Hadoop Applications Simplified - Nitin Motgi",
-      "visible": true
+      "visible": true,
+      "description": "Nitin Motgi talks about Hadoop Applications simplified using CDAP at the Cerner Engineering. Date of talk: 04/27 Location: Cerner, Kansas City."
     },
     {
       "videoId": "YJB5tdY_GvQ",
       "preview": "https://i.ytimg.com/vi/YJB5tdY_GvQ/hqdefault.jpg",
       "title": "CDAP for Telecoms -- @Telecom Council Jan 21st, 2016",
-      "visible": true
+      "visible": true,
+      "description": "Watch Jon Gray, CEO of Cask Data, present at the Telecom Council, January 21st, 2016, held at Dell."
     },
     {
       "videoId": "HQgjPBMVLuk",
       "preview": "https://i.ytimg.com/vi/HQgjPBMVLuk/hqdefault.jpg",
       "title": "#BDAM: Building a Self-Service Data Lake on Google Cloud Platform, by Ali Anwar",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Ali Anwar from Cask Big Data Applications Meetup, 01/31/2018 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "13qi5UIObCs",
       "preview": "https://i.ytimg.com/vi/13qi5UIObCs/hqdefault.jpg",
       "title": "Open Source, Code Free Data Pipelines, by Jon Gray",
-      "visible": true
+      "visible": true,
+      "description": "Big Data Day LA 2016 July 9, 2016 Los Angeles Link to slides: ..."
     },
     {
       "videoId": "E_RZCEFIS6c",
       "preview": "https://i.ytimg.com/vi/E_RZCEFIS6c/hqdefault.jpg",
       "title": "#BDAM: Apache Phoenix: OLTP in Hadoop, by James Taylor, Saleforce.com",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: James Taylor, Saleforce.com Big Data Applications Meetup, 01/27/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "YAgAWfOLObM",
       "preview": "https://i.ytimg.com/vi/YAgAWfOLObM/hqdefault.jpg",
       "title": "QCon SF 2016: Unified Integration for Data-Driven Applications",
-      "visible": true
+      "visible": true,
+      "description": "In this talk recorded at the QCon San Francisco 2016 conference, Jonathan Gray, founder and CEO at Cask, will explain how Cask's unified integration platform ..."
     },
     {
       "videoId": "XUkANr9iag0",
       "preview": "https://i.ytimg.com/vi/XUkANr9iag0/hqdefault.jpg",
       "title": "Cask Webinar: What's new in CDAP 3.5?",
-      "visible": false
+      "visible": false,
+      "description": "Cask Webinar: What's new in CDAP 3.5? Date: 08/10/2016 Link to presentation slides: http://www.slideshare.net/caskdata/webinar-whats-new-in-cdap-35 In this ..."
     },
     {
       "videoId": "I1GLRXyQlx8",
       "preview": "https://i.ytimg.com/vi/I1GLRXyQlx8/hqdefault.jpg",
       "title": "#BDAM: Building Enterprise Grade Applications in Yarn with Apache Twill, by Poorna Chandra, Cask",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Poorna Chandra, Cask Big Data Applications Meetup, 07/27/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "tGfPKYizZWY",
       "preview": "https://i.ytimg.com/vi/tGfPKYizZWY/hqdefault.jpg",
-      "title": "#BDAM: One size doesn’t fit all: Federated Data Science using Ampool",
-      "visible": true
+      "title": "#BDAM: One size doesn\u2019t fit all: Federated Data Science using Ampool",
+      "visible": true,
+      "description": "Speaker: Nitin Lamba and Suhas Gogate, Ampool Big Data Applications Meetup, 09/14/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "5Qgqb76bsds",
       "preview": "https://i.ytimg.com/vi/5Qgqb76bsds/hqdefault.jpg",
       "title": "#BDAM: Turning a data pond into a data lake with Apache NiFi, by Gene Peters from Telligent Data",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Gene Peters, Telligent Data Big Data Applications Meetup, 05/10/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to ..."
     },
     {
       "videoId": "YqZ5to0l-Ik",
       "preview": "https://i.ytimg.com/vi/YqZ5to0l-Ik/hqdefault.jpg",
       "title": "#BDAM: Improving App and Cluster perf for Big Data Stacks, by Kunal Agarwal, Unravel Data",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Kunal Agarwal, Unravel Data Big Data Applications Meetup, 03/29/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to ..."
     },
     {
       "videoId": "pRpTodNcNJY",
       "preview": "https://i.ytimg.com/vi/pRpTodNcNJY/hqdefault.jpg",
       "title": "#BDAM: Designing Modern Data Pipelines with Apache Kafka",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Gwen Shapira, Confluent Big Data Applications Meetup, 11/09/2016 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "0SFjE_Yc2aE",
       "preview": "https://i.ytimg.com/vi/0SFjE_Yc2aE/hqdefault.jpg",
       "title": "#BDAM: Building an ECA Rules Engine for IoT with CDAP, by Bhooshan Mogal",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Bhooshan Mogal, Cask Big Data Applications Meetup, 03/29/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "1J-W_4Ld1RU",
       "preview": "https://i.ytimg.com/vi/1J-W_4Ld1RU/hqdefault.jpg",
       "title": "#BDAM: Building Data pipelines with CDAP, by Gokul Gunasekaran",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Gokul Gunasekaran, Cask Big Data Applications Meetup, 06/15/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "mZErrxU-79Y",
       "preview": "https://i.ytimg.com/vi/mZErrxU-79Y/hqdefault.jpg",
       "title": "Learn CDAP: Data Migration from Amazon S3 to ADLS  using a CDAP Pipelines",
-      "visible": true
+      "visible": true,
+      "description": "In this video, we will demonstrate building a CDAP pipeline to migrate data from Amazon S3 to Azure Data Lake Store. If you are interested to learn more about ..."
     },
     {
       "videoId": "juqPL5UFaDM",
       "preview": "https://i.ytimg.com/vi/juqPL5UFaDM/hqdefault.jpg",
       "title": "#BDAM: Ambry: Linkedin's Scalable Geo-distributed Object Store, by Sivabalan Narayanan, LinkedIn",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Sivabalan Narayanan, LinkedIn Big Data Applications Meetup, 07/27/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "BH01X1kI4mY",
       "preview": "https://i.ytimg.com/vi/BH01X1kI4mY/hqdefault.jpg",
       "title": "#BDAM: Scaling tribal knowledge at Airbnb",
-      "visible": true
+      "visible": true,
+      "description": "Speakers: Chris Williams, John Bodley, Airbnb Big Data Applications Meetup, 02/08/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ ..."
     },
     {
       "videoId": "b5BVljC8MKU",
       "preview": "https://i.ytimg.com/vi/b5BVljC8MKU/hqdefault.jpg",
       "title": "JONATHAN GRAY CEO of Cask, at HP Vertica - Big Data Day LA, June 27, 2015",
-      "visible": false
+      "visible": false,
+      "description": "Big Data Day LA On June 27, 2015 JONATHAN GRAY CEO at Cask."
     },
     {
       "videoId": "Zu18mM6nLg4",
       "preview": "https://i.ytimg.com/vi/Zu18mM6nLg4/hqdefault.jpg",
       "title": "Building Spark Streaming Pipelines with CDAP, by Gokul Gunasekaran",
-      "visible": true
+      "visible": true,
+      "description": "Title: Building Spark Streaming Pipelines with Cask Hydrator Speaker: Gokul Gunasekaran, Cask Big Data Cloud Meetup 08/30/2016 Link to meetup: ..."
     },
     {
       "videoId": "BW9mRj3f9UM",
       "preview": "https://i.ytimg.com/vi/BW9mRj3f9UM/hqdefault.jpg",
       "title": "Cask: About and what we look for",
-      "visible": false
+      "visible": false,
+      "description": "January 9, 2015 Hear from our CTO and Co-founder Nitin Motgi, and our Project Manager Priyanka Nambiar - about why you should join Cask!"
     },
     {
       "videoId": "Y83sydxN3U8",
       "preview": "https://i.ytimg.com/vi/Y83sydxN3U8/hqdefault.jpg",
       "title": "#BDAM: Leveraging Big Data at TubeMogul, by Murtaza Doctor and John Trenkle from TubeMogul",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Murtaza Doctor and John Trenkle Big Data Applications Meetup, 04/27/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "-e9mwP-6iT0",
       "preview": "https://i.ytimg.com/vi/-e9mwP-6iT0/hqdefault.jpg",
       "title": "Strata SJ 2016: Fixing What's Broken - Big Data in the Enterprise",
-      "visible": false
+      "visible": false,
+      "description": "Hadoop and Spark provide unprecedented scale and flexibility at a low cost compared to data warehouses. However, the messy and diverse nature of big data ..."
     },
     {
       "videoId": "f7NG3_QNKFY",
@@ -490,69 +587,78 @@
       "videoId": "CEkDgwlve2M",
       "preview": "https://i.ytimg.com/vi/CEkDgwlve2M/hqdefault.jpg",
       "title": "Brown Bag Session at Cask HQ  Ad hoc SQL Queries",
-      "visible": false
+      "visible": false,
+      "description": "September 23, 2014."
     },
     {
       "videoId": "CES7aBf82DU",
       "preview": "https://i.ytimg.com/vi/CES7aBf82DU/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Fixed Length To JSON Processing",
-      "visible": true
+      "visible": true,
+      "description": "This CDAP screencast video demonstrates how you can take a fixed length file and transform it to JSON records. For more information on CDAP, please contact: ..."
     },
     {
       "videoId": "wmXyjA0-Hwc",
       "preview": "https://i.ytimg.com/vi/wmXyjA0-Hwc/hqdefault.jpg",
       "title": "#BDAM: Analyze Ad impressions at speed of thought using Spark 2.0 and Snappydata",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Jags Ramnarayan, Big Data Applications Meetup, 09/14/2016 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "Zt_mzikca94",
       "preview": "https://i.ytimg.com/vi/Zt_mzikca94/hqdefault.jpg",
       "title": "Learn CDAP: [SCREENCAST] Quantize a column - Digitize",
-      "visible": true
+      "visible": true,
+      "description": "This short CDAP screencast shows you how you can quantize continuous values into groups, using CDAP's Data Prep feature. For more information on CDAP, ..."
     },
     {
       "videoId": "mSKwjKvYUtI",
       "preview": "https://i.ytimg.com/vi/mSKwjKvYUtI/hqdefault.jpg",
       "title": "#BDAM:  EDW Optimization with Hadoop and CDAP, by Sagar Kapare",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Sagar Kapare, Cask Big Data Applications Meetup, 05/10/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "S6bRBzojObA",
       "preview": "https://i.ytimg.com/vi/S6bRBzojObA/hqdefault.jpg",
       "title": "#BDAM: Future proof, portable pipelines using Apache Beam, by Malo Denielou from Google",
-      "visible": true
+      "visible": true,
+      "description": "Speaker: Malo Denielou, Google Big Data Applications Meetup, 05/10/2017 Palo Alto, CA More info here: http://www.meetup.com/BigDataApps/ Link to slides: ..."
     },
     {
       "videoId": "j1DQ3FfduR0",
       "preview": "https://i.ytimg.com/vi/j1DQ3FfduR0/hqdefault.jpg",
       "title": "Jonathan Gray, Cask - Hadoop Summit 2016 San Jose #HS16SJ #theCUBE",
-      "visible": false
+      "visible": false,
+      "description": "Jonathan Gray speaks with John Furrier and George Gilbert from TheCube at Hadoop Summit 2016 in San Jose, CA. #HS16SJ #theCUBE."
     },
     {
       "videoId": "_tPix15gP3c",
       "preview": "https://i.ytimg.com/vi/_tPix15gP3c/hqdefault.jpg",
       "title": "Introducing Coopr",
-      "visible": false
+      "visible": false,
+      "description": "September 24, 2014."
     },
     {
       "videoId": "x4RM3l86ZgM",
       "preview": "https://i.ytimg.com/vi/x4RM3l86ZgM/hqdefault.jpg",
       "title": "Cask Intern Experience - Yue Gao, Summer 2016",
-      "visible": false
+      "visible": false,
+      "description": "Yue Gao interned at Cask for the summer of 2016, and here speaks about his summer internship experience. Yue is pursuing his Master's degree in Computer ..."
     },
     {
       "videoId": "735nEV7jxrs",
       "preview": "https://i.ytimg.com/vi/735nEV7jxrs/hqdefault.jpg",
       "title": "#BDAM: Unified access framework for distributed data systems on HDFS, by Shivram Mani",
-      "visible": true
+      "visible": true,
+      "description": "EXPAND FOR MORE INFO. Speaker: Shivram Mani, Pivotal Big Data Applications Meetup, 06/15/2016 Palo Alto, CA More info here: ..."
     },
     {
       "videoId": "t-FtGX_5UJI",
       "preview": "https://i.ytimg.com/vi/t-FtGX_5UJI/hqdefault.jpg",
       "title": "The DAP Where YARN, HBase, Kafka and Spark go to Production - by Jonathan Gray",
-      "visible": true
+      "visible": true,
+      "description": "June 30, 2016 Hadoop Summit '16, San Jose Title: The DAP Where YARN, HBase, Kafka and Spark go to Production Speaker: Jonathan Gray, CEO Cask ..."
     }
   ]
 }
-
-
