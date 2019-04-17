@@ -36,5 +36,6 @@ install:
 
 script:
   - hugo
+  - bash ./scripts/test-headers/main.sh
   - npm run test:spelling
   - ./bin/htmltest
