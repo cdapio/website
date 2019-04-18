@@ -8,9 +8,11 @@
 
   &__custom {
     justify-content: center;
+
     @include media-breakpoint-down(sm) {
       width: 100%;
     }
+
     @include media-breakpoint-between(sm, md) {
       width: 50%;
     }
@@ -18,7 +20,7 @@
 
   &__image {
     width: auto;
-    height: 40px;
+    max-height: 70px;
   }
 
   &__wrapper {
