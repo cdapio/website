@@ -33,7 +33,7 @@
         {{ partial "components/get-started/services" (dict "context" . "index" $index) }}
       {{ end }}
 
-      {{ range $index, $item := .on_production }}
+      {{ range $index, $item := .onProduction }}
         {{ partial "components/get-started/services" (dict "context" . "index" $index) }}
       {{ end }}
 
@@ -41,14 +41,14 @@
       {{ end }}
     </div>
     <div id="premises-tab" class="tab-pane fade">
-      {{ with $tabs := $data.get_started.on_premises }}
+      {{ with $tabs := $data.get_started.onPremises }}
       {{ range $tabs }}
       {{ range $index, $item := .evaluate }}
       {{ $wrapper := $item.subTitle }}
         {{ partial "components/get-started/services" (dict "context" . "index" $index "wrapper" $wrapper "class" "premises") }}
       {{ end }}
 
-      {{ range $index, $item := .on_production }}
+      {{ range $index, $item := .onProduction }}
       {{ $wrapper := $item.subTitle }}
         {{ partial "components/get-started/services" (dict "context" . "index" $index "wrapper" $wrapper "class" "premises") }}
       {{ end }}
@@ -67,7 +67,42 @@
 <script>
   const ctaBtns = document.querySelectorAll('.premises-services__button');
   const closeBtns = document.querySelectorAll('.get-started__close-wrapper');
+  const dropdownEvaluationItems = document.querySelectorAll('.evaluation-nav-js');
+  const dropdownProductionItems = document.querySelectorAll('.production-nav-js');
+  const dropDownCta = document.querySelector('.dropdown-toggle');
+  const panesEvaluation = document.querySelectorAll('.evaluation-wrapper-js');
+  const panesProductuon = document.querySelectorAll('.production-wrapper-js');
+  let persistBtnText = dropDownCta.innerText.trim();
   let datasetContext = {};
+
+  function handleDropdownItemClick(items, panes, callback) {
+    items.forEach(item => {
+      item.addEventListener('click', function () {
+        document.querySelector(`#dropdownBtn-${this.dataset.id}`).innerText = this.innerText;
+        callback(panes, this);
+      });
+    });
+  }
+
+  function processOverlay(items, context) {
+    items.forEach(item => {
+      item.classList.remove('d-flex');
+      if (context.dataset.id === item.dataset.reflect) {
+        item.classList.add('d-flex');
+      }
+    });
+  }
+
+  handleDropdownItemClick(
+    dropdownEvaluationItems,
+    panesEvaluation,
+    processOverlay
+  );
+  handleDropdownItemClick(
+    dropdownProductionItems,
+    panesProductuon,
+    processOverlay,
+  );
 
   function open() {
     ctaBtns.forEach(btn => {
@@ -89,6 +124,7 @@
       closeBtn.addEventListener('click', function() {
         this.parentNode.classList.remove('d-flex');
         document.querySelector(`.${this.dataset.reflect}`).classList.remove('d-none');
+        dropDownCta.innerText = persistBtnText;
       });
     });
   }
