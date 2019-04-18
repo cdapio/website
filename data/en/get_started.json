@@ -231,7 +231,7 @@
                   {
                     "buttonTitle": "CDAP 4.3.5 for VM",
                     "id": "version-512-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-5.1.2.ova"
+                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-4.3.5.ova"
                   }
                 ],
                 "dropdownItems": [
@@ -255,7 +255,8 @@
                   "descriptionBody": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
                   "whatsnewHeader": "What's new",
                   "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"
+                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>",
+                    "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"
                   ],
                   "requirementsHeader": "System Requirements",
                   "requirementsList": [
