@@ -7,8 +7,10 @@
       line-height: 44px;
     }
   }
+
   &__subTitle {
     font-size: 14px;
+    text-transform: uppercase;
     line-height: 2.5;
     border-bottom: 1px solid $greyish-brown;
     margin: 0 auto;
