@@ -9,6 +9,7 @@ resources/
 
 # IDE
 .idea/
+.vscode
 
 # misc
 .DS_Store
