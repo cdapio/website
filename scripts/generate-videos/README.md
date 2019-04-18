@@ -29,13 +29,15 @@ usage: main.py [-h] -o OUTPUT -k API_KEY [-v VISIBLE] [-u UPDATE]
 optional arguments:
   -h, --help            show this help message and exit
   -o OUTPUT, --output OUTPUT
-                        Absolute path to output file.
+                        Absolute path to output file. Output file can exist.
   -k API_KEY, --api-key API_KEY
                         Youtube API key.
   -v VISIBLE, --visible VISIBLE
-                        Append new videos as visible
+                        Append new videos as visible.
   -u UPDATE, --update UPDATE
-                        Update existing videos
+                        Update video in output file if it exists.
   --update-attributes UPDATE_ATTRIBUTES, --update-attributes UPDATE_ATTRIBUTES
-                        Comma separated list of attributes allowed to update
+                        Comma separated list of attributes allowed to update.
+                        Works only when --update flag is true
+
 ```

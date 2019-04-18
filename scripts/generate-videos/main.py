@@ -72,14 +72,20 @@ def get_original_videos(path):
 
 def merge_videos(original_videos, youtube_videos, visible, update, update_props):
   props = update_props.split(',')
+  marked = []
   for video in youtube_videos:
     matched_video = next((v for v in original_videos['videos'] if v['videoId'] == video['videoId']), None)
     if matched_video is None:
+      marked = [video['videoId']] + marked
       video['visible'] = visible
       original_videos['videos'] = [video] + original_videos['videos']
-    elif update is not False:
-      for prop in props:
-        matched_video[prop] = video[prop]
+      print('Added new video:\n Link: https://www.youtube.com/watch?v=%s \n Title: %s \n' % (video['videoId'], video['title']) )
+    else:
+      marked = [video['videoId']] + marked
+      if update is not False:
+        for prop in props:
+          matched_video[prop] = video[prop]
+  original_videos['videos'] = list(filter(lambda v: v['videoId'] in marked, original_videos['videos']))
   return original_videos
 
 def save_videos(data, file_path):
@@ -88,11 +94,11 @@ def save_videos(data, file_path):
 
 def main():
   parser = argparse.ArgumentParser()
-  parser.add_argument('-o', '--output', help='Absolute path to output file.', required=True)
+  parser.add_argument('-o', '--output', help='Absolute path to output file. Output file can exist.', required=True)
   parser.add_argument('-k', '--api-key', help='Youtube API key.', required=True)
-  parser.add_argument('-v', '--visible', help='Append new videos as visible', default=True)
-  parser.add_argument('-u', '--update', help='Update existing videos', default=False)
-  parser.add_argument('--update-attributes', '--update-attributes', help='Comma separated list of attributes allowed to update', default='description,title')
+  parser.add_argument('-v', '--visible', help='Append new videos as visible.', default=False)
+  parser.add_argument('-u', '--update', help='Update video in output file if it exists.', default=False)
+  parser.add_argument('--update-attributes', '--update-attributes', help='Comma separated list of attributes allowed to update. Works only when --update flag is true', default='description,title,preview')
   args = parser.parse_args()
 
   global api
