@@ -55,6 +55,7 @@
       </div>
       {{ end }}
     </div>
+    {{/*  Overlay details  */}}
     {{ range $item := .context.overlayItems }}
     {{ $id := .id }}
     <div class="get-started__overlay {{lower $.context.subTitle }}-wrapper-js d-none mt-5" id="{{ $id }}" data-reflect="{{ $id }}">
@@ -105,39 +106,9 @@
         </div>
       </div>
       <div class="get-started__overlay-right">
-        {{ range .overlayRight }}
-        <h3 class="get-started__overlay-title">
-          {{ .title }}
-        </h3>
-        <div class="get-started__overlay-wrapper">
-          <div class="get-started__overlay-small-title">
-            {{ .descriptionHeader }}
-          </div>
-          <div class="get-started__overlay-description">
-            {{ .descriptionBody }}
-          </div>
-        </div>
-        <div class="get-started__overlay-wrapper">
-          <div class="get-started__overlay-small-title">
-            {{ .whatsnewHeader }}
-          </div>
-          <ul class="get-started__overlay-description">
-            {{ range .whatsnewBody }}
-            <li>{{ . | safeHTML }}</li>
-            {{ end }}
-          </ul>
-        </div>
-        <div class="get-started__overlay-wrapper">
-          <div class="get-started__overlay-small-title">
-            {{ .requirementsHeader }}
-          </div>
-          <ul class="get-started__overlay-description">
-            {{ range .requirementsList }}
-            <li>{{ . }}</li>
-            {{ end }}
-          </ul>
-        </div>
-        {{ end }}
+        {{if .details}}
+          {{readFile .details | markdownify}}
+        {{end}}
       </div>
       <div data-reflect="{{ with $.wrapper }}{{ lower . }}{{ end }}-js"
            class="get-started__close-wrapper">
@@ -146,5 +117,6 @@
       </div>
     </div>
     {{ end }}
+    {{/*  Overlay Details End  */}}
   </div>
 </section>

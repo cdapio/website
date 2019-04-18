@@ -109,25 +109,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-512-mac",
-                  "linkTitle": "CDAP 5.1.2 Linux/Mac",
-                  "title": "CDAP 5.1.2 for Linux/Mac",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/linux-mac-512.md"
             },
             {
               "id": "linuxmac-435",
@@ -156,26 +138,7 @@
                 "linkTitle": "Get CDAP for Linux/Mac",
                 "linkId": "linux"
               },
-              "overlayRight": [
-                {
-                  "id": "version-435-mac",
-                  "linkTitle": "CDAP 4.3.5 Linux/Mac",
-                  "title": "CDAP 4.3.5 for Linux/Mac",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>",
-                    "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/linux-mac-435.md"
             },
             {
               "id": "vm-512",
@@ -201,25 +164,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-512-vm",
-                  "linkTitle": "CDAP 5.1.2 VM",
-                  "title": "CDAP 5.1.2 for VM",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/vm-512.md"
             },
             {
               "id": "vm-435",
@@ -246,26 +191,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-512-vm",
-                  "linkTitle": "CDAP 4.3.5 VM",
-                  "title": "CDAP 4.3.5 for VM",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>",
-                    "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/vm-435.md"
             },
             {
               "id": "docker-512",
@@ -292,25 +218,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-512-docker",
-                  "linkTitle": "CDAP 5.1.2 Docker",
-                  "title": "CDAP 5.1.2 for Docker",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP Docker provides a clean, contained environment for trying out CDAP on your desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/docker-512.md"
             },
             {
               "id": "docker-435",
@@ -337,26 +245,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-435-docker",
-                  "linkTitle": "CDAP 4.3.5 Docker",
-                  "title": "CDAP 4.3.5 for Docker",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP Docker provides a clean, contained environment for trying out CDAP on your desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://cdap.io/?new=blog'>release notes</a>",
-                    "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8, Node.js versions 8.7.0+, Apache Maven 3.0+"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/docker-435.md"
             }
           ],
           "items": [
@@ -459,28 +348,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "active": true,
-                  "id": "version-512-cdh",
-                  "linkTitle": "CDAP 5.1.2 CDH",
-                  "title": "CDAP 5.1.2 for CDH",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "Use the CDAP Custom Service Descriptor (CSD) to install and manage CDAP on CM managed Hadoop clusters.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian",
-                    "Supported CDH versions: CDH 5.1.x to 5.11.x",
-                    "Supported CM versions: CM 5.1 - CM 5.11",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/cdh-512.md"
             },
             {
               "id": "cloudera-435",
@@ -507,28 +375,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-435-cdh",
-                  "linkTitle": "CDAP 4.3.5 CDH",
-                  "title": "CDAP 4.3.5 for CDH",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "Use the CDAP Custom Service Descriptor (CSD) to install and manage CDAP on CM managed Hadoop clusters.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/4.3.5/en/reference-manual/release-notes.html#release-4-3-5'>release notes</a>",
-                    "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian",
-                    "Supported CDH versions: CDH 5.1.x to 5.11.x",
-                    "Supported CM versions: CM 5.1 - CM 5.11",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 7 or 8"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/cdh-435.md"
             },
             {
               "id": "ambari-512",
@@ -559,28 +406,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "active": true,
-                  "id": "version-512-am",
-                  "linkTitle": "CDAP 5.1.2 Ambari",
-                  "title": "CDAP 5.1.2 Ambari",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.0/en/reference-manual/release-notes.html#release-5-1-0'>release notes</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian",
-                    "Supported CDH versions: CDH 5.1.x to 5.11.x",
-                    "Supported CM versions: CM 5.1 - CM 5.11",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 8"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/ambari-512.md"
             },
             {
               "id": "ambari-435",
@@ -609,28 +435,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-435-am",
-                  "linkTitle": "CDAP 4.3.5 Ambari",
-                  "title": "CDAP 4.3.5 Ambari",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "CDAP VM provides a complete, pre-built environment for running CDAP on your desktop or laptop.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/4.3.5/en/reference-manual/release-notes.html#release-4-3-5'>release notes</a>",
-                    "Read the <a target='_blank' href='http://blog.cask.co/2017/08/announcing-ga-release-of-cdap-4-3/'>engineering blog</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: RedHat Linux, Ubuntu, CentOS, OEL, Debian",
-                    "Supported CDH versions: CDH 5.1.x to 5.11.x",
-                    "Supported CM versions: CM 5.1 - CM 5.11",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Other requirements: JDK 7 or 8"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/ambari-435.md"
             },
             {
               "id": "mapr-512",
@@ -659,26 +464,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "active": true,
-                  "id": "version-512-mapr",
-                  "linkTitle": "CDAP 5.1.2 RPM/DEB",
-                  "title": "CDAP 5.1.2 for RPM/DEB",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "RPM and Debian distributions of CDAP to support your MapR and other installation needs.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2'>release notes</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Supported Hadoop versions: MapR, Apache BigTop, Apache Hadoop"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/mapr-512.md"
             },
             {
               "id": "mapr-435",
@@ -707,26 +493,7 @@
                   }
                 ]
               },
-              "overlayRight": [
-                {
-                  "id": "version-435-mapr",
-                  "linkTitle": "CDAP 4.3.5 RPM/DEB",
-                  "title": "CDAP 4.3.5 for RPM/DEB",
-                  "descriptionHeader": "Description",
-                  "descriptionBody": "RPM and Debian distributions of CDAP to support your MapR and other installation needs.",
-                  "whatsnewHeader": "What's new",
-                  "whatsnewBody": [
-                    "View <a target='_blank' href='https://docs.cask.co/cdap/4.3.5/en/reference-manual/release-notes.html#release-4-3-5'>release notes</a>",
-                    "Read the <a target='_blank' href='https://cdap.io/?new=blog'>engineering blog</a>"
-                  ],
-                  "requirementsHeader": "System Requirements",
-                  "requirementsList": [
-                    "Supported OS: MacOS, RedHat Linux, Ubuntu, CentOs",
-                    "Supported browsers: Chrome, Safari, Firefox",
-                    "Supported Hadoop versions: MapR, Apache BigTop, Apache Hadoop"
-                  ]
-                }
-              ]
+              "details": "content/en/get-started/cards/mapr-435.md"
             }
           ],
           "items": [
