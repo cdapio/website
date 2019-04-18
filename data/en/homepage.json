@@ -30,7 +30,14 @@
     {
       "imageUrl": "/images/get-started/google-cloud-platform.png",
       "title": "Google Cloud Next ’19",
-      "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center"
+      "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center."
+    },
+    {
+      "imageUrl": "/images/get-started/data-hub.svg",
+      "title": "Cloud Data Fusion launched on GCP",
+      "description": "Cloud Data Fusion is a fully managed, cloud-native, enterprise data integration service, powered by CDAP, for quickly building and managing data pipelines on Google Cloud Platform. Visit the Google Cloud Console to try it out today.",
+      "linkTitle": "Google Cloud Console",
+      "linkUrl": "https://console.cloud.google.com/data-fusion"
     }
   ],
   "why": [
@@ -159,7 +166,7 @@
     "items": [
       {
         "url": "https://google.com",
-        "image": "googlelogo_color.png"
+        "image": "google-logo.png"
       },
       {
         "url": "https://www.guavus.com/",

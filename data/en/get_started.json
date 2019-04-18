@@ -18,7 +18,7 @@
           "description": "The CDAP Cloud Sandbox is a single-process package of CDAP optimized for the Cloud. Functionally identical with the CDAP Local Sandbox, it may differ in nomenclature, and may have additional optimizations - such as dedicated tabs in the Hub - specific to individual cloud providers. The CDAP Cloud Sandbox is available from the respective cloud providers`  Marketplaces.",
           "items": [
             {
-              "title": "Google Cloud Platform",
+              "title": "Google Cloud",
               "description": "Spin up the CDAP Cloud Sandbox on the Google Cloud Marketplace.",
               "img": "/images/pipelines-plugins/google-cloud-platform.png",
               "linkTitle": "Go to Cloud Marketplace",
@@ -53,7 +53,7 @@
               "description": "Fully-managed, cloud-native, enterprise data integration service for quickly building and managing data pipelines",
               "img": "/images/get-started/data-hub.svg",
               "linkTitle": "Go to Google Cloud Console",
-              "link": "https://cloud.google.com/data-fusion/"
+              "link": "https://console.cloud.google.com/data-fusion/"
             },
             {
               "title": "CDAP for Amazon EMR",

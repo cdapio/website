@@ -66,11 +66,15 @@
   &__media-body {
     letter-spacing: .17px;
     margin-top: 25px;
-    height: 111px;
+    height: 165px;
     margin-left: 28px;
 
+    @include media-breakpoint-down(lg) {
+      height: 203px;
+    }
+
     @include media-breakpoint-down(md) {
-      height: 225px;
+      height: 230px;
     }
 
     @include media-breakpoint-down(sm) {
@@ -95,7 +99,6 @@
       margin: 0;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-height: 25px;
 
       @include media-breakpoint-down(md) {
         max-height: 105px;
@@ -109,21 +112,19 @@
   }
 
   &__carousel-figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 252px;
-    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 15px;
+    }
   }
 
   &__carousel-img {
-    height: 171px;
+    height: 116px;
     width: auto;
-
-    @include media-breakpoint-down(md) {
-      align-self: self-start;
-    }
-
-    @include media-breakpoint-down(sm) {
-      align-self: center;
-    }
   }
 
   .carousel-indicators {
