@@ -26,8 +26,9 @@
   }
 
   .container-fluid {
+    max-width: 95%;
     @include media-breakpoint-up(xl) {
-      max-width: 1480px;
+      max-width: 100%;
     }
   }
 

@@ -19,6 +19,12 @@
   position: relative;
   overflow: hidden;
 
+  &__body {
+    color: #333;
+    margin: 0;
+    font-size: 16px;
+  }
+
   a {
     display: none;
 
@@ -64,7 +70,7 @@
     color: $greyish-brown;
 
     @include media-breakpoint-up(lg) {
-      min-height: 125px;
+      min-height: 90px;
     }
 
     @include media-breakpoint-down(md) {

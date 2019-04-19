@@ -22,7 +22,7 @@
         <h6 class="services__subTitle not-apply">{{ .context.subTitle }}</h6>
       </div>
       <h2 class="my-2">{{ .context.title }}</h2>
-      <p>{{ .context.description }}</p>
+      <p class="services__description not-apply">{{ .context.description }}</p>
     </div>
   </div>
   <div class="container mt-5">
@@ -32,6 +32,9 @@
       <div {{ if $item.id }} id="{{ $item.id }}" {{ end }}
            class="col-lg-4 services__wrapper justify-content-center align-items-center">
         <div class="d-flex flex-column justify-content-between align-items-center services__block my-5">
+          {{ with .isFeatured }}
+            <div class="feature-label">FEATURED</div>
+          {{ end }}
           <div class="services__image-block">
             <img class="services__image"
                  src="{{ $item.img }}"

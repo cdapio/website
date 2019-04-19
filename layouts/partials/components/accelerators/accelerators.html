@@ -19,7 +19,7 @@
   <div class="accelerators-info__block" onclick="window.location='{{ .url }}'">
     <img class="accelerators-info__image" src="{{ .image | relURL }}" alt="Pipelines">
     <h4 class="accelerators-info__title mb-4 mt-3">{{ .title }}</h4>
-    <p class="accelerators-info__body">
+    <p class="accelerators-info__body not-apply">
       {{ .body | safeHTML }}
       <a href="{{ .url }}">{{ .urlTitle }}</a>
     </p>

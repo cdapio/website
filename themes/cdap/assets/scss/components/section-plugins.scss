@@ -45,6 +45,12 @@
     color: $black;
   }
 
+  &__description {
+    color: $black;
+    margin: 0;
+    font-size: 16px;
+  }
+
   &__block-title {
     font-size: 25px;
     line-height: 1.2;
