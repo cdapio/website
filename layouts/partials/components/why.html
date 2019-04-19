@@ -34,11 +34,11 @@
           <img class="why__image" src="{{ $items.icon }}">
         {{ end }}
         <h3 class="why__block-title mt-4 not-apply text-center">{{ $items.header | safeHTML }}</h3>
-        <div id="{{ .id }}" class="why__block-body mt-4 d-sm-flex collapse">
+        <div id="{{ .id }}" class="why__block-body mt-4 collapse show d-sm-flex">
           {{ $items.paragraph }}
         </div>
         <a id="{{ .id }}btn" class="d-sm-none d-flex mt-4" href="#" data-toggle="collapse" data-target="#{{ $items.id }}"
-           onclick="learnMore({{ $items.id }})">Learn more</a>
+           onclick="learnMore({{ $items.id }})">Hide</a>
       </div>
     </div>
     {{ end }}
