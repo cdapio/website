@@ -19,17 +19,19 @@
   <div class="container">
     <div class="services__header">
       <div class="text-center">
-        <h6 class="services__subTitle not-apply">{{ .subTitle }}</h6>
+        <h6 class="services__subTitle not-apply">{{ .context.subTitle }}</h6>
       </div>
-      <h2 class="my-2">{{ .title }}</h2>
-      <p>{{ .description }}</p>
+      <h2 class="my-2">{{ .context.title }}</h2>
+      <p>{{ .context.description }}</p>
     </div>
   </div>
   <div class="container mt-5">
-    <div class="row">
-      {{ range $index, $item := .items }}
-      <div {{ if $item.id }} id="{{ $item.id }}" {{ end }} class="col-lg-4 d-flex services__wrapper">
-        <div class="d-flex flex-column justify-content-between align-items-center services__block">
+    <div class="row {{ with .wrapper }}{{ lower . }}-js{{ end }} mt-5">
+      {{ $subTitle := .context.subTitle }}
+      {{ range $index, $item := .context.items }}
+      <div {{ if $item.id }} id="{{ $item.id }}" {{ end }}
+           class="col-lg-4 services__wrapper justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-between align-items-center services__block my-5">
           <div class="services__image-block">
             <img class="services__image"
                  src="{{ $item.img }}"
@@ -39,8 +41,13 @@
           </div>
           <h3 class="mt-4 not-apply text-center">{{ $item.title | safeHTML }}</h3>
           <p class="mt-1 d-sm-flex not-apply">{{ $item.description | safeHTML }}</p>
-          <div class="w-100">
-            <a role="button" class="btn services__button" href="{{ $item.link }}" target="_blank">
+          <div class="services__button-wrapper w-100">
+            <a class="{{ with $.class }}{{ . }}-{{ end }}services__button"
+               role="button"
+               target="_blank"
+               {{ with $item.link }} href="{{ . }}" {{ end }}
+               {{ with $item.linkId }} data-link-id="{{ . }}" {{ end }}
+               {{ with $.wrapper }} data-wrapper="{{ lower . }}" {{ end }}>
               {{ $item.linkTitle }}
             </a>
           </div>
@@ -48,5 +55,68 @@
       </div>
       {{ end }}
     </div>
+    {{/*  Overlay details  */}}
+    {{ range $item := .context.overlayItems }}
+    {{ $id := .id }}
+    <div class="get-started__overlay {{lower $.context.subTitle }}-wrapper-js d-none mt-5" id="{{ $id }}" data-reflect="{{ $id }}">
+      <div class="get-started__overlay-left">
+        <div {{ with $item.item.id }} id="{{ . }}" {{ end }}
+             class="{{ with .linkId }}{{ . }}-js{{ end }} services__wrapper-overlay">
+          <div class="get-started__overlay-block">
+            <div class="services__image-block">
+              <img class="services__image"
+                   src="{{ $item.item.img }}"
+                   {{ with $item.item.imgHeight }}
+                   style="height:{{ $item.imgHeight }}"
+                   {{ end }}>
+            </div>
+            <h4 class="get-started__overlay-title not-apply">{{ $item.item.title | safeHTML }}</h4>
+            <div class="get-started__button-wrapper w-100">
+              {{ range $item.item.buttons }}
+              <a class="btn get-started__overlay-btn"
+                 data-reflect="{{ .id }}"
+                 target="_blank"
+                 href="{{ .buttonHref }}">Download&nbsp;<span
+                class="get-started__title-version">{{ .buttonTitle }}</span>
+              </a>
+              {{ end }}
+              <div class="get-started__tabs-wrapper dropdown w-100">
+                <button class="get-started__overlay-btn--toggle dropdown-toggle w-100"
+                        type="button"
+                        id="dropdownBtn-{{ .id }}"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                  Previous Versions
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                  <ul class="get-started__dropdown-items">
+                    {{ range $item.item.dropdownItems }}
+                    <li class="nav-item {{ with .active }}active{{ end }}">
+                      <a class="{{lower $.context.subTitle }}-nav-js"
+                         id="{{ .id }}-tab"
+                         data-id="{{ .id }}">{{ .linkTitle }}</a>
+                    </li>
+                    {{ end }}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="get-started__overlay-right">
+        {{if .details}}
+          {{readFile .details | markdownify}}
+        {{end}}
+      </div>
+      <div data-reflect="{{ with $.wrapper }}{{ lower . }}{{ end }}-js"
+           class="get-started__close-wrapper">
+        <span class="get-started__overlay-btn--close"></span>
+        <span class="get-started__overlay-btn-title">Close</span>
+      </div>
+    </div>
+    {{ end }}
+    {{/*  Overlay Details End  */}}
   </div>
 </section>

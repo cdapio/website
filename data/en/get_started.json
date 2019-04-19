@@ -42,7 +42,7 @@
           ]
         }
       ],
-      "on_production": [
+      "onProduction": [
         {
           "subTitle": "Production",
           "title": "Install CDAP in Mission-Critical Environments",
@@ -74,64 +74,480 @@
       ]
     }
   ],
-  "on_premises": [
+  "onPremises": [
     {
       "evaluate": [
         {
           "subTitle": "Evaluation",
           "title": "Run CDAP Locally for Evaluation",
           "description": "CDAP is available as a standalone package to install and run locally, including everything to get you started immediately on experimenting with data applications on your laptop or desktop. Once you are ready, your local copy can be easily moved to a distributed environment. These packages are not meant for production use and no patching is available for those images once deployed.",
+          "overlay": true,
+          "overlayItems": [
+            {
+              "active": true,
+              "id": "linuxmac-512",
+              "item": {
+                "title": "Linux/Mac OSX",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/linux-mac.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 5.1.2 for Linux/Mac",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-5.1.2.zip"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 5.1.2 Linux/Mac",
+                    "id": "linuxmac-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 Linux/Mac",
+                    "id": "linuxmac-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/linux-mac-512.md"
+            },
+            {
+              "id": "linuxmac-435",
+              "item": {
+                "title": "Linux/Mac OSX",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/linux-mac.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 4.3.5 for Linux/Mac",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-4.3.5.zip"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 5.1.2 Linux/Mac",
+                    "id": "linuxmac-512"
+                  },
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 4.3.5 Linux/Mac",
+                    "id": "linuxmac-435"
+                  }
+                ],
+                "linkTitle": "Get CDAP for Linux/Mac",
+                "linkId": "linux"
+              },
+              "details": "content/en/get-started/cards/linux-mac-435.md"
+            },
+            {
+              "id": "vm-512",
+              "item": {
+                "title": "CDAP for VM",
+                "img": "/images/get-started/vm.svg",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 5.1.2 for VM",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-5.1.2.ova"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 5.1.2 VM",
+                    "id": "vm-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 VM",
+                    "id": "vm-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/vm-512.md"
+            },
+            {
+              "id": "vm-435",
+              "item": {
+                "title": "CDAP for VM",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/vm.svg",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 4.3.5 for VM",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-4.3.5.ova"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 5.1.2 VM",
+                    "id": "vm-512"
+                  },
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 4.3.5 VM",
+                    "id": "vm-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/vm-435.md"
+            },
+            {
+              "id": "docker-512",
+              "item": {
+                "title": "CDAP for Docker",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/docker.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 5.1.2 for Docker",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 5.1.2 Docker",
+                    "id": "docker-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 Docker",
+                    "id": "docker-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/docker-512.md"
+            },
+            {
+              "id": "docker-435",
+              "item": {
+                "title": "CDAP for Docker",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/docker.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 4.3.5 for Docker",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 5.1.2 Docker",
+                    "id": "docker-512"
+                  },
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 4.3.5 Docker",
+                    "id": "docker-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/docker-435.md"
+            }
+          ],
           "items": [
             {
               "title": "Linux/Mac OSX",
               "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
               "img": "/images/get-started/linux-mac.png",
-              "linkTitle": "Go to Google Cloud Console",
-              "link": "https://cloud.google.com/cloud-console/"
+              "button": {
+                "buttonTitle": "CDAP 5.1.2 for Linux/Mac",
+                "id": "version-512-mac",
+                "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-5.1.2.zip"
+              },
+              "linkTitle": "Get CDAP for Linux/Mac",
+              "linkId": "linuxmac-512",
+              "overlayPane": {
+                "id": "version-512-mac",
+                "linkTitle": "CDAP 5.1.2 Linux/Mac",
+                "title": "CDAP 5.1.2 for Linux/Mac"
+              }
             },
             {
               "title": "VM",
               "description": "Download a pre-built virtual machine for trying out CDAP on your Linux, Mac OSX or Windows machines.",
               "img": "/images/get-started/vm.svg",
-              "linkTitle": "Go to AWS Marketplace",
-              "link": "https://aws.amazon.com/marketplace/pp/B06W9G8L1C"
+              "buttons": {
+                "active": true,
+                "buttonTitle": "CDAP 5.1.2 for VM",
+                "id": "version-512-vm",
+                "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-5.1.2.ova"
+              },
+              "linkTitle": "Get CDAP for VM",
+              "linkId": "vm-512",
+              "link": "",
+              "overlayPane": [
+                {
+                  "id": "version-512-vm",
+                  "linkTitle": "CDAP 5.1.2 VM",
+                  "title": "CDAP 5.1.2 for Linux/Mac"
+                },
+                {
+                  "id": "version-435-vm",
+                  "linkTitle": "CDAP 4.3.5 VM",
+                  "title": "CDAP 4.3.5 for Linux/Mac"
+                }
+              ]
             },
             {
               "title": "Docker",
               "description": "Download a clean, pre-built Docker image for trying out CDAP on your Linux, MacOSX or Windows machines.",
               "img": "/images/get-started/docker.png",
-              "linkTitle": "Go to Azure Marketplace",
-              "link": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cask.cdap-cloud-sandbox"
+              "buttons": {
+                "active": true,
+                "id": "version-512-docker",
+                "buttonTitle": "Get CDAP 5.1.2 for Docker",
+                "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
+              },
+              "linkTitle": "Get CDAP for Docker",
+              "linkId": "docker-512",
+              "link": "",
+              "overlayPane": {
+                "id": "version-512-docker",
+                "linkTitle": "CDAP 4.3.5 Docker",
+                "title": "CDAP 5.1.2 for Linux/Mac"
+              }
             }
           ]
         }
       ],
-      "on_production": [
+      "onProduction": [
         {
           "subTitle": "Production",
           "title": "Get connected",
           "description": "If you are ready to install CDAP on your Kubernetes or Apache Hadoop clusters, in critical environments, choose from one of the following options:",
+          "overlay": true,
+          "overlayItems": [
+            {
+              "active": "true",
+              "id": "cloudera-512",
+              "title": "CDAP 5.1.2 for Linux/Mac",
+              "description": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
+              "item": {
+                "title": "CDAP for CDH",
+                "img": "/images/get-started/cdh.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "Download CDAP 5.1.2 for CDH",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-5.1.0.jar"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 5.1.2 CDH",
+                    "id": "cloudera-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 CDH",
+                    "id": "cloudera-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/cdh-512.md"
+            },
+            {
+              "id": "cloudera-435",
+              "item": {
+                "title": "CDAP for CDH",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/cdh.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "Download CDAP 4.3.5 for CDH",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-4.3.1.jar"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 5.1.2 CDH",
+                    "id": "cloudera-512"
+                  },
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 4.3.5 CDH",
+                    "id": "cloudera-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/cdh-435.md"
+            },
+            {
+              "id": "ambari-512",
+              "item": {
+                "title": "CDAP for Ambari",
+                "img": "/images/get-started/ambari.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "Get CDAP 5.1.2 for Ambari DEB",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/5.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_5.1.0-1_all.deb"
+                  },
+                  {
+                    "buttonTitle": "Get CDAP 5.1.2 for Ambari RPM",
+                    "id": "version-512-mac",
+                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/5.1/rpms/cdap-ambari-service-5.1.0-1.noarch.rpm"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 5.1.2 Ambari",
+                    "id": "ambari-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 Ambari",
+                    "id": "ambari-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/ambari-512.md"
+            },
+            {
+              "id": "ambari-435",
+              "item": {
+                "title": "CDAP for Ambari",
+                "img": "/images/get-started/ambari.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "Get CDAP 4.3.5 for Ambari DEB",
+                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/4.3/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_4.3.0-1_all.deb"
+                  },
+                  {
+                    "buttonTitle": "Get CDAP 4.3.5 for Ambari RPM",
+                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/4.3/rpms/cdap-ambari-service-4.3.0-1.noarch.rpm"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 5.1.2 Ambari",
+                    "id": "ambari-512"
+                  },
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 4.3.5 Ambari",
+                    "id": "ambari-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/ambari-435.md"
+            },
+            {
+              "id": "mapr-512",
+              "item": {
+                "title": "CDAP for MapR",
+                "img": "/images/get-started/mapr.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "Download CDAP 5.1.2 DEB",
+                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-5.1.2.tgz"
+                  },
+                  {
+                    "buttonTitle": "Download CDAP 5.1.2 RPM",
+                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-5.1.2.tgz"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 5.1.2 MapR",
+                    "id": "mapr-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 MapR",
+                    "id": "mapr-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/mapr-512.md"
+            },
+            {
+              "id": "mapr-435",
+              "item": {
+                "title": "CDAP for MapR",
+                "img": "/images/get-started/mapr.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "Download CDAP 4.3.5 DEB",
+                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-4.3.5.tgz"
+                  },
+                  {
+                    "buttonTitle": "Download CDAP 4.3.5 RPM",
+                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-4.3.5.tgz"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 5.1.2 MapR",
+                    "id": "mapr-512"
+                  },
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 4.3.5 MapR",
+                    "id": "mapr-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/mapr-435.md"
+            }
+          ],
           "items": [
             {
               "title": "CDAP for CDH",
               "description": "To add CDAP to your Cloudera Manager installations, use the CDAP Custom Service Descriptor (CSD).",
               "img": "/images/get-started/cdh.png",
+              "button": [
+                {
+                  "id": "version-512-cdh",
+                  "buttonTitle": "CDAP 5.1.2 for CDH",
+                  "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-5.1.0.jar"
+                },
+                {
+                  "id": "version-435-cdh",
+                  "buttonTitle": "CDAP 4.3.5 for CDH",
+                  "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-5.1.0.jar"
+                }
+              ],
               "linkTitle": "Get CDAP for CDH",
-              "link": "https://www.cloudera.com/downloads/partner/cdap.html"
+              "linkId": "cloudera-512",
+              "link": "",
+              "overlayPane": {
+                "id": "cloudera-512",
+                "linkTitle": "CDAP 5.1.2 CDH",
+                "title": "CDAP 5.1.2 for CDH",
+                "active": true
+              }
             },
             {
               "title": "CDAP for Ambari",
               "description": "To use CDAP within your Hortonworks Data Platform (HDP) environment, use Apache Ambari.",
               "img": "/images/get-started/ambari.png",
               "linkTitle": "Get CDAP for Ambari",
-              "link": "https://github.com/cdapio/cdap-ambari-service"
+              "linkId": "ambari-512",
+              "link": "",
+              "overlay_pane": {
+                "id": "version-512-am",
+                "linkTitle": "CDAP 5.1.2 Ambari",
+                "title": "CDAP 5.1.2 for Ambari"
+              }
             },
             {
               "title": "CDAP for MapR, BigTop and more",
               "description": "If you are using MapR, BigTop or the Apache Hadoop, use RPM and Debian distributions of CDAP.",
               "img": "/images/get-started/mapr.png",
               "linkTitle": "Get CDAP for RPM/DEB",
-              "link": "https://docs.cask.co/cdap/current/en/admin-manual/installation/mapr.html"
+              "linkId": "mapr-512",
+              "link": "",
+              "overlayPane": {
+                "id": "version-512-mapr",
+                "linkTitle": "CDAP 4.3.5 MapR",
+                "title": "CDAP 5.1.2 for MapR"
+              }
             }
           ]
         }
