@@ -33,6 +33,12 @@
     display: inline-block;
   }
 
+  &__description {
+    color: #333;
+    margin: 0;
+    font-size: 18px;
+  }
+
   &__wrapper {
     display: flex;
     height: 429px;
