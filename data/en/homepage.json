@@ -11,8 +11,8 @@
     },
     {
       "id": "profile",
-      "tabTitle": "On Premises",
-      "title": "Get started on-prem",
+      "tabTitle": "On-Premises",
+      "title": "Get started on-premises",
       "description": "Run CDAP on-premises on your own Apache Hadoop based clusters.",
       "buttonTitle": "Get Started",
       "url": "/get-started/#premises"
