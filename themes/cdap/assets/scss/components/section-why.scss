@@ -15,6 +15,8 @@
  */
 
 .why {
+  $card-space: 35px;
+
   color: $greyish-brown;
 
   a:hover, a:focus {
@@ -54,6 +56,8 @@
 
   &__block {
     border-right: solid 1px $gray;
+    padding-right: $card-space;
+    padding-left: $card-space;
 
     &:nth-child(4n) {
       border-right: 0;

@@ -15,6 +15,8 @@
  */
 
 .services {
+  $card-space: 35px;
+
   &__header {
     color: $greyish-brown;
     letter-spacing: .24px;
@@ -56,7 +58,8 @@
   &__block {
     color: $black;
     height: 360px;
-    margin-right: auto;
+    padding-left: $card-space;
+    padding-right: $card-space;
 
     h3 {
       font-size: 25px;
