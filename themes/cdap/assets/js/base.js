@@ -22,6 +22,8 @@ const showTeamButton = $('#showTeamBtn');
 const heroDescription = $('#heroDescription');
 const hero = $('#hero');
 const heroTeam = $('#heroTeam');
+let singularName;
+let pluralName
 
 $(document).ready(() => {
     if (window.location.hash === "#premises") {
@@ -69,9 +71,10 @@ function displayQuantityInformation(items) {
   if (searchResult !== null && quantityWrapper !== null) {
     searchResult.style.display = items.length > 0 ? 'none' : '';
     quantityWrapper.style.display = items.length > 0 ? '' : 'none';
+    const entityName = items.length > 1 ? pluralName : singularName;
 
     if (items.length !== 0) {
-      quantity.innerHTML = items.length;
+      quantity.innerHTML = items.length + ' ' + entityName;
     }
   }
 }
@@ -241,9 +244,13 @@ function searchVideos() {
 }
 
 if (window.location.href.match('plugins')) {
+  singularName = 'plugin';
+  pluralName = 'plugins';
   displayQuantityInformation(plugins);
 }
 
 if (window.location.href.match('videos')) {
+  singularName = 'video';
+  pluralName = 'videos';
   displayQuantityInformation(videosByDisplayShow);
 }
