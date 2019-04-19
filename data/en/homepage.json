@@ -13,7 +13,7 @@
       "id": "profile",
       "tabTitle": "On Premises",
       "title": "Get started on-prem",
-      "description": "Run CDAP on-premises on your own Apache Hadoop or Kubernetes based clusters.",
+      "description": "Run CDAP on-premises on your own Apache Hadoop based clusters.",
       "buttonTitle": "Get Started",
       "url": "/get-started/#premises"
     }
@@ -73,7 +73,7 @@
       "right_column": [
         {
           "header": "Portable runtime environments",
-          "paragraph": "Build once, run anywhere through portability across runtime environments such as Kubernetes, Apache Hadoop YARN and Docker.",
+          "paragraph": "Build once, run anywhere through portability across runtime environments such as Apache Hadoop YARN and Docker.",
           "id": "feature_5"
         },
         {

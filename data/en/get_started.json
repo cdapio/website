@@ -318,7 +318,7 @@
         {
           "subTitle": "Production",
           "title": "Get connected",
-          "description": "If you are ready to install CDAP on your Kubernetes or Apache Hadoop clusters, in critical environments, choose from one of the following options:",
+          "description": "If you are ready to install CDAP on your Apache Hadoop clusters, in critical environments, choose from one of the following options:",
           "overlay": true,
           "overlayItems": [
             {
