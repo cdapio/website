@@ -63,6 +63,53 @@
     }
   }
 
+  .feature-label {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 0 19px;
+    left: 10px;
+    top: -20px;
+    width: 126px;
+    height: 28px;
+    background-color: #003756;
+    font-family: $base-font-family;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: $white;
+
+    @include media-breakpoint-down(lg) {
+      width: 100px;
+      padding: 0 10px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-style: solid;
+      border-width: 14px 19px 14px 0;
+      border-color: transparent #fff transparent transparent;
+
+      @include media-breakpoint-down(lg) {
+        border-width: 14px 15px 14px 0;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 36%;
+      border-style: solid;
+      border-width: 19px 15px 10px 0;
+      border-color: transparent #003756 transparent transparent;
+      z-index: -1;
+    }
+  }
+
   &__image-block {
     display: flex;
     align-items: center;

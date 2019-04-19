@@ -53,7 +53,8 @@
               "description": "Fully-managed, cloud-native, enterprise data integration service for quickly building and managing data pipelines",
               "img": "/images/get-started/data-hub.svg",
               "linkTitle": "Go to Google Cloud Console",
-              "link": "https://console.cloud.google.com/data-fusion/"
+              "link": "https://console.cloud.google.com/data-fusion/",
+              "isFeatured": true
             },
             {
               "title": "CDAP for Amazon EMR",
