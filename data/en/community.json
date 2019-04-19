@@ -97,27 +97,5 @@
       "title": "Stay informed",
       "description": "Stay informed about the latest news and announcements by following us on Twitter, subscribing to our YouTube channel, or meeting us at meetups and conferences."
     }
-  ],
-  "announcement": [
-    {
-      "imageUrl": "/images/get-started/data-hub.svg",
-      "title": "Cloud Data Fusion launched on GCP",
-      "description": "Cloud Data Fusion is a fully managed, cloud-native, enterprise data integration service, powered by CDAP, for quickly building and managing data pipelines on Google Cloud Platform. Visit the Google Cloud Console to try it out today.",
-      "linkTitle": "Visit Google Cloud Console",
-      "linkUrl": "https://console.cloud.google.com/data-fusion"
-    },
-    {
-      "imageUrl": "/images/bdam-header.jpg",
-      "active": true,
-      "title": "Big Data Applications Meetup",
-      "description": "Join us for the next Big Data Applications Meetup at Google San Francisco on 04/10. ",
-      "linkTitle": "RSVP here",
-      "linkUrl": "https://www.meetup.com/BigDataApps/events/259996482/"
-    },
-    {
-      "imageUrl": "/images/get-started/data-hub.svg",
-      "title": "Google Cloud Next ’19",
-      "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center."
-    }
   ]
 }

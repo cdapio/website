@@ -13,31 +13,9 @@
       "id": "profile",
       "tabTitle": "On Premises",
       "title": "Get started on-prem",
-      "description": "Run CDAP on-premises on your own Apache Hadoop or Kubernetes based clusters.",
+      "description": "Run CDAP on-premises on your own Apache Hadoop based clusters.",
       "buttonTitle": "Get Started",
       "url": "/get-started/#premises"
-    }
-  ],
-  "announcement_home": [
-    {
-      "imageUrl": "/images/bdam-header.jpg",
-      "active": true,
-      "title": "Big Data Applications Meetup",
-      "description": "Join us for the next Big Data Applications Meetup at Google San Francisco on 04/10. ",
-      "linkTitle": "RSVP here",
-      "linkUrl": "https://www.meetup.com/BigDataApps/events/259996482/"
-    },
-    {
-      "imageUrl": "/images/get-started/google-cloud-platform.png",
-      "title": "Google Cloud Next ’19",
-      "description": "We will also be available at the OSS Office Hours on 04/10 at Google Cloud Next ‘19 SF at Moscone Center."
-    },
-    {
-      "imageUrl": "/images/get-started/data-hub.svg",
-      "title": "Cloud Data Fusion launched on GCP",
-      "description": "Cloud Data Fusion is a fully managed, cloud-native, enterprise data integration service, powered by CDAP, for quickly building and managing data pipelines on Google Cloud Platform. Visit the Google Cloud Console to try it out today.",
-      "linkTitle": "Google Cloud Console",
-      "linkUrl": "https://console.cloud.google.com/data-fusion"
     }
   ],
   "why": [
@@ -95,7 +73,7 @@
       "right_column": [
         {
           "header": "Portable runtime environments",
-          "paragraph": "Build once, run anywhere through portability across runtime environments such as Kubernetes, Apache Hadoop YARN and Docker.",
+          "paragraph": "Build once, run anywhere through portability across runtime environments such as Apache Hadoop YARN and Docker.",
           "id": "feature_5"
         },
         {

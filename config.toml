@@ -141,13 +141,6 @@ name = "Case Studies"
 weight = 10
 
 [[languages.en.menu.main]]
-identifier = "Plugins"
-url = "/resources/plugins"
-parent = "Resources"
-name = "Plugins"
-weight = 30
-
-[[languages.en.menu.main]]
 identifier = "Videos"
 url = "/resources/videos"
 parent = "Resources"
