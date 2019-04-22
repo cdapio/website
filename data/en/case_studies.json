@@ -12,8 +12,8 @@
           "linkUrl": "./healthcare"
         },
         {
-          "img": "/images/case-studies/healthcare.svg",
-          "imgHeight": "55px",
+          "img": "/images/case-studies/sports-entertainment.svg",
+          "imgHeight": "72px",
           "title": "Sports and Entertainment",
           "description": "XML content ingestion",
           "linkTitle": "View",
