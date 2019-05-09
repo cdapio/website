@@ -58,7 +58,7 @@ download_sandbox () {
     if [[ -f "$SANDBOX_ZIP_PATH" ]]; then
       log "Sandbox archive found. Skip download"
     else
-      wget https://downloads.cask.co/cdap-sandbox/cdap-sandbox-$SANDBOX_VERSION.zip -O $DOWNLOADS_DIR/$SANDBOX_ZIP
+      wget -q https://downloads.cask.co/cdap-sandbox/cdap-sandbox-$SANDBOX_VERSION.zip -O $DOWNLOADS_DIR/$SANDBOX_ZIP
     fi
     log "Unzip sandbox"
     unzip -qq $SANDBOX_ZIP_PATH -d $SANDBOX_DIR
