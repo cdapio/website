@@ -14,28 +14,15 @@
 
 language: python
 dist: xenial
-cache: npm
 
 python:
   - "3.6"
 
-addons:
-  apt:
-    packages:
-      - python-pygments
-
 before_install:
-  - sudo snap install hugo --channel=extended
-  - nvm install 10.4.0
-  - git submodule update --init --recursive
-  - curl https://htmltest.wjdp.uk | bash
+  - sudo snap install --classic hub
 
 install:
-  - rm -rf public 2> /dev/null
-  - npm install
+  - pip install -r ./scripts/generate-plugins/requirements.txt
 
 script:
-  - hugo
-  - bash ./scripts/test-headers/main.sh
-  - npm run test:spelling
-  - ./bin/htmltest
+  - bash ./scripts/update-plugins-ci.sh
