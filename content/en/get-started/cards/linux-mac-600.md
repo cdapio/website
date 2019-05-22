@@ -1,4 +1,4 @@
-### CDAP 4.3.5 for Linux/Mac
+### CDAP 6.0.0 for Linux/Mac
 
 #### Description
 
@@ -6,8 +6,7 @@ CDAP for Linux/MacOSX provides a complete environment for installing and running
 
 #### What's New:
 
-* View [release notes](https://docs.cdap.io/cdap/4.3.5/en/reference-manual/release-notes.html#release-4-3-5)
-* Read the [engineering blog](http://blog.cdap.io/2017/08/announcing-ga-release-of-cdap-4-3/)
+* View [release notes](https://docs.cdap.io/cdap/6.0.0/en/reference-manual/release-notes.html#release-6-0-0)
 
 #### System Requirements
 

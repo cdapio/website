@@ -1,4 +1,4 @@
-### CDAP 5.1.2 RPM/DEB
+### CDAP 6.0.0 RPM/DEB
 
 #### Description
 
@@ -6,7 +6,7 @@ RPM and Debian distributions of CDAP to support your MapR and other installation
 
 #### What's New:
 
-* View [release notes](https://docs.cdap.io/cdap/5.1.2/en/reference-manual/release-notes.html#release-5-1-2)
+* View [release notes](https://docs.cdap.io/cdap/6.0.0/en/reference-manual/release-notes.html#release-6-0-0)
 
 #### System Requirements
 
