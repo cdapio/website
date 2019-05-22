@@ -27,7 +27,7 @@
 </div>
 <div class="container">
   <div class="row justify-content-between mt-4 no-gutters">
-    {{ range first 4 .items }}
+    {{ range first 3 .items }}
     <div class="companies__custom d-flex align-items-center my-4">
       <a href="{{ .url }}" target="_blank">
         <img src="images/{{ .image }}" class="companies__image"/>
@@ -38,31 +38,14 @@
 </div>
 <div class="container">
   <div class="companies__wrapper mt-0 mt-sm-5">
-    <div class="collapse" id="companies">
-      <div class="row justify-content-between no-gutters">
-        {{ range after 4 .items }}
-        <div class="companies__custom d-flex align-items-center my-4">
-          <a href="{{ .url }}" target="_blank">
-            <img src="images/{{ .image }}" class="companies__image"/>
-          </a>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</div>
-{{ $list := .items }}
-{{ $len := (len $list) }}
-{{ if gt $len 4 }}
-<div class="container">
-  <div class="row">
-    <div class="col-12 text-center">
-      <div class="companies__wrapper">
-        <a class="companies__cta mt-3" id="toggleBtn" data-toggle="collapse" data-target="#companies" aria-expanded="false"
-             aria-controls="companies">Show more
+    <div class="row justify-content-between no-gutters">
+      {{ range after 3 .items }}
+      <div class="companies__custom d-flex align-items-center my-4">
+        <a href="{{ .url }}" target="_blank">
+          <img src="images/{{ .image }}" class="companies__image"/>
         </a>
       </div>
+      {{ end }}
     </div>
   </div>
 </div>
-{{ end }}
