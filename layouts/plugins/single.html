@@ -1,0 +1,104 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+{{ define "main" }}
+
+{{ partial "components/hero-panel" . }}
+
+<section class="plugins">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="plugins-small__field-wrapper input-group mb-3">
+          <input type="text"
+                 id="searchInput"
+                 class="plugins-small__search-input"
+                 placeholder="Search plugins by name"
+                 onkeyup="search()"
+          >
+          <div class="input-group-prepend">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="plugins-small__field-wrapper input-group mb-3">
+          <div class="plugins-small__chips d-sm-flex d-none">
+          </div>
+          <div class="plugins-small__select" onclick="onSelect()">
+            {{ .Params.filter_title }}
+            <ul class="plugins-small__select-wrapper">
+              {{ range .Params.select_types }}
+              <li>
+                <label for="{{ . }}">
+                  <input type="checkbox" id="{{ . }}" class="plugins-small__checkbox" name="type" value="{{ . }}"/>
+                  <div class="checkmark"></div>
+                  {{ humanize . }}
+                </label>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="plugins__quantity-wrapper" style="display: none">
+          <span class="plugins__quantity"></span>&nbsp;displayed
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <ul class="plugins-small__wrapper">
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ $index := -1 }}
+      {{ range $plugins := $data.plugins_list }}
+      <li class="plugins-small__item mb-5 ml-auto mr-auto ml-md-0 mr-md-4" data-select="{{ lower .Type }}"
+          data-title='{{ with (index . "Display Name") }}{{ . }}{{ end }}'>
+        <div class="plugins-small__image">
+          {{ if or (eq (index . "Icon") "N/A") (not (index . "Icon")) }}
+          <img src="/images/icons/socket.png"/>
+          {{ else }}
+          {{ .Icon | safeHTML }}
+          {{ end }}
+        </div>
+        {{ $index = add $index 1 }}
+        <div class="plugins-small__title mt-3">{{ with (index . "Display Name") }}{{ . }}{{ end }}</div>
+        <div class="plugins-small__type mt-3">{{ with (index . "Type") }}{{ . }}{{ end }}</div>
+        <div class="plugins-small__cta-wrapper" onclick="toggleDetails({{$index}})">
+          {{if .Description}}
+            <a class="plugins-small__cta">View details</a>
+          {{end}}
+        </div>
+        <div class="plugins-small__inner-description" id="{{$index}}">
+          <div class="plugins-small__inner-description-title">{{ (index . "Display Name") }}</div>
+          <div class="plugins-small__inner-description-body">{{ .Description}}</div>
+            <div class="plugins-small__cta-wrapper">
+              <a class="plugins-small__cta-hide" onclick="toggleDetails({{$index}})">Hide details</a>
+            </div>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="plugins-small__search-result" style="display: none">{{ .Site.Params.noResults.title }}</div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,84 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+{{ define "main" }}
+
+<div class="videos-page">
+  {{ partial "components/hero-panel" . }}
+
+  <div class="container">
+    <div class="row align-items-center flex-md-row flex-column-reverse">
+      <div class="col-md-6 col-sm-12">
+        <div class="plugins-small__field-wrapper input-group">
+          <input type="text"
+                 id="searchInput"
+                 class="plugins-small__search-input mb-3 mt-3"
+                 placeholder="Search videos by name"
+                 onkeyup="searchVideos()"
+          >
+          <div class="input-group-prepend"></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="d-flex justify-content-end align-items-center my-3">
+          <span class="mr-4">Subscribe to our channel</span>
+          <div class="g-ytsubscribe" data-channelid="UCfkRcekMTa5GA2DdNKba7Jg" data-layout="default"
+               data-count="default">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="plugins__quantity-wrapper" style="display: none">
+          <span class="plugins__quantity"></span>&nbsp;displayed
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ $data := index .Site.Data .Site.Language.Lang }}
+  {{ $VIDEOS_TO_SHOW := 11 }}
+  <div class="container mt-3">
+    {{ with $videos := $data.videos.videos }}
+    <div class="videos-page__wrapper" data-videos-to-show="{{ $VIDEOS_TO_SHOW }}">
+      {{ range $index, $element := where $videos "visible" true  }}
+        {{ partial "components/videos/videos" (dict "context" . "index" $index "VIDEOS_TO_SHOW" $VIDEOS_TO_SHOW) }}
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="plugins-small__search-result" style="display: none">{{ .Site.Params.noResults.title }}</div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="companies__wrapper">
+          <a class="companies__cta" id="toggleBtn">Show more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ partial "components/videos/video-modal" . }}
+</div>
+
+<script src="https://apis.google.com/js/platform.js"></script>
+
+{{ end }}

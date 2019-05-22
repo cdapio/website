@@ -1,0 +1,50 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<div class="container">
+  <div class="row">
+    <div class="get-connected__title col-12 align-items-center">
+      <h3 class="not-apply">{{ .title }}</h3>
+      <p class="not-apply">{{ .description }}</p>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <div class="row px-3 justify-content-start justify-content-lg-between">
+    {{ range .items }}
+    <div class="get-connected__wrapper col-lg-4 col-md-12">
+      <div class="get-connected__item">
+        <h4 class="not-apply">{{ .title }}</h4>
+        <p class="get-connected__paragraph not-apply">{{ .body }}</p>
+        <div class="d-flex justify-content-between">
+          {{ range .links }}
+          <div class="d-flex flex-column align-items-center">
+            <div class="get-connected__icon d-flex align-items-center pb-3">
+              <img src="{{with .icon}}{{ . }}{{end}}"
+                   style="{{ with .height }}height: {{.}}{{end}};{{ with .width }}width: {{.}}{{end}}" />
+            </div>
+            <a href="{{ .href | default "#"}}" target="_blank">
+            {{ .title }}
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

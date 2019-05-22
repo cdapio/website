@@ -1,0 +1,98 @@
+/**
+ *  Copyright © 2019 CDAP
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ *  use this file except in compliance with the License. You may obtain a copy of
+ *  the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ *  License for the specific language governing permissions and limitations under
+ *  the License.
+ */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@include media-breakpoint-up(xl) {
+  @include container(90%, 1324px);
+}
+
+:root {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: $base-font-family;
+    font-weight: 400;
+    color: $white;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  button {
+    font-weight: 500;
+  }
+
+  p {
+    &:not(.not-apply) {
+      color: $black;
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font-family;
+    font-weight: normal;
+    &:not(.not-apply) {
+      margin: 0;
+      line-height: 1.71;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  h2 {
+    &:not(.not-apply) {
+      font-size: 35px;
+      @include media-breakpoint-down(sm) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  h4 {
+    &:not(.not-apply) {
+      font-size: 25px;
+    }
+  }
+
+  a {
+    white-space: nowrap;
+  }
+
+  section {
+    &:not(.not-apply) {
+      padding: 25px 0 12px;
+
+      @include media-breakpoint-up(sm) {
+        padding: 45px 0 50px;
+      }
+    }
+  }
+
+  footer {
+    padding: 36px 0 90px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 40px 0 176px;
+    }
+  }
+}

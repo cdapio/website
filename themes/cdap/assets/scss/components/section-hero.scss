@@ -1,0 +1,428 @@
+/**
+ *  Copyright © 2019 CDAP
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ *  use this file except in compliance with the License. You may obtain a copy of
+ *  the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ *  License for the specific language governing permissions and limitations under
+ *  the License.
+ */
+
+section.hero.opened {
+  max-height: 900px;
+}
+
+.hero {
+  background: url('/images/background-cover.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 505px;
+
+  @include media-breakpoint-up(lg) {
+    background: url('/images/hero-background-blue.svg') no-repeat, url('/images/background-cover.jpg') no-repeat;
+    background-size: auto, cover;
+    background-position: center;
+  }
+
+  @include media-breakpoint-down(md) {
+    max-height: 505px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    background: url('/images/background-cover.jpg') no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    max-height: none;
+  }
+
+  #showTeamBtn {
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.25;
+    font-weight: bold;
+    font-size: 10px;
+    position: absolute;
+    top: 8px;
+    left: 63%;
+    height: 10px;
+    width: 10px;
+    z-index: 1000;
+    @include media-breakpoint-down(md) {
+      left: 80%;
+      top: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      left: 70%;
+      top: -5px;
+    }
+  }
+
+  &__teamTab {
+    max-width: 625px;
+    max-height: 410px;
+    border: solid 1px #979797;
+    @include media-breakpoint-down(sm) {
+      border: none;
+    }
+  }
+
+  .close {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      margin-top: -1px;
+      background: $gray-5;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__closeBtn {
+    font-family: $secondary-font-family;
+    font-size: 13px;
+    color: $bright-orange;
+    letter-spacing: 0.16px;
+  }
+
+  &__divider {
+    width: 182px;
+    border-bottom: solid 1px #979797;
+  }
+
+  &__team {
+    list-style-type: none;
+    columns: 2;
+    padding: 0;
+
+    li {
+      font-family: $secondary-font-family;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.15px;
+      line-height: 27px;
+    }
+  }
+
+  &__title {
+    font-size: 55px;
+    letter-spacing: .17px;
+    margin-top: 50px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 35px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__paragraph {
+    font-size: 25px;
+    letter-spacing: .3px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__block {
+    width: auto;
+    max-width: 580px;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    padding: 37px 50px;
+    box-shadow: 0 0 14px 6px $black-10;
+    border-radius: 0;
+    background-image: linear-gradient(to bottom, $white, $white-15);
+
+    @include media-breakpoint-down(sm) {
+      height: 401px;
+      position: relative;
+      box-shadow: 0 0 12px 5px rgba(87, 87, 87, 0.76);
+      padding: 17px 15px;
+      width: calc(100% + 30px);
+      left: -15px;
+      top: 30px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      border-radius: 8px;
+    }
+  }
+
+  .nav-tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__nav-tabs {
+    padding: 0 0 15px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -30px;
+      bottom: 0;
+      width: calc(100% + 45px);
+      height: 1px;
+      background-color: $gray-5;
+    }
+
+    &.nav-tabs {
+      border-bottom: 0;
+
+      @include media-breakpoint-up(sm) {
+        border-bottom: 1px solid #dee2e6;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .nav-item {
+    a {
+      color: $greyish-brown;
+
+      &:link, &:hover {
+        text-decoration: inherit;
+      }
+    }
+  }
+
+  &__nav-link {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    padding: 10px;
+    position: relative;
+    z-index: 9;
+
+    &.active {
+      position: relative;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 0.2px;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 7px solid;
+      border-color: $deep-orange;
+    }
+  }
+
+  &__tab-pane {
+    &.tab-pane.active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__tab-title {
+    color: $greyish-brown;
+    font-size: 25px;
+  }
+
+  &__tab-body {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: $greyish-brown;
+    min-height: 81px;
+
+    @include media-breakpoint-down(lg) {
+      min-height: 108px;
+    }
+
+    @include media-breakpoint-down(md) {
+      min-height: 81px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: 135px;
+    }
+  }
+}
+
+.hero-panel {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  font-size: 25px;
+  background-image: url('/images/background-cover-secondary.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .background-image {
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 380px;
+
+    @include media-breakpoint-down(sm) {
+      min-height: 515px;
+    }
+
+    @include media-breakpoint-up(md) {
+      background-size: unset;
+    }
+  }
+
+  .container {
+
+    @include media-breakpoint-up(sm) {
+      padding: 0;
+    }
+
+    img {
+      margin-top: 29px;
+      margin-bottom: 40px;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #03d7f6;
+
+    &:hover {
+      color: #03d7f6;
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    line-height: .8;
+    height: 70px;
+  }
+
+  &__navigation {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    justify-content: center;
+
+    @include media-breakpoint-up(sm) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__navigation-item {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    color: $white;
+    padding: 0 10px;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 62px;
+    }
+
+    &:link, &:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    &.active {
+      font-weight: bold;
+      border-bottom: 14px solid $deep-orange;
+    }
+  }
+
+  &__outer {
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+
+    @include media-breakpoint-down(sm) {
+      min-height: 515px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-left: 1rem;
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__bottom-paragraph {
+    font-size: 20px;
+    color: $white;
+    margin-top: 113px;
+  }
+
+  &__community-paragraph {
+    font-size: 16px;
+    line-height: 2.81;
+    color: $white;
+  }
+
+  &__paragraph {
+    margin-top: 70px;
+    line-height: 35px;
+    letter-spacing: .17px;
+    max-width: 540px;
+
+    @include media-breakpoint-down(md) {
+      max-width: 580px;
+    }
+  }
+
+  &__bottom-img {
+    position: absolute;
+    height: 150px;
+    top: 351px;
+    background: url("/images/features-bottom.svg") no-repeat;
+    background-size: cover;
+
+    @include media-breakpoint-down(sm) {
+      top: 486px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+markdown
+pypandoc
+beautifulsoup4
+pytablewriter
+pandas

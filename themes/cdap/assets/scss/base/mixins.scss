@@ -1,0 +1,64 @@
+/**
+ *  Copyright © 2019 CDAP
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ *  use this file except in compliance with the License. You may obtain a copy of
+ *  the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ *  License for the specific language governing permissions and limitations under
+ *  the License.
+ */
+
+@mixin rotate($transform, $margin) {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: $transform;
+  transition: all .4s;
+  border: solid $white;
+  border-width: 0 1px 1px 0;
+  margin-left: 8px;
+  margin-bottom: $margin;
+  @include media-breakpoint-down(sm) {
+    margin-left: 25px;
+  }
+}
+
+@mixin background($position) {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: .23;
+  background-image: url('/images/features-#{$position}.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @if $position == 'top' {
+    top: 0;
+    height: 83px;
+  }
+
+  @if $position == 'bottom' {
+    bottom: 0;
+    height: 139px;
+  }
+}
+
+@mixin container($width, $maxWidth: 100%) {
+  .container {
+    width: $width;
+    max-width: $maxWidth;
+
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

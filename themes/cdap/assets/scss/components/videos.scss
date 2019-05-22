@@ -1,0 +1,81 @@
+/**
+ *  Copyright © 2019 CDAP
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ *  use this file except in compliance with the License. You may obtain a copy of
+ *  the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ *  License for the specific language governing permissions and limitations under
+ *  the License.
+ */
+
+.videos-page {
+  color: $black;
+
+  h5 {
+    line-height: 24px;
+    letter-spacing: .35px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: 1rem;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+    }
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat(auto-fill, 264px);
+    }
+  }
+
+  &__video {
+    height: 168px;
+    width: 290px;
+  }
+
+  &__video-block {
+    max-width: 290px;
+  }
+
+  &__modal-video {
+    height: 380px;
+    width: 766px;
+
+    @include media-breakpoint-down(md) {
+      height: 260px;
+      width: 460px;
+    }
+
+    @media screen and (max-width: 575px) {
+      height: 168px;
+      width: 290px;
+    }
+  }
+
+  &__modalBtn {
+    position: absolute;
+    height: 168px;
+    width: 290px;
+    cursor: pointer;
+  }
+
+  &__title {
+    height: auto;
+    line-height: 1.25rem;
+
+    @include media-breakpoint-up(sm) {
+      height: 129px;
+    }
+  }
+}

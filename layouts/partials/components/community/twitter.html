@@ -1,0 +1,51 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3>{{ .title }}</h3>
+      <p class="not-apply">{{ .description }}</p>
+    </div>
+  </div>
+  <div class="row">
+    {{ range .items }}
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <h4 class="not-apply">{{ .title }}</h4>
+        <p class="not-apply">{{ .body }}</p>
+        {{ range .links }}
+          <div>
+            <img src="{{ .icon }}" />
+            <a href="#">{{ .title }}</a>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+  <div class="d-flex align-items-center mt-4">
+    <div class="mr-4">
+      <a href="https://twitter.com/cdapio?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @cdapio</a>
+    </div>
+    <div class="mr-4">
+      <div class="g-ytsubscribe" data-channelid="UCfkRcekMTa5GA2DdNKba7Jg" data-layout="default" data-count="default"></div>
+    </div>
+  </div>
+</div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://apis.google.com/js/platform.js"></script>

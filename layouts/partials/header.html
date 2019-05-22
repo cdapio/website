@@ -1,0 +1,134 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="w-100">
+        <div class="header__wrapper d-flex flex-column flex-md-row justify-content-between">
+          <div class="navbar navbar-dark justify-content-start">
+            <button id="menuBtn"
+                    class="navbar-toggler"
+                    type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="header__home" href="/">
+              <img class="header__logo" src="{{ .Site.Params.logo }}" alt="logo">
+            </a>
+          </div>
+          <nav class="navbar navbar-expand-md p-0 mt-2">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                {{ $currentNode := . }}
+                {{ $url := .URL }}
+                {{ $firstUrlElement := index (split .URL "/") 1 }}
+                {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+                      <li class="nav-item {{ if or (eq $firstUrlElement "resources") (eq $firstUrlElement "case-studies") }}active {{ end }} dropdown">
+                        <a class="header__item header__item-dropdown">
+                          {{ .Name }}
+                        </a>
+                        <div class="dropdown-menu">
+                          {{ range .Children }}
+                            <a class="dropdown-item" href="{{ .URL }}" target="{{ with .Post }}_blank{{end}}">
+                              <span>{{ .Name }}</span>
+                              {{ $post_status := .Post }}
+                              {{ with $post_status }}
+                                <span class="external-link-icon">
+                                  {{ partial "svg/external-link.svg" (dict "size" "10") }}
+                                </span>
+                              {{ end }}
+                            </a>
+                          {{ end }}
+                        </div>
+                      </li>
+                    {{ else if eq $firstUrlElement "accelerators" }}
+                      <li class="nav-item {{ if eq "/accelerators/" .URL }}active {{ end }}">
+                        <a class="header__item" href="{{ .URL | relURL }}">
+                          <span>{{ .Name }}</span>
+                          {{ .Post }}
+                        </a>
+                      </li>
+                    {{ else }}
+                      <li class="nav-item {{ if eq $url .URL }}active {{ end }}">
+                        <a class="header__item" href="{{ .URL | relURL }}">
+                          <span>{{ .Name }}</span>
+                          {{ .Post }}
+                        </a>
+                      </li>
+                    {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mobileMenu" class="sideMenu collapse">
+    <button id="closeBtn"
+            class="navbar-toggler mt-3"
+            type="button">
+      <span class="close"></span>
+    </button>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="nav-item mt-4">
+          <a class="header__item {{ if eq $firstUrlElement "resources" }}active {{ end }} header__item-dropdown"
+             id="dropdownMenuButton"
+             data-toggle="dropdown"
+             aria-haspopup="true"
+             aria-expanded="false">
+            {{ .Name }}
+          </a>
+          <div class="dropdown-menu container-fluid" aria-labelledby="dropdownMenuButton">
+            {{ range .Children }}
+            <a class="dropdown-item" href="{{ .URL }}">
+              <span>{{ .Name }}</span>
+              {{ $post_status := .Post }}
+              {{ with $post_status }}
+              <span class="external-link-icon">
+                                  {{ partial "svg/external-link.svg" (dict "size" "10") }}
+                                </span>
+              {{ end }}
+            </a>
+            {{ end }}
+          </div>
+        </li>
+        {{ else if eq $firstUrlElement "accelerators" }}
+        <li class="nav-item mt-4">
+        <a class="header__item {{ if eq "/accelerators/" .URL }}active {{ end }}" href="{{ .URL | relURL }}">
+          <span>{{ .Name }}</span>
+          {{ .Post }}
+        </a>
+        </li>
+        {{ else }}
+        <li class="nav-item mt-4">
+        <a class="header__item {{ if eq $url .URL }}active {{ end }}" href="{{ .URL }}">
+          <span>{{ .Name }}</span>
+          {{ .Post }}
+        </a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

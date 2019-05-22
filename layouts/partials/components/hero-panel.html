@@ -1,0 +1,82 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<section class="hero-panel not-apply">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="hero-panel__title d-flex align-items-center">
+        <div>
+          {{ with .Params.hero }}
+          {{ if .link_back_url }}
+          <a href="{{ .link_back_url | markdownify }}" class="hero-panel__link">{{ .link_back_title | markdownify }}</a>
+          {{ end }}
+          <h4 class="not-apply m-0" >{{ .title | markdownify }}</h4>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ $backgroundColor := .Params.hero.background_color }}
+  {{ $background_image_secondary := .Params.hero.background_image_secondary  }}
+  <div class="d-flex flex-column w-100" {{ with $backgroundColor }} style="background-color: {{ . }}" {{ end }}>
+    <div class="hero-panel__outer">
+      <div class="container background-image" {{ with $background_image_secondary }} style="background-image: url('{{ . | relURL }}')" {{ end }}>
+        <div class="row">
+          <div class="hero-panel__info col-lg-6 col-md-12">
+            <p class="hero-panel__paragraph not-apply">{{ .Params.hero.body | markdownify }}</p>
+            {{ with .Params.hero }}
+              {{ if .link_documentation_url }}
+              <a href="{{ .link_documentation_url }}" class="hero-panel__link" target="_blank">{{ .link_documentation_title | markdownify }}</a>
+              {{ end }}
+            {{ end }}
+              {{if eq .Params.type "community"}}
+                <p class="hero-panel__community-paragraph not-apply pt-4">
+                  See our <a {{ with .Params.hero.link }} href="{{ . }}" {{ end }} style="color: {{ .Params.hero.link_color }}">code of conduct</a> to learn more.
+                </p>
+              {{ else }}
+                {{ with .Params.hero.bottom_paragraph }}
+                  <p class="hero-panel__bottom-paragraph not-apply">{{ . }}</p>
+                {{ end }}
+              {{ end }}
+            {{ if .Page.Params.navigation }}
+            <div class="hero-panel__navigation">
+              <ul class="nav nav-tabs">
+                {{ $data := index .Site.Data .Site.Language.Lang }}
+                {{ if eq .Page.Params.type "get-started" }}
+                {{ range $element := $data.get_started.tabs }}
+                <li>
+                  <a id="on-{{ .id }}"
+                     class="hero-panel__navigation-item not-apply"
+                     data-toggle="tab"
+                     href="#{{ .id }}-tab">{{ .title}}</a>
+                </li>
+                {{ end }}
+                {{ end }}
+              </ul>
+            </div>
+            {{ end }}
+          </div>
+          <div class="hero-panel__info col-lg-6 col-md-12">
+            {{ with .Params.hero.image }}
+              <img src="/{{ . }}">
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

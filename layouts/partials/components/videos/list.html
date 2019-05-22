@@ -1,0 +1,39 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<section class="videos pb-5" id="videos">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="plugins__title ml-3">{{ .title }}</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="videos__wrapper">
+      {{ range $item := .items }}
+        <div class="videos-page__video-block mb-1 ml-auto mr-auto ml-md-0 mr-md-4">
+          <div class="videos-page__modalBtn" onclick="openVideoModal({{ .title }}, 'https://www.youtube.com/embed/'+{{ .videoId }})"></div>
+          <img class="videos-page__video m-auto" src="{{ .preview }}">
+          <p class="videos-page__title mt-3 text-dark not-apply">{{ .title }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "components/videos/video-modal" . }}

@@ -1,0 +1,68 @@
+{
+  "features_wrangler": [
+    {
+      "title": "Wrangler features",
+      "left_column": [
+        {
+          "header": "Code free transformations",
+          "paragraph": "Interactive, code-free transformations with feedback at each step using a powerful graphical UI"
+        },
+        {
+          "header": "Extensible, comprehensive transformation library",
+          "paragraph": "Comprehensive library with over 1000+ built-in transformations; Extensible API for adding more transformations"
+        },
+        {
+          "header": "Comprehensive data source support",
+          "paragraph": "Built-in connections to popular cloud and on-prem data sources such as relational databases, file systems, object stores such as AWS S3 and Cloud Storage, Kafka, NoSQL stores"
+        }
+      ],
+      "right_column": [
+        {
+          "header": "Operationalization using pipelines",
+          "paragraph": "One-click pipeline creation for creating scalable and reliable pipelines for mission critical environments"
+        },
+        {
+          "header": "Automatic data quality and profiling",
+          "paragraph": "Data quality indicators for determining data quality; data quality library for improving trust and quality; profiling to understand data distribution and column relationships after every transformation"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "title": "Videos",
+      "items": [
+        {
+          "videoId": "cGYmMtGO9Lo",
+          "preview": "https://i.ytimg.com/vi_webp/cGYmMtGO9Lo/maxresdefault.webp",
+          "title": "Learn CDAP: CDAP Data Prep and Pipelines Tutorial"
+        },
+        {
+          "videoId": "Zt_mzikca94",
+          "preview": "https://i.ytimg.com/vi_webp/Zt_mzikca94/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] Quantize a column - Digitize"
+        },
+        {
+          "videoId": "9LHmTybkU50",
+          "preview": "https://i.ytimg.com/vi_webp/9LHmTybkU50/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] Parse as Avro using Schema Registry"
+        },
+        {
+          "videoId": "0ZoTvyCD4tQ",
+          "preview": "https://i.ytimg.com/vi_webp/0ZoTvyCD4tQ/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] Parse AVRO Binary and Protobuf Records in DataPrep"
+        },
+        {
+          "videoId": "y-gPtDJtiSI",
+          "preview": "https://i.ytimg.com/vi_webp/y-gPtDJtiSI/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] New CDAP Connections"
+        },
+        {
+          "videoId": "OBIUBMKQHGo",
+          "preview": "https://i.ytimg.com/vi_webp/OBIUBMKQHGo/maxresdefault.webp",
+          "title": "Learn CDAP: [SCREENCAST] DataPrep - Restricted Directives"
+        }
+      ]
+    }
+  ]
+}

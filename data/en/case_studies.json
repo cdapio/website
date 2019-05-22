@@ -1,0 +1,64 @@
+{
+  "solutions_by_industry": [
+    {
+      "title": "Solutions by industry",
+      "items": [
+        {
+          "img": "/images/case-studies/healthcare.svg",
+          "imgHeight": "55px",
+          "title": "Healthcare",
+          "description": "Offloading data warehouse reporting workloads",
+          "linkTitle": "View",
+          "linkUrl": "./healthcare"
+        },
+        {
+          "img": "/images/case-studies/sports-entertainment.svg",
+          "imgHeight": "72px",
+          "title": "Sports and Entertainment",
+          "description": "XML content ingestion",
+          "linkTitle": "View",
+          "linkUrl": "./sports-and-entertainment"
+        },
+        {
+          "img": "/images/case-studies/finance.svg",
+          "imgHeight": "61px",
+          "title": "Finance",
+          "description": "Information Security Analytics and Reporting",
+          "linkTitle": "View",
+          "linkUrl": "./finance"
+        },
+        {
+          "img": "/images/case-studies/ecommerce.svg",
+          "imgHeight": "51px",
+          "title": "E-commerce",
+          "description": "In-flight brand sentiment analysis of the Twitter Firehose",
+          "linkTitle": "View",
+          "linkUrl": "./e-commerce"
+        },
+        {
+          "img": "/images/case-studies/telecom.svg",
+          "imgHeight": "92px",
+          "title": "Telco",
+          "description": "Encrypting and Data Masking",
+          "linkTitle": "View",
+          "linkUrl": "./telco"
+        },
+        {
+          "img": "/images/case-studies/finance.svg",
+          "imgHeight": "61px",
+          "title": "Finance",
+          "description": "Data cleansing and validation of 3 billion records",
+          "linkTitle": "View",
+          "linkUrl": "./finance2"
+        }
+      ]
+    }
+  ],
+  "solutions_by_customer": [
+    {
+      "title": "Solutions by customer needs",
+      "isGray": true,
+      "items": [ ]
+    }
+  ]
+}

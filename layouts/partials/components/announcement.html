@@ -1,0 +1,57 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="announcement__wrapper">
+        <div id="carouselCaptions"
+             class="carousel slide main__carousel"
+             data-ride="carousel"
+             data-interval="false">
+          <ol class="carousel-indicators">
+            {{ range $index, $element := . }}
+            <li data-target="#carouselCaptions" data-slide-to="{{ $index }}"
+                class="{{ if $element.active }} active {{ end }}"></li>
+            {{ end }}
+          </ol>
+          <div class="carousel-inner">
+            {{ range $item := . }}
+            <div class="carousel-item {{ if $item.active }} active {{ end }}">
+              <div class="announcement__media d-flex flex-column flex-md-row">
+                <div class="announcement__carousel-figure">
+                  <img src="{{ $item.imageUrl }}" class="announcement__carousel-img align-self-top"
+                      alt="announcement">
+                </div>
+                <div class="announcement__media-body">
+                  <h2 class="announcement__title not-apply">{{ $item.title }}</h2>
+                  <p class="not-apply"> {{ $item.description }} </p>
+                  {{ with .linkUrl}}
+                    <a class="btn btn-link mt-3" href="{{ .}}" target="_blank">
+                      {{ $item.linkTitle }}
+                    </a>
+                  {{end}}
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

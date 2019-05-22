@@ -1,0 +1,56 @@
+{
+  "features_analytics": [
+    {
+      "title": "Analytics features",
+      "left_column": [
+        {
+          "header": "UI driven data wrangler and cleansing",
+          "paragraph": "Seamless, integrated experience from data preparation and cleansing to model development, evaluation and deployment."
+        },
+        {
+          "header": "Support for popular ML libraries",
+          "paragraph": "Out of the box  support for common ML libraries such as SparkML"
+        },
+        {
+          "header": "Scoring plugins for running predictions",
+          "paragraph": "Built in scoring plugins take you from model development to running predictions on data in a few seconds."
+        },
+        {
+          "header": "Model evaluation",
+          "paragraph": "Integrated metrics and visualization that provides rich summaries and graphs for evaluating model performance."
+        }
+      ],
+      "right_column": [
+        {
+          "header": "Automated training and test data split",
+          "paragraph": "Automated splitting into training and test datasets reduces the need for custom tooling."
+        },
+        {
+          "header": "Hyperparameter tuning",
+          "paragraph": "Switches and knobs for advanced users to tune model performance using hyperparameters"
+        },
+        {
+          "header": "Model Lifecycle Management",
+          "paragraph": "Automated model lifecycle management from deployment to promotion and retiring."
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "title": "Videos",
+      "items": [
+        {
+          "videoId": "nZO8fkOE8P0",
+          "preview": "https://i.ytimg.com/vi/nZO8fkOE8P0/maxresdefault.jpg",
+          "title": "Rapid Time to Value with CDAP: Enterprise-Ready Machine Learning in under Three Minutes"
+        },
+        {
+          "videoId": "jk-QQitVECc",
+          "preview": "https://i.ytimg.com/vi/jk-QQitVECc/maxresdefault.jpg",
+          "title": "#BDAM: Machine Learning for the Masses, by Albert Shau, Cask"
+        }
+      ]
+    }
+  ]
+}

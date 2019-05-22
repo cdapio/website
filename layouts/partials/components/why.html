@@ -1,0 +1,46 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="why__title">
+        {{ .title }}
+      </h2>
+      <p class="why__paragraph mt-3">
+        {{ .description }}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    {{ range $items := .items }}
+    <div class="why__block col-md-6 col-lg-3 d-flex flex-column mt-5">
+      <div class="d-flex flex-column justify-content-center align-items-center mb-5">
+        {{ with $items.icon }}
+          <img class="why__image" src="{{ $items.icon }}">
+        {{ end }}
+        <h3 class="why__block-title mt-4 not-apply text-center">{{ $items.header | safeHTML }}</h3>
+        <div id="{{ .id }}" class="why__block-body mt-4 collapse show d-sm-flex">
+          {{ $items.paragraph }}
+        </div>
+        <a id="{{ .id }}btn" class="d-sm-none d-flex mt-4" href="#" data-toggle="collapse" data-target="#{{ $items.id }}"
+           onclick="learnMore({{ $items.id }})">Hide</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>

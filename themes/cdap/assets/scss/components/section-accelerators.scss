@@ -1,0 +1,137 @@
+/**
+ *  Copyright © 2019 CDAP
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ *  use this file except in compliance with the License. You may obtain a copy of
+ *  the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ *  License for the specific language governing permissions and limitations under
+ *  the License.
+ */
+
+.accelerators {
+  &__title {
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: $greyish-brown;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    color: $black-5;
+    cursor: pointer;
+    overflow: hidden;
+
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.41);
+    background-color: $white;
+    border: 1px solid transparent;
+    transition: all .3s;
+
+    @include media-breakpoint-down(md) {
+      max-width: 290px;
+      margin: 0 auto;
+    }
+
+    &:focus {
+      border: 1px solid $orange-10;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.03);
+        transition: all .3s;
+      }
+
+      transition: all .3s;
+      background-color: $gray-10;
+    }
+  }
+
+  &__link {
+    margin-top: 28px;
+  }
+
+  &__item-image {
+    transform: scale(1);
+    transition: all .3s;
+    max-height: 157px;
+  }
+
+  &__inner-wrapper {
+    padding: 27px 21px 24px 25px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 27px 10px 24px 10px;
+    }
+  }
+
+  &__item-body {
+    height: 120px;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: .15px;
+    line-height: 20px;
+    margin: 6px 0 0;
+
+    @include media-breakpoint-down(md) {
+      height: 100px;
+    }
+  }
+
+  &__btnBlock {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}
+
+.accelerators-info {
+  padding: 48px 72px 100px 24px;
+  color: black;
+
+  @include media-breakpoint-down(lg) {
+    padding: 47px 40px 0 24px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 35px 1px 0 0;
+  }
+
+  &__wrapper {
+    @include media-breakpoint-up(lg) {
+      &:nth-child(even) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  &__block {
+    margin-bottom: 70px;
+    cursor: pointer;
+    letter-spacing: .22px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 580px;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+    color: $black;
+  }
+
+  &__body {
+    color: #333;
+    margin: 0;
+    font-size: 16px;
+  }
+}

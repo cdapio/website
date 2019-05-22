@@ -1,0 +1,64 @@
+{{/*
+  Copyright © 2019 CDAP
+
+  Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  use this file except in compliance with the License. You may obtain a copy of
+  the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  License for the specific language governing permissions and limitations under
+  the License.
+*/}}
+
+
+<div class="features__home-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="features__title">
+          {{ .title }}
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{ range .left_column }}
+      <div class="col-lg-6 col-md-12">
+        <div class="features__block mt-5">
+          <h4 class="features__title mb-4">{{ .header }}</h4>
+          <p id="{{ .id }}" class="features__body d-sm-flex collapse show not-apply">{{ .paragraph }}</p>
+          <a id="{{ .id }}btn"
+             class="d-sm-none d-flex mt-4"
+             href="#"
+             data-toggle="collapse"
+             data-target="#{{ .id }}"
+             onclick="learnMore({{ .id }})">
+            Hide
+          </a>
+        </div>
+      </div>
+      {{ end }}
+      {{ range .right_column }}
+      <div class="col-lg-6 col-md-12">
+        <div class="features__block mt-5">
+          <h4 class="features__title mb-4">{{ .header }}</h4>
+          <p id="{{ .id }}" class="features__body d-sm-flex collapse show not-apply">{{ .paragraph }}</p>
+          <a id="{{ .id }}btn"
+             class="d-sm-none d-flex mt-4"
+             href="#"
+             data-toggle="collapse"
+             data-target="#{{ .id }}"
+             onclick="learnMore({{ .id }})">
+            Hide
+          </a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

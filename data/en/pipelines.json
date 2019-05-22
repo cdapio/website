@@ -1,0 +1,166 @@
+{
+  "why": [
+    {
+      "title": "Pipelines benefits",
+      "description": "Pipelines accelerator enables developers, business analysts and data scientists to quickly derive insights from data, without having to worry about infrastructure and integration.",
+      "items": [
+        {
+          "header": "Integrated with all data",
+          "paragraph": "Pipelines provide connectors to relational databases, flat files, mainframes, cloud services, NoSQL, and more.",
+          "id": "reduced-complexity"
+        },
+        {
+          "header": "Increased flexibility",
+          "paragraph": "Through portability across on-premises and public cloud environments.",
+          "id": "increased-velocity"
+        },
+        {
+          "header": "Reduced complexity",
+          "paragraph": "Pipelines reduce complexity through a graphical interface, code free transformations, and reusable tempates.",
+          "id": "increased-flexibility"
+        },
+        {
+          "header": "Improved data trustworthiness",
+          "paragraph": "Through data quality libraries, metadata and lineage capture, audit logging.",
+          "id": "improved-visibility"
+        }
+      ]
+    }
+  ],
+  "features_pipeline": [
+    {
+      "title": "Pipeline features",
+      "left_column": [
+        {
+          "header": "Connector ecosystem",
+          "paragraph": "Built-in connectors to a variety of cloud and on-prem, modern and legacy systems; public APIs to build custom connectors"
+        },
+        {
+          "header": "Visual data pipeline designer",
+          "paragraph": "Build data pipelines by stitching together sources, transformations, sinks and other nodes using a simple, point and click pipeline studio UI"
+        },
+        {
+          "header": "Data discovery and governance",
+          "paragraph": "Data discovery based on technical, operational and business metadata; Lineage for root cause and impact analysis"
+        }
+      ],
+      "right_column": [
+        {
+          "header": "Comprehensive integration toolkit",
+          "paragraph": "Conditionals and pre/post processing actions; Alerting and Notifications; Error processing"
+        },
+        {
+          "header": "Interactive, code-free transformations",
+          "paragraph": "Wide variety of built-in data transformation plugins; Interactive data transformation interface with feedback at each step"
+        },
+        {
+          "header": "Seamless operations",
+          "paragraph": "Time and process based scheduling, monitoring via logs, metrics, dashboards and reporting"
+        }
+      ]
+    }
+  ],
+  "pipeline_plugins": [
+    {
+      "title": "Plugins",
+      "description": "Pipelines support plugins for connecting to a variety of cloud and on-premises systems, as well as to perform data transformations.",
+      "btnTitle": "View All Plugins",
+      "btnLink": "/resources/plugins/",
+      "items": [
+        {
+          "title": "Google Cloud",
+          "image": "/images/pipelines-plugins/google-cloud-platform.png"
+        },
+        {
+          "title": "Microsoft Azure",
+          "image": "/images/pipelines-plugins/microsoft-azure.png"
+        },
+        {
+          "title": "Amazon Web Services",
+          "image": "/images/pipelines-plugins/amazon-web-services.png"
+        },
+        {
+          "title": "Hadoop",
+          "image": "/images/pipelines-plugins/hadoop.png"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "title": "Videos",
+      "items": [
+        {
+          "videoId": "jMVp9vV7gJs",
+          "preview": "https://i.ytimg.com/vi/jMVp9vV7gJs/maxresdefault.jpg",
+          "title": "Learn CDAP: Event Based Triggers for CDAP Pipelines"
+        },
+        {
+          "videoId": "Q0pzUVEF9WE",
+          "preview": "https://i.ytimg.com/vi/Q0pzUVEF9WE/maxresdefault.jpg",
+          "title": "Learn CDAP: [SCREENCAST] How to create workflows from your existing Spark applications"
+        },
+        {
+          "videoId": "j7Tu6kPKnrQ",
+          "preview": "https://i.ytimg.com/vi/j7Tu6kPKnrQ/maxresdefault.jpg",
+          "title": "Learn CDAP:  Spark Interpreter Demo - Writing custom Spark code  in a CDAP Pipeline"
+        },
+        {
+          "videoId": "d-HfyVTfdM8",
+          "preview": "https://i.ytimg.com/vi/d-HfyVTfdM8/maxresdefault.jpg",
+          "title": "Learn CDAP: EDW Optimization - Offloading data from Oracle to HBase"
+        },
+        {
+          "videoId": "wJEY1dtabNQ",
+          "preview": "https://i.ytimg.com/vi/wJEY1dtabNQ/hqdefault.jpg",
+          "title": "Learn CDAP: Data Ingest from Azure Blob Store and ADLS using CDAP Pipelines"
+        },
+        {
+          "videoId": "3vncr5EE2Mk",
+          "preview": "https://i.ytimg.com/vi/3vncr5EE2Mk/hqdefault.jpg",
+          "title": "Learn CDAP: Realtime IOT data Ingestion Using Azure Event Hub and CDAP Pipelines"
+        },
+        {
+          "videoId": "4nxyzxINtp4",
+          "preview": "https://i.ytimg.com/vi/4nxyzxINtp4/maxresdefault.jpg",
+          "title": "Learn CDAP: EDW Optimization with Hadoop and CDAP (CDC)"
+        },
+        {
+          "videoId": "mSKwjKvYUtI",
+          "preview": "https://i.ytimg.com/vi/mSKwjKvYUtI/maxresdefault.jpg",
+          "title": "#BDAM:  EDW Optimization with Hadoop and CDAP, by Sagar Kapare from Cask"
+        },
+        {
+          "videoId": "gDnINRBzg2s",
+          "preview": "https://i.ytimg.com/vi/gDnINRBzg2s/maxresdefault.jpg",
+          "title": "Learn CDAP: Legacy Spark programs in CDAP"
+        },
+        {
+          "videoId": "XD_LnkVo_t8",
+          "preview": "https://i.ytimg.com/vi/XD_LnkVo_t8/maxresdefault.jpg",
+          "title": "Learn CDAP: Transfer data from Oracle DB to CDAP Table"
+        },
+        {
+          "videoId": "Jh9JvmWL1oY",
+          "preview": "https://i.ytimg.com/vi/Jh9JvmWL1oY/maxresdefault.jpg",
+          "title": "Learn CDAP: Preview for Batch Data Pipelines"
+        },
+        {
+          "videoId": "_eKH5YnvO-0",
+          "preview": "https://i.ytimg.com/vi/_eKH5YnvO-0/maxresdefault.jpg",
+          "title": "Learn CDAP: Preview for Realtime Data Pipelines"
+        },
+        {
+          "videoId": "k9ESaATI1mQ",
+          "preview": "https://i.ytimg.com/vi/k9ESaATI1mQ/maxresdefault.jpg",
+          "title": "Learn CDAP: Hive Export and Import  using CDAP Pipelines"
+        },
+        {
+          "videoId": "r0eK95-WFT0",
+          "preview": "https://i.ytimg.com/vi/r0eK95-WFT0/hqdefault.jpg",
+          "title": "Rapid Time to Value with CDAP: From Data File to Apache Kudu in Under 5 Minutes"
+        }
+      ]
+    }
+  ]
+}

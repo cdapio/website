@@ -1,0 +1,3 @@
+[submodule "themes/cdap/assets/vendor/bootstrap"]
+	path = themes/cdap/assets/vendor/bootstrap
+	url = https://github.com/twbs/bootstrap.git

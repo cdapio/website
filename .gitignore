@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# production
+public/
+tech-doc-hugo/
+tmp/
+resources/
+
+# IDE
+.idea/
+.vscode
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+htmltest.log
+refcache.json
+bin/
+
+# generated files
+/scripts/tmp
