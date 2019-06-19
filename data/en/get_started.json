@@ -528,12 +528,12 @@
                   {
                     "buttonTitle": "CDAP 6.0.0 for Ambari DEB",
                     "id": "version-600-mac",
-                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/5.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.0.0-1_all.deb"
+                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/6.0/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.0.0-1_all.deb"
                   },
                   {
                     "buttonTitle": "CDAP 6.0.0 for Ambari RPM",
                     "id": "version-600-mac",
-                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/5.1/rpms/cdap-ambari-service-6.0.0-1.noarch.rpm"
+                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/6.0/rpms/cdap-ambari-service-6.0.0-1.noarch.rpm"
                   }
                 ],
                 "dropdownItems": [
