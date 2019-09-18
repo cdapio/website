@@ -149,8 +149,9 @@ def parse_plugin_json(plugin_json_file):
   properties = data['properties']
   parsed_plugins = OrderedDict()
   for key in properties:
+    # dictionary that this method will create
     # {
-    #   "<plugin-name>": {
+    #   "<plugin-name>-<plugin-type>": {
     #     "name": "<plugin-name>",
     #     "type": "<plugin-type>",
     #     "description": "<short description>",
@@ -159,7 +160,8 @@ def parse_plugin_json(plugin_json_file):
     # }
     splits = key.split('.')
     config_type = splits[0]
-    plugin_name_and_type = splits[1].split('-')
+    plugin_identifier = splits[1]
+    plugin_name_and_type = plugin_identifier.split('-')
     plugin_name = plugin_name_and_type[0]
     # this should never happen. It only happens when a plugin file is not named correctly.
     # that scenario points to a different bug, which should be fixed.
@@ -170,51 +172,51 @@ def parse_plugin_json(plugin_json_file):
       plugin_type = plugin_name_and_type[1].lower()
 
     # initialized plugin in result, if it is not already present
-    if plugin_name not in parsed_plugins:
-      parsed_plugins[plugin_name] = OrderedDict()
+    if plugin_identifier not in parsed_plugins:
+      parsed_plugins[plugin_identifier] = OrderedDict()
 
     # add name
-    parsed_plugins[plugin_name]['Name'] = plugin_name
+    parsed_plugins[plugin_identifier]['Name'] = plugin_name
     # initialize display name to name. if available, this will be overriden by display-name from widgets json
-    parsed_plugins[plugin_name]['Display Name'] = plugin_name
+    parsed_plugins[plugin_identifier]['Display Name'] = plugin_name
 
     # add type
     # conditional also due to same bug indicated above. Should never happen
     if plugin_type in PLUGIN_DISPLAY_TYPES:
-      parsed_plugins[plugin_name]['Type'] = PLUGIN_DISPLAY_TYPES[plugin_type]
+      parsed_plugins[plugin_identifier]['Type'] = PLUGIN_DISPLAY_TYPES[plugin_type]
     else:
       print("Could not determine type for - {}. Current type is {}".format(plugin_name, plugin_type))
-      parsed_plugins[plugin_name]['Type'] = plugin_type
+      parsed_plugins[plugin_identifier]['Type'] = plugin_type
 
     if config_type == 'widgets':
       # add display name and icon
-      add_display_name_and_icon(plugin_name, properties[key], parsed_plugins)
+      add_display_name_and_icon(plugin_identifier, properties[key], parsed_plugins)
     elif config_type == 'doc':
       # add description
-      add_description(plugin_name, properties[key], parsed_plugins)
+      add_description(plugin_identifier, properties[key], parsed_plugins)
 
   return parsed_plugins
 
 
-def add_display_name_and_icon(plugin_name, widgets, dict_to_update):
+def add_display_name_and_icon(plugin_identifier, widgets, dict_to_update):
   parsed_widgets = json.loads(widgets)
   if 'display-name' in parsed_widgets:
-    dict_to_update[plugin_name]['Display Name'] = parsed_widgets['display-name']
+    dict_to_update[plugin_identifier]['Display Name'] = parsed_widgets['display-name']
   # add icon if available, else add N/A
-  dict_to_update[plugin_name]['Icon'] = 'N/A'
+  dict_to_update[plugin_identifier]['Icon'] = 'N/A'
   if 'icon' in parsed_widgets:
-    dict_to_update[plugin_name]['Icon'] = get_icon(parsed_widgets['icon'])
+    dict_to_update[plugin_identifier]['Icon'] = get_icon(parsed_widgets['icon'])
   pass
 
 
-def add_description(plugin_name, docs, dict_to_update):
+def add_description(plugin_identifier, docs, dict_to_update):
   description = find_description_element(docs)
   if description is None:
     print("Could not find description for - ", docs)
     return
 
   # print("Found description as: ", description.string)
-  dict_to_update[plugin_name]['Description'] = description.string
+  dict_to_update[plugin_identifier]['Description'] = description.string
 
 
 def find_description_element(docs):
