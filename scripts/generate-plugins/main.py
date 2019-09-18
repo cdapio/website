@@ -307,6 +307,28 @@ def write_as_md(plugins_by_type, output_path):
   with open(output_path, "w") as output_file:
     output_file.write(output)
 
+
+def write_as_csv(all_plugins, output_path):
+  f = open(output_path, 'w')
+  f.write("Name,Display Name,Type,Description")
+  f.write('\n')
+  for each_plugin in all_plugins.values():
+    row = each_plugin['Name'] 
+    row += ',' 
+    row += each_plugin['Display Name']
+    row += ','
+    row += each_plugin['Type']
+    row += ','
+    if 'Description' in each_plugin and each_plugin['Description'] is not None:
+      row += each_plugin['Description'].replace('\n', '')
+      row += ','
+    row += '\n'
+    f.write(row)
+
+  f.close()
+  
+
+
 def populate_black_list(path):
   black_list = []
   if path:
@@ -324,7 +346,7 @@ def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('cdap_sandbox_dir', help='Absolute path to the directory containing the CDAP Sandbox')
   parser.add_argument('hub_dir', help='Absolute path to the directory containing the Hub source')
-  parser.add_argument('-v', '--cdap_version', help='CDAP version to build plugin list for', default='5.0.0')
+  parser.add_argument('-v', '--cdap_version', help='CDAP version to build plugin list for', default='6.1.0')
   parser.add_argument('-f', '--output_format', help='The format to generate output in', default='json')
   parser.add_argument('-o', '--output_path', help='Absolute path to output file. Output file must not exist. Containing directory must exist.', default='plugins')
   parser.add_argument('-i', '--ignore_plugins', help='Absolute path to file with plugins blacklist.')
@@ -345,6 +367,7 @@ def main():
   all_plugins.update(built_in_plugins)
   all_plugins.update(hub_plugins)
 
+  print("Length : %d" % len(all_plugins))
   # filter plugins using black list
   for ignored in ignore_plugins:
     if ignored in all_plugins:
@@ -360,10 +383,13 @@ def main():
   if args.output_format == 'json':
     f = open(args.output_path, 'w')
     f.write(json.dumps(all_plugins, indent=2))
+    f.close()
   elif args.output_format == 'md':
     pivoted_by_plugin_type = pivot_by_plugin_type(all_plugins)
     # print(json.dumps(pivoted_by_plugin_type))
     write_as_md(pivoted_by_plugin_type, args.output_path)
+  elif args.output_format == 'csv':
+    write_as_csv(all_plugins, args.output_path)
 
 
 if __name__ == '__main__':
