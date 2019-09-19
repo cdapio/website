@@ -28,8 +28,8 @@ DEPS_FAILED=false
 DEPS=(python git unzip wget)
 
 _check_deps () {
-  if [[ ! $(git lfs) ]]; then
-    echo "You need to install 'git lfs'"
+  if [[ ! $(git) ]]; then
+    echo "You need to install 'git'"
     DEPS_FAILED=true
   fi
   for dep in "${DEPS[@]}"; do
@@ -70,7 +70,7 @@ download_sandbox () {
 download_marketplace () {
   if [[ ! -d "$MARKETPLACE_DIR" ]]; then
     log "Clonning cdap-marketplace"
-    git lfs clone https://github.com/cdapio/cask-marketplace.git $MARKETPLACE_DIR
+    git clone https://github.com/cdapio/cask-marketplace.git $MARKETPLACE_DIR
   else
     log "Marketplace found. Skip"
   fi

@@ -163,6 +163,11 @@ def parse_plugin_json(plugin_json_file):
     plugin_identifier = splits[1]
     plugin_name_and_type = plugin_identifier.split('-')
     plugin_name = plugin_name_and_type[0]
+
+    # Filter blacklisted plugins
+    if plugin_name in blacklisted_plugins:
+      continue;
+
     # this should never happen. It only happens when a plugin file is not named correctly.
     # that scenario points to a different bug, which should be fixed.
     # e.g. https://github.com/data-integrations/change-data-capture/pull/1
@@ -185,7 +190,7 @@ def parse_plugin_json(plugin_json_file):
     if plugin_type in PLUGIN_DISPLAY_TYPES:
       parsed_plugins[plugin_identifier]['Type'] = PLUGIN_DISPLAY_TYPES[plugin_type]
     else:
-      print("Could not determine type for - {}. Current type is {}".format(plugin_name, plugin_type))
+      #print("Could not determine type for - {}. Current type is {}".format(plugin_name, plugin_type))
       parsed_plugins[plugin_identifier]['Type'] = plugin_type
 
     if config_type == 'widgets':
@@ -330,18 +335,35 @@ def write_as_csv(all_plugins, output_path):
   f.close()
   
 
+#def filter_blacklisted_plugins(blacklist_paths, all_plugins):
+#  plugins_to_ignore = populate_blacklist(blacklist_paths)
+#  for plugin_to_ignore in plugins_to_ignore:
+#    for key in all_plugins:
+#      plugin_name_and_type = key.split('-')
+#      plugin_name = plugin_name_and_type[0]
+#      if plugin_to_ignore == plugin_name:
+#        all_plugins.pop(key)
+#      if plugin_to_ignore.lower() == plugin_name:
+#        all_plugins.pop(key)
 
-def populate_black_list(path):
-  black_list = []
-  if path:
-    with open(path, "r") as fp:
-      plugin = fp.readline()
-      while plugin:
-        if not plugin.startswith('#'):
-          black_list.append(plugin.strip())
+    #if plugin_to_ignore in all_plugins:
+     # all_plugins.pop(plugin_to_ignore)
+    #if plugin_to_ignore.lower() in all_plugins:
+     # all_plugins.pop(plugin_to_ignore.lower())
+
+def populate_blacklist(blacklist_paths):
+  blacklist = []
+  if blacklist_paths:
+    paths = blacklist_paths.split(',')
+    for path in paths:
+      with open(path, "r") as fp:
         plugin = fp.readline()
+        while plugin:
+          if not plugin.startswith('#'):
+            blacklist.append(plugin.strip())
+          plugin = fp.readline()
 
-  return black_list
+  return blacklist
 
 
 def main():
@@ -351,10 +373,14 @@ def main():
   parser.add_argument('-v', '--cdap_version', help='CDAP version to build plugin list for', default='6.1.0')
   parser.add_argument('-f', '--output_format', help='The format to generate output in', default='json')
   parser.add_argument('-o', '--output_path', help='Absolute path to output file. Output file must not exist. Containing directory must exist.', default='plugins')
-  parser.add_argument('-i', '--ignore_plugins', help='Absolute path to file with plugins blacklist.')
+  parser.add_argument('-i', '--plugins_to_ignore', help='List of absolute paths to files with plugins to ignore')
   args = parser.parse_args()
 
   artifacts_dir = os.path.join(args.cdap_sandbox_dir, 'artifacts')
+
+  # globally populate plugin blacklist
+  global blacklisted_plugins
+  blacklisted_plugins = populate_blacklist(args.plugins_to_ignore)
 
   built_in_plugins = populate_built_in_plugins(artifacts_dir)
   # print "########### built in #########"
@@ -362,23 +388,14 @@ def main():
   hub_plugins = populate_hub_plugins(args.hub_dir, args.cdap_version)
   # print "########### hub #########"
   # print json.dumps(hub_plugins)
-  ignore_plugins = populate_black_list(args.ignore_plugins)
 
   # combine/union
   all_plugins = {}
   all_plugins.update(built_in_plugins)
   all_plugins.update(hub_plugins)
 
-  print("Length : %d" % len(all_plugins))
   # filter plugins using black list
-  for ignored in ignore_plugins:
-    if ignored in all_plugins:
-      all_plugins.pop(ignored)
-    if ignored.lower() in all_plugins:
-      all_plugins.pop(ignored.lower())
-  # print("########## everything #########")
-  # print(json.dumps(all_plugins))
-
+  #filter_blacklisted_plugins(args.plugins_to_ignore, all_plugins)
 
   # generate output
   # JSON
