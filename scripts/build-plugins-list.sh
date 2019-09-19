@@ -14,22 +14,23 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-SANDBOX_VERSION=${SANDBOX_VERSION:-5.1.2}
+# Note: Do not use SNAPSHOT versions here, since sandboxes don't exist at downloads.cask.co for SNAPSHOT versions
+SANDBOX_VERSION=${SANDBOX_VERSION:-6.0.0}
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 DOWNLOADS_DIR=$DIR/tmp
 SANDBOX_ZIP="cdap-sandbox-$SANDBOX_VERSION.zip"
 SANDBOX_ZIP_PATH=$DOWNLOADS_DIR/$SANDBOX_ZIP
 SANDBOX_DIR=$DOWNLOADS_DIR/cdap-sandbox
 SANDBOX_EXTRACTED_DIR=$SANDBOX_DIR/cdap-sandbox-$SANDBOX_VERSION
-MARKETPLACE_DIR=$DOWNLOADS_DIR/cdap-marketplace
+HUB_DIR=$DOWNLOADS_DIR/hub
 IGNORE_PLUGINS_FILE=$DIR/generate-plugins/.pluginsignore
 PLUGINS_FILE=$DIR/../data/en/plugins_list.json
 DEPS_FAILED=false
 DEPS=(python git unzip wget)
 
 _check_deps () {
-  if [[ ! $(git lfs) ]]; then
-    echo "You need to install 'git lfs'"
+  if [[ ! $(git) ]]; then
+    echo "You need to install 'git'"
     DEPS_FAILED=true
   fi
   for dep in "${DEPS[@]}"; do
@@ -68,9 +69,9 @@ download_sandbox () {
 }
 
 download_marketplace () {
-  if [[ ! -d "$MARKETPLACE_DIR" ]]; then
+  if [[ ! -d "$HUB_DIR" ]]; then
     log "Clonning cdap-marketplace"
-    git lfs clone https://github.com/cdapio/cask-marketplace.git $MARKETPLACE_DIR
+    git clone https://github.com/cdapio/hub.git $HUB_DIR
   else
     log "Marketplace found. Skip"
   fi
@@ -78,7 +79,7 @@ download_marketplace () {
 
 generate_plugins () {
   log "Generating plugins list"
-  python $DIR/generate-plugins/main.py $SANDBOX_EXTRACTED_DIR $MARKETPLACE_DIR -o $PLUGINS_FILE -i $IGNORE_PLUGINS_FILE
+  python $DIR/generate-plugins/main.py $SANDBOX_EXTRACTED_DIR $HUB_DIR -o $PLUGINS_FILE -i $IGNORE_PLUGINS_FILE
 }
 
 setup
