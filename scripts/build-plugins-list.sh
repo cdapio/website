@@ -14,7 +14,7 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-SANDBOX_VERSION=${SANDBOX_VERSION:-5.1.2}
+SANDBOX_VERSION=${SANDBOX_VERSION:-6.1.0-SNAPSHOT}
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 DOWNLOADS_DIR=$DIR/tmp
 SANDBOX_ZIP="cdap-sandbox-$SANDBOX_VERSION.zip"
