@@ -575,7 +575,7 @@
                   {
                     "buttonTitle": "CDAP 6.1.2 for CDH",
                     "id": "version-612-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.2.jar"
+                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.0.jar"
                   }
                 ],
                 "dropdownItems": [
@@ -716,12 +716,12 @@
                   {
                     "buttonTitle": "CDAP 6.1.2 for Ambari DEB",
                     "id": "version-612-mac",
-                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/6.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.1.2-1_all.deb"
+                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/6.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.1.1-1_all.deb"
                   },
                   {
                     "buttonTitle": "CDAP 6.1.2 for Ambari RPM",
                     "id": "version-612-mac",
-                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/6.1/rpms/cdap-ambari-service-6.1.2-1.noarch.rpm"
+                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/6.1/rpms/cdap-ambari-service-6.1.1-1.noarch.rpm"
                   }
                 ],
                 "dropdownItems": [
@@ -1019,7 +1019,7 @@
               "button": {
                 "id": "version-612-cdh",
                 "buttonTitle": "CDAP 6.1.2 for CDH",
-                "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.2.jar"
+                "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.0.jar"
               },
               "linkTitle": "Get CDAP for CDH",
               "linkId": "cloudera-612",
