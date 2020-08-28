@@ -5,7 +5,7 @@ aliases:
 - "/resources/case-studies"
 hero:
   title: Case Studies
-  body: "CDAP powers mission-critical use cases in a variety of industries such as healthcare, 
+  body: "CDAP powers a mission-critical use cases in a variety of industries such as healthcare, 
          telecommunications, financial services, media and entertainment, retail, etc."
   navigation: true
   background_color: "#404244"
