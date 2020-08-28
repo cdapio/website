@@ -98,8 +98,8 @@
                     "id": "linuxmac-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Linux/Mac",
-                    "id": "linuxmac-613"
+                    "linkTitle": "CDAP 6.1.4 Linux/Mac",
+                    "id": "linuxmac-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Linux/Mac",
@@ -118,16 +118,16 @@
               "details": "content/en/get-started/cards/linux-mac-621.md"
             },
             {
-              "id": "linuxmac-613",
+              "id": "linuxmac-614",
               "item": {
                 "title": "Linux/Mac OSX",
                 "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
                 "img": "/images/get-started/linux-mac.png",
                 "buttons": [
                   {
-                    "buttonTitle": "CDAP 6.1.3 for Linux/Mac",
-                    "id": "version-613-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-6.1.3.zip"
+                    "buttonTitle": "CDAP 6.1.4 for Linux/Mac",
+                    "id": "version-614-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-6.1.4.zip"
                   }
                 ],
                 "dropdownItems": [
@@ -137,8 +137,8 @@
                   },
                   {
                     "active": true,
-                    "linkTitle": "CDAP 6.1.3 Linux/Mac",
-                    "id": "linuxmac-613"
+                    "linkTitle": "CDAP 6.1.4 Linux/Mac",
+                    "id": "linuxmac-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Linux/Mac",
@@ -154,7 +154,7 @@
                   }
                 ]
               },
-              "details": "content/en/get-started/cards/linux-mac-613.md"
+              "details": "content/en/get-started/cards/linux-mac-614.md"
             },
             {
               "id": "linuxmac-600",
@@ -175,8 +175,8 @@
                     "id": "linuxmac-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Linux/Mac",
-                    "id": "linuxmac-613"
+                    "linkTitle": "CDAP 6.1.4 Linux/Mac",
+                    "id": "linuxmac-614"
                   },
                   {
                     "active": true,
@@ -214,8 +214,8 @@
                     "id": "linuxmac-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Linux/Mac",
-                    "id": "linuxmac-613"
+                    "linkTitle": "CDAP 6.1.4 Linux/Mac",
+                    "id": "linuxmac-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Linux/Mac",
@@ -253,8 +253,8 @@
                     "id": "linuxmac-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Linux/Mac",
-                    "id": "linuxmac-613"
+                    "linkTitle": "CDAP 6.1.4 Linux/Mac",
+                    "id": "linuxmac-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Linux/Mac",
@@ -294,8 +294,8 @@
                     "id": "vm-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 VM",
-                    "id": "vm-613"
+                    "linkTitle": "CDAP 6.1.4 VM",
+                    "id": "vm-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 VM",
@@ -314,15 +314,15 @@
               "details": "content/en/get-started/cards/vm-621.md"
             },
             {
-              "id": "vm-613",
+              "id": "vm-614",
               "item": {
                 "title": "CDAP for VM",
                 "img": "/images/get-started/vm.svg",
                 "buttons": [
                   {
-                    "buttonTitle": "CDAP 6.1.3 for VM",
-                    "id": "version-613-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-6.1.3.ova"
+                    "buttonTitle": "CDAP 6.1.4 for VM",
+                    "id": "version-614-mac",
+                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-6.1.4.ova"
                   }
                 ],
                 "dropdownItems": [
@@ -332,8 +332,8 @@
                   },
                   {
                     "active": true,
-                    "linkTitle": "CDAP 6.1.3 VM",
-                    "id": "vm-613"
+                    "linkTitle": "CDAP 6.1.4 VM",
+                    "id": "vm-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 VM",
@@ -349,7 +349,7 @@
                   }
                 ]
               },
-              "details": "content/en/get-started/cards/vm-613.md"
+              "details": "content/en/get-started/cards/vm-614.md"
             },
             {
               "id": "vm-600",
@@ -369,8 +369,8 @@
                     "id": "vm-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 VM",
-                    "id": "vm-613"
+                    "linkTitle": "CDAP 6.1.4 VM",
+                    "id": "vm-614"
                   },
                   {
                     "active": true,
@@ -407,8 +407,8 @@
                     "id": "vm-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 VM",
-                    "id": "vm-613"
+                    "linkTitle": "CDAP 6.1.4 VM",
+                    "id": "vm-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 VM",
@@ -446,8 +446,8 @@
                     "id": "vm-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 VM",
-                    "id": "vm-613"
+                    "linkTitle": "CDAP 6.1.4 VM",
+                    "id": "vm-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 VM",
@@ -486,8 +486,8 @@
                     "id": "docker-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Docker",
-                    "id": "docker-613"
+                    "linkTitle": "CDAP 6.1.4 Docker",
+                    "id": "docker-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Docker",
@@ -506,15 +506,15 @@
               "details": "content/en/get-started/cards/docker-621.md"
             },
             {
-              "id": "docker-613",
+              "id": "docker-614",
               "item": {
                 "title": "CDAP for Docker",
                 "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
                 "img": "/images/get-started/docker.png",
                 "buttons": [
                   {
-                    "buttonTitle": "CDAP 6.1.3 for Docker",
-                    "id": "version-613-mac",
+                    "buttonTitle": "CDAP 6.1.4 for Docker",
+                    "id": "version-614-mac",
                     "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
                   }
                 ],
@@ -525,8 +525,8 @@
                   },
                   {
                     "active": true,
-                    "linkTitle": "CDAP 6.1.3 Docker",
-                    "id": "docker-613"
+                    "linkTitle": "CDAP 6.1.4 Docker",
+                    "id": "docker-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Docker",
@@ -542,7 +542,7 @@
                   }
                 ]
               },
-              "details": "content/en/get-started/cards/docker-613.md"
+              "details": "content/en/get-started/cards/docker-614.md"
             },
             {
               "id": "docker-600",
@@ -563,8 +563,8 @@
                     "id": "docker-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Docker",
-                    "id": "docker-613"
+                    "linkTitle": "CDAP 6.1.4 Docker",
+                    "id": "docker-614"
                   },
                   {
                     "active": true,
@@ -602,8 +602,8 @@
                     "id": "docker-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Docker",
-                    "id": "docker-613"
+                    "linkTitle": "CDAP 6.1.4 Docker",
+                    "id": "docker-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Docker",
@@ -641,8 +641,8 @@
                     "id": "docker-621"
                   },
                   {
-                    "linkTitle": "CDAP 6.1.3 Docker",
-                    "id": "docker-613"
+                    "linkTitle": "CDAP 6.1.4 Docker",
+                    "id": "docker-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Docker",
@@ -729,24 +729,24 @@
           "overlayItems": [
             {
               "active": true,
-              "id": "cloudera-613",
-              "title": "CDAP 6.1.3 for CDH",
+              "id": "cloudera-614",
+              "title": "CDAP 6.1.4 for CDH",
               "description": "CDAP for Linux/MacOSX provides a complete environment for installing and running CDAP on your Linux or MacOSX desktop or laptop.",
               "item": {
                 "title": "CDAP for CDH",
                 "img": "/images/get-started/cdh.png",
                 "buttons": [
                   {
-                    "buttonTitle": "CDAP 6.1.3 for CDH",
-                    "id": "version-613-mac",
+                    "buttonTitle": "CDAP 6.1.4 for CDH",
+                    "id": "version-614-mac",
                     "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.0.jar"
                   }
                 ],
                 "dropdownItems": [
                   {
                     "active": true,
-                    "linkTitle": "CDAP 6.1.3 CDH",
-                    "id": "cloudera-613"
+                    "linkTitle": "CDAP 6.1.4 CDH",
+                    "id": "cloudera-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 CDH",
@@ -762,7 +762,7 @@
                   }
                 ]
               },
-              "details": "content/en/get-started/cards/cdh-613.md"
+              "details": "content/en/get-started/cards/cdh-614.md"
             },
             {
               "id": "cloudera-600",
@@ -780,8 +780,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 CDH",
-                    "id": "cloudera-613"
+                    "linkTitle": "CDAP 6.1.4 CDH",
+                    "id": "cloudera-614"
                   },
                   {
                     "active": true,
@@ -816,8 +816,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 CDH",
-                    "id": "cloudera-613"
+                    "linkTitle": "CDAP 6.1.4 CDH",
+                    "id": "cloudera-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 CDH",
@@ -851,8 +851,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 CDH",
-                    "id": "cloudera-613"
+                    "linkTitle": "CDAP 6.1.4 CDH",
+                    "id": "cloudera-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 CDH",
@@ -872,27 +872,27 @@
               "details": "content/en/get-started/cards/cdh-435.md"
             },
             {
-              "id": "ambari-613",
+              "id": "ambari-614",
               "item": {
                 "title": "CDAP for Ambari",
                 "img": "/images/get-started/ambari.png",
                 "buttons": [
                   {
-                    "buttonTitle": "CDAP 6.1.3 for Ambari DEB",
-                    "id": "version-613-mac",
-                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/6.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.1.3-1_all.deb"
+                    "buttonTitle": "CDAP 6.1.4 for Ambari DEB",
+                    "id": "version-614-mac",
+                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/6.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.1.4-1_all.deb"
                   },
                   {
-                    "buttonTitle": "CDAP 6.1.3 for Ambari RPM",
-                    "id": "version-613-mac",
-                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/6.1/rpms/cdap-ambari-service-6.1.3-1.noarch.rpm"
+                    "buttonTitle": "CDAP 6.1.4 for Ambari RPM",
+                    "id": "version-614-mac",
+                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/6.1/rpms/cdap-ambari-service-6.1.4-1.noarch.rpm"
                   }
                 ],
                 "dropdownItems": [
                   {
                     "active": true,
-                    "linkTitle": "CDAP 6.1.3 Ambari",
-                    "id": "ambari-613"
+                    "linkTitle": "CDAP 6.1.4 Ambari",
+                    "id": "ambari-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Ambari",
@@ -908,7 +908,7 @@
                   }
                 ]
               },
-              "details": "content/en/get-started/cards/ambari-613.md"
+              "details": "content/en/get-started/cards/ambari-614.md"
             },
             {
               "id": "ambari-600",
@@ -929,8 +929,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 Ambari",
-                    "id": "ambari-613"
+                    "linkTitle": "CDAP 6.1.4 Ambari",
+                    "id": "ambari-614"
                   },
                   {
                     "active": true,
@@ -969,8 +969,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 Ambari",
-                    "id": "ambari-613"
+                    "linkTitle": "CDAP 6.1.4 Ambari",
+                    "id": "ambari-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Ambari",
@@ -1006,8 +1006,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 Ambari",
-                    "id": "ambari-613"
+                    "linkTitle": "CDAP 6.1.4 Ambari",
+                    "id": "ambari-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 Ambari",
@@ -1027,25 +1027,25 @@
               "details": "content/en/get-started/cards/ambari-435.md"
             },
             {
-              "id": "mapr-613",
+              "id": "mapr-614",
               "item": {
                 "title": "CDAP for MapR",
                 "img": "/images/get-started/mapr.png",
                 "buttons": [
                   {
-                    "buttonTitle": "CDAP 6.1.3 DEB",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-6.1.3.tgz"
+                    "buttonTitle": "CDAP 6.1.4 DEB",
+                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-6.1.4.tgz"
                   },
                   {
-                    "buttonTitle": "CDAP 6.1.3 RPM",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-6.1.3.tgz"
+                    "buttonTitle": "CDAP 6.1.4 RPM",
+                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-6.1.4.tgz"
                   }
                 ],
                 "dropdownItems": [
                   {
                     "active": true,
-                    "linkTitle": "CDAP 6.1.3 MapR",
-                    "id": "mapr-613"
+                    "linkTitle": "CDAP 6.1.4 MapR",
+                    "id": "mapr-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 MapR",
@@ -1061,7 +1061,7 @@
                   }
                 ]
               },
-              "details": "content/en/get-started/cards/mapr-613.md"
+              "details": "content/en/get-started/cards/mapr-614.md"
             },
             {
               "id": "mapr-600",
@@ -1080,8 +1080,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 MapR",
-                    "id": "mapr-613"
+                    "linkTitle": "CDAP 6.1.4 MapR",
+                    "id": "mapr-614"
                   },
                   {
                     "active": true,
@@ -1117,8 +1117,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 MapR",
-                    "id": "mapr-613"
+                    "linkTitle": "CDAP 6.1.4 MapR",
+                    "id": "mapr-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 MapR",
@@ -1154,8 +1154,8 @@
                 ],
                 "dropdownItems": [
                   {
-                    "linkTitle": "CDAP 6.1.3 MapR",
-                    "id": "mapr-613"
+                    "linkTitle": "CDAP 6.1.4 MapR",
+                    "id": "mapr-614"
                   },
                   {
                     "linkTitle": "CDAP 6.0.0 MapR",
@@ -1181,17 +1181,17 @@
               "description": "To add CDAP to your Cloudera Manager installations, use the CDAP Custom Service Descriptor (CSD).",
               "img": "/images/get-started/cdh.png",
               "button": {
-                "id": "version-613-cdh",
-                "buttonTitle": "CDAP 6.1.3 for CDH",
+                "id": "version-614-cdh",
+                "buttonTitle": "CDAP 6.1.4 for CDH",
                 "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.0.jar"
               },
               "linkTitle": "Get CDAP for CDH",
-              "linkId": "cloudera-613",
+              "linkId": "cloudera-614",
               "link": "",
               "overlayPane": {
-                "id": "cloudera-613",
-                "linkTitle": "CDAP 6.1.3 CDH",
-                "title": "CDAP 6.1.3 for CDH",
+                "id": "cloudera-614",
+                "linkTitle": "CDAP 6.1.4 CDH",
+                "title": "CDAP 6.1.4 for CDH",
                 "active": true
               }
             },
@@ -1200,12 +1200,12 @@
               "description": "To use CDAP within your Hortonworks Data Platform (HDP) environment, use Apache Ambari.",
               "img": "/images/get-started/ambari.png",
               "linkTitle": "Get CDAP for Ambari",
-              "linkId": "ambari-613",
+              "linkId": "ambari-614",
               "link": "",
               "overlay_pane": {
-                "id": "version-613-am",
-                "linkTitle": "CDAP 6.1.3 Ambari",
-                "title": "CDAP 6.1.3 for Ambari"
+                "id": "version-614-am",
+                "linkTitle": "CDAP 6.1.4 Ambari",
+                "title": "CDAP 6.1.4 for Ambari"
               }
             },
             {
@@ -1213,12 +1213,12 @@
               "description": "If you are using MapR, BigTop or the Apache Hadoop, use RPM and Debian distributions of CDAP.",
               "img": "/images/get-started/mapr.png",
               "linkTitle": "Get CDAP for RPM/DEB",
-              "linkId": "mapr-613",
+              "linkId": "mapr-614",
               "link": "",
               "overlayPane": {
-                "id": "version-613-mapr",
-                "linkTitle": "CDAP 6.1.3 MapR",
-                "title": "CDAP 6.1.3 for MapR"
+                "id": "version-614-mapr",
+                "linkTitle": "CDAP 6.1.4 MapR",
+                "title": "CDAP 6.1.4 for MapR"
               }
             }
           ]
