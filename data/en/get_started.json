@@ -88,7 +88,7 @@
                   {
                     "buttonTitle": "CDAP 6.2.2 for Linux/Mac",
                     "id": "version-622-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-6.2.2.zip"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-6.2.2.zip"
                   }
                 ],
                 "dropdownItems": [
@@ -127,7 +127,7 @@
                   {
                     "buttonTitle": "CDAP 6.1.4 for Linux/Mac",
                     "id": "version-614-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-6.1.4.zip"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-6.1.4.zip"
                   }
                 ],
                 "dropdownItems": [
@@ -166,7 +166,7 @@
                   {
                     "buttonTitle": "CDAP 6.0.0 for Linux/Mac",
                     "id": "version-600-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-6.0.0.zip"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-6.0.0.zip"
                   }
                 ],
                 "dropdownItems": [
@@ -205,7 +205,7 @@
                   {
                     "buttonTitle": "CDAP 5.1.2 for Linux/Mac",
                     "id": "version-512-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-5.1.2.zip"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-5.1.2.zip"
                   }
                 ],
                 "dropdownItems": [
@@ -244,7 +244,7 @@
                   {
                     "buttonTitle": "CDAP 4.3.5 for Linux/Mac",
                     "id": "version-512-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-4.3.5.zip"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-4.3.5.zip"
                   }
                 ],
                 "dropdownItems": [
@@ -284,7 +284,7 @@
                   {
                     "buttonTitle": "CDAP 6.2.2 for VM",
                     "id": "version-622-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-6.2.2.ova"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-6.2.2.ova"
                   }
                 ],
                 "dropdownItems": [
@@ -322,7 +322,7 @@
                   {
                     "buttonTitle": "CDAP 6.1.4 for VM",
                     "id": "version-614-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-6.1.4.ova"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-6.1.4.ova"
                   }
                 ],
                 "dropdownItems": [
@@ -360,7 +360,7 @@
                   {
                     "buttonTitle": "CDAP 6.0.0 for VM",
                     "id": "version-600-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-6.0.0.ova"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-6.0.0.ova"
                   }
                 ],
                 "dropdownItems": [
@@ -398,7 +398,7 @@
                   {
                     "buttonTitle": "CDAP 5.1.2 for VM",
                     "id": "version-512-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-5.1.2.ova"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-5.1.2.ova"
                   }
                 ],
                 "dropdownItems": [
@@ -437,7 +437,7 @@
                   {
                     "buttonTitle": "CDAP 4.3.5 for VM",
                     "id": "version-512-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-4.3.5.ova"
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-4.3.5.ova"
                   }
                 ],
                 "dropdownItems": [
@@ -670,7 +670,7 @@
               "button": {
                 "buttonTitle": "CDAP 6.2.2 for Linux/Mac",
                 "id": "version-622-mac",
-                "buttonHref": "https://downloads.cask.co/cdap-sandbox/cdap-sandbox-6.2.2.zip"
+                "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-6.2.2.zip"
               },
               "linkTitle": "Get CDAP for Linux/Mac",
               "linkId": "linuxmac-622",
@@ -688,7 +688,7 @@
                 "active": true,
                 "buttonTitle": "CDAP 6.2.2 for VM",
                 "id": "version-622-vm",
-                "buttonHref": "https://downloads.cask.co/cdap-sandbox-vm/cdap-sandbox-6.2.2.ova"
+                "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-6.2.2.ova"
               },
               "linkTitle": "Get CDAP for VM",
               "linkId": "vm-622",
@@ -739,7 +739,7 @@
                   {
                     "buttonTitle": "CDAP 6.1.4 for CDH",
                     "id": "version-614-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.0.jar"
+                    "buttonHref": "https://downloads.cdap.io/cdap-csd/CDAP-6.1.0.jar"
                   }
                 ],
                 "dropdownItems": [
@@ -775,7 +775,7 @@
                   {
                     "buttonTitle": "CDAP 6.0.0 for CDH",
                     "id": "version-600-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.0.0.jar"
+                    "buttonHref": "https://downloads.cdap.io/cdap-csd/CDAP-6.0.0.jar"
                   }
                 ],
                 "dropdownItems": [
@@ -811,7 +811,7 @@
                   {
                     "buttonTitle": "CDAP 5.1.2 for CDH",
                     "id": "version-512-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-5.1.0.jar"
+                    "buttonHref": "https://downloads.cdap.io/cdap-csd/CDAP-5.1.0.jar"
                   }
                 ],
                 "dropdownItems": [
@@ -846,7 +846,7 @@
                   {
                     "buttonTitle": "CDAP 4.3.5 for CDH",
                     "id": "version-512-mac",
-                    "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-4.3.1.jar"
+                    "buttonHref": "https://downloads.cdap.io/cdap-csd/CDAP-4.3.1.jar"
                   }
                 ],
                 "dropdownItems": [
@@ -880,12 +880,12 @@
                   {
                     "buttonTitle": "CDAP 6.1.4 for Ambari DEB",
                     "id": "version-614-mac",
-                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/6.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.1.4-1_all.deb"
+                    "buttonHref": "https://repository.cdap.io/ubuntu/precise/amd64/cdap/6.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.1.4-1_all.deb"
                   },
                   {
                     "buttonTitle": "CDAP 6.1.4 for Ambari RPM",
                     "id": "version-614-mac",
-                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/6.1/rpms/cdap-ambari-service-6.1.4-1.noarch.rpm"
+                    "buttonHref": "https://repository.cdap.io/centos/6/x86_64/cdap/6.1/rpms/cdap-ambari-service-6.1.4-1.noarch.rpm"
                   }
                 ],
                 "dropdownItems": [
@@ -919,12 +919,12 @@
                   {
                     "buttonTitle": "CDAP 6.0.0 for Ambari DEB",
                     "id": "version-600-mac",
-                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/6.0/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.0.0-1_all.deb"
+                    "buttonHref": "https://repository.cdap.io/ubuntu/precise/amd64/cdap/6.0/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_6.0.0-1_all.deb"
                   },
                   {
                     "buttonTitle": "CDAP 6.0.0 for Ambari RPM",
                     "id": "version-600-mac",
-                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/6.0/rpms/cdap-ambari-service-6.0.0-1.noarch.rpm"
+                    "buttonHref": "https://repository.cdap.io/centos/6/x86_64/cdap/6.0/rpms/cdap-ambari-service-6.0.0-1.noarch.rpm"
                   }
                 ],
                 "dropdownItems": [
@@ -959,12 +959,12 @@
                   {
                     "buttonTitle": "CDAP 5.1.2 for Ambari DEB",
                     "id": "version-512-mac",
-                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/5.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_5.1.0-1_all.deb"
+                    "buttonHref": "https://repository.cdap.io/ubuntu/precise/amd64/cdap/5.1/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_5.1.0-1_all.deb"
                   },
                   {
                     "buttonTitle": "CDAP 5.1.2 for Ambari RPM",
                     "id": "version-512-mac",
-                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/5.1/rpms/cdap-ambari-service-5.1.0-1.noarch.rpm"
+                    "buttonHref": "https://repository.cdap.io/centos/6/x86_64/cdap/5.1/rpms/cdap-ambari-service-5.1.0-1.noarch.rpm"
                   }
                 ],
                 "dropdownItems": [
@@ -997,11 +997,11 @@
                 "buttons": [
                   {
                     "buttonTitle": "CDAP 4.3.5 for Ambari DEB",
-                    "buttonHref": "https://repository.cask.co/ubuntu/precise/amd64/cdap/4.3/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_4.3.0-1_all.deb"
+                    "buttonHref": "https://repository.cdap.io/ubuntu/precise/amd64/cdap/4.3/pool/precise/cdap/c/cdap-ambari-service/cdap-ambari-service_4.3.0-1_all.deb"
                   },
                   {
                     "buttonTitle": "CDAP 4.3.5 for Ambari RPM",
-                    "buttonHref": "https://repository.cask.co/centos/6/x86_64/cdap/4.3/rpms/cdap-ambari-service-4.3.0-1.noarch.rpm"
+                    "buttonHref": "https://repository.cdap.io/centos/6/x86_64/cdap/4.3/rpms/cdap-ambari-service-4.3.0-1.noarch.rpm"
                   }
                 ],
                 "dropdownItems": [
@@ -1034,11 +1034,11 @@
                 "buttons": [
                   {
                     "buttonTitle": "CDAP 6.1.4 DEB",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-6.1.4.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-6.1.4.tgz"
                   },
                   {
                     "buttonTitle": "CDAP 6.1.4 RPM",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-6.1.4.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-6.1.4.tgz"
                   }
                 ],
                 "dropdownItems": [
@@ -1071,11 +1071,11 @@
                 "buttons": [
                   {
                     "buttonTitle": "CDAP 6.0.0 DEB",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-6.0.0.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-6.0.0.tgz"
                   },
                   {
                     "buttonTitle": "CDAP 6.0.0 RPM",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-6.0.0.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-6.0.0.tgz"
                   }
                 ],
                 "dropdownItems": [
@@ -1108,11 +1108,11 @@
                 "buttons": [
                   {
                     "buttonTitle": "CDAP 5.1.2 DEB",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-5.1.2.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-5.1.2.tgz"
                   },
                   {
                     "buttonTitle": "CDAP 5.1.2 RPM",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-5.1.2.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-5.1.2.tgz"
                   }
                 ],
                 "dropdownItems": [
@@ -1145,11 +1145,11 @@
                 "buttons": [
                   {
                     "buttonTitle": "CDAP 4.3.5 DEB",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-4.3.5.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-deb-bundle/cdap-distributed-deb-bundle-4.3.5.tgz"
                   },
                   {
                     "buttonTitle": "CDAP 4.3.5 RPM",
-                    "buttonHref": "https://downloads.cask.co/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-4.3.5.tgz"
+                    "buttonHref": "https://downloads.cdap.io/cdap-distributed-rpm-bundle/cdap-distributed-rpm-bundle-4.3.5.tgz"
                   }
                 ],
                 "dropdownItems": [
@@ -1183,7 +1183,7 @@
               "button": {
                 "id": "version-614-cdh",
                 "buttonTitle": "CDAP 6.1.4 for CDH",
-                "buttonHref": "https://downloads.cask.co/cdap-csd/CDAP-6.1.0.jar"
+                "buttonHref": "https://downloads.cdap.io/cdap-csd/CDAP-6.1.0.jar"
               },
               "linkTitle": "Get CDAP for CDH",
               "linkId": "cloudera-614",
