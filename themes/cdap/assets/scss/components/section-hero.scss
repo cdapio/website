@@ -311,9 +311,15 @@ section.hero.opened {
     img {
       margin-top: 29px;
       margin-bottom: 40px;
-
+      width: 60%;
+      
       @include media-breakpoint-down(md) {
-        display: none;
+        width: 50%;
+        // display: none;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
       }
     }
   }

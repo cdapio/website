@@ -71,6 +71,12 @@
             {{ end }}
           </div>
           <div class="hero-panel__info col-lg-6 col-md-12">
+            <p class="hero-panel__paragraph not-apply text-center">
+              {{ .Params.hero.adaptivescale_intro | markdownify }} 
+                <a href="{{.Params.hero.adaptivescale_link}}">
+                  <img src="{{ .Params.hero.adaptivescale_img }}" class="hero-image"/>
+                </a>
+            </p>
             {{ with .Params.hero.image }}
               <img src="/{{ . }}">
             {{ end }}
