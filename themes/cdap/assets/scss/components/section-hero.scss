@@ -311,11 +311,10 @@ section.hero.opened {
     img {
       margin-top: 29px;
       margin-bottom: 40px;
-      width: 60%;
+      width: 40%;
       
       @include media-breakpoint-down(md) {
         width: 50%;
-        // display: none;
       }
 
       @include media-breakpoint-down(sm) {

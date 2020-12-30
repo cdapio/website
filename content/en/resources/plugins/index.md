@@ -10,7 +10,7 @@ hero:
   background_color: "#012F4B"
   background_image: /images/hero-background-blue.svg
   background_image_secondary: /images/hero-background-blue.svg
-  adaptivescale_intro: "An interactive hub experience powered by"
+  adaptivescale_intro: "Try the new interactive CDAP plugin Hub experience powered by"
   adaptivescale_link: "https://adaptivescale.com"
   adaptivescale_img: /images/AdaptiveScale_Logo_white.png
 filter_title: Filter By
