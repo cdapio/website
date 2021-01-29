@@ -19,10 +19,10 @@
           "items": [
             {
               "title": "Google Cloud",
-              "description": "Spin up the CDAP Cloud Sandbox on the Google Cloud Marketplace.",
+              "description": "Spin up the Developer Edition of Google Cloud Data Fusion (powered by CDAP).",
               "img": "/images/pipelines-plugins/google-cloud-platform.png",
-              "linkTitle": "Go to Cloud Marketplace",
-              "link": "https://console.cloud.google.com/marketplace/details/click-to-deploy-images/cdap"
+              "linkTitle": "Go to Google Cloud Console",
+              "link": "https://console.cloud.google.com/data-fusion/"
             },
             {
               "title": " Amazon Web Service",
