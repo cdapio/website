@@ -79,6 +79,53 @@
           "overlayItems": [
             {
               "active": true,
+              "id": "linuxmac-640",
+              "item": {
+                "title": "Linux/Mac OSX",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/linux-mac.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 6.4.0 for Linux/Mac",
+                    "id": "version-640-mac",
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-6.4.0.zip"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                    "id": "linuxmac-640"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.3.0 Linux/Mac",
+                    "id": "linuxmac-630"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.2.3 Linux/Mac",
+                    "id": "linuxmac-623"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.1.4 Linux/Mac",
+                    "id": "linuxmac-614"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.0.0 Linux/Mac",
+                    "id": "linuxmac-600"
+                  },
+                  {
+                    "linkTitle": "CDAP 5.1.2 Linux/Mac",
+                    "id": "linuxmac-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 Linux/Mac",
+                    "id": "linuxmac-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/linux-mac-640.md"
+            },
+            {
               "id": "linuxmac-630",
               "item": {
                 "title": "Linux/Mac OSX",
@@ -92,6 +139,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                    "id": "linuxmac-640"
+                  },
                   {
                     "active": true,
                     "linkTitle": "CDAP 6.3.0 Linux/Mac",
@@ -136,6 +187,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                    "id": "linuxmac-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 Linux/Mac",
                     "id": "linuxmac-630"
                   },
@@ -178,6 +233,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                    "id": "linuxmac-640"
+                  },
                   {
                     "linkTitle": "CDAP 6.3.0 Linux/Mac",
                     "id": "linuxmac-630"
@@ -222,6 +281,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                    "id": "linuxmac-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 Linux/Mac",
                     "id": "linuxmac-630"
                   },
@@ -264,6 +327,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                    "id": "linuxmac-640"
+                  },
                   {
                     "linkTitle": "CDAP 6.3.0 Linux/Mac",
                     "id": "linuxmac-630"
@@ -308,6 +375,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                    "id": "linuxmac-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 Linux/Mac",
                     "id": "linuxmac-630"
                   },
@@ -339,6 +410,52 @@
               "details": "content/en/get-started/cards/linux-mac-435.md"
             },
             {
+              "id": "vm-640",
+              "item": {
+                "title": "CDAP for VM",
+                "img": "/images/get-started/vm.svg",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 6.4.0 for VM",
+                    "id": "version-640-mac",
+                    "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-6.4.0.ova"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 6.4.0 VM",
+                    "id": "vm-640"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.3.0 VM",
+                    "id": "vm-630"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.2.3 VM",
+                    "id": "vm-623"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.1.4 VM",
+                    "id": "vm-614"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.0.0 VM",
+                    "id": "vm-600"
+                  },
+                  {
+                    "linkTitle": "CDAP 5.1.2 VM",
+                    "id": "vm-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 VM",
+                    "id": "vm-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/vm-640.md"
+            },
+            {
               "id": "vm-630",
               "item": {
                 "title": "CDAP for VM",
@@ -351,6 +468,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 VM",
+                    "id": "vm-640"
+                  },
                   {
                     "active": true,
                     "linkTitle": "CDAP 6.3.0 VM",
@@ -394,6 +515,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 VM",
+                    "id": "vm-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 VM",
                     "id": "vm-630"
                   },
@@ -435,6 +560,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 VM",
+                    "id": "vm-640"
+                  },
                   {
                     "linkTitle": "CDAP 6.3.0 VM",
                     "id": "vm-630"
@@ -478,6 +607,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 VM",
+                    "id": "vm-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 VM",
                     "id": "vm-630"
                   },
@@ -519,6 +652,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 VM",
+                    "id": "vm-640"
+                  },
                   {
                     "linkTitle": "CDAP 6.3.0 VM",
                     "id": "vm-630"
@@ -563,6 +700,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 VM",
+                    "id": "vm-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 VM",
                     "id": "vm-630"
                   },
@@ -592,6 +733,53 @@
               "details": "content/en/get-started/cards/vm-435.md"
             },
             {
+              "id": "docker-640",
+              "item": {
+                "title": "CDAP for Docker",
+                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
+                "img": "/images/get-started/docker.png",
+                "buttons": [
+                  {
+                    "buttonTitle": "CDAP 6.4.0 for Docker",
+                    "id": "version-640-mac",
+                    "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
+                  }
+                ],
+                "dropdownItems": [
+                  {
+                    "active": true,
+                    "linkTitle": "CDAP 6.4.0 Docker",
+                    "id": "docker-640"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.3.0 Docker",
+                    "id": "docker-630"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.2.3 Docker",
+                    "id": "docker-623"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.1.4 Docker",
+                    "id": "docker-614"
+                  },
+                  {
+                    "linkTitle": "CDAP 6.0.0 Docker",
+                    "id": "docker-600"
+                  },
+                  {
+                    "linkTitle": "CDAP 5.1.2 Docker",
+                    "id": "docker-512"
+                  },
+                  {
+                    "linkTitle": "CDAP 4.3.5 Docker",
+                    "id": "docker-435"
+                  }
+                ]
+              },
+              "details": "content/en/get-started/cards/docker-640.md"
+            },
+            {
               "id": "docker-630",
               "item": {
                 "title": "CDAP for Docker",
@@ -605,6 +793,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 Docker",
+                    "id": "docker-640"
+                  },
                   {
                     "active": true,
                     "linkTitle": "CDAP 6.3.0 Docker",
@@ -649,6 +841,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 Docker",
+                    "id": "docker-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 Docker",
                     "id": "docker-630"
                   },
@@ -691,6 +887,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 Docker",
+                    "id": "docker-640"
+                  },
                   {
                     "linkTitle": "CDAP 6.3.0 Docker",
                     "id": "docker-630"
@@ -735,6 +935,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 Docker",
+                    "id": "docker-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 Docker",
                     "id": "docker-630"
                   },
@@ -777,6 +981,10 @@
                   }
                 ],
                 "dropdownItems": [
+                  {
+                    "linkTitle": "CDAP 6.4.0 Docker",
+                    "id": "docker-640"
+                  },
                   {
                     "linkTitle": "CDAP 6.3.0 Docker",
                     "id": "docker-630"
@@ -821,6 +1029,10 @@
                 ],
                 "dropdownItems": [
                   {
+                    "linkTitle": "CDAP 6.4.0 Docker",
+                    "id": "docker-640"
+                  },
+                  {
                     "linkTitle": "CDAP 6.3.0 Docker",
                     "id": "docker-630"
                   },
@@ -856,16 +1068,16 @@
               "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
               "img": "/images/get-started/linux-mac.png",
               "button": {
-                "buttonTitle": "CDAP 6.3.0 for Linux/Mac",
-                "id": "version-630-mac",
-                "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-6.3.0.zip"
+                "buttonTitle": "CDAP 6.4.0 for Linux/Mac",
+                "id": "version-640-mac",
+                "buttonHref": "https://downloads.cdap.io/cdap-sandbox/cdap-sandbox-6.4.0.zip"
               },
               "linkTitle": "Get CDAP for Linux/Mac",
-              "linkId": "linuxmac-630",
+              "linkId": "linuxmac-640",
               "overlayPane": {
-                "id": "version-630-mac",
-                "linkTitle": "CDAP 6.3.0 Linux/Mac",
-                "title": "CDAP 6.3.0 for Linux/Mac"
+                "id": "version-640-mac",
+                "linkTitle": "CDAP 6.4.0 Linux/Mac",
+                "title": "CDAP 6.4.0 for Linux/Mac"
               }
             },
             {
@@ -874,16 +1086,16 @@
               "img": "/images/get-started/vm.svg",
               "buttons": {
                 "active": true,
-                "buttonTitle": "CDAP 6.3.0 for VM",
-                "id": "version-630-vm",
-                "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-6.3.0.ova"
+                "buttonTitle": "CDAP 6.4.0 for VM",
+                "id": "version-640-vm",
+                "buttonHref": "https://downloads.cdap.io/cdap-sandbox-vm/cdap-sandbox-6.4.0.ova"
               },
               "linkTitle": "Get CDAP for VM",
-              "linkId": "vm-630",
+              "linkId": "vm-640",
               "overlayPane": {
-                "id": "version-630-vm",
-                "linkTitle": "CDAP 6.3.0 VM",
-                "title": "CDAP 6.3.0 for VM"
+                "id": "version-640-vm",
+                "linkTitle": "CDAP 6.4.0 VM",
+                "title": "CDAP 6.4.0 for VM"
               }
             },
             {
@@ -892,17 +1104,17 @@
               "img": "/images/get-started/docker.png",
               "buttons": {
                 "active": true,
-                "id": "version-630-docker",
-                "buttonTitle": "Get CDAP 6.3.0 for Docker",
+                "id": "version-640-docker",
+                "buttonTitle": "Get CDAP 6.4.0 for Docker",
                 "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
               },
               "linkTitle": "Get CDAP for Docker",
-              "linkId": "docker-630",
+              "linkId": "docker-640",
               "link": "",
               "overlayPane": {
-                "id": "version-630-docker",
-                "linkTitle": "CDAP 6.3.0 Docker",
-                "title": "CDAP 6.3.0 for Linux/Mac"
+                "id": "version-640-docker",
+                "linkTitle": "CDAP 6.4.0 Docker",
+                "title": "CDAP 6.4.0 for Linux/Mac"
               }
             }
           ]
