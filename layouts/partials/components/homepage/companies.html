@@ -21,48 +21,32 @@
       <h2 class="companies__title">
         {{ .title }}
       </h2>
-      <a href="{{ .linkURL }}">{{ .linkTitle }}</a>
+      <!--a href="{{ .linkURL }}">{{ .linkTitle }}</a-->
     </div>
   </div>
 </div>
 <div class="container">
-  <div class="row justify-content-between mt-4 no-gutters">
-    {{ range first 4 .items }}
-    <div class="companies__custom d-flex align-items-center my-4">
-      <a href="{{ .url }}" target="_blank">
-        <img src="images/{{ .image }}" class="companies__image"/>
-      </a>
-    </div>
-    {{ end }}
-  </div>
-</div>
-<div class="container">
-  <div class="companies__wrapper mt-0 mt-sm-5">
-    <div class="collapse" id="companies">
-      <div class="row justify-content-between no-gutters">
-        {{ range after 4 .items }}
-        <div class="companies__custom d-flex align-items-center my-4">
-          <a href="{{ .url }}" target="_blank">
-            <img src="images/{{ .image }}" class="companies__image"/>
-          </a>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</div>
-{{ $list := .items }}
-{{ $len := (len $list) }}
-{{ if gt $len 4 }}
-<div class="container">
-  <div class="row">
-    <div class="col-12 text-center">
-      <div class="companies__wrapper">
-        <a class="companies__cta mt-3" id="toggleBtn" data-toggle="collapse" data-target="#companies" aria-expanded="false"
-             aria-controls="companies">Show more
+  <div class="row mt-4">
+    {{range $index, $items := .items}}
+      <div class="col-xs-12 col-sm-6 col-lg-3 my-4">
+        {{$desktopClasses := newScratch}}
+        {{$tabletClasses := newScratch}}
+
+        {{$desktopClasses.Set "0" "justify-content-lg-start"}}
+        {{$desktopClasses.Set "1" "justify-content-lg-center"}}
+        {{$desktopClasses.Set "2" "justify-content-lg-center"}}
+        {{$desktopClasses.Set "3" "justify-content-lg-end"}}
+
+        {{$tabletClasses.Set "0" "justify-content-sm-start"}}
+        {{$tabletClasses.Set "1" "justify-content-sm-end"}}
+
+        {{$desktopClassName := $desktopClasses.Get (string (mod $index 4))}}
+        {{$tabletClassName := $tabletClasses.Get (string (mod $index 2))}}
+
+        <a href="{{ .url }}" target="_blank" class="d-flex justify-content-center {{$desktopClassName}} {{$tabletClassName}}">
+          <img src="images/{{ .image }}" class="companies__image"/>
         </a>
       </div>
-    </div>
+    {{end}}
   </div>
 </div>
-{{ end }}

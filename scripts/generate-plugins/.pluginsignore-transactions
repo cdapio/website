@@ -1,0 +1,15 @@
+TPFSParquet
+DynTable
+TPFSAvro
+SnapshotAvro
+ParquetDynamicPartitionedDataset
+SnapshotText
+SnapshotAvro
+SnapshotParquet
+KVTable
+AvroDynamicPartitionedDataset
+Cube
+DynamicMultiFileset
+Table
+ORCDynamicPartitionedDataset
+TPFSOrc

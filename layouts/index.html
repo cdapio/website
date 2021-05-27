@@ -79,7 +79,7 @@
 </section>
 
 <section class="testimonials">
-  {{ with $testimonials := $data.homepage.testimonials }}
+<!--  {{ with $testimonials := $data.homepage.testimonials }}
   {{ range $testimonials }}
   {{ partial "components/homepage/testimonials" . }}
   {{ end }}
@@ -89,11 +89,12 @@
       {{ partial "components/homepage/get-started-button" . }}
     </div>
   </div>
+  -->
 </section>
 
 <section class="companies">
   {{ with $companies := $data.homepage.companies }}
-  {{ partial "components/homepage/companies" . }}
+    {{ partial "components/homepage/companies" . }}
   {{ end }}
 </section>
 

@@ -21,7 +21,7 @@ const dropdownProductionItems = document.querySelectorAll('.production-nav-js');
 const dropDownCta = document.querySelector('.dropdown-toggle');
 const panesEvaluation = document.querySelectorAll('.evaluation-wrapper-js');
 const panesProduction = document.querySelectorAll('.production-wrapper-js');
-let persistBtnText = dropDownCta.innerText.trim();
+let persistBtnText = dropDownCta ? dropDownCta.innerText.trim() : '';
 let datasetContext = {};
 
 function handleDropdownItemClick(items, panes, callback) {

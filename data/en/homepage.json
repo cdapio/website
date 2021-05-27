@@ -139,11 +139,9 @@
   ],
   "companies": {
     "title": "Partners",
-    "linkTitle": "Read case studies",
-    "linkURL": "/resources/case-studies/",
     "items": [
       {
-        "url": "https://google.com",
+        "url": "https://cloud.google.com",
         "image": "google-logo.png"
       },
       {
@@ -155,8 +153,24 @@
         "image": "cv-logo@3x.png"
       },
       {
-        "url": "https://www.publicissapient.com/",
-        "image": "publicissapient.svg"
+        "url": "http://adaptivescale.com",
+        "image": "AdaptiveScale_Logo.png"
+      },
+      {
+        "url": "https://www.cirus.io/",
+        "image": "cirus_logo.png"
+      },
+      {
+        "url": "https://cogniflare.io/",
+        "image": "Cogniflare_logo.png"
+      },
+      {
+        "url": "https://www.quantiphi.com/",
+        "image": "quantiphi_logo.png"
+      },
+      {
+        "url": "https://www.pythian.com/",
+        "image": "pythian.png"
       },
       {
         "url": "https://www.amaris.ai/",
