@@ -1053,7 +1053,7 @@
                 "buttons": [
                   {
                     "buttonTitle": "CDAP 6.7.1 for Docker",
-                    "id": "version-670-docker",
+                    "id": "version-671-docker",
                     "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
                   }
                 ],
@@ -1556,24 +1556,6 @@
                 "id": "version-671-mac",
                 "linkTitle": "CDAP 6.7.1 Linux/Mac",
                 "title": "CDAP 6.7.1 for Linux/Mac"
-              }
-            },
-            {
-              "title": "VM",
-              "description": "Download a pre-built virtual machine for trying out CDAP on your Linux, Mac OSX or Windows machines.",
-              "img": "/images/get-started/vm.svg",
-              "buttons": {
-                "active": true,
-                "buttonTitle": "CDAP 6.7.1 for VM",
-                "id": "version-670-vm",
-                "buttonHref": "https://github.com/cdapio/cdap-build/releases/download/v6.7.1/cdap-sandbox-6.7.1.ova"
-              },
-              "linkTitle": "Get CDAP for VM",
-              "linkId": "vm-671",
-              "overlayPane": {
-                "id": "version-671-vm",
-                "linkTitle": "CDAP 6.7.0 VM",
-                "title": "CDAP 6.7.0 for VM"
               }
             },
             {
