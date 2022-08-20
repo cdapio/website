@@ -6,7 +6,7 @@ CDAP Docker provides a clean, contained environment for trying out CDAP on your 
 
 ####  What's New:
 
-* View [release notes](https://cdap.atlassian.net/wiki/spaces/DOCS/pages/1782087786/CDAP+Release+6.7.1)
+* View [release notes](https://cdap.atlassian.net/wiki/spaces/DOCS/pages/1808007171/CDAP+Release+6.7.1)
 
 #### System Requirements
 

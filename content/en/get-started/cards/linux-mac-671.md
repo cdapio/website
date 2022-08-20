@@ -6,7 +6,7 @@ CDAP for Linux/MacOSX provides a complete environment for installing and running
 
 ####  What's New:
 
-* View [release notes](https://cdap.atlassian.net/wiki/spaces/DOCS/pages/1782087786/CDAP+Release+6.7.1)
+* View [release notes](https://cdap.atlassian.net/wiki/spaces/DOCS/pages/1808007171/CDAP+Release+6.7.1)
 
 #### System Requirements
 
