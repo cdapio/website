@@ -16,13 +16,6 @@
               "href": "https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/cdap-user"
             },
             {
-              "title": "Slack",
-              "icon": "/images/icons/slack.jpg",
-              "height": "57px",
-              "width": "85px",
-              "href": "https://cdap-users.herokuapp.com/"
-            },
-            {
               "title": "Stack Overflow",
               "icon": "/images/icons/stackoverflow.png",
               "height": "61px",
