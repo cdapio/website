@@ -149,8 +149,9 @@ def parse_plugin_json(plugin_json_file):
   properties = data['properties']
   parsed_plugins = OrderedDict()
   for key in properties:
+    # dictionary that this method will create
     # {
-    #   "<plugin-name>": {
+    #   "<plugin-name>-<plugin-type>": {
     #     "name": "<plugin-name>",
     #     "type": "<plugin-type>",
     #     "description": "<short description>",
@@ -159,8 +160,14 @@ def parse_plugin_json(plugin_json_file):
     # }
     splits = key.split('.')
     config_type = splits[0]
-    plugin_name_and_type = splits[1].split('-')
+    plugin_identifier = splits[1]
+    plugin_name_and_type = plugin_identifier.split('-')
     plugin_name = plugin_name_and_type[0]
+
+    # Filter blacklisted plugins
+    if plugin_name in blacklisted_plugins:
+      continue;
+
     # this should never happen. It only happens when a plugin file is not named correctly.
     # that scenario points to a different bug, which should be fixed.
     # e.g. https://github.com/data-integrations/change-data-capture/pull/1
@@ -170,51 +177,51 @@ def parse_plugin_json(plugin_json_file):
       plugin_type = plugin_name_and_type[1].lower()
 
     # initialized plugin in result, if it is not already present
-    if plugin_name not in parsed_plugins:
-      parsed_plugins[plugin_name] = OrderedDict()
+    if plugin_identifier not in parsed_plugins:
+      parsed_plugins[plugin_identifier] = OrderedDict()
 
     # add name
-    parsed_plugins[plugin_name]['Name'] = plugin_name
+    parsed_plugins[plugin_identifier]['Name'] = plugin_name
     # initialize display name to name. if available, this will be overriden by display-name from widgets json
-    parsed_plugins[plugin_name]['Display Name'] = plugin_name
+    parsed_plugins[plugin_identifier]['Display Name'] = plugin_name
 
     # add type
     # conditional also due to same bug indicated above. Should never happen
     if plugin_type in PLUGIN_DISPLAY_TYPES:
-      parsed_plugins[plugin_name]['Type'] = PLUGIN_DISPLAY_TYPES[plugin_type]
+      parsed_plugins[plugin_identifier]['Type'] = PLUGIN_DISPLAY_TYPES[plugin_type]
     else:
-      print("Could not determine type for - {}. Current type is {}".format(plugin_name, plugin_type))
-      parsed_plugins[plugin_name]['Type'] = plugin_type
+      #print("Could not determine type for - {}. Current type is {}".format(plugin_name, plugin_type))
+      parsed_plugins[plugin_identifier]['Type'] = plugin_type
 
     if config_type == 'widgets':
       # add display name and icon
-      add_display_name_and_icon(plugin_name, properties[key], parsed_plugins)
+      add_display_name_and_icon(plugin_identifier, properties[key], parsed_plugins)
     elif config_type == 'doc':
       # add description
-      add_description(plugin_name, properties[key], parsed_plugins)
+      add_description(plugin_identifier, properties[key], parsed_plugins)
 
   return parsed_plugins
 
 
-def add_display_name_and_icon(plugin_name, widgets, dict_to_update):
+def add_display_name_and_icon(plugin_identifier, widgets, dict_to_update):
   parsed_widgets = json.loads(widgets)
   if 'display-name' in parsed_widgets:
-    dict_to_update[plugin_name]['Display Name'] = parsed_widgets['display-name']
+    dict_to_update[plugin_identifier]['Display Name'] = parsed_widgets['display-name']
   # add icon if available, else add N/A
-  dict_to_update[plugin_name]['Icon'] = 'N/A'
+  dict_to_update[plugin_identifier]['Icon'] = 'N/A'
   if 'icon' in parsed_widgets:
-    dict_to_update[plugin_name]['Icon'] = get_icon(parsed_widgets['icon'])
+    dict_to_update[plugin_identifier]['Icon'] = get_icon(parsed_widgets['icon'])
   pass
 
 
-def add_description(plugin_name, docs, dict_to_update):
+def add_description(plugin_identifier, docs, dict_to_update):
   description = find_description_element(docs)
   if description is None:
     print("Could not find description for - ", docs)
     return
 
   # print("Found description as: ", description.string)
-  dict_to_update[plugin_name]['Description'] = description.string
+  dict_to_update[plugin_identifier]['Description'] = description.string
 
 
 def find_description_element(docs):
@@ -307,30 +314,73 @@ def write_as_md(plugins_by_type, output_path):
   with open(output_path, "w") as output_file:
     output_file.write(output)
 
-def populate_black_list(path):
-  black_list = []
-  if path:
-    with open(path, "r") as fp:
-      plugin = fp.readline()
-      while plugin:
-        if not plugin.startswith('#'):
-          black_list.append(plugin.strip())
-        plugin = fp.readline()
 
-  return black_list
+def write_as_csv(all_plugins, output_path):
+  f = open(output_path, 'w')
+  f.write("Name,Display Name,Type,Description")
+  f.write('\n')
+  for each_plugin in all_plugins.values():
+    row = each_plugin['Name'] 
+    row += ',' 
+    row += each_plugin['Display Name']
+    row += ','
+    row += each_plugin['Type']
+    row += ','
+    if 'Description' in each_plugin and each_plugin['Description'] is not None:
+      row += each_plugin['Description'].replace('\n', '')
+      row += ','
+    row += '\n'
+    f.write(row)
+
+  f.close()
+  
+
+#def filter_blacklisted_plugins(blacklist_paths, all_plugins):
+#  plugins_to_ignore = populate_blacklist(blacklist_paths)
+#  for plugin_to_ignore in plugins_to_ignore:
+#    for key in all_plugins:
+#      plugin_name_and_type = key.split('-')
+#      plugin_name = plugin_name_and_type[0]
+#      if plugin_to_ignore == plugin_name:
+#        all_plugins.pop(key)
+#      if plugin_to_ignore.lower() == plugin_name:
+#        all_plugins.pop(key)
+
+    #if plugin_to_ignore in all_plugins:
+     # all_plugins.pop(plugin_to_ignore)
+    #if plugin_to_ignore.lower() in all_plugins:
+     # all_plugins.pop(plugin_to_ignore.lower())
+
+def populate_blacklist(blacklist_paths):
+  blacklist = []
+  if blacklist_paths:
+    paths = blacklist_paths.split(',')
+    for path in paths:
+      with open(path, "r") as fp:
+        plugin = fp.readline()
+        while plugin:
+          if not plugin.startswith('#'):
+            blacklist.append(plugin.strip())
+          plugin = fp.readline()
+
+  return blacklist
 
 
 def main():
   parser = argparse.ArgumentParser()
   parser.add_argument('cdap_sandbox_dir', help='Absolute path to the directory containing the CDAP Sandbox')
   parser.add_argument('hub_dir', help='Absolute path to the directory containing the Hub source')
-  parser.add_argument('-v', '--cdap_version', help='CDAP version to build plugin list for', default='5.0.0')
+  parser.add_argument('-v', '--cdap_version', help='CDAP version to build plugin list for', default='6.1.0')
   parser.add_argument('-f', '--output_format', help='The format to generate output in', default='json')
   parser.add_argument('-o', '--output_path', help='Absolute path to output file. Output file must not exist. Containing directory must exist.', default='plugins')
-  parser.add_argument('-i', '--ignore_plugins', help='Absolute path to file with plugins blacklist.')
+  parser.add_argument('-i', '--plugins_to_ignore', help='List of absolute paths to files with plugins to ignore')
   args = parser.parse_args()
 
   artifacts_dir = os.path.join(args.cdap_sandbox_dir, 'artifacts')
+
+  # globally populate plugin blacklist
+  global blacklisted_plugins
+  blacklisted_plugins = populate_blacklist(args.plugins_to_ignore)
 
   built_in_plugins = populate_built_in_plugins(artifacts_dir)
   # print "########### built in #########"
@@ -338,7 +388,6 @@ def main():
   hub_plugins = populate_hub_plugins(args.hub_dir, args.cdap_version)
   # print "########### hub #########"
   # print json.dumps(hub_plugins)
-  ignore_plugins = populate_black_list(args.ignore_plugins)
 
   # combine/union
   all_plugins = {}
@@ -346,24 +395,20 @@ def main():
   all_plugins.update(hub_plugins)
 
   # filter plugins using black list
-  for ignored in ignore_plugins:
-    if ignored in all_plugins:
-      all_plugins.pop(ignored)
-    if ignored.lower() in all_plugins:
-      all_plugins.pop(ignored.lower())
-  # print("########## everything #########")
-  # print(json.dumps(all_plugins))
-
+  #filter_blacklisted_plugins(args.plugins_to_ignore, all_plugins)
 
   # generate output
   # JSON
   if args.output_format == 'json':
     f = open(args.output_path, 'w')
     f.write(json.dumps(all_plugins, indent=2))
+    f.close()
   elif args.output_format == 'md':
     pivoted_by_plugin_type = pivot_by_plugin_type(all_plugins)
     # print(json.dumps(pivoted_by_plugin_type))
     write_as_md(pivoted_by_plugin_type, args.output_path)
+  elif args.output_format == 'csv':
+    write_as_csv(all_plugins, args.output_path)
 
 
 if __name__ == '__main__':

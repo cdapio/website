@@ -16,13 +16,6 @@
               "href": "https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/cdap-user"
             },
             {
-              "title": "Slack",
-              "icon": "/images/icons/slack.jpg",
-              "height": "57px",
-              "width": "85px",
-              "href": "https://cdap-users.herokuapp.com/"
-            },
-            {
               "title": "Stack Overflow",
               "icon": "/images/icons/stackoverflow.png",
               "height": "61px",
@@ -38,7 +31,7 @@
             {
               "title": "Jira",
               "icon": "/images/icons/jira-blue.png",
-              "href": "https://issues.cask.co/"
+              "href": "https://cdap.atlassian.net/"
             }
           ]
         },
@@ -66,7 +59,7 @@
           "body": "Fix a newbie issue, to get familiar with the process of contributing to CDAP",
           "icon": "/images/icons/jira.png",
           "linkTitle": "Go to Jira",
-          "href": "https://issues.cask.co/browse/CDAP-14707?jql=labels%20%3D%20newbie"
+          "href": "https://cdap.atlassian.net/browse/CDAP-14707?jql=labels%20%3D%20newbie"
         },
         {
           "title": "Submit a proposal",

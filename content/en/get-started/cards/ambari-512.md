@@ -6,7 +6,7 @@ Use Apache Ambari to add CDAP to an existing HDP cluster (which already has the 
 
 #### What's New:
 
-* View [release notes](https://docs.cask.co/cdap/5.1.0/en/reference-manual/release-notes.html#release-5-1-0)
+* View [release notes](https://docs.cdap.io/cdap/5.1.0/en/reference-manual/release-notes.html#release-5-1-0)
 
 #### System Requirements
 
