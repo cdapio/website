@@ -75,10 +75,6 @@
                     "id": "linuxmac-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
                     "id": "linuxmac-672"
                   },
@@ -122,73 +118,6 @@
               },
               "details": "content/en/get-started/cards/linux-mac-680.md"
             },
-             {
-              "id": "linuxmac-673",
-              "item": {
-                "title": "Linux/Mac OSX",
-                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
-                "img": "/images/get-started/linux-mac.png",
-                "buttons": [
-                  {
-                    "buttonTitle": "CDAP 6.7.3 for Linux/Mac",
-                    "id": "version-673-mac",
-                    "buttonHref": "https://github.com/cdapio/cdap-build/releases/download/v6.7.3/cdap-sandbox-6.7.3.zip"
-                  }
-                ],
-                "dropdownItems": [
-                  {
-                    "linkTitle": "CDAP 6.8.0 Linux/Mac",
-                    "id": "linuxmac-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673",
-                    "active": true
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.2 Linux/Mac",
-                    "id": "linuxmac-672"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.1 Linux/Mac",
-                    "id": "linuxmac-671"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.0 Linux/Mac",
-                    "id": "linuxmac-670"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.6.0 Linux/Mac",
-                    "id": "linuxmac-660"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.5.1 Linux/Mac",
-                    "id": "linuxmac-651"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.5.0 Linux/Mac",
-                    "id": "linuxmac-650"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.4.1 Linux/Mac",
-                    "id": "linuxmac-641"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.3.0 Linux/Mac",
-                    "id": "linuxmac-630"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.2.3 Linux/Mac",
-                    "id": "linuxmac-623"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.1.4 Linux/Mac",
-                    "id": "linuxmac-614"
-                  }
-                ]
-              },
-              "details": "content/en/get-started/cards/linux-mac-673.md"
-            },
             {
               "id": "linuxmac-672",
               "item": {
@@ -206,10 +135,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Linux/Mac",
                     "id": "linuxmac-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
                   },
                   {
                     "active": true,
@@ -275,10 +200,6 @@
                     "id": "linuxmac-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
                     "id": "linuxmac-672"
                   },
@@ -340,10 +261,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Linux/Mac",
                     "id": "linuxmac-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
@@ -409,10 +326,6 @@
                     "id": "linuxmac-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
                     "id": "linuxmac-672"
                   },
@@ -474,10 +387,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Linux/Mac",
                     "id": "linuxmac-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
@@ -543,10 +452,6 @@
                     "id": "linuxmac-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
                     "id": "linuxmac-672"
                   },
@@ -608,10 +513,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Linux/Mac",
                     "id": "linuxmac-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
@@ -677,10 +578,6 @@
                     "id": "linuxmac-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
                     "id": "linuxmac-672"
                   },
@@ -742,10 +639,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Linux/Mac",
                     "id": "linuxmac-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
@@ -811,10 +704,6 @@
                     "id": "linuxmac-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Linux/Mac",
-                    "id": "linuxmac-673"
-                  },
-                  {
                     "active": true,
                     "linkTitle": "CDAP 6.7.2 Linux/Mac",
                     "id": "linuxmac-672"
@@ -860,6 +749,7 @@
               },
               "details": "content/en/get-started/cards/linux-mac-614.md"
             },
+
             {
               "id": "vm-680",
               "item": {
@@ -877,10 +767,6 @@
                     "active": true,
                     "linkTitle": "CDAP 6.8.0 VM",
                     "id": "vm-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 VM",
@@ -926,72 +812,6 @@
               },
               "details": "content/en/get-started/cards/vm-680.md"
             },
-                        {
-              "id": "vm-673",
-              "item": {
-                "title": "CDAP for VM",
-                "img": "/images/get-started/vm.svg",
-                "buttons": [
-                  {
-                    "buttonTitle": "CDAP 6.7.3 for VM",
-                    "id": "version-673-vm",
-                    "buttonHref": "https://github.com/cdapio/cdap-build/releases/download/v6.7.3/cdap-sandbox-6.7.3.ova"
-                  }
-                ],
-                "dropdownItems": [
-                  {
-                    "linkTitle": "CDAP 6.8.0 VM",
-                    "id": "vm-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673",
-                    "active": true
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.2 VM",
-                    "id": "vm-672"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.1 VM",
-                    "id": "vm-671"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.0 VM",
-                    "id": "vm-670"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.6.0 VM",
-                    "id": "vm-660"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.5.1 VM",
-                    "id": "vm-651"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.5.0 VM",
-                    "id": "vm-650"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.4.1 VM",
-                    "id": "vm-641"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.3.0 VM",
-                    "id": "vm-630"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.2.3 VM",
-                    "id": "vm-623"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.1.4 VM",
-                    "id": "vm-614"
-                  }
-                ]
-              },
-              "details": "content/en/get-started/cards/vm-673.md"
-            },
             {
               "id": "vm-672",
               "item": {
@@ -1008,10 +828,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 VM",
                     "id": "vm-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
                   },
                   {
                     "active": true,
@@ -1076,10 +892,6 @@
                     "id": "vm-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 VM",
                     "id": "vm-672"
                   },
@@ -1140,10 +952,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 VM",
                     "id": "vm-680"
-                  },
-                                    {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 VM",
@@ -1208,10 +1016,6 @@
                     "id": "vm-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 VM",
                     "id": "vm-672"
                   },
@@ -1272,10 +1076,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 VM",
                     "id": "vm-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 VM",
@@ -1340,10 +1140,6 @@
                     "id": "vm-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 VM",
                     "id": "vm-672"
                   },
@@ -1404,10 +1200,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 VM",
                     "id": "vm-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 VM",
@@ -1472,10 +1264,6 @@
                     "id": "vm-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 VM",
                     "id": "vm-672"
                   },
@@ -1538,10 +1326,6 @@
                     "id": "vm-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 VM",
                     "id": "vm-672"
                   },
@@ -1602,10 +1386,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 VM",
                     "id": "vm-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 VM",
-                    "id": "vm-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 VM",
@@ -1673,10 +1453,6 @@
                     "id": "docker-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Docker",
                     "id": "docker-672"
                   },
@@ -1721,73 +1497,6 @@
               "details": "content/en/get-started/cards/docker-680.md"
             },
             {
-              "id": "docker-673",
-              "item": {
-                "title": "CDAP for Docker",
-                "description": "Download a standalone zip file for trying out CDAP on your Linux or Mac OSX machine.",
-                "img": "/images/get-started/docker.png",
-                "buttons": [
-                  {
-                    "buttonTitle": "CDAP 6.7.3 for Docker",
-                    "id": "version-673-docker",
-                    "buttonHref": "https://hub.docker.com/r/caskdata/cdap-sandbox/"
-                  }
-                ],
-                "dropdownItems": [
-                  {
-                    "linkTitle": "CDAP 6.8.0 Docker",
-                    "id": "docker-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673",
-                    "active": true
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.2 Docker",
-                    "id": "docker-672"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.1 Docker",
-                    "id": "docker-671"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.0 Docker",
-                    "id": "docker-670"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.6.0 Docker",
-                    "id": "docker-660"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.5.1 Docker",
-                    "id": "docker-651"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.5.0 Docker",
-                    "id": "docker-650"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.4.1 Docker",
-                    "id": "docker-641"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.3.0 Docker",
-                    "id": "docker-630"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.2.3 Docker",
-                    "id": "docker-623"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.1.4 Docker",
-                    "id": "docker-614"
-                  }
-                ]
-              },
-              "details": "content/en/get-started/cards/docker-673.md"
-            },
-            {
               "id": "docker-672",
               "item": {
                 "title": "CDAP for Docker",
@@ -1804,10 +1513,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Docker",
                     "id": "docker-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
                   },
                   {
                     "active": true,
@@ -1873,10 +1578,6 @@
                     "id": "docker-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Docker",
                     "id": "docker-672"
                   },
@@ -1938,10 +1639,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Docker",
                     "id": "docker-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Docker",
@@ -2007,10 +1704,6 @@
                     "id": "docker-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Docker",
                     "id": "docker-672"
                   },
@@ -2072,10 +1765,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Docker",
                     "id": "docker-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Docker",
@@ -2141,10 +1830,6 @@
                     "id": "docker-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Docker",
                     "id": "docker-672"
                   },
@@ -2206,10 +1891,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Docker",
                     "id": "docker-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Docker",
@@ -2275,10 +1956,6 @@
                     "id": "docker-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Docker",
                     "id": "docker-672"
                   },
@@ -2342,10 +2019,6 @@
                     "id": "docker-680"
                   },
                   {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
-                  },
-                  {
                     "linkTitle": "CDAP 6.7.2 Docker",
                     "id": "docker-672"
                   },
@@ -2407,10 +2080,6 @@
                   {
                     "linkTitle": "CDAP 6.8.0 Docker",
                     "id": "docker-680"
-                  },
-                  {
-                    "linkTitle": "CDAP 6.7.3 Docker",
-                    "id": "docker-673"
                   },
                   {
                     "linkTitle": "CDAP 6.7.2 Docker",
@@ -2529,3 +2198,5 @@
     }
   ]
 }
+
+
