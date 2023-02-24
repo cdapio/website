@@ -17,8 +17,8 @@ def generate_card(template_filename, cdap_version, release_notes_url):
 
 
 def generate_cards(cdap_version):
-    print('[1/2] Generating get-started card files...')
-    print('Enter the CDAP release notes link:')
+    print('\n[1/3] Generating get-started card files...')
+    print('\nEnter the CDAP release notes link:')
     release_notes_url = input()
     generate_card('docker-template.md', cdap_version, release_notes_url)
     generate_card('linux-mac-template.md', cdap_version, release_notes_url)
@@ -26,7 +26,7 @@ def generate_cards(cdap_version):
 
 
 def update_data(cdap_version):
-    print('[2/2] Updating get-started json data...')
+    print('\n[2/3] Updating get-started json data...')
     data_filepath = '../../data/en/get_started.json'
     print('Updating data file', data_filepath)
     short_version = cdap_version.replace('.', '')
@@ -113,14 +113,31 @@ def update_data(cdap_version):
         json.dump(data, data_file, indent=2)
 
 
+def update_news(cdap_version):
+    print('\n[3/3] Updating news json data...')
+    news_filepath = '../../data/en/news.json'
+    print('Updating news json file', news_filepath)
+
+    news_json = None
+    with open(news_filepath) as news_file:
+        news_json = json.load(news_file)
+
+    news_json['items'][0]['title'] = f'CDAP {cdap_version}'
+    news_json['items'][0]['description'] = f'CDAP version {cdap_version} is generally available.'
+
+    with open(news_filepath, 'w') as news_file:
+        json.dump(news_json, news_file, indent=2)
+
+
 def main():
     print('Adding content for new CDAP version...\n')
 
-    print('Enter the CDAP version (Eg. 6.8.0, 6.7.3):')
+    print('\nEnter the CDAP version (Eg. 6.8.0, 6.7.3):')
     cdap_version = input()
 
     generate_cards(cdap_version)
     update_data(cdap_version)
+    update_news(cdap_version)
 
 if __name__ == "__main__":
     main()
