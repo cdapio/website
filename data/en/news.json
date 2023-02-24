@@ -9,7 +9,6 @@
       "linkUrl": "/get-started/"
     },
     {
-      "active": true,
       "imageUrl": "/images/logo-orange.png",
       "title": "CDAP 6.7.3",
       "description": "CDAP version 6.7.3 is generally available.",
