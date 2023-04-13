@@ -9,13 +9,6 @@
       "linkUrl": "/get-started/"
     },
     {
-      "imageUrl": "/images/logo-orange.png",
-      "title": "CDAP 6.7.3",
-      "description": "CDAP version 6.7.3 is generally available.",
-      "linkTitle": "Get Started",
-      "linkUrl": "/get-started/"
-    },
-    {
       "imageUrl": "/images/get-started/data-hub.svg",
       "title": "Cloud Data Fusion launched on GCP",
       "description": "Cloud Data Fusion is a fully managed, cloud-native, enterprise data integration service, powered by CDAP, for quickly building and managing data pipelines on Google Cloud Platform. Visit the Google Cloud Console to try it out today.",
