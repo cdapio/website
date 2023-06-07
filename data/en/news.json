@@ -3,8 +3,8 @@
     {
       "active": true,
       "imageUrl": "/images/logo-orange.png",
-      "title": "CDAP 6.9.0",
-      "description": "CDAP version 6.9.0 is generally available.",
+      "title": "CDAP 6.9.1",
+      "description": "CDAP version 6.9.1 is generally available.",
       "linkTitle": "Get Started",
       "linkUrl": "/get-started/"
     },
