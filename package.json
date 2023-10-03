@@ -20,6 +20,6 @@
   "devDependencies": {
     "cspell": "^3.2.2",
     "autoprefixer": "^9.4.10",
-    "postcss-cli": "^5.0.1"
+    "postcss-cli": "^10.1.0"
   }
 }
