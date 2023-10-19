@@ -70,7 +70,20 @@
             </div>
             {{ end }}
           </div>
-          <div class="hero-panel__info col-lg-6 col-md-12">
+          <div class="hero-panel__info col-lg-6 col-md-12 text-center">
+            {{if eq .Params.type "plugins"}}
+            <p class="mt-5 not-apply">
+              {{ .Params.hero.adaptivescale_intro | markdownify }} 
+            </p>
+            <p>
+              <a href="{{.Params.hero.adaptivescale_link}}">
+                <img src="{{ .Params.hero.adaptivescale_img }}" class="hero-image"/>
+              </a>
+            </p>
+            <a href="{{.Params.hero.adaptivescale_link}}" target="_blank" class="mt-3 mb-5">
+              <button class="btn-cta">Explore</button>
+            </a>
+              {{ end }}
             {{ with .Params.hero.image }}
               <img src="/{{ . }}">
             {{ end }}
