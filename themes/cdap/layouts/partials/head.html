@@ -17,7 +17,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 {{ if eq (getenv "HUGO_ENV") "production" }}
 <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 {{ else }}
@@ -29,7 +29,6 @@
 {{ partialCached "favicons.html" . }}
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 {{- template "_internal/opengraph.html" . -}}
-{{- template "_internal/google_news.html" . -}}
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 {{ if eq (getenv "HUGO_ENV") "production" }}
