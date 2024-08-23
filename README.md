@@ -6,6 +6,10 @@
 This site is built using [hugo](https://gohugo.io).
 Follow [instruction](https://gohugo.io/getting-started/installing/) to install hugo.
 
+**Info:** The current working build was done using hugo-extended v0.111.1.
+We have not verified the build using subsequent / later versions of hugo.
+
+
 ## Up And Running
 
 ```bash

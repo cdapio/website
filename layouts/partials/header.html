@@ -34,8 +34,8 @@
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav">
                 {{ $currentNode := . }}
-                {{ $url := .URL }}
-                {{ $firstUrlElement := index (split .URL "/") 1 }}
+                {{ $url := .RelPermalink }}
+                {{ $firstUrlElement := index (split .RelPermalink "/") 1 }}
                 {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
                       <li class="nav-item {{ if or (eq $firstUrlElement "resources") (eq $firstUrlElement "case-studies") }}active {{ end }} dropdown">
